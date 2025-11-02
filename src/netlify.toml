@@ -5,14 +5,8 @@
   publish = "dist"
   command = "npm run build"
 
-# Redirection pour SPA (Single Page Application)
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  force = false
-  
 # Exceptions pour les fichiers statiques (ne pas rediriger vers index.html)
+# IMPORTANT : Ces règles doivent être AVANT la redirection SPA
 [[redirects]]
   from = "/sitemap.xml"
   to = "/sitemap.xml"
@@ -24,6 +18,14 @@
   to = "/robots.txt"
   status = 200
   force = true
+  
+# Redirection pour SPA (Single Page Application)
+# Cette règle doit être EN DERNIER
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false
 
 [[redirects]]
   from = "/manifest.json"
