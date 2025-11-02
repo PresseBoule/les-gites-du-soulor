@@ -7,7 +7,7 @@ Disallow: /admin/
 Disallow: /api/
 
 # Sitemap
-Sitemap: https://www.gites-soulor.com/sitemap.xml
+Sitemap: https://lesgitesdusoulor.fr/sitemap.xml
 
 # Crawl-delay pour éviter la surcharge
 Crawl-delay: 1
