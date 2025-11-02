@@ -11,13 +11,31 @@
   from = "/sitemap.xml"
   to = "/sitemap.xml"
   status = 200
-  force = true
 
 [[redirects]]
   from = "/robots.txt"
   to = "/robots.txt"
   status = 200
-  force = true
+
+[[redirects]]
+  from = "/manifest.json"
+  to = "/manifest.json"
+  status = 200
+
+[[redirects]]
+  from = "/favicon.svg"
+  to = "/favicon.svg"
+  status = 200
+
+[[redirects]]
+  from = "/logo-*.png"
+  to = "/logo-:splat.png"
+  status = 200
+
+[[redirects]]
+  from = "/logo-*.svg"
+  to = "/logo-:splat.svg"
+  status = 200
   
 # Redirection pour SPA (Single Page Application)
 # Cette règle doit être EN DERNIER
@@ -25,31 +43,6 @@
   from = "/*"
   to = "/index.html"
   status = 200
-  force = false
-
-[[redirects]]
-  from = "/manifest.json"
-  to = "/manifest.json"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/favicon.svg"
-  to = "/favicon.svg"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/logo-*.png"
-  to = "/logo-:splat.png"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/logo-*.svg"
-  to = "/logo-:splat.svg"
-  status = 200
-  force = true
 
 # Headers pour le SEO et la sécurité
 [[headers]]
