@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Page d'accueil -->
+  <url>
+    <loc>https://www.gites-soulor.com/</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://i.postimg.cc/BZMLXsYh/2022-10-10.jpg</image:loc>
+      <image:title>Les Gîtes du Soulor - Vue panoramique</image:title>
+      <image:caption>Gîtes de charme dans les Pyrénées</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Section Gîtes -->
+  <url>
+    <loc>https://www.gites-soulor.com/#gites</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Section Tarifs -->
+  <url>
+    <loc>https://www.gites-soulor.com/#tarifs</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Section Bien-être -->
+  <url>
+    <loc>https://www.gites-soulor.com/#bien-etre</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Section Contact -->
+  <url>
+    <loc>https://www.gites-soulor.com/#contact</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Calendrier de réservation externe -->
+  <url>
+    <loc>https://gite-soulor-reservation.netlify.app/</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Réservation bain nordique et sauna -->
+  <url>
+    <loc>https://bain-sauna-gite-soulor.netlify.app/</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+</urlset>
