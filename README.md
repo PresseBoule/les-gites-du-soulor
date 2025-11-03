@@ -1,5 +1,5 @@
 
-  # Personnaliser site Les Gites
+  # Les Gîtes du Soulor – Réservez votre séjour authentique dans les Pyrénées
 
   This is a code bundle for Personnaliser site Les Gites. The original project is available at https://www.figma.com/design/IwkKRZiMn0WZujptgkfR8F/Personnaliser-site-Les-Gites.
 
