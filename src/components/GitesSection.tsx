@@ -4,6 +4,8 @@ import { useRef, useState } from 'react';
 import { Home, Wifi, Coffee, Monitor, Car, Mountain, Users, Sofa, X, ChevronLeft, ChevronRight, Construction } from 'lucide-react';
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from './ui/dialog';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import { EditableGiteGallery } from './admin/EditableGiteGallery';
+import { useAdmin } from '../contexts/AdminContext';
 
 const gitesData = [
   {
@@ -131,12 +133,29 @@ const features = [
   },
 ];
 
-export function GitesSection() {
+interface GitesProps {
+  gites?: any[];
+}
+
+export function GitesSection({ gites }: GitesProps = {}) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [hoveredGite, setHoveredGite] = useState<number | null>(null);
   const [selectedGite, setSelectedGite] = useState<number | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const { updateContent, content } = useAdmin();
+  
+  // Utiliser les gîtes du contexte s'ils existent, sinon utiliser les données par défaut
+  const gitesDataToUse = content?.gites && content.gites.length > 0 
+    ? content.gites.map((g, idx) => ({
+        ...gitesData[idx],
+        ...g,
+        name: g.nom || gitesData[idx]?.name,
+        capacity: g.capacite || gitesData[idx]?.capacity,
+        image: g.image || gitesData[idx]?.image,
+        gallery: g.gallery || gitesData[idx]?.gallery,
+      }))
+    : gitesData;
 
   const handleOpenGallery = (giteIndex: number) => {
     setSelectedGite(giteIndex);
@@ -150,16 +169,39 @@ export function GitesSection() {
 
   const handleNextImage = () => {
     if (selectedGite !== null) {
-      const gallery = gitesData[selectedGite].gallery;
+      const gallery = gitesDataToUse[selectedGite].gallery;
       setCurrentImageIndex((prev) => (prev + 1) % gallery.length);
     }
   };
 
   const handlePrevImage = () => {
     if (selectedGite !== null) {
-      const gallery = gitesData[selectedGite].gallery;
+      const gallery = gitesDataToUse[selectedGite].gallery;
       setCurrentImageIndex((prev) => (prev - 1 + gallery.length) % gallery.length);
     }
+  };
+
+  const handleUpdateGiteImages = (giteIndex: number, mainImage: string, gallery: string[]) => {
+    // Mettre à jour le contenu des gîtes
+    const updatedGites = [...(content?.gites || gitesData.map((g, idx) => ({
+      nom: g.name,
+      capacite: g.capacity,
+      description: '',
+      image: g.image,
+      gallery: g.gallery,
+      color: g.color,
+      accentColor: g.accentColor,
+      hasBalcony: g.hasBalcony,
+      inConstruction: g.inConstruction,
+    })))];
+
+    updatedGites[giteIndex] = {
+      ...updatedGites[giteIndex],
+      image: mainImage,
+      gallery: gallery,
+    };
+
+    updateContent('gites', updatedGites);
   };
 
   return (
@@ -225,27 +267,34 @@ export function GitesSection() {
 
         {/* Gites Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20 max-w-7xl mx-auto">
-          {gitesData.map((gite, index) => (
-            <motion.div
+          {gitesDataToUse.map((gite, index) => (
+            <EditableGiteGallery
               key={gite.name}
-              initial={{ opacity: 0, y: 100 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
-              transition={{ duration: 0.8, delay: index * 0.15 }}
-              onHoverStart={() => setHoveredGite(index)}
-              onHoverEnd={() => setHoveredGite(null)}
-              className="group relative"
+              giteName={gite.name}
+              giteIndex={index}
+              mainImage={gite.image}
+              gallery={gite.gallery || []}
+              onUpdateImages={handleUpdateGiteImages}
             >
-              {/* Card glow */}
               <motion.div
-                className="absolute -inset-2 bg-gradient-to-br from-[#c4a574]/30 via-[#5a7a9f]/20 to-[#c4a574]/30 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                animate={hoveredGite === index ? {
-                  scale: [1, 1.1, 1],
-                } : {}}
-                transition={{ duration: 2, repeat: Infinity }}
-              />
+                initial={{ opacity: 0, y: 100 }}
+                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
+                transition={{ duration: 0.8, delay: index * 0.15 }}
+                onHoverStart={() => setHoveredGite(index)}
+                onHoverEnd={() => setHoveredGite(null)}
+                className="group relative"
+              >
+                {/* Card glow */}
+                <motion.div
+                  className="absolute -inset-2 bg-gradient-to-br from-[#c4a574]/30 via-[#5a7a9f]/20 to-[#c4a574]/30 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                  animate={hoveredGite === index ? {
+                    scale: [1, 1.1, 1],
+                  } : {}}
+                  transition={{ duration: 2, repeat: Infinity }}
+                />
 
-              {/* Card */}
-              <div className="relative h-full bg-gradient-to-br from-[#2d3843] to-[#3a4a5a] rounded-3xl overflow-hidden border border-white/10 group-hover:border-[#c4a574]/30 transition-all duration-500">
+                {/* Card */}
+                <div className="relative h-full bg-gradient-to-br from-[#2d3843] to-[#3a4a5a] rounded-3xl overflow-hidden border border-white/10 group-hover:border-[#c4a574]/30 transition-all duration-500">
                 {/* Image */}
                 <div className="relative h-64 overflow-hidden">
                   <motion.div
@@ -334,6 +383,7 @@ export function GitesSection() {
                 <div className="absolute bottom-4 right-4 w-12 h-12 border-r-2 border-b-2 border-[#c4a574]/0 rounded-br-2xl group-hover:border-[#c4a574]/50 transition-all duration-500" />
               </div>
             </motion.div>
+            </EditableGiteGallery>
           ))}
         </div>
 
@@ -428,10 +478,10 @@ export function GitesSection() {
             <>
               {/* Accessibility elements - visually hidden */}
               <DialogTitle className="sr-only">
-                Galerie photos - {gitesData[selectedGite].name}
+                Galerie photos - {gitesDataToUse[selectedGite].name}
               </DialogTitle>
               <DialogDescription className="sr-only">
-                Parcourez les photos du gîte {gitesData[selectedGite].name}. Utilisez les flèches pour naviguer entre les images.
+                Parcourez les photos du gîte {gitesDataToUse[selectedGite].name}. Utilisez les flèches pour naviguer entre les images.
               </DialogDescription>
             </>
           )}
@@ -451,9 +501,9 @@ export function GitesSection() {
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
                       <h3 className="text-2xl text-white" style={{ fontFamily: 'serif' }}>
-                        {gitesData[selectedGite].name}
+                        {gitesDataToUse[selectedGite].name}
                       </h3>
-                      {gitesData[selectedGite].inConstruction && (
+                      {gitesDataToUse[selectedGite].inConstruction && (
                         <span className="px-3 py-1 rounded-full bg-orange-500/20 backdrop-blur-md border border-orange-500/50 text-orange-400 text-xs font-medium flex items-center gap-1.5">
                           <Construction className="w-3.5 h-3.5" />
                           En travaux
@@ -474,8 +524,8 @@ export function GitesSection() {
                 {/* Image */}
                 <div className="relative h-[70vh]">
                   <ImageWithFallback
-                    src={gitesData[selectedGite].gallery[currentImageIndex]}
-                    alt={`${gitesData[selectedGite].name} - Photo ${currentImageIndex + 1}`}
+                    src={gitesDataToUse[selectedGite].gallery[currentImageIndex]}
+                    alt={`${gitesDataToUse[selectedGite].name} - Photo ${currentImageIndex + 1}`}
                     className="w-full h-full object-cover"
                   />
                   
@@ -508,7 +558,7 @@ export function GitesSection() {
 
                 {/* Thumbnails */}
                 <div className="absolute bottom-20 left-0 right-0 z-20 flex justify-center gap-2 px-4">
-                  {gitesData[selectedGite].gallery.map((img, idx) => (
+                  {gitesDataToUse[selectedGite].gallery.map((img, idx) => (
                     <motion.button
                       key={idx}
                       onClick={() => setCurrentImageIndex(idx)}

@@ -6,10 +6,21 @@ import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Button } from './ui/button';
 import { TikTokIcon } from './TikTokIcon';
+import { EditableText } from './admin/EditableText';
+import { useAdmin } from '../contexts/AdminContext';
 
-export function Contact() {
+interface ContactProps {
+  contact?: {
+    telephone: string;
+    email: string;
+    adresse: string;
+  };
+}
+
+export function Contact({ contact }: ContactProps = {}) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const { content } = useAdmin();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -94,9 +105,13 @@ export function Contact() {
                   </div>
                   Coordonnées
                 </h3>
-                <p className="text-white/70 mb-8 leading-relaxed">
-                  N'hésitez pas à nous contacter pour toute question concernant nos gîtes, les tarifs ou pour effectuer une réservation.
-                </p>
+                <EditableText
+                  path="contact.description"
+                  value={content?.contact?.description || "N'hésitez pas à nous contacter pour toute question concernant nos gîtes, les tarifs ou pour effectuer une réservation."}
+                  as="p"
+                  className="text-white/70 mb-8 leading-relaxed"
+                  multiline
+                />
 
                 <div className="space-y-4">
                   <motion.a
@@ -110,12 +125,17 @@ export function Contact() {
                     </div>
                     <div>
                       <p className="text-white/60 text-sm">Téléphone</p>
-                      <p className="text-white text-lg">06 45 79 59 39</p>
+                      <EditableText
+                        path="contact.telephone"
+                        value={content?.contact?.telephone || "06 45 79 59 39"}
+                        as="p"
+                        className="text-white text-lg"
+                      />
                     </div>
                   </motion.a>
 
                   <motion.a
-                    href="mailto:spanazol@wanadoo.fr"
+                    href={`mailto:${content?.contact?.email || 'spanazol@wanadoo.fr'}`}
                     className="flex items-center gap-4 p-5 bg-[#2c3e50]/50 rounded-xl border border-white/5 group"
                     whileHover={{ x: 8, borderColor: 'rgba(196, 165, 116, 0.3)' }}
                     transition={{ duration: 0.2 }}
@@ -125,12 +145,17 @@ export function Contact() {
                     </div>
                     <div>
                       <p className="text-white/60 text-sm">Email</p>
-                      <p className="text-white text-lg break-all">spanazol@wanadoo.fr</p>
+                      <EditableText
+                        path="contact.email"
+                        value={content?.contact?.email || "spanazol@wanadoo.fr"}
+                        as="p"
+                        className="text-white text-lg break-all"
+                      />
                     </div>
                   </motion.a>
 
                   <motion.a
-                    href="https://www.instagram.com/les_gites_du_soulor/"
+                    href={content?.social?.instagram || "https://www.instagram.com/les_gites_du_soulor/"}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-4 p-5 bg-[#2c3e50]/50 rounded-xl border border-white/5 group"
@@ -142,12 +167,17 @@ export function Contact() {
                     </div>
                     <div>
                       <p className="text-white/60 text-sm">Instagram</p>
-                      <p className="text-white text-lg">@les_gites_du_soulor</p>
+                      <EditableText
+                        path="social.instagramHandle"
+                        value={content?.social?.instagramHandle || "@les_gites_du_soulor"}
+                        as="p"
+                        className="text-white text-lg"
+                      />
                     </div>
                   </motion.a>
 
                   <motion.a
-                    href="https://www.tiktok.com/@les_gites_du_soulor"
+                    href={content?.social?.tiktok || "https://www.tiktok.com/@les_gites_du_soulor"}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-4 p-5 bg-[#2c3e50]/50 rounded-xl border border-white/5 group"
@@ -159,7 +189,12 @@ export function Contact() {
                     </div>
                     <div>
                       <p className="text-white/60 text-sm">TikTok</p>
-                      <p className="text-white text-lg">@les_gites_du_soulor</p>
+                      <EditableText
+                        path="social.tiktokHandle"
+                        value={content?.social?.tiktokHandle || "@les_gites_du_soulor"}
+                        as="p"
+                        className="text-white text-lg"
+                      />
                     </div>
                   </motion.a>
                 </div>

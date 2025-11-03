@@ -1,8 +1,11 @@
 import { motion, useInView, AnimatePresence } from 'motion/react';
 import { useRef, useState } from 'react';
 import { Waves, Flame, Clock, Sparkles, X, ChevronLeft, ChevronRight, Camera } from 'lucide-react';
-import { Dialog, DialogContent } from './ui/dialog';
+import { Dialog, DialogContent, DialogTitle, DialogDescription } from './ui/dialog';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import { EditableText } from './admin/EditableText';
+import { EditableImage } from './admin/EditableImage';
+import { useAdmin } from '../contexts/AdminContext';
 
 // 🎨 IMPORTANT: Remplacez ces URLs par vos vraies photos du bain nordique et sauna
 // Pour ajouter vos photos: remplacez simplement les URLs dans le tableau 'wellnessGallery' ci-dessous
@@ -32,6 +35,7 @@ export function WellnessSection() {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
   const [galleryOpen, setGalleryOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const { content } = useAdmin();
 
   const handleOpenGallery = () => {
     setGalleryOpen(true);
@@ -103,18 +107,25 @@ export function WellnessSection() {
             </span>
           </motion.div>
 
-          <h2 className="text-4xl md:text-5xl lg:text-6xl text-white mb-6 tracking-wide">
-            Espace Bien-Être
-          </h2>
+          <EditableText
+            path="wellness.titre"
+            value={content?.wellness?.titre || "Espace Bien-Être"}
+            as="h2"
+            className="text-4xl md:text-5xl lg:text-6xl text-white mb-6 tracking-wide"
+          />
 
-          <motion.p
+          <motion.div
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-white/70 max-w-2xl mx-auto text-lg"
           >
-            Après vos journées en montagne, ressourcez-vous dans notre espace bien-être privatif
-          </motion.p>
+            <EditableText
+              path="wellness.description"
+              value={content?.wellness?.description || "Après vos journées en montagne, ressourcez-vous dans notre espace bien-être privatif"}
+              as="p"
+              className="text-white/70 max-w-2xl mx-auto text-lg"
+            />
+          </motion.div>
         </motion.div>
 
         {/* Features Cards */}
@@ -154,10 +165,19 @@ export function WellnessSection() {
 
                 {/* Content */}
                 <div className="p-8">
-                  <h3 className="text-2xl text-white mb-4">{feature.title}</h3>
-                  <p className="text-white/70 leading-relaxed">
-                    {feature.description}
-                  </p>
+                  <EditableText
+                    path={`wellness.features.${index}.title`}
+                    value={content?.wellness?.features?.[index]?.title || feature.title}
+                    as="h3"
+                    className="text-2xl text-white mb-4"
+                  />
+                  <EditableText
+                    path={`wellness.features.${index}.description`}
+                    value={content?.wellness?.features?.[index]?.description || feature.description}
+                    as="p"
+                    className="text-white/70 leading-relaxed"
+                    multiline
+                  />
 
                   {/* Decorative line */}
                   <motion.div
@@ -280,6 +300,10 @@ export function WellnessSection() {
       {/* Gallery Modal - Style identique aux gîtes */}
       <Dialog open={galleryOpen} onOpenChange={handleCloseGallery}>
         <DialogContent className="max-w-5xl bg-[#2d3843] border-[#c4a574]/30 p-0 overflow-hidden">
+          <DialogTitle className="sr-only">Galerie Bain Nordique & Sauna</DialogTitle>
+          <DialogDescription className="sr-only">
+            Découvrez notre espace bien-être avec bain nordique et sauna
+          </DialogDescription>
           <AnimatePresence mode="wait">
             {galleryOpen && (
               <motion.div

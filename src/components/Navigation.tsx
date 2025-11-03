@@ -1,6 +1,8 @@
 import { motion, useScroll, useTransform } from 'motion/react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { EditableText } from './admin/EditableText';
+import { useAdmin } from '../contexts/AdminContext';
 
 interface NavigationProps {
   scrollY: number;
@@ -19,6 +21,7 @@ export function Navigation({ scrollY }: NavigationProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
   const isScrolled = scrollY > 50;
+  const { content } = useAdmin();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -66,15 +69,20 @@ export function Navigation({ scrollY }: NavigationProps) {
       <div className="container mx-auto px-4 lg:px-6">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <motion.button
+          <motion.div
             onClick={() => scrollToSection('hero')}
             className="cursor-pointer relative group"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
           >
-            <span className="relative z-10 text-white tracking-[0.3em]">
-              LES GÎTES DU SOULOR
-            </span>
+            <div className="relative z-10">
+              <EditableText
+                path="texts.siteName"
+                value={content?.texts?.siteName || "LES GÎTES DU SOULOR"}
+                as="span"
+                className="text-white tracking-[0.3em]"
+              />
+            </div>
             
             <motion.div
               className="absolute inset-0 bg-gradient-to-r from-[#c4a574]/0 via-[#c4a574]/10 to-[#c4a574]/0 rounded-lg -inset-2"
@@ -82,7 +90,7 @@ export function Navigation({ scrollY }: NavigationProps) {
               whileHover={{ opacity: 1 }}
               transition={{ duration: 0.3 }}
             />
-          </motion.button>
+          </motion.div>
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center gap-2">

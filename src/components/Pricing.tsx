@@ -2,44 +2,70 @@ import { motion } from 'motion/react';
 import { useInView } from 'motion/react';
 import { useRef } from 'react';
 import { Calendar, Moon, Sunrise, Snowflake, Sun, Leaf } from 'lucide-react';
+import { EditableText } from './admin/EditableText';
+import { useAdmin } from '../contexts/AdminContext';
 
-const pricingData = [
+const defaultPricingData = [
   {
     type: 'Week-End',
     subtitle: 'Vendredi 16h à Dimanche 11h',
-    icon: Moon,
+    icon: 'Moon',
     prices: [
-      { season: 'Basse Saison', price: '400€', icon: Leaf, color: 'from-green-400/20 to-emerald-600/20' },
-      { season: 'Moyenne', price: '425€', icon: Sun, color: 'from-yellow-400/20 to-orange-500/20' },
-      { season: 'Haute Saison', price: '450€', icon: Snowflake, color: 'from-blue-400/20 to-cyan-600/20' },
+      { season: 'Basse Saison', price: '400€', icon: 'Leaf', color: 'from-green-400/20 to-emerald-600/20' },
+      { season: 'Moyenne', price: '425€', icon: 'Sun', color: 'from-yellow-400/20 to-orange-500/20' },
+      { season: 'Haute Saison', price: '450€', icon: 'Snowflake', color: 'from-blue-400/20 to-cyan-600/20' },
     ],
   },
   {
     type: 'Séjour en Semaine',
     subtitle: 'Dimanche 16h au Vendredi 11h',
     note: 'MINIMUM 2 NUITS',
-    icon: Calendar,
+    icon: 'Calendar',
     prices: [
-      { season: 'Basse Saison', price: '150€', unit: 'la nuit', icon: Leaf, color: 'from-green-400/20 to-emerald-600/20' },
-      { season: 'Moyenne', price: '165€', unit: 'la nuit', icon: Sun, color: 'from-yellow-400/20 to-orange-500/20' },
-      { season: 'Haute Saison', price: '180€', unit: 'la nuit', icon: Snowflake, color: 'from-blue-400/20 to-cyan-600/20' },
+      { season: 'Basse Saison', price: '150€', unit: 'la nuit', icon: 'Leaf', color: 'from-green-400/20 to-emerald-600/20' },
+      { season: 'Moyenne', price: '165€', unit: 'la nuit', icon: 'Sun', color: 'from-yellow-400/20 to-orange-500/20' },
+      { season: 'Haute Saison', price: '180€', unit: 'la nuit', icon: 'Snowflake', color: 'from-blue-400/20 to-cyan-600/20' },
     ],
   },
   {
     type: 'La Semaine',
     subtitle: 'Séjour complet 7 jours',
-    icon: Sunrise,
+    icon: 'Sunrise',
     prices: [
-      { season: 'Basse Saison', price: '1150€', icon: Leaf, color: 'from-green-400/20 to-emerald-600/20' },
-      { season: 'Moyenne', price: '1250€', icon: Sun, color: 'from-yellow-400/20 to-orange-500/20' },
-      { season: 'Haute Saison', price: '1350€', icon: Snowflake, color: 'from-blue-400/20 to-cyan-600/20' },
+      { season: 'Basse Saison', price: '1150€', icon: 'Leaf', color: 'from-green-400/20 to-emerald-600/20' },
+      { season: 'Moyenne', price: '1250€', icon: 'Sun', color: 'from-yellow-400/20 to-orange-500/20' },
+      { season: 'Haute Saison', price: '1350€', icon: 'Snowflake', color: 'from-blue-400/20 to-cyan-600/20' },
     ],
   },
 ];
 
-export function Pricing() {
+interface PricingProps {
+  tarifs?: any[];
+}
+
+export function Pricing({ tarifs }: PricingProps = {}) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const { content } = useAdmin();
+
+  const pricingData = (content?.tarifs && Array.isArray(content.tarifs) && content.tarifs.length > 0) 
+    ? content.tarifs 
+    : defaultPricingData;
+
+  const iconMap: { [key: string]: any } = {
+    Moon,
+    Calendar,
+    Sunrise,
+    Leaf,
+    Sun,
+    Snowflake,
+  };
+
+  const seasonIconMap: { [key: string]: any } = {
+    Leaf,
+    Sun,
+    Snowflake,
+  };
 
   return (
     <section id="pricing" className="py-24 relative overflow-hidden">
@@ -93,7 +119,7 @@ export function Pricing() {
         {/* Pricing Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {pricingData.map((option, index) => {
-            const Icon = option.icon;
+            const Icon = iconMap[option.icon] || Calendar;
             return (
               <motion.div
                 key={option.type}
@@ -133,12 +159,25 @@ export function Pricing() {
                         </div>
                       </motion.div>
 
-                      <h3 className="text-2xl text-white text-center mb-2 group-hover:text-[#c4a574] transition-colors">
-                        {option.type}
-                      </h3>
-                      <p className="text-white/60 text-center mb-1">{option.subtitle}</p>
+                      <EditableText
+                        path={`tarifs.${index}.type`}
+                        value={option.type}
+                        as="h3"
+                        className="text-2xl text-white text-center mb-2 group-hover:text-[#c4a574] transition-colors"
+                      />
+                      <EditableText
+                        path={`tarifs.${index}.subtitle`}
+                        value={option.subtitle}
+                        as="p"
+                        className="text-white/60 text-center mb-1"
+                      />
                       {option.note && (
-                        <p className="text-[#c4a574] text-center mb-6">{option.note}</p>
+                        <EditableText
+                          path={`tarifs.${index}.note`}
+                          value={option.note}
+                          as="p"
+                          className="text-[#c4a574] text-center mb-6"
+                        />
                       )}
 
                       {/* Divider */}
@@ -146,8 +185,8 @@ export function Pricing() {
 
                       {/* Prices */}
                       <div className="space-y-4">
-                        {option.prices.map((priceItem, priceIndex) => {
-                          const SeasonIcon = priceItem.icon;
+                        {(option.prices || []).map((priceItem, priceIndex) => {
+                          const SeasonIcon = seasonIconMap[priceItem.icon] || Leaf;
                           return (
                             <motion.div
                               key={priceItem.season}
@@ -162,16 +201,29 @@ export function Pricing() {
                                   <div className="flex items-center gap-3">
                                     <SeasonIcon className="w-5 h-5 text-white/70" />
                                     <div>
-                                      <p className="text-white/70">{priceItem.season}</p>
+                                      <EditableText
+                                        path={`tarifs.${index}.prices.${priceIndex}.season`}
+                                        value={priceItem.season}
+                                        as="p"
+                                        className="text-white/70"
+                                      />
                                       {priceItem.unit && (
-                                        <p className="text-white/50 text-sm">({priceItem.unit})</p>
+                                        <EditableText
+                                          path={`tarifs.${index}.prices.${priceIndex}.unit`}
+                                          value={priceItem.unit}
+                                          as="p"
+                                          className="text-white/50 text-sm"
+                                        />
                                       )}
                                     </div>
                                   </div>
                                   <div className="text-right">
-                                    <p className="text-2xl text-[#c4a574] group-hover/price:scale-110 transition-transform">
-                                      {priceItem.price}
-                                    </p>
+                                    <EditableText
+                                      path={`tarifs.${index}.prices.${priceIndex}.price`}
+                                      value={priceItem.price}
+                                      as="p"
+                                      className="text-2xl text-[#c4a574] group-hover/price:scale-110 transition-transform"
+                                    />
                                   </div>
                                 </div>
                               </div>

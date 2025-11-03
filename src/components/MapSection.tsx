@@ -1,6 +1,7 @@
 import { motion, useInView } from 'motion/react';
 import { useRef, useEffect, useState } from 'react';
 import { MapPin, Navigation, Maximize2 } from 'lucide-react';
+import { EditableWrapper } from './admin/EditableWrapper';
 
 export function MapSection() {
   const ref = useRef(null);
@@ -151,18 +152,26 @@ export function MapSection() {
             </span>
           </motion.div>
 
-          <h2 className="text-4xl md:text-5xl lg:text-6xl text-white mb-6 tracking-wide">
-            Nous Trouver
-          </h2>
+          <EditableWrapper
+            path="texts.mapTitre"
+            defaultValue="Nous Trouver"
+            as="h2"
+            className="text-4xl md:text-5xl lg:text-6xl text-white mb-6 tracking-wide"
+          />
 
-          <motion.p
+          <motion.div
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-white/70 max-w-2xl mx-auto text-lg"
+            className="max-w-2xl mx-auto text-lg"
           >
-            Au cœur des Pyrénées, à Arrens-Marsous
-          </motion.p>
+            <EditableWrapper
+              path="texts.mapDescription"
+              defaultValue="Au cœur des Pyrénées, à Arrens-Marsous"
+              as="p"
+              className="text-white/70"
+            />
+          </motion.div>
         </motion.div>
 
         {/* Map Container */}
