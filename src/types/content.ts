@@ -187,7 +187,7 @@ export const defaultContent: SiteContent = {
     description: "Découvrez nos 4 gîtes de charme nichés dans les montagnes pyrénéennes. Un havre de paix où tradition et modernité se rencontrent pour vous offrir un séjour inoubliable.",
     badge: "Arrens-Marsous, Hautes-Pyrénées",
     imageMain: "https://i.postimg.cc/BZMLXsYh/2022-10-10.jpg",
-    imageSecondaire: "https://i.postimg.cc/Dzpf7yyS/Les-Artigaux-appartements.jpg"
+    imageSecondaire: "https://i.postimg.cc/QNwn7RLP/unnamed1.jpg"
   },
   infoCards: [
     {
