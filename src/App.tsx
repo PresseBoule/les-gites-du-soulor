@@ -428,7 +428,7 @@ function MainSite() {
                 <div className="aspect-[16/10] relative overflow-hidden">
                   <EditableImage
                     path="hero.imageSecondaire"
-                    src={content.hero.imageSecondaire || 'https://i.postimg.cc/Dzpf7yyS/Les-Artigaux-appartements.jpg'}
+                    src={content.hero.imageSecondaire || 'https://i.postimg.cc/QNwn7RLP/unnamed1.jpg'}
                     alt="Les Artigaux - Appartements"
                     className="w-full h-full object-cover"
                     style={{
