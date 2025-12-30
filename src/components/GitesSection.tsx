@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from 'motion/react';
 import { useInView } from 'motion/react';
 import { useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Home, Wifi, Coffee, Monitor, Car, Mountain, Users, Sofa, X, ChevronLeft, ChevronRight, Construction } from 'lucide-react';
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from './ui/dialog';
 import { ImageWithFallback } from './figma/ImageWithFallback';
@@ -10,7 +11,8 @@ import { useAdmin } from '../contexts/AdminContext';
 const gitesData = [
   {
     name: 'Le Suyen',
-    capacity: '2 places',
+    slug: 'le-suyen',
+    capacity: '2 personnes',
     // ⚠️ PHOTO À REMPLACER - Image principale de la carte
     image: 'https://i.postimg.cc/FFcpb6LX/7588570501155327596.jpg',
     color: 'from-amber-500/20 to-orange-600/20',
@@ -33,7 +35,8 @@ const gitesData = [
   },
   {
     name: 'Le Tech',
-    capacity: '2 places',
+    slug: 'le-tech',
+    capacity: '2 personnes',
     // ⚠️ PHOTO À REMPLACER - Image principale de la carte
     image: 'https://i.postimg.cc/sfQJLy0X/2856943310074011028.jpg',
     color: 'from-blue-500/20 to-cyan-600/20',
@@ -60,7 +63,8 @@ const gitesData = [
   },
   {
     name: "L'Estaing",
-    capacity: '2 places',
+    slug: 'lestaing',
+    capacity: '2 personnes',
     image: 'https://images.unsplash.com/photo-1686987537277-516791dabf61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob3VzZSUyMHJlbm92YXRpb24lMjBjb25zdHJ1Y3Rpb258ZW58MXx8fHwxNzYxODE4MjYzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
     color: 'from-emerald-500/20 to-teal-600/20',
     accentColor: '#8fb89f',
@@ -76,7 +80,8 @@ const gitesData = [
   },
   {
     name: 'Le Soum',
-    capacity: '2 places',
+    slug: 'le-soum',
+    capacity: '2 personnes',
     image: 'https://i.postimg.cc/SKksq5yk/unnamed.jpg',
     color: 'from-purple-500/20 to-pink-600/20',
     accentColor: '#b89fc4',
@@ -365,18 +370,24 @@ export function GitesSection({ gites }: GitesProps = {}) {
                   </p>
 
                   {/* CTA */}
-                  <motion.button
-                    onClick={() => gite.inConstruction ? null : handleOpenGallery(index)}
-                    whileHover={{ scale: gite.inConstruction ? 1 : 1.05 }}
-                    whileTap={{ scale: gite.inConstruction ? 1 : 0.95 }}
-                    className={`block w-full py-2.5 rounded-xl border text-center transition-all duration-300 ${
-                      gite.inConstruction
-                        ? 'bg-gradient-to-r from-gray-500/10 to-gray-600/10 border-gray-500/30 text-gray-400 cursor-not-allowed opacity-60'
-                        : 'bg-gradient-to-r from-[#c4a574]/10 to-[#5a7a9f]/10 border-[#c4a574]/30 text-[#c4a574] group-hover:from-[#c4a574] group-hover:to-[#b89560] group-hover:text-white'
-                    }`}
-                  >
-                    {gite.inConstruction ? 'Non disponible' : 'Découvrir'}
-                  </motion.button>
+                  {gite.inConstruction ? (
+                    <button
+                      disabled
+                      className="block w-full py-2.5 rounded-xl border bg-gradient-to-r from-gray-500/10 to-gray-600/10 border-gray-500/30 text-gray-400 cursor-not-allowed opacity-60 text-center transition-all duration-300"
+                    >
+                      Non disponible
+                    </button>
+                  ) : (
+                    <Link to={`/gites/${gite.slug}`}>
+                      <motion.button
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="block w-full py-2.5 rounded-xl border bg-gradient-to-r from-[#c4a574]/10 to-[#5a7a9f]/10 border-[#c4a574]/30 text-[#c4a574] group-hover:from-[#c4a574] group-hover:to-[#b89560] group-hover:text-white text-center transition-all duration-300"
+                      >
+                        Découvrir
+                      </motion.button>
+                    </Link>
+                  )}
                 </div>
 
                 {/* Corner decoration */}

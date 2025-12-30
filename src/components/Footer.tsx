@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from 'motion/react';
 import { useState } from 'react';
 import { MapPin, Phone, Mail, Instagram, Mountain, Heart, Lock, Eye, EyeOff, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { LegalModal } from './LegalModal';
 import { TikTokIcon } from './TikTokIcon';
 import { EditableText } from './admin/EditableText';
@@ -29,12 +30,11 @@ export function Footer({ contact, social }: FooterProps = {}) {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { label: 'Accueil', href: '#hero' },
-    { label: 'Nos Gîtes', href: '#gites' },
-    { label: 'Tarifs', href: '#pricing' },
-    { label: 'Bien-être', href: '#wellness' },
-    { label: 'Localisation', href: '#location-map' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'Accueil', to: '/' },
+    { label: 'Nos Gîtes', to: '/gites' },
+    { label: 'Tarifs', to: '/tarifs' },
+    { label: 'Bien-être', to: '/bien-etre' },
+    { label: 'Contact', to: '/contact' },
   ];
 
   const scrollToSection = (id: string) => {
@@ -146,13 +146,13 @@ export function Footer({ contact, social }: FooterProps = {}) {
               <ul className="space-y-2">
                 {quickLinks.map((link) => (
                   <li key={link.label}>
-                    <button
-                      onClick={() => scrollToSection(link.href.substring(1))}
+                    <Link
+                      to={link.to}
                       className="text-white/60 hover:text-[#c4a574] transition-colors flex items-center gap-2 group"
                     >
                       <span className="w-1 h-1 rounded-full bg-white/40 group-hover:bg-[#c4a574] transition-colors" />
                       {link.label}
-                    </button>
+                    </Link>
                   </li>
                 ))}
               </ul>

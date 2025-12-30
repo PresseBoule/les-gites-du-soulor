@@ -198,7 +198,7 @@ export const defaultContent: SiteContent = {
     {
       icon: 'Home',
       title: 'Au Cœur des Sommets',
-      description: 'Situés à proximité des plus belles randonnées des Pyrénées, nos gîtes vous offrent un accès direct aux pistes de ski en hiver et aux sentiers de montagne en été.',
+      description: 'Situés à proximité des plus belles randonnées des Pyrénées, nos gîtes vous offrent un accès en moins de 30min aux pistes de ski en hiver et aux sentiers de montagne en été.',
     },
     {
       icon: 'Map',
