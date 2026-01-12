@@ -236,7 +236,7 @@ export function BienEtrePage() {
             className="text-center mb-12"
           >
             <motion.a
-              href="https://gite-soulor-reservation.netlify.app/"
+              href="https://bain-sauna-gite-soulor.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
@@ -594,7 +594,7 @@ export function BienEtrePage() {
               
               {/* Bouton Réserver en bas */}
               <motion.a
-                href="https://gite-soulor-reservation.netlify.app/"
+                href="https://bain-sauna-gite-soulor.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
