@@ -457,7 +457,7 @@ export function TarifsPage() {
             transition={{ duration: 0.6 }}
             className="max-w-2xl mx-auto text-center"
           >
-            <Link to="/contact">
+            <Link to="https://gite-soulor-reservation.netlify.app/">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
