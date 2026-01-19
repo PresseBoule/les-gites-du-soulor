@@ -95,8 +95,19 @@ export function AdminDashboard({ onLogout }: AdminDashboardProps) {
       return;
     }
 
-    if (newPassword.length < 6) {
-      showMessage('error', 'Le mot de passe doit contenir au moins 6 caractères');
+    if (newPassword.length < 12) {
+      showMessage('error', 'Le mot de passe doit contenir au moins 12 caractères');
+      return;
+    }
+
+    // Validation de la complexité du mot de passe
+    const hasUpperCase = /[A-Z]/.test(newPassword);
+    const hasLowerCase = /[a-z]/.test(newPassword);
+    const hasNumbers = /\d/.test(newPassword);
+    const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(newPassword);
+
+    if (!hasUpperCase || !hasLowerCase || !hasNumbers || !hasSpecialChar) {
+      showMessage('error', 'Le mot de passe doit contenir : majuscules, minuscules, chiffres et caractères spéciaux');
       return;
     }
 
@@ -592,10 +603,25 @@ function PasswordEditor({
         {saving ? 'Modification...' : 'Changer le mot de passe'}
       </button>
 
-      <div className="bg-yellow-500/20 border border-yellow-500/50 rounded-lg p-4">
-        <p className="text-yellow-200 text-sm">
-          ⚠️ Conservez votre nouveau mot de passe en lieu sûr. Vous en aurez besoin pour accéder à cette interface.
-        </p>
+      <div className="space-y-3">
+        <div className="bg-yellow-500/20 border border-yellow-500/50 rounded-lg p-4">
+          <p className="text-yellow-200 text-sm">
+            ⚠️ Conservez votre nouveau mot de passe en lieu sûr. Vous en aurez besoin pour accéder à cette interface.
+          </p>
+        </div>
+        
+        <div className="bg-blue-500/20 border border-blue-500/50 rounded-lg p-4">
+          <p className="text-blue-200 text-sm mb-2">
+            ✅ <strong>Mot de passe fort requis :</strong>
+          </p>
+          <ul className="text-blue-200 text-xs space-y-1 ml-4">
+            <li>• Minimum 12 caractères</li>
+            <li>• Au moins une majuscule</li>
+            <li>• Au moins une minuscule</li>
+            <li>• Au moins un chiffre</li>
+            <li>• Au moins un caractère spécial (!@#$%...)</li>
+          </ul>
+        </div>
       </div>
     </div>
   );

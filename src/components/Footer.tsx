@@ -95,7 +95,7 @@ export function Footer({ contact, social }: FooterProps = {}) {
         />
 
         <div className="container mx-auto px-4 py-16 relative z-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
             {/* About Section */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -135,26 +135,51 @@ export function Footer({ contact, social }: FooterProps = {}) {
               </div>
             </motion.div>
 
-            {/* Quick Links */}
+            {/* SEO Pages Links */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
+              transition={{ duration: 0.5, delay: 0.15 }}
             >
-              <h3 className="text-white mb-4">Navigation</h3>
+              <h3 className="text-white mb-4">Nos Gîtes</h3>
               <ul className="space-y-2">
-                {quickLinks.map((link) => (
-                  <li key={link.label}>
-                    <Link
-                      to={link.to}
-                      className="text-white/60 hover:text-[#c4a574] transition-colors flex items-center gap-2 group"
-                    >
-                      <span className="w-1 h-1 rounded-full bg-white/40 group-hover:bg-[#c4a574] transition-colors" />
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
+                <li>
+                  <Link
+                    to="/gite-arrens-marsous"
+                    className="text-white/60 hover:text-[#c4a574] transition-colors flex items-center gap-2 group text-sm"
+                  >
+                    <span className="w-1 h-1 rounded-full bg-white/40 group-hover:bg-[#c4a574] transition-colors" />
+                    Gîte Arrens-Marsous
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/gite-val-azun"
+                    className="text-white/60 hover:text-[#c4a574] transition-colors flex items-center gap-2 group text-sm"
+                  >
+                    <span className="w-1 h-1 rounded-full bg-white/40 group-hover:bg-[#c4a574] transition-colors" />
+                    Gîte Val d'Azun
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/gite-bain-nordique"
+                    className="text-white/60 hover:text-[#c4a574] transition-colors flex items-center gap-2 group text-sm"
+                  >
+                    <span className="w-1 h-1 rounded-full bg-white/40 group-hover:bg-[#c4a574] transition-colors" />
+                    Gîte Bain Nordique
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/gite-proximite-lourdes"
+                    className="text-white/60 hover:text-[#c4a574] transition-colors flex items-center gap-2 group text-sm"
+                  >
+                    <span className="w-1 h-1 rounded-full bg-white/40 group-hover:bg-[#c4a574] transition-colors" />
+                    Gîte près de Lourdes
+                  </Link>
+                </li>
               </ul>
             </motion.div>
 

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import { FloatingElements } from './components/FloatingElements';
 import { Navigation } from './components/Navigation';
 import { Footer } from './components/Footer';
@@ -16,14 +17,20 @@ import { WellnessPage } from './pages/WellnessPage';
 import { ContactPage } from './pages/ContactPage';
 import { GitesPage } from './pages/GitesPage';
 import { BienEtrePage } from './pages/BienEtrePage';
+import { GiteArrensMarsousPage } from './pages/GiteArrensMarsousPage';
+import { GiteValAzunPage } from './pages/GiteValAzunPage';
+import { GiteBainNordiquePage } from './pages/GiteBainNordiquePage';
+import { GiteProximiteLourdesPage } from './pages/GiteProximiteLourdesPage';
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <AdminProvider>
-        <AppContent />
-      </AdminProvider>
-    </BrowserRouter>
+    <HelmetProvider>
+      <BrowserRouter>
+        <AdminProvider>
+          <AppContent />
+        </AdminProvider>
+      </BrowserRouter>
+    </HelmetProvider>
   );
 }
 
@@ -86,6 +93,10 @@ function AppContent() {
           <Route path="/gites/:slug" element={<GitePage />} />
           <Route path="/bien-etre" element={<BienEtrePage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/gite-arrens-marsous" element={<GiteArrensMarsousPage />} />
+          <Route path="/gite-val-azun" element={<GiteValAzunPage />} />
+          <Route path="/gite-bain-nordique" element={<GiteBainNordiquePage />} />
+          <Route path="/gite-proximite-lourdes" element={<GiteProximiteLourdesPage />} />
         </Routes>
 
         {/* Footer */}

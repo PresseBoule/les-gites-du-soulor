@@ -6,6 +6,7 @@ import { GitesSection } from '../components/GitesSection';
 import { useAdmin } from '../contexts/AdminContext';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 export function GitesPage() {
   const { content } = useAdmin();
@@ -75,6 +76,12 @@ export function GitesPage() {
 
   return (
     <div className="pt-24 pb-16">
+      <Helmet>
+        <title>Gîtes 2 Personnes Pyrénées - 4 Logements Tout Confort | Les Gîtes du Soulor</title>
+        <meta name="description" content="Découvrez nos 4 gîtes pour 2 personnes à Arrens-Marsous : Le Suyen, Le Tech, L'Estaing et Le Soum. Hébergements tout confort en montagne, Hautes-Pyrénées." />
+        <link rel="canonical" href="https://lesgitesdusoulor.fr/gites" />
+      </Helmet>
+
       {/* Hero Section */}
       <section className="py-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-[#2d3843]/50 to-transparent" />

@@ -99,10 +99,6 @@ export function AdminLogin({ onLoginSuccess }: AdminLoginProps) {
           >
             {loading ? 'Connexion...' : 'Se connecter'}
           </button>
-
-          <p className="text-white/50 text-sm text-center mt-6">
-            Mot de passe par défaut : <span className="text-[#c4a574]">admin123</span>
-          </p>
         </form>
       </div>
     </div>

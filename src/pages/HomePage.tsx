@@ -9,6 +9,7 @@ import { motion } from 'framer-motion';
 import { EditableText } from '../components/admin/EditableText';
 import { EditableImage } from '../components/admin/EditableImage';
 import { Calendar, Home, Map, Users, Ban } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 export function HomePage() {
   const { content } = useAdmin();
@@ -27,6 +28,12 @@ export function HomePage() {
 
   return (
     <>
+      <Helmet>
+        <title>Les Gîtes du Soulor - Location Gîte Arrens-Marsous Val d'Azun Pyrénées</title>
+        <meta name="description" content="Location de gîtes 2 personnes à Arrens-Marsous dans le Val d'Azun, Hautes-Pyrénées. Bain nordique et sauna. 4 gîtes tout confort au cœur des Pyrénées." />
+        <link rel="canonical" href="https://lesgitesdusoulor.fr/" />
+      </Helmet>
+
       {/* Hero Section */}
       <section id="hero" className="pt-32 pb-16 relative min-h-screen flex flex-col justify-center">
         {/* Background pattern */}
@@ -248,6 +255,97 @@ export function HomePage() {
               </motion.div>
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Section SEO Introduction */}
+      <section className="py-16 relative">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="p-10 rounded-3xl bg-gradient-to-br from-white/5 to-transparent border border-white/10 shadow-2xl"
+            >
+              <div className="prose prose-invert prose-lg max-w-none">
+                <h2 className="text-3xl text-white mb-6 text-center" style={{ fontFamily: 'serif' }}>
+                  Gîtes de Montagne à Arrens-Marsous, Val d'Azun
+                </h2>
+                
+                <p className="text-white/90 leading-relaxed mb-6">
+                  Bienvenue aux <strong className="text-[#c4a574]">Gîtes du Soulor</strong>, votre havre de paix au cœur des <strong className="text-[#c4a574]">Hautes-Pyrénées</strong>. Nous vous proposons <strong className="text-[#c4a574]">4 gîtes pour 2 personnes</strong> dans le charmant village d'<strong className="text-[#c4a574]">Arrens-Marsous</strong>, au pied du mythique <strong className="text-[#c4a574]">Col du Soulor</strong>. Que vous recherchiez un <strong>week-end romantique</strong>, une <strong>semaine de randonnée</strong> ou un <strong>séjour ressourçant avec bain nordique et sauna</strong>, nos hébergements de montagne vous offrent le cadre idéal pour vos vacances dans les Pyrénées.
+                </p>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
+                  <div className="p-6 rounded-xl bg-white/5 border border-white/10">
+                    <h3 className="text-xl text-[#c4a574] mb-4 flex items-center gap-2">
+                      <Home className="w-5 h-5" />
+                      Nos 4 Gîtes pour 2 Personnes
+                    </h3>
+                    <p className="text-white/80 leading-relaxed text-sm mb-3">
+                      <strong className="text-white">Le Suyen</strong>, <strong className="text-white">Le Tech</strong>, <strong className="text-white">L'Estaing</strong> et <strong className="text-white">Le Soum</strong> : quatre gîtes tout confort, entièrement équipés, avec cuisine aménagée, salle de bain moderne, et un accès privilégié à nos équipements bien-être.
+                    </p>
+                    <p className="text-white/70 text-sm">
+                      Tous nos gîtes sont indépendants, offrant intimité et tranquillité pour votre séjour en montagne.
+                    </p>
+                  </div>
+                  
+                  <div className="p-6 rounded-xl bg-white/5 border border-white/10">
+                    <h3 className="text-xl text-[#c4a574] mb-4 flex items-center gap-2">
+                      <Map className="w-5 h-5" />
+                      Situation Géographique Idéale
+                    </h3>
+                    <p className="text-white/80 leading-relaxed text-sm mb-3">
+                      Situés au cœur du <strong className="text-white">Val d'Azun</strong>, nos gîtes sont le point de départ parfait pour explorer le <strong>Parc National des Pyrénées</strong>, les <strong>stations de ski d'Hautacam et Grand Tourmalet</strong>, et les nombreux sentiers de randonnée de la région.
+                    </p>
+                    <p className="text-white/70 text-sm">
+                      Accès facile : 30 min de Lourdes, 1h de Pau, 45 min de Tarbes.
+                    </p>
+                  </div>
+                </div>
+
+                <p className="text-white/80 leading-relaxed mb-6">
+                  Le <strong>Val d'Azun</strong> est une vallée préservée des Pyrénées, réputée pour sa beauté naturelle et son authenticité. En séjournant dans nos gîtes à <strong>Arrens-Marsous</strong>, vous bénéficiez d'un accès privilégié aux <strong>cols mythiques du Soulor et d'Aubisque</strong>, aux <strong>lacs de montagne</strong> (lac d'Estaing, lac d'Ilhéou), et à une multitude d'activités outdoor : <em>randonnée pédestre</em>, <em>VTT</em>, <em>ski alpin et ski de fond</em> en hiver, <em>via ferrata</em>, et bien plus encore.
+                </p>
+
+                <div className="p-6 rounded-xl bg-gradient-to-br from-[#c4a574]/10 to-[#5a7a9f]/10 border border-[#c4a574]/20 mt-6">
+                  <h3 className="text-xl text-white mb-3">Pourquoi choisir Les Gîtes du Soulor ?</h3>
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-white/80 text-sm">
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#c4a574] mt-1">✓</span>
+                      <span>4 gîtes modernes et tout équipés pour 2 personnes</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#c4a574] mt-1">✓</span>
+                      <span>Bain nordique chauffé au feu de bois et sauna traditionnel</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#c4a574] mt-1">✓</span>
+                      <span>Emplacement idéal au pied des montagnes</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#c4a574] mt-1">✓</span>
+                      <span>Accès aux randonnées et stations de ski</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#c4a574] mt-1">✓</span>
+                      <span>Formules flexibles : week-end, semaine ou séjour long</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#c4a574] mt-1">✓</span>
+                      <span>Parking privé et Wi-Fi gratuit inclus</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <p className="text-white/70 leading-relaxed text-sm mt-6 text-center">
+                  Que vous planifiez une <strong className="text-white">escapade romantique</strong>, un <strong className="text-white">séjour bien-être</strong> ou des <strong className="text-white">vacances sportives</strong>, nos gîtes à Arrens-Marsous vous promettent une expérience authentique dans les Pyrénées. Réservez dès maintenant et vivez un séjour inoubliable en montagne !
+                </p>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
