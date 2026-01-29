@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router'; // Changé de 'react-router-dom' à 'react-router'
 import { Helmet } from 'react-helmet-async';
 import { MapPin, Home, Mountain, Waves, Flame, Star, ArrowRight, Check } from 'lucide-react';
 
@@ -12,7 +12,7 @@ export function GiteArrensMarsousPage() {
   const gites = [
     { nom: 'Le Suyen', surface: '50m²', image: 'https://i.postimg.cc/FFcpb6LX/7588570501155327596.jpg' },
     { nom: 'Le Tech', surface: '50m²', image: 'https://i.postimg.cc/sfQJLy0X/2856943310074011028.jpg' },
-    { nom: "L'Estaing", surface: '65m²', image: 'https://images.unsplash.com/photo-1686987537277-516791dabf61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob3VzZSUyMHJlbm92YXRpb24lMjBjb25zdHJ1Y3Rpb258ZW58MXx8fHwxNzYxODE4MjYzfDA&ixlib=rb-4.1.0&q=80&w=1080' },
+    { nom: "L'Estaing", surface: '65m²', image: 'https://i.postimg.cc/x12r0yfD/IMG-3567.jpg' },
     { nom: 'Le Soum', surface: '50m²', image: 'https://i.postimg.cc/SKksq5yk/unnamed.jpg' },
   ];
 

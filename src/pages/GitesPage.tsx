@@ -4,7 +4,7 @@ import { EditableImage } from '../components/admin/EditableImage';
 import { Home, Users, Star, MapPin, Sparkles } from 'lucide-react';
 import { GitesSection } from '../components/GitesSection';
 import { useAdmin } from '../contexts/AdminContext';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router'; // Changé de 'react-router-dom' à 'react-router'
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 
@@ -49,10 +49,10 @@ export function GitesPage() {
       id: 'lestaing',
       nom: "L'Estaing",
       slug: 'lestaing',
-      description: 'Gîte en cours de rénovation. Bientôt disponible pour votre confort.',
+      description: 'Un espace intimiste et chaleureux, conçu pour votre confort',
       surface: '65m²',
       capacite: '2 personnes',
-      imageMain: 'https://images.unsplash.com/photo-1686987537277-516791dabf61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob3VzZSUyMHJlbm92YXRpb24lMjBjb25zdHJ1Y3Rpb258ZW58MXx8fHwxNzYxODE4MjYzfDA&ixlib=rb-4.1.0&q=80&w=1080',
+      imageMain: 'https://i.postimg.cc/x12r0yfD/IMG-3567.jpg',
       couleur: 'from-emerald-500/20 to-teal-600/20',
     },
     {
@@ -471,15 +471,15 @@ export function GitesPage() {
                 className="text-white/70 leading-relaxed mb-6"
                 multiline
               />
-              <Link to="/contact">
+              <a href="https://gite-soulor-reservation.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="px-8 py-4 rounded-full bg-gradient-to-r from-[#c4a574] to-[#d4b584] text-white font-semibold hover:from-[#d4b584] hover:to-[#c4a574] transition-all shadow-lg"
                 >
-                  Nous contacter pour réserver
+                  Réserver maintenant
                 </motion.button>
-              </Link>
+              </a>
             </div>
           </motion.div>
         </div>

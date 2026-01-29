@@ -1,8 +1,8 @@
-import { motion } from 'motion/react';
-import { Calendar, Clock, CreditCard, Info, Check, AlertCircle, Euro, Moon, Sunrise, Leaf, Sun, Snowflake, ArrowRight, X } from 'lucide-react';
+import { motion } from 'motion/react'; // Ajout de motion
+import { DollarSign, Home, Users, Sparkles, Info, Heart, Check, Moon, Calendar, Sunrise, Leaf, Sun, Snowflake, Euro, AlertCircle, ArrowRight, X } from 'lucide-react'; // Ajout des icônes manquantes
 import { EditableText } from '../components/admin/EditableText';
 import { useAdmin } from '../contexts/AdminContext';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router'; // Changé de 'react-router-dom' à 'react-router'
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 
@@ -24,20 +24,9 @@ export function TarifsPage() {
   // Utiliser les tarifs réels du site
   const tarifs = Array.isArray(content.tarifs) && content.tarifs.length > 0 ? content.tarifs : [
     {
-      type: 'Week-End',
-      subtitle: 'Vendredi 16h à Dimanche 11h',
+      type: 'Nuitée',
+      subtitle: 'Séjour flexible à la nuitée',
       icon: 'Moon',
-      prices: [
-        { season: 'Basse Saison', price: '400€', icon: 'Leaf', color: 'from-green-400/20 to-emerald-600/20' },
-        { season: 'Moyenne', price: '425€', icon: 'Sun', color: 'from-yellow-400/20 to-orange-500/20' },
-        { season: 'Haute Saison', price: '450€', icon: 'Snowflake', color: 'from-blue-400/20 to-cyan-600/20' },
-      ],
-    },
-    {
-      type: 'Séjour en Semaine',
-      subtitle: 'Dimanche 16h au Vendredi 11h',
-      note: 'MINIMUM 2 NUITS',
-      icon: 'Calendar',
       prices: [
         { season: 'Basse Saison', price: '150€', unit: 'la nuit', icon: 'Leaf', color: 'from-green-400/20 to-emerald-600/20' },
         { season: 'Moyenne', price: '165€', unit: 'la nuit', icon: 'Sun', color: 'from-yellow-400/20 to-orange-500/20' },
@@ -45,13 +34,24 @@ export function TarifsPage() {
       ],
     },
     {
+      type: 'Séjour 2 Nuits ou Plus',
+      subtitle: 'Tarif dégressif à partir de 2 nuits',
+      note: 'REMISE DE 30% APPLIQUÉE',
+      icon: 'Calendar',
+      prices: [
+        { season: 'Basse Saison', price: '125€', unit: 'la nuit', icon: 'Leaf', color: 'from-green-400/20 to-emerald-600/20' },
+        { season: 'Moyenne', price: '140€', unit: 'la nuit', icon: 'Sun', color: 'from-yellow-400/20 to-orange-500/20' },
+        { season: 'Haute Saison', price: '150€', unit: 'la nuit', icon: 'Snowflake', color: 'from-blue-400/20 to-cyan-600/20' },
+      ],
+    },
+    {
       type: 'La Semaine',
       subtitle: 'Séjour complet 7 jours',
       icon: 'Sunrise',
       prices: [
-        { season: 'Basse Saison', price: '1150€', icon: 'Leaf', color: 'from-green-400/20 to-emerald-600/20' },
-        { season: 'Moyenne', price: '1250€', icon: 'Sun', color: 'from-yellow-400/20 to-orange-500/20' },
-        { season: 'Haute Saison', price: '1350€', icon: 'Snowflake', color: 'from-blue-400/20 to-cyan-600/20' },
+        { season: 'Basse Saison', price: '875€', icon: 'Leaf', color: 'from-green-400/20 to-emerald-600/20' },
+        { season: 'Moyenne', price: '980€', icon: 'Sun', color: 'from-yellow-400/20 to-orange-500/20' },
+        { season: 'Haute Saison', price: '1050€', icon: 'Snowflake', color: 'from-blue-400/20 to-cyan-600/20' },
       ],
     },
   ];
@@ -67,19 +67,19 @@ export function TarifsPage() {
 
   const conditions = [
     {
-      icon: Clock,
+      icon: Home,
       titre: 'Arrivée / Départ',
       description: 'Arrivée : à partir de 16h00 | Départ : avant 11h00',
     },
     {
-      icon: Calendar,
-      titre: 'Durée minimum',
-      description: 'Week-end : 2 nuits minimum. Semaine : selon disponibilités. Semaine complète : 7 jours.',
+      icon: Users,
+      titre: 'Flexibilité',
+      description: 'Séjours acceptés dès 1 nuitée. Tarif dégressif appliqué automatiquement à partir de 2 nuits.',
     },
     {
-      icon: CreditCard,
+      icon: Sparkles,
       titre: 'Modalités de paiement',
-      description: 'Acompte de 30% à la réservation, solde à l\'arrivée. Chèques vacances acceptés.',
+      description: 'Acompte de 30% à la réservation, solde à l\'arrivée. Paiements acceptés : espèces, carte bancaire, virement.',
     },
     {
       icon: Info,
@@ -102,8 +102,8 @@ export function TarifsPage() {
   return (
     <>
       <Helmet>
-        <title>Tarifs Gîtes Arrens-Marsous - Prix Week-end & Semaine | Les Gîtes du Soulor</title>
-        <meta name="description" content="Tarifs de nos gîtes 2 personnes à Arrens-Marsous : Week-end dès 400€, semaine dès 150€/nuit. Basse, moyenne et haute saison. Réservez votre séjour dans les Pyrénées." />
+        <title>Tarifs Gîtes Arrens-Marsous - Dès 125€/Nuit | Les Gîtes du Soulor</title>
+        <meta name="description" content="Tarifs de nos gîtes 2 personnes à Arrens-Marsous : dès 150€/nuit, remise 30% à partir de 2 nuits (125€/nuit), semaine dès 875€. Réservez votre séjour dans les Pyrénées." />
         <link rel="canonical" href="https://lesgitesdusoulor.fr/tarifs" />
       </Helmet>
 
@@ -180,7 +180,7 @@ export function TarifsPage() {
               >
                 <div className="prose prose-invert prose-lg max-w-none">
                   <p className="text-white/90 leading-relaxed mb-6">
-                    Découvrez nos <strong className="text-[#c4a574]">tarifs transparents</strong> pour un séjour dans nos gîtes de montagne à <strong className="text-[#c4a574]">Arrens-Marsous</strong>, au cœur du Val d'Azun dans les <strong className="text-[#c4a574]">Hautes-Pyrénées</strong>. Que vous souhaitiez réserver pour un week-end ressourçant, une semaine en semaine ou un séjour complet de 7 jours, nous proposons des formules adaptées à tous vos besoins.
+                    Découvrez nos <strong className="text-[#c4a574]">tarifs transparents</strong> pour un séjour dans nos gîtes de montagne à <strong className="text-[#c4a574]">Arrens-Marsous</strong>, au cœur du Val d'Azun dans les <strong className="text-[#c4a574]">Hautes-Pyrénées</strong>. Que vous souhaitiez réserver pour une nuitée, plusieurs jours ou un séjour complet d'une semaine, nous proposons des formules adaptées à tous vos besoins.
                   </p>
                   
                   <p className="text-white/80 leading-relaxed mb-6">
@@ -193,23 +193,23 @@ export function TarifsPage() {
                   
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
                     <div className="p-4 rounded-xl bg-white/5 border border-white/10">
-                      <h3 className="text-lg text-[#c4a574] mb-2">Week-end</h3>
+                      <h3 className="text-lg text-[#c4a574] mb-2">Nuitée</h3>
                       <p className="text-white/70 text-sm leading-relaxed">
-                        Profitez d'une échappée belle du vendredi 16h au dimanche 11h. Idéal pour déconnecter le temps d'un long week-end en montagne. Tarifs de <strong className="text-white">400€ à 450€</strong> selon la saison.
+                        Séjours flexibles à la nuitée, sans durée minimum. Idéal pour une escapade courte ou prolongée selon vos envies. Tarifs de <strong className="text-white">150€ à 180€ par nuit</strong> selon la saison.
                       </p>
                     </div>
                     
                     <div className="p-4 rounded-xl bg-white/5 border border-white/10">
-                      <h3 className="text-lg text-[#c4a574] mb-2">Séjour en Semaine</h3>
+                      <h3 className="text-lg text-[#c4a574] mb-2">Séjour 2 Nuits ou Plus</h3>
                       <p className="text-white/70 text-sm leading-relaxed">
-                        Pour ceux qui souhaitent profiter du calme pyrénéen en dehors des week-ends, nous proposons des séjours du dimanche 16h au vendredi 11h, avec un minimum de 2 nuits. Tarifs de <strong className="text-white">150€ à 180€ par nuit</strong>.
+                        Bénéficiez d'une remise de 30% dès la 2ème nuit ! Profitez du calme pyrénéen avec un tarif avantageux. Tarifs de <strong className="text-white">125€ à 150€ par nuit</strong>.
                       </p>
                     </div>
                     
                     <div className="p-4 rounded-xl bg-white/5 border border-white/10">
                       <h3 className="text-lg text-[#c4a574] mb-2">La Semaine Complète</h3>
                       <p className="text-white/70 text-sm leading-relaxed">
-                        Pour un ressourcement total, optez pour un séjour de 7 jours complet. Tarifs de <strong className="text-white">1150€ à 1350€</strong> selon la saison.
+                        Pour un ressourcement total, optez pour un séjour de 7 jours complet. Tarifs de <strong className="text-white">875€ à 1050€</strong> selon la saison.
                       </p>
                     </div>
                   </div>
