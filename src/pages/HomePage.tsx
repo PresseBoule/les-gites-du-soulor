@@ -540,7 +540,7 @@ export function HomePage() {
                 />
                 <EditableText
                   path="texts.ageMinDescription"
-                  value={content.texts?.ageMinDescription || "Nos gîtes sont inadaptés pour les enfants de moins de 17 ans. Nous vous remercions de votre compréhension."}
+                  value={content.texts?.ageMinDescription || "Nos gîtes sont inadaptés pour les enfants de moins de 10 ans. Nous vous remercions de votre compréhension."}
                   as="p"
                   className="text-white/70 leading-relaxed"
                   multiline
