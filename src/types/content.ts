@@ -147,7 +147,7 @@ export const defaultContent: SiteContent = {
     {
       type: 'Séjour en Semaine',
       subtitle: 'Dimanche 16h au Vendredi 11h',
-      note: 'MINIMUM 2 NUITS',
+      note: 'MINIMUM 1 NUITS',
       icon: 'Calendar',
       prices: [
         { season: 'Basse Saison', price: '150€', unit: 'la nuit', icon: 'Leaf', color: 'from-green-400/20 to-emerald-600/20' },
@@ -235,7 +235,7 @@ export const defaultContent: SiteContent = {
     // Règlement
     reglementTitre: "Règlement des Gîtes",
     ageMinTitre: "Âge Minimum",
-    ageMinDescription: "Nos gîtes sont inadaptés pour les enfants de moins de 17 ans. Nous vous remercions de votre compréhension.",
+    ageMinDescription: "Nos gîtes sont inadaptés pour les enfants de moins de 10 ans. Nous vous remercions de votre compréhension.",
     animauxTitre: "Animaux Non Admis",
     animauxDescription: "Les animaux ne sont pas acceptés dans nos gîtes afin de garantir le confort de tous nos visiteurs.",
     // Footer
