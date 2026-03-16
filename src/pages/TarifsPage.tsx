@@ -498,7 +498,7 @@ export function TarifsPage() {
                   <div>
                     <EditableText
                       path="pages.tarifs.noteImportante"
-                      value={content.pages?.tarifs?.noteImportante || 'Les tarifs sont indiqués pour 4 personnes. Tous nos gîtes sont conçus pour accueillir 4 personnes maximum. Pour toute demande spécifique ou réservation de dernière minute, n'hésitez pas à nous contacter directement.'}
+                      value={content.pages?.tarifs?.noteImportante || 'Les tarifs sont indiqués pour 4 personnes. Tous nos gîtes sont conçus pour accueillir 4 personnes maximum. Pour toute demande spécifique ou réservation de dernière minute, n/'hésitez pas à nous contacter directement.'}
                       as="p"
                       className="text-white/80 leading-relaxed"
                       multiline
