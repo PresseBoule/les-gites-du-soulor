@@ -12,7 +12,7 @@ const gitesData = [
   {
     name: 'Le Suyen',
     slug: 'le-suyen',
-    capacity: '2 personnes',
+    capacity: '4 personnes',
     // ⚠️ PHOTO À REMPLACER - Image principale de la carte
     image: 'https://i.postimg.cc/FFcpb6LX/7588570501155327596.jpg',
     color: 'from-amber-500/20 to-orange-600/20',
@@ -36,7 +36,7 @@ const gitesData = [
   {
     name: 'Le Tech',
     slug: 'le-tech',
-    capacity: '2 personnes',
+    capacity: '4 personnes',
     // ⚠️ PHOTO À REMPLACER - Image principale de la carte
     image: 'https://i.postimg.cc/sfQJLy0X/2856943310074011028.jpg',
     color: 'from-blue-500/20 to-cyan-600/20',
@@ -64,7 +64,7 @@ const gitesData = [
   {
     name: "L'Estaing",
     slug: 'lestaing',
-    capacity: '2 personnes',
+    capacity: '4 personnes',
     image: 'https://images.unsplash.com/photo-1686987537277-516791dabf61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob3VzZSUyMHJlbm92YXRpb24lMjBjb25zdHJ1Y3Rpb258ZW58MXx8fHwxNzYxODE4MjYzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
     color: 'from-emerald-500/20 to-teal-600/20',
     accentColor: '#8fb89f',
@@ -81,7 +81,7 @@ const gitesData = [
   {
     name: 'Le Soum',
     slug: 'le-soum',
-    capacity: '2 personnes',
+    capacity: '4 personnes',
     image: 'https://i.postimg.cc/SKksq5yk/unnamed.jpg',
     color: 'from-purple-500/20 to-pink-600/20',
     accentColor: '#b89fc4',
@@ -258,7 +258,7 @@ export function GitesSection({ gites }: GitesProps = {}) {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-white/70 max-w-3xl mx-auto text-lg"
           >
-            Gîtes deux places offrant sérénité et confort, pour profiter pleinement de votre séjour au Soulor.
+            Gîtes 4 places offrant sérénité et confort, pour profiter pleinement de votre séjour au Soulor.
             Tout est prévu pour que vous vous sentiez comme chez vous.
           </motion.p>
 
