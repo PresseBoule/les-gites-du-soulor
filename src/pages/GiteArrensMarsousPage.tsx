@@ -48,8 +48,8 @@ export function GiteArrensMarsousPage() {
   return (
     <>
       <Helmet>
-        <title>Gîte à Arrens-Marsous - Location 2 Personnes Val d'Azun Pyrénées</title>
-        <meta name="description" content="Location de gîte à Arrens-Marsous dans le Val d'Azun. 4 hébergements tout confort pour 2 personnes avec bain nordique et sauna. À 5 min du village à pied." />
+        <title>Gîte à Arrens-Marsous - Location 4 Personnes Val d'Azun Pyrénées</title>
+        <meta name="description" content="Location de gîte à Arrens-Marsous dans le Val d'Azun. 4 hébergements tout confort pour 4 personnes avec bain nordique et sauna. À 5 min du village à pied." />
         <link rel="canonical" href="https://lesgitesdusoulor.fr/gite-arrens-marsous" />
       </Helmet>
 
@@ -155,7 +155,7 @@ export function GiteArrensMarsousPage() {
                         <Star className="w-5 h-5 text-[#c4a574]" />
                       </div>
                       <p className="text-white/60 text-sm mb-4">
-                        {gite.surface} • 2 personnes
+                        {gite.surface} • 4 personnes
                       </p>
                       <Link 
                         to="/gites" 
@@ -351,7 +351,7 @@ export function GiteArrensMarsousPage() {
                   Réservez votre gîte à Arrens-Marsous
                 </h3>
                 <p className="text-white/70 leading-relaxed mb-8">
-                  Disponible pour week-end (2 nuits minimum), mi-semaine ou semaine complète. 
+                  Disponible pour week-end (1 nuits minimum), mi-semaine ou semaine complète. 
                   Acompte de 30% à la réservation, solde à l'arrivée. Chèques vacances acceptés.
                 </p>
                 
