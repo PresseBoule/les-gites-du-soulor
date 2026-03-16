@@ -282,7 +282,7 @@ export function HomePage() {
                   <div className="p-6 rounded-xl bg-white/5 border border-white/10">
                     <h3 className="text-xl text-[#c4a574] mb-4 flex items-center gap-2">
                       <Home className="w-5 h-5" />
-                      Nos 4 Gîtes pour 2 Personnes
+                      Nos 4 Gîtes pour 4 Personnes
                     </h3>
                     <p className="text-white/80 leading-relaxed text-sm mb-3">
                       <strong className="text-white">Le Suyen</strong>, <strong className="text-white">Le Tech</strong>, <strong className="text-white">L'Estaing</strong> et <strong className="text-white">Le Soum</strong> : quatre gîtes tout confort, entièrement équipés, avec cuisine aménagée, salle de bain moderne, et un accès privilégié à nos équipements bien-être.
