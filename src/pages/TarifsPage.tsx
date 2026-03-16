@@ -36,12 +36,12 @@ export function TarifsPage() {
     {
       type: 'Séjour 2 Nuits ou Plus',
       subtitle: 'Tarif dégressif à partir de 2 nuits',
-      note: 'REMISE DE 30% APPLIQUÉE',
+      note: 'REMISE DE 20% APPLIQUÉE',
       icon: 'Calendar',
       prices: [
-        { season: 'Basse Saison', price: '125€', unit: 'la nuit', icon: 'Leaf', color: 'from-green-400/20 to-emerald-600/20' },
-        { season: 'Moyenne', price: '140€', unit: 'la nuit', icon: 'Sun', color: 'from-yellow-400/20 to-orange-500/20' },
-        { season: 'Haute Saison', price: '150€', unit: 'la nuit', icon: 'Snowflake', color: 'from-blue-400/20 to-cyan-600/20' },
+        { season: 'Basse Saison', price: '120€', unit: 'la nuit', icon: 'Leaf', color: 'from-green-400/20 to-emerald-600/20' },
+        { season: 'Moyenne', price: '130€', unit: 'la nuit', icon: 'Sun', color: 'from-yellow-400/20 to-orange-500/20' },
+        { season: 'Haute Saison', price: '145€', unit: 'la nuit', icon: 'Snowflake', color: 'from-blue-400/20 to-cyan-600/20' },
       ],
     },
     {
@@ -49,9 +49,9 @@ export function TarifsPage() {
       subtitle: 'Séjour complet 7 jours',
       icon: 'Sunrise',
       prices: [
-        { season: 'Basse Saison', price: '875€', icon: 'Leaf', color: 'from-green-400/20 to-emerald-600/20' },
-        { season: 'Moyenne', price: '980€', icon: 'Sun', color: 'from-yellow-400/20 to-orange-500/20' },
-        { season: 'Haute Saison', price: '1050€', icon: 'Snowflake', color: 'from-blue-400/20 to-cyan-600/20' },
+        { season: 'Basse Saison', price: '840€', icon: 'Leaf', color: 'from-green-400/20 to-emerald-600/20' },
+        { season: 'Moyenne', price: '910€', icon: 'Sun', color: 'from-yellow-400/20 to-orange-500/20' },
+        { season: 'Haute Saison', price: '1015€', icon: 'Snowflake', color: 'from-blue-400/20 to-cyan-600/20' },
       ],
     },
   ];
@@ -79,7 +79,7 @@ export function TarifsPage() {
     {
       icon: Sparkles,
       titre: 'Modalités de paiement',
-      description: 'Acompte de 30% à la réservation, solde à l\'arrivée. Paiements acceptés : espèces, carte bancaire, virement.',
+      description: 'Acompte de 20% à la réservation, solde à l\'arrivée. Paiements acceptés : espèces, carte bancaire, virement.',
     },
     {
       icon: Info,
@@ -102,8 +102,8 @@ export function TarifsPage() {
   return (
     <>
       <Helmet>
-        <title>Tarifs Gîtes Arrens-Marsous - Dès 125€/Nuit | Les Gîtes du Soulor</title>
-        <meta name="description" content="Tarifs de nos gîtes 2 personnes à Arrens-Marsous : dès 150€/nuit, remise 30% à partir de 2 nuits (125€/nuit), semaine dès 875€. Réservez votre séjour dans les Pyrénées." />
+        <title>Tarifs Gîtes Arrens-Marsous - Dès 120€/Nuit | Les Gîtes du Soulor</title>
+        <meta name="description" content="Tarifs de nos gîtes 4 personnes à Arrens-Marsous : dès 150€/nuit, remise 20% à partir de 2 nuits (120€/nuit), semaine dès 840€. Réservez votre séjour dans les Pyrénées." />
         <link rel="canonical" href="https://lesgitesdusoulor.fr/tarifs" />
       </Helmet>
 
@@ -202,14 +202,14 @@ export function TarifsPage() {
                     <div className="p-4 rounded-xl bg-white/5 border border-white/10">
                       <h3 className="text-lg text-[#c4a574] mb-2">Séjour 2 Nuits ou Plus</h3>
                       <p className="text-white/70 text-sm leading-relaxed">
-                        Bénéficiez d'une remise de 30% dès la 2ème nuit ! Profitez du calme pyrénéen avec un tarif avantageux. Tarifs de <strong className="text-white">125€ à 150€ par nuit</strong>.
+                        Bénéficiez d'une remise de 20% dès la 2ème nuit ! Profitez du calme pyrénéen avec un tarif avantageux. Tarifs de <strong className="text-white">120€ à 145€ par nuit</strong>.
                       </p>
                     </div>
                     
                     <div className="p-4 rounded-xl bg-white/5 border border-white/10">
                       <h3 className="text-lg text-[#c4a574] mb-2">La Semaine Complète</h3>
                       <p className="text-white/70 text-sm leading-relaxed">
-                        Pour un ressourcement total, optez pour un séjour de 7 jours complet. Tarifs de <strong className="text-white">875€ à 1050€</strong> selon la saison.
+                        Pour un ressourcement total, optez pour un séjour de 7 jours complet. Tarifs de <strong className="text-white">840€ à 1015€</strong> selon la saison.
                       </p>
                     </div>
                   </div>
