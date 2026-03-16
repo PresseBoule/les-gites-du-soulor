@@ -13,7 +13,7 @@ export function GiteBainNordiquePage() {
     <>
       <Helmet>
         <title>Gîte avec Bain Nordique Pyrénées - Hot Tub & Sauna Arrens-Marsous | Les Gîtes du Soulor</title>
-        <meta name="description" content="Gîte 2 personnes avec bain nordique chauffé au feu de bois et sauna dans les Pyrénées. Hébergement bien-être à Arrens-Marsous, Val d'Azun. Réservation en ligne." />
+        <meta name="description" content="Gîte 4 personnes avec bain nordique chauffé au feu de bois et sauna dans les Pyrénées. Hébergement bien-être à Arrens-Marsous, Val d'Azun. Réservation en ligne." />
         <meta name="keywords" content="gîte bain nordique, hot tub pyrénées, gîte sauna, bain nordique montagne, spa pyrénées, gîte bien-être" />
         <link rel="canonical" href="https://lesgitesdusoulor.fr/gite-bain-nordique" />
       </Helmet>
@@ -286,13 +286,13 @@ export function GiteBainNordiquePage() {
                   </h2>
                   
                   <p className="text-white/90 leading-relaxed mb-6">
-                    Les Gîtes du Soulor proposent <strong className="text-[#c4a574]">4 gîtes indépendants pour 2 personnes</strong>, tous avec accès au bain nordique et au sauna :
+                    Les Gîtes du Soulor proposent <strong className="text-[#c4a574]">4 gîtes indépendants pour 4 personnes</strong>, tous avec accès au bain nordique et au sauna :
                   </p>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="p-4 rounded-xl bg-gradient-to-br from-[#c4a574]/10 to-transparent border border-[#c4a574]/20">
                       <h3 className="text-lg text-[#c4a574] mb-2">🏔️ Le Suyen</h3>
-                      <p className="text-white/70 text-sm">Gîte cosy 2 personnes • Cuisine équipée • Bain nordique & sauna</p>
+                      <p className="text-white/70 text-sm">Gîte cosy 4 personnes • Cuisine équipée • Bain nordique & sauna</p>
                     </div>
                     <div className="p-4 rounded-xl bg-gradient-to-br from-[#c4a574]/10 to-transparent border border-[#c4a574]/20">
                       <h3 className="text-lg text-[#c4a574] mb-2">🏔️ Le Tech</h3>
