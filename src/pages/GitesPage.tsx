@@ -31,7 +31,7 @@ export function GitesPage() {
       slug: 'le-suyen',
       description: 'Un espace intimiste et chaleureux, conçu pour votre confort',
       surface: '50m²',
-      capacite: '2 personnes',
+      capacite: '4 personnes',
       imageMain: 'https://i.postimg.cc/FFcpb6LX/7588570501155327596.jpg',
       couleur: 'from-amber-500/20 to-orange-600/20',
     },
@@ -41,7 +41,7 @@ export function GitesPage() {
       slug: 'le-tech',
       description: 'Un espace intimiste et chaleureux, conçu pour votre confort',
       surface: '50m²',
-      capacite: '2 personnes',
+      capacite: '4 personnes',
       imageMain: 'https://i.postimg.cc/sfQJLy0X/2856943310074011028.jpg',
       couleur: 'from-blue-500/20 to-cyan-600/20',
     },
@@ -51,7 +51,7 @@ export function GitesPage() {
       slug: 'lestaing',
       description: 'Un espace intimiste et chaleureux, conçu pour votre confort',
       surface: '65m²',
-      capacite: '2 personnes',
+      capacite: '4 personnes',
       imageMain: 'https://i.postimg.cc/x12r0yfD/IMG-3567.jpg',
       couleur: 'from-emerald-500/20 to-teal-600/20',
     },
@@ -61,7 +61,7 @@ export function GitesPage() {
       slug: 'le-soum',
       description: 'Un espace intimiste et chaleureux, conçu pour votre confort',
       surface: '50m²',
-      capacite: '2 personnes',
+      capacite: '4 personnes',
       imageMain: 'https://i.postimg.cc/SKksq5yk/unnamed.jpg',
       couleur: 'from-purple-500/20 to-pink-600/20',
     },
@@ -77,8 +77,8 @@ export function GitesPage() {
   return (
     <div className="pt-24 pb-16">
       <Helmet>
-        <title>Gîtes 2 Personnes Pyrénées - 4 Logements Tout Confort | Les Gîtes du Soulor</title>
-        <meta name="description" content="Découvrez nos 4 gîtes pour 2 personnes à Arrens-Marsous : Le Suyen, Le Tech, L'Estaing et Le Soum. Hébergements tout confort en montagne, Hautes-Pyrénées." />
+        <title>Gîtes 4 Personnes Pyrénées - 4 Logements Tout Confort | Les Gîtes du Soulor</title>
+        <meta name="description" content="Découvrez nos 4 gîtes pour 4 personnes à Arrens-Marsous : Le Suyen, Le Tech, L'Estaing et Le Soum. Hébergements tout confort en montagne, Hautes-Pyrénées." />
         <link rel="canonical" href="https://lesgitesdusoulor.fr/gites" />
       </Helmet>
 
@@ -134,7 +134,7 @@ export function GitesPage() {
             />
             <EditableText
               path="pages.gites.sousTitre"
-              value={content.pages?.gites?.sousTitre || 'Quatre havres de paix pour 2 personnes, chacun avec son caractère unique'}
+              value={content.pages?.gites?.sousTitre || 'Quatre havres de paix pour 4 personnes, chacun avec son caractère unique'}
               as="p"
               className="text-white/70 text-xl max-w-3xl mx-auto"
             />
@@ -155,7 +155,7 @@ export function GitesPage() {
             <div className="p-8 rounded-2xl bg-gradient-to-br from-white/5 to-transparent border border-white/10">
               <EditableText
                 path="pages.gites.introduction"
-                value={content.pages?.gites?.introduction || 'Chacun de nos quatre gîtes a été pensé pour accueillir confortablement 2 personnes dans un cadre intimiste et raffiné. Que vous recherchiez une escapade romantique, un séjour ressourçant ou une base pour vos aventures en montagne, vous trouverez ici votre refuge idéal.'}
+                value={content.pages?.gites?.introduction || 'Chacun de nos quatre gîtes a été pensé pour accueillir confortablement 4 personnes dans un cadre intimiste et raffiné. Que vous recherchiez une escapade romantique, un séjour ressourçant ou une base pour vos aventures en montagne, vous trouverez ici votre refuge idéal.'}
                 as="p"
                 className="text-white/80 text-lg leading-relaxed text-center"
                 multiline
