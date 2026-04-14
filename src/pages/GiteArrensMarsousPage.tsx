@@ -48,7 +48,7 @@ export function GiteArrensMarsousPage() {
   return (
     <>
       <Helmet>
-        <title>Gîte à Arrens-Marsous - Location 4 Personnes Val d'Azun Pyrénées</title>
+        <title>Gîte à Arrens-Marsous - Location 3 Personnes Val d'Azun Pyrénées</title>
         <meta name="description" content="Location de gîte à Arrens-Marsous dans le Val d'Azun. 4 hébergements tout confort pour 4 personnes avec bain nordique et sauna. À 5 min du village à pied." />
         <link rel="canonical" href="https://lesgitesdusoulor.fr/gite-arrens-marsous" />
       </Helmet>
@@ -122,7 +122,7 @@ export function GiteArrensMarsousPage() {
               className="text-center mb-12"
             >
               <h2 className="text-4xl text-white mb-4" style={{ fontFamily: 'serif' }}>
-                Nos 4 gîtes de charme pour 2 personnes
+                Nos 4 gîtes de charme pour 3 personnes
               </h2>
               <p className="text-white/70 text-lg max-w-2xl mx-auto">
                 Le Suyen, Le Tech, L'Estaing et Le Soum : quatre hébergements tout confort avec bain nordique et sauna
@@ -155,7 +155,7 @@ export function GiteArrensMarsousPage() {
                         <Star className="w-5 h-5 text-[#c4a574]" />
                       </div>
                       <p className="text-white/60 text-sm mb-4">
-                        {gite.surface} • 4 personnes
+                        {gite.surface} • 3 personnes
                       </p>
                       <Link 
                         to="/gites" 
