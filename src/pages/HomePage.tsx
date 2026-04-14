@@ -30,7 +30,7 @@ export function HomePage() {
     <>
       <Helmet>
         <title>Les Gîtes du Soulor - Location Gîte Arrens-Marsous Val d'Azun Pyrénées</title>
-        <meta name="description" content="Location de gîtes 4 personnes à Arrens-Marsous dans le Val d'Azun, Hautes-Pyrénées. Bain nordique et sauna. 4 gîtes tout confort au cœur des Pyrénées." />
+        <meta name="description" content="Location de gîtes 3 personnes à Arrens-Marsous dans le Val d'Azun, Hautes-Pyrénées. Bain nordique et sauna. 4 gîtes tout confort au cœur des Pyrénées." />
         <link rel="canonical" href="https://lesgitesdusoulor.fr/" />
       </Helmet>
 
@@ -275,14 +275,14 @@ export function HomePage() {
                 </h2>
                 
                 <p className="text-white/90 leading-relaxed mb-6">
-                  Bienvenue aux <strong className="text-[#c4a574]">Gîtes du Soulor</strong>, votre havre de paix au cœur des <strong className="text-[#c4a574]">Hautes-Pyrénées</strong>. Nous vous proposons <strong className="text-[#c4a574]">4 gîtes pour 4 personnes</strong> dans le charmant village d'<strong className="text-[#c4a574]">Arrens-Marsous</strong>, au pied du mythique <strong className="text-[#c4a574]">Col du Soulor</strong>. Que vous recherchiez un <strong>week-end romantique</strong>, une <strong>semaine de randonnée</strong> ou un <strong>séjour ressourçant avec bain nordique et sauna</strong>, nos hébergements de montagne vous offrent le cadre idéal pour vos vacances dans les Pyrénées.
+                  Bienvenue aux <strong className="text-[#c4a574]">Gîtes du Soulor</strong>, votre havre de paix au cœur des <strong className="text-[#c4a574]">Hautes-Pyrénées</strong>. Nous vous proposons <strong className="text-[#c4a574]">4 gîtes pour 3 personnes</strong> dans le charmant village d'<strong className="text-[#c4a574]">Arrens-Marsous</strong>, au pied du mythique <strong className="text-[#c4a574]">Col du Soulor</strong>. Que vous recherchiez un <strong>week-end romantique</strong>, une <strong>semaine de randonnée</strong> ou un <strong>séjour ressourçant avec bain nordique et sauna</strong>, nos hébergements de montagne vous offrent le cadre idéal pour vos vacances dans les Pyrénées.
                 </p>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
                   <div className="p-6 rounded-xl bg-white/5 border border-white/10">
                     <h3 className="text-xl text-[#c4a574] mb-4 flex items-center gap-2">
                       <Home className="w-5 h-5" />
-                      Nos 4 Gîtes pour 4 Personnes
+                      Nos 4 Gîtes pour 3 Personnes
                     </h3>
                     <p className="text-white/80 leading-relaxed text-sm mb-3">
                       <strong className="text-white">Le Suyen</strong>, <strong className="text-white">Le Tech</strong>, <strong className="text-white">L'Estaing</strong> et <strong className="text-white">Le Soum</strong> : quatre gîtes tout confort, entièrement équipés, avec cuisine aménagée, salle de bain moderne, et un accès privilégié à nos équipements bien-être.
@@ -315,7 +315,7 @@ export function HomePage() {
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-white/80 text-sm">
                     <li className="flex items-start gap-2">
                       <span className="text-[#c4a574] mt-1">✓</span>
-                      <span>4 gîtes modernes et tout équipés pour 4 personnes</span>
+                      <span>4 gîtes modernes et tout équipés pour 3 personnes</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#c4a574] mt-1">✓</span>
