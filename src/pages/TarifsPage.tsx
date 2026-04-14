@@ -184,7 +184,7 @@ export function TarifsPage() {
                   </p>
                   
                   <p className="text-white/80 leading-relaxed mb-6">
-                    Nos 4 gîtes pour 4 personnes (<strong>Le Suyen</strong>, <strong>Le Tech</strong>, <strong>L'Estaing</strong> et <strong>Le Soum</strong>) offrent le même niveau de confort et les mêmes tarifs. Tous nos prix incluent le linge de maison, le ménage de fin de séjour, le chauffage, le Wi-Fi et l'accès à nos équipements bien-être.
+                    Nos 4 gîtes pour 3 personnes (<strong>Le Suyen</strong>, <strong>Le Tech</strong>, <strong>L'Estaing</strong> et <strong>Le Soum</strong>) offrent le même niveau de confort et les mêmes tarifs. Tous nos prix incluent le linge de maison, le ménage de fin de séjour, le chauffage, le Wi-Fi et l'accès à nos équipements bien-être.
                   </p>
 
                   <h2 className="text-2xl text-white mb-4 mt-8" style={{ fontFamily: 'serif' }}>
@@ -498,7 +498,7 @@ export function TarifsPage() {
                   <div>
                     <EditableText
                       path="pages.tarifs.noteImportante"
-                      value={content.pages?.tarifs?.noteImportante || "Les tarifs sont indiqués pour 4 personnes. Tous nos gîtes sont conçus pour accueillir 4 personnes maximum. Pour toute demande spécifique ou réservation de dernière minute, n'hésitez pas à nous contacter directement."}
+                      value={content.pages?.tarifs?.noteImportante || "Les tarifs sont indiqués pour 3 personnes. Tous nos gîtes sont conçus pour accueillir 3 personnes maximum. Pour toute demande spécifique ou réservation de dernière minute, n'hésitez pas à nous contacter directement."}
                       as="p"
                       className="text-white/80 leading-relaxed"
                       multiline
