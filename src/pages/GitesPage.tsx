@@ -31,7 +31,7 @@ export function GitesPage() {
       slug: 'le-suyen',
       description: 'Un espace intimiste et chaleureux, conçu pour votre confort',
       surface: '50m²',
-      capacite: '4 personnes',
+      capacite: '3 personnes',
       imageMain: 'https://i.postimg.cc/FFcpb6LX/7588570501155327596.jpg',
       couleur: 'from-amber-500/20 to-orange-600/20',
     },
