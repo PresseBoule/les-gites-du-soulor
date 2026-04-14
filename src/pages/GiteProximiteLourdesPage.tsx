@@ -13,7 +13,7 @@ export function GiteProximiteLourdesPage() {
     <>
       <Helmet>
         <title>Gîte près de Lourdes - Location 30 min de Lourdes avec Bain Nordique | Les Gîtes du Soulor</title>
-        <meta name="description" content="Gîte 4 personnes à 30 min de Lourdes, dans les Pyrénées. Hébergement calme à Arrens-Marsous avec bain nordique et sauna. Alternative nature à Lourdes." />
+        <meta name="description" content="Gîte 3 personnes à 30 min de Lourdes, dans les Pyrénées. Hébergement calme à Arrens-Marsous avec bain nordique et sauna. Alternative nature à Lourdes." />
         <meta name="keywords" content="gîte proche lourdes, hébergement lourdes, location lourdes, gîte 30 min lourdes, alternative lourdes" />
         <link rel="canonical" href="https://lesgitesdusoulor.fr/gite-proximite-lourdes" />
       </Helmet>
@@ -65,7 +65,7 @@ export function GiteProximiteLourdesPage() {
                   </h2>
                   
                   <p className="text-white/90 leading-relaxed mb-6">
-                    Vous recherchez un <strong className="text-[#c4a574]">hébergement calme</strong> à proximité de <strong className="text-[#c4a574]">Lourdes</strong> ? Les Gîtes du Soulor, situés à <strong className="text-[#c4a574]">Arrens-Marsous</strong> dans le <strong className="text-[#c4a574]">Val d'Azun</strong>, vous proposent <strong>4 gîtes pour 4 personnes</strong> à seulement <strong className="text-[#c4a574]">30 minutes de Lourdes</strong>. Une alternative parfaite pour profiter du calme de la montagne tout en restant proche de la cité mariale.
+                    Vous recherchez un <strong className="text-[#c4a574]">hébergement calme</strong> à proximité de <strong className="text-[#c4a574]">Lourdes</strong> ? Les Gîtes du Soulor, situés à <strong className="text-[#c4a574]">Arrens-Marsous</strong> dans le <strong className="text-[#c4a574]">Val d'Azun</strong>, vous proposent <strong>4 gîtes pour 3 personnes</strong> à seulement <strong className="text-[#c4a574]">30 minutes de Lourdes</strong>. Une alternative parfaite pour profiter du calme de la montagne tout en restant proche de la cité mariale.
                   </p>
 
                   <p className="text-white/80 leading-relaxed mb-6">
@@ -233,7 +233,7 @@ export function GiteProximiteLourdesPage() {
                   </h2>
                   
                   <p className="text-white/90 leading-relaxed mb-6">
-                    Les Gîtes du Soulor proposent <strong className="text-[#c4a574]">4 hébergements indépendants pour 4 personnes</strong>, idéaux pour un séjour en couple près de Lourdes. Chaque gîte est entièrement équipé et offre tout le confort moderne.
+                    Les Gîtes du Soulor proposent <strong className="text-[#c4a574]">4 hébergements indépendants pour 3 personnes</strong>, idéaux pour un séjour en couple près de Lourdes. Chaque gîte est entièrement équipé et offre tout le confort moderne.
                   </p>
 
                   <div className="p-6 rounded-xl bg-gradient-to-br from-[#c4a574]/10 to-[#5a7a9f]/10 border border-[#c4a574]/20 mb-6">
@@ -285,7 +285,7 @@ export function GiteProximiteLourdesPage() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="p-4 rounded-xl bg-gradient-to-br from-[#c4a574]/10 to-transparent border border-[#c4a574]/20">
                       <h3 className="text-lg text-[#c4a574] mb-2">🏔️ Le Suyen</h3>
-                      <p className="text-white/70 text-sm">Gîte 4 personnes avec accès bien-être</p>
+                      <p className="text-white/70 text-sm">Gîte 3 personnes avec accès bien-être</p>
                     </div>
                     <div className="p-4 rounded-xl bg-gradient-to-br from-[#c4a574]/10 to-transparent border border-[#c4a574]/20">
                       <h3 className="text-lg text-[#c4a574] mb-2">🏔️ Le Tech</h3>
@@ -350,7 +350,7 @@ export function GiteProximiteLourdesPage() {
                     </Link>
                   </motion.div>
                   <p className="text-white/60 text-sm mt-4">
-                    À 30 min de Lourdes • 4 gîtes 4 personnes • Bain nordique & sauna inclus
+                    À 30 min de Lourdes • 4 gîtes 3 personnes • Bain nordique & sauna inclus
                   </p>
                 </div>
               </motion.div>
