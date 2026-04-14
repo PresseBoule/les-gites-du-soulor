@@ -190,7 +190,7 @@ ${formData.message}
                   </h2>
                   
                   <p className="text-white/90 leading-relaxed mb-4">
-                    Vous souhaitez <strong className="text-[#c4a574]">réserver un gîte</strong> pour vos prochaines vacances dans les <strong className="text-[#c4a574]">Pyrénées</strong> ? Les Gîtes du Soulor sont à votre disposition pour vous accueillir toute l'année à <strong className="text-[#c4a574]">Arrens-Marsous</strong>, dans le <strong className="text-[#c4a574]">Val d'Azun</strong>. Nous répondons à toutes vos questions sur nos 4 gîtes pour 4 personnes, nos tarifs, et nos équipements bien-être (bain nordique et sauna).
+                    Vous souhaitez <strong className="text-[#c4a574]">réserver un gîte</strong> pour vos prochaines vacances dans les <strong className="text-[#c4a574]">Pyrénées</strong> ? Les Gîtes du Soulor sont à votre disposition pour vous accueillir toute l'année à <strong className="text-[#c4a574]">Arrens-Marsous</strong>, dans le <strong className="text-[#c4a574]">Val d'Azun</strong>. Nous répondons à toutes vos questions sur nos 4 gîtes pour 3 personnes, nos tarifs, et nos équipements bien-être (bain nordique et sauna).
                   </p>
                   
                   <p className="text-white/70 leading-relaxed text-sm">
