@@ -12,9 +12,9 @@ export function GiteValAzunPage() {
   return (
     <>
       <Helmet>
-        <title>Gîte Val d'Azun - Location 2 Personnes avec Bain Nordique | Les Gîtes du Soulor</title>
-        <meta name="description" content="Louez un gîte 4 personnes au cœur du Val d'Azun, Hautes-Pyrénées. Bain nordique, sauna, randonnée. Séjour nature à Arrens-Marsous. Réservation en ligne." />
-        <meta name="keywords" content="gîte val d'azun, location val d'azun, hébergement val d'azun, gîte pyrénées, gîte 4 personnes val d'azun" />
+        <title>Gîte Val d'Azun - Location 3 Personnes avec Bain Nordique | Les Gîtes du Soulor</title>
+        <meta name="description" content="Louez un gîte 3 personnes au cœur du Val d'Azun, Hautes-Pyrénées. Bain nordique, sauna, randonnée. Séjour nature à Arrens-Marsous. Réservation en ligne." />
+        <meta name="keywords" content="gîte val d'azun, location val d'azun, hébergement val d'azun, gîte pyrénées, gîte 3 personnes val d'azun" />
         <link rel="canonical" href="https://lesgitesdusoulor.fr/gite-val-azun" />
       </Helmet>
 
@@ -65,7 +65,7 @@ export function GiteValAzunPage() {
                   </h2>
                   
                   <p className="text-white/90 leading-relaxed mb-6">
-                    Le <strong className="text-[#c4a574]">Val d'Azun</strong> est l'une des vallées les plus préservées et authentiques des <strong className="text-[#c4a574]">Hautes-Pyrénées</strong>. Situé entre le célèbre <strong>Col du Soulor</strong> et le <strong>Col d'Aubisque</strong>, cette vallée offre des paysages époustouflants et une nature intacte. Les Gîtes du Soulor, situés à <strong className="text-[#c4a574]">Arrens-Marsous</strong>, vous proposent <strong>4 gîtes pour 4 personnes</strong> idéalement placés pour découvrir toutes les richesses de cette région exceptionnelle.
+                    Le <strong className="text-[#c4a574]">Val d'Azun</strong> est l'une des vallées les plus préservées et authentiques des <strong className="text-[#c4a574]">Hautes-Pyrénées</strong>. Situé entre le célèbre <strong>Col du Soulor</strong> et le <strong>Col d'Aubisque</strong>, cette vallée offre des paysages époustouflants et une nature intacte. Les Gîtes du Soulor, situés à <strong className="text-[#c4a574]">Arrens-Marsous</strong>, vous proposent <strong>4 gîtes pour 3 personnes</strong> idéalement placés pour découvrir toutes les richesses de cette région exceptionnelle.
                   </p>
 
                   <p className="text-white/80 leading-relaxed mb-6">
@@ -125,11 +125,11 @@ export function GiteValAzunPage() {
                 {/* Nos gîtes dans le Val d'Azun */}
                 <div className="p-8 rounded-2xl bg-gradient-to-br from-white/5 to-transparent border border-white/10 mb-8">
                   <h2 className="text-2xl text-white mb-6" style={{ fontFamily: 'serif' }}>
-                    Nos Gîtes 2 Personnes dans le Val d'Azun
+                    Nos Gîtes 3 Personnes dans le Val d'Azun
                   </h2>
                   
                   <p className="text-white/90 leading-relaxed mb-6">
-                    Les Gîtes du Soulor vous proposent <strong className="text-[#c4a574]">4 hébergements indépendants</strong> pour 4 personnes, situés au pied du Col du Soulor à Arrens-Marsous. Chaque gîte porte le nom d'un sommet emblématique du Val d'Azun :
+                    Les Gîtes du Soulor vous proposent <strong className="text-[#c4a574]">4 hébergements indépendants</strong> pour 3 personnes, situés au pied du Col du Soulor à Arrens-Marsous. Chaque gîte porte le nom d'un sommet emblématique du Val d'Azun :
                   </p>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
