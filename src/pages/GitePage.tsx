@@ -24,7 +24,7 @@ import { Dialog, DialogContent, DialogTitle, DialogDescription } from '../compon
 const gitesData = {
   'le-suyen': {
     nom: 'Le Suyen',
-    capacite: '2 personnes',
+    capacite: '3 personnes',
     image: 'https://i.postimg.cc/FFcpb6LX/7588570501155327596.jpg',
     gallery: [
       'https://i.postimg.cc/FFcpb6LX/7588570501155327596.jpg',
@@ -48,7 +48,7 @@ const gitesData = {
   },
   'le-tech': {
     nom: 'Le Tech',
-    capacite: '4 personnes',
+    capacite: '3 personnes',
     image: 'https://i.postimg.cc/sfQJLy0X/2856943310074011028.jpg',
     gallery: [
       'https://i.postimg.cc/gcQgcr6h/8792647096264011841.jpg',
@@ -76,7 +76,7 @@ const gitesData = {
   },
   'lestaing': {
     nom: "L'Estaing",
-    capacite: '4 personnes',
+    capacite: '3 personnes',
     image: 'https://i.postimg.cc/x12r0yfD/IMG-3567.jpg',
     gallery: [
       'https://i.postimg.cc/x12r0yfD/IMG-3567.jpg',
@@ -98,7 +98,7 @@ const gitesData = {
   },
   'le-soum': {
     nom: 'Le Soum',
-    capacite: '4 personnes',
+    capacite: '3 personnes',
     image: 'https://i.postimg.cc/SKksq5yk/unnamed.jpg',
     gallery: [
       'https://i.postimg.cc/nVQdbwMg/193423021054318720.jpg',
