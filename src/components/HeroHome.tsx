@@ -120,7 +120,7 @@ export function HeroHome() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <EditableImage
                   path="images.heroMain"
-                  value={content?.images?.heroMain || "https://i.postimg.cc/BZMLXsYh/2022-10-10.jpg"}
+                  value={content?.images?.heroMain || "/images/postimg/BZMLXsYh/2022-10-10.jpg"}
                   alt="Les Gîtes du Soulor - Vue d'ensemble"
                   className="w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover"
                 />

@@ -60,11 +60,12 @@ export const mset = async (keys: string[], values: any[]): Promise<void> => {
 // Gets multiple key-value pairs from the database.
 export const mget = async (keys: string[]): Promise<any[]> => {
   const supabase = client()
-  const { data, error } = await supabase.from("kv_store_66cb1054").select("value").in("key", keys);
+  const { data, error } = await supabase.from("kv_store_66cb1054").select("key, value").in("key", keys);
   if (error) {
     throw new Error(error.message);
   }
-  return data?.map((d) => d.value) ?? [];
+  const valuesByKey = new Map((data ?? []).map((row) => [row.key, row.value]));
+  return keys.map((key) => valuesByKey.get(key));
 };
 
 // Deletes multiple key-value pairs from the database.

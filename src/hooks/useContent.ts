@@ -2,6 +2,27 @@ import { useState, useEffect } from 'react';
 import { SiteContent, defaultContent } from '../types/content';
 import { projectId, publicAnonKey } from '../utils/supabase/info';
 
+function isObject(value: unknown): value is Record<string, any> {
+  return Boolean(value) && typeof value === 'object' && !Array.isArray(value);
+}
+
+function mergeContent(remoteContent: Partial<SiteContent> | null | undefined): SiteContent {
+  const remote = remoteContent ?? {};
+
+  return {
+    tarifs: Array.isArray(remote.tarifs) ? remote.tarifs : defaultContent.tarifs,
+    gites: Array.isArray(remote.gites) ? remote.gites : defaultContent.gites,
+    contact: isObject(remote.contact) ? { ...defaultContent.contact, ...remote.contact } : defaultContent.contact,
+    social: isObject(remote.social) ? { ...defaultContent.social, ...remote.social } : defaultContent.social,
+    hero: isObject(remote.hero) ? { ...defaultContent.hero, ...remote.hero } : defaultContent.hero,
+    infoCards: Array.isArray(remote.infoCards) ? remote.infoCards : defaultContent.infoCards,
+    wellness: isObject(remote.wellness) ? { ...defaultContent.wellness, ...remote.wellness } : defaultContent.wellness,
+    navigation: Array.isArray(remote.navigation) ? remote.navigation : defaultContent.navigation,
+    texts: isObject(remote.texts) ? { ...defaultContent.texts, ...remote.texts } : defaultContent.texts,
+    pages: isObject(remote.pages) ? remote.pages : defaultContent.pages,
+  };
+}
+
 export function useContent() {
   const [content, setContent] = useState<SiteContent>(defaultContent);
   const [loading, setLoading] = useState(true);
@@ -27,19 +48,7 @@ export function useContent() {
         
         if (data.success) {
           // Fusionner avec le contenu par défaut pour les valeurs manquantes
-          const mergedContent = {
-            tarifs: data.content.tarifs || defaultContent.tarifs,
-            gites: data.content.gites || defaultContent.gites,
-            contact: data.content.contact || defaultContent.contact,
-            social: data.content.social || defaultContent.social,
-            hero: data.content.hero || defaultContent.hero,
-            infoCards: data.content.infoCards || defaultContent.infoCards,
-            wellness: data.content.wellness || defaultContent.wellness,
-            navigation: data.content.navigation || defaultContent.navigation,
-            texts: { ...defaultContent.texts, ...data.content.texts },
-          };
-          
-          setContent(mergedContent);
+          setContent(mergeContent(data.content));
         }
       } catch (err) {
         console.error('Erreur de chargement du contenu:', err);
@@ -75,19 +84,7 @@ export function useContent() {
       const data = await response.json();
       
       if (data.success) {
-        const mergedContent = {
-          tarifs: data.content.tarifs || defaultContent.tarifs,
-          gites: data.content.gites || defaultContent.gites,
-          contact: data.content.contact || defaultContent.contact,
-          social: data.content.social || defaultContent.social,
-          hero: data.content.hero || defaultContent.hero,
-          infoCards: data.content.infoCards || defaultContent.infoCards,
-          wellness: data.content.wellness || defaultContent.wellness,
-          navigation: data.content.navigation || defaultContent.navigation,
-          texts: { ...defaultContent.texts, ...data.content.texts },
-        };
-        
-        setContent(mergedContent);
+        setContent(mergeContent(data.content));
       }
     } catch (err) {
       console.error('Erreur de rafraîchissement du contenu:', err);

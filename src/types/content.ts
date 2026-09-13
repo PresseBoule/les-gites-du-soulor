@@ -129,26 +129,16 @@ export interface SiteContent {
   wellness?: Wellness;
   navigation?: NavItem[];
   texts?: Texts;
+  pages?: Record<string, any>;
 }
 
 // Contenu par défaut (celui actuellement dans le site)
 export const defaultContent: SiteContent = {
   tarifs: [
     {
-      type: 'Week-End',
-      subtitle: 'Vendredi 16h à Dimanche 11h',
+      type: 'Nuitée',
+      subtitle: 'Séjour flexible à la nuitée',
       icon: 'Moon',
-      prices: [
-        { season: 'Basse Saison', price: '400€', icon: 'Leaf', color: 'from-green-400/20 to-emerald-600/20' },
-        { season: 'Moyenne', price: '425€', icon: 'Sun', color: 'from-yellow-400/20 to-orange-500/20' },
-        { season: 'Haute Saison', price: '450€', icon: 'Snowflake', color: 'from-blue-400/20 to-cyan-600/20' },
-      ],
-    },
-    {
-      type: 'Séjour en Semaine',
-      subtitle: 'Dimanche 16h au Vendredi 11h',
-      note: 'MINIMUM 1 NUITS',
-      icon: 'Calendar',
       prices: [
         { season: 'Basse Saison', price: '150€', unit: 'la nuit', icon: 'Leaf', color: 'from-green-400/20 to-emerald-600/20' },
         { season: 'Moyenne', price: '165€', unit: 'la nuit', icon: 'Sun', color: 'from-yellow-400/20 to-orange-500/20' },
@@ -156,13 +146,24 @@ export const defaultContent: SiteContent = {
       ],
     },
     {
+      type: 'Séjour 2 Nuits ou Plus',
+      subtitle: 'Tarif dégressif à partir de 2 nuits',
+      note: 'TARIF DÉGRESSIF APPLIQUÉ',
+      icon: 'Calendar',
+      prices: [
+        { season: 'Basse Saison', price: '125€', unit: 'la nuit', icon: 'Leaf', color: 'from-green-400/20 to-emerald-600/20' },
+        { season: 'Moyenne', price: '140€', unit: 'la nuit', icon: 'Sun', color: 'from-yellow-400/20 to-orange-500/20' },
+        { season: 'Haute Saison', price: '150€', unit: 'la nuit', icon: 'Snowflake', color: 'from-blue-400/20 to-cyan-600/20' },
+      ],
+    },
+    {
       type: 'La Semaine',
       subtitle: 'Séjour complet 7 jours',
       icon: 'Sunrise',
       prices: [
-        { season: 'Basse Saison', price: '1150€', icon: 'Leaf', color: 'from-green-400/20 to-emerald-600/20' },
-        { season: 'Moyenne', price: '1250€', icon: 'Sun', color: 'from-yellow-400/20 to-orange-500/20' },
-        { season: 'Haute Saison', price: '1350€', icon: 'Snowflake', color: 'from-blue-400/20 to-cyan-600/20' },
+        { season: 'Basse Saison', price: '875€', icon: 'Leaf', color: 'from-green-400/20 to-emerald-600/20' },
+        { season: 'Moyenne', price: '980€', icon: 'Sun', color: 'from-yellow-400/20 to-orange-500/20' },
+        { season: 'Haute Saison', price: '1050€', icon: 'Snowflake', color: 'from-blue-400/20 to-cyan-600/20' },
       ],
     },
   ],
@@ -186,8 +187,8 @@ export const defaultContent: SiteContent = {
     sousTitre: "Votre Refuge d'Exception au Cœur des Pyrénées",
     description: "Découvrez nos 4 gîtes de charme nichés dans les montagnes pyrénéennes. Un havre de paix où tradition et modernité se rencontrent pour vous offrir un séjour inoubliable.",
     badge: "Arrens-Marsous, Hautes-Pyrénées",
-    imageMain: "https://i.postimg.cc/BZMLXsYh/2022-10-10.jpg",
-    imageSecondaire: "https://i.postimg.cc/Dzpf7yyS/Les-Artigaux-appartements.jpg"
+    imageMain: "/images/postimg/BZMLXsYh/2022-10-10.jpg",
+    imageSecondaire: "/images/postimg/Dzpf7yyS/Les-Artigaux-appartements.jpg"
   },
   infoCards: [
     {

@@ -29,7 +29,7 @@ export function BienEtrePage() {
       description: 'Plongez dans une expérience de détente unique avec notre bain nordique chauffé au feu de bois, face aux sommets enneigés. Profitez de la chaleur apaisante de l\'eau tout en contemplant les paysages pyrénéens.',
       avantages: ['Chauffé au feu de bois', 'Vue sur les montagnes', 'Réservation privative', 'Expérience authentique'],
       couleur: 'from-orange-500/20 to-red-500/20',
-      image: 'https://i.postimg.cc/SQ5Nzs4k/2005472970463032322.jpg',
+      image: '/images/postimg/SQ5Nzs4k/2005472970463032322.jpg',
     },
     {
       icon: Droplets,
@@ -37,7 +37,7 @@ export function BienEtrePage() {
       description: 'Profitez de notre sauna traditionnel en bois pour une relaxation profonde et une expérience bien-être authentique en montagne. Idéal après une journée de randonnée.',
       avantages: ['Sauna en bois', 'Chaleur sèche', 'Détente musculaire', 'Accès inclus'],
       couleur: 'from-blue-500/20 to-cyan-500/20',
-      image: 'https://i.postimg.cc/w3KfYJsZ/8779031119280369718.jpg',
+      image: '/images/postimg/w3KfYJsZ/8779031119280369718.jpg',
     },
     {
       icon: Wind,
@@ -45,7 +45,7 @@ export function BienEtrePage() {
       description: 'Après vos activités en montagne, profitez de nos espaces de détente pour vous ressourcer pleinement dans un cadre naturel préservé.',
       avantages: ['Espace privatif', 'Calme absolu', 'Vue panoramique', 'Air pur de montagne'],
       couleur: 'from-purple-500/20 to-pink-500/20',
-      image: 'https://i.postimg.cc/pXqCBg0M/4519027198872613593.jpg',
+      image: '/images/postimg/pXqCBg0M/4519027198872613593.jpg',
     },
   ];
 
@@ -103,15 +103,15 @@ export function BienEtrePage() {
 
   // Galerie complète de photos du bain nordique et sauna
   const galerie = [
-    'https://i.postimg.cc/SQ5Nzs4k/2005472970463032322.jpg', // Vue panoramique bain nordique avec reflet
-    'https://i.postimg.cc/w3KfYJsZ/8779031119280369718.jpg', // Gros plan sauna avec porte circulaire
-    'https://i.postimg.cc/sfBGLbDZ/IMG-3073.jpg', // Intérieur du sauna
-    'https://i.postimg.cc/pXqCBg0M/4519027198872613593.jpg', // Bain nordique avec vue Pyrénées
-    'https://i.postimg.cc/j5fKH6t2/IMG-3075.jpg', // Bain nordique panorama montagneux
-    'https://i.postimg.cc/mrzG43cC/IMG-3070.jpg', // Panneau d'entrée
-    'https://i.postimg.cc/5yprLjYd/IMG-3078.jpg', // Bain nordique avec poêle
-    'https://i.postimg.cc/25p0qncS/8209701038044386348.jpg', // Vue d'ensemble
-    'https://i.postimg.cc/NFvxbB8v/unnamed.jpg', // Vue d'ensemble 2
+    '/images/postimg/SQ5Nzs4k/2005472970463032322.jpg', // Vue panoramique bain nordique avec reflet
+    '/images/postimg/w3KfYJsZ/8779031119280369718.jpg', // Gros plan sauna avec porte circulaire
+    '/images/postimg/sfBGLbDZ/IMG-3073.jpg', // Intérieur du sauna
+    '/images/postimg/pXqCBg0M/4519027198872613593.jpg', // Bain nordique avec vue Pyrénées
+    '/images/postimg/j5fKH6t2/IMG-3075.jpg', // Bain nordique panorama montagneux
+    '/images/postimg/mrzG43cC/IMG-3070.jpg', // Panneau d'entrée
+    '/images/postimg/5yprLjYd/IMG-3078.jpg', // Bain nordique avec poêle
+    '/images/postimg/25p0qncS/8209701038044386348.jpg', // Vue d'ensemble
+    '/images/postimg/NFvxbB8v/unnamed.jpg', // Vue d'ensemble 2
   ];
 
   const photosVisibles = showAllPhotos ? galerie : galerie.slice(0, 4);
@@ -191,12 +191,12 @@ export function BienEtrePage() {
               className="max-w-4xl mx-auto relative"
             >
               <div className="absolute -inset-8 bg-gradient-to-r from-[#c4a574]/30 via-[#5a7a9f]/30 to-[#c4a574]/30 blur-3xl" />
-              <div className="relative aspect-[16/9] rounded-3xl overflow-hidden shadow-2xl">
+              <div className="relative aspect-[16/9] rounded-3xl overflow-hidden shadow-2xl bg-[#1a252f]">
                 <EditableImage
                   path="pages.bienEtre.imageHero"
-                  src={content.pages?.bienEtre?.imageHero || 'https://i.postimg.cc/SQ5Nzs4k/2005472970463032322.jpg'}
+                  src={content.pages?.bienEtre?.imageHero || '/images/postimg/SQ5Nzs4k/2005472970463032322.jpg'}
                   alt="Bien-être"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#2d3843]/60 via-transparent to-transparent" />
               </div>

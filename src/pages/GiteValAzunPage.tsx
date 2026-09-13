@@ -325,7 +325,7 @@ export function GiteValAzunPage() {
                     </Link>
                   </motion.div>
                   <p className="text-white/60 text-sm mt-4">
-                    Tarifs : Week-end dès 400€ • Semaine dès 150€/nuit
+                    Tarifs : nuitée dès 150€ • Dès 2 nuits : 125€/nuit • Semaine dès 875€
                   </p>
                 </div>
               </motion.div>

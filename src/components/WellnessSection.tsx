@@ -11,23 +11,23 @@ import { useAdmin } from '../contexts/AdminContext';
 // Pour ajouter vos photos: remplacez simplement les URLs dans le tableau 'wellnessGallery' ci-dessous
 const wellnessGallery = [
   // Photo 1 - Vue panoramique bain nordique avec reflet (votre Photo 13)
-  'https://i.postimg.cc/SQ5Nzs4k/2005472970463032322.jpg',
+  '/images/postimg/SQ5Nzs4k/2005472970463032322.jpg',
   // Photo 2 - Gros plan sauna avec porte circulaire (votre Photo 10)
-  'https://i.postimg.cc/w3KfYJsZ/8779031119280369718.jpg',
+  '/images/postimg/w3KfYJsZ/8779031119280369718.jpg',
   // Photo 3 - Intérieur du sauna (votre Photo 14)
-  'https://i.postimg.cc/sfBGLbDZ/IMG-3073.jpg',
+  '/images/postimg/sfBGLbDZ/IMG-3073.jpg',
   // Photo 4 - Bain nordique avec vue Pyrénées (votre Photo 12)
-  'https://i.postimg.cc/pXqCBg0M/4519027198872613593.jpg',
+  '/images/postimg/pXqCBg0M/4519027198872613593.jpg',
   // Photo 5 - Bain nordique panorama montagneux (votre Photo 7)
-  'https://i.postimg.cc/j5fKH6t2/IMG-3075.jpg',
+  '/images/postimg/j5fKH6t2/IMG-3075.jpg',
   // Photo 6 - Panneau d'entrée (votre Photo 11)
-  'https://i.postimg.cc/mrzG43cC/IMG-3070.jpg',
+  '/images/postimg/mrzG43cC/IMG-3070.jpg',
   // Photo 7 - Bain nordique avec poêle (votre Photo 16)
-  'https://i.postimg.cc/5yprLjYd/IMG-3078.jpg',
+  '/images/postimg/5yprLjYd/IMG-3078.jpg',
   // Photo 8 - Vue d'ensemble (votre Photo 17)
-  'https://i.postimg.cc/25p0qncS/8209701038044386348.jpg',
+  '/images/postimg/25p0qncS/8209701038044386348.jpg',
   // Photo 9 - Vue d'ensemble (votre Photo 17)
-  'https://i.postimg.cc/NFvxbB8v/unnamed.jpg',
+  '/images/postimg/NFvxbB8v/unnamed.jpg',
 ];
 
 export function WellnessSection() {
@@ -332,11 +332,11 @@ export function WellnessSection() {
                 </div>
 
                 {/* Image */}
-                <div className="relative h-[70vh]">
+                <div className="relative h-[70vh] bg-[#1a252f]">
                   <ImageWithFallback
                     src={wellnessGallery[currentImageIndex]}
                     alt={`Bain Nordique & Sauna - Photo ${currentImageIndex + 1}`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                     style={{
                       filter: 'brightness(1.05) contrast(1.08) saturate(1.12)'
                     }}

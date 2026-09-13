@@ -69,7 +69,7 @@ app.post("/make-server-66cb1054/admin/change-password", async (c) => {
 // Récupérer tout le contenu
 app.get("/make-server-66cb1054/content", async (c) => {
   try {
-    const keys = ["tarifs", "gites", "contact", "social", "hero", "infoCards", "wellness", "navigation", "texts"];
+    const keys = ["tarifs", "gites", "contact", "social", "hero", "infoCards", "wellness", "navigation", "texts", "pages"];
     const values = await kv.mget(keys);
     
     const content: any = {};
@@ -145,7 +145,7 @@ app.post("/make-server-66cb1054/admin/reset-content", async (c) => {
     }
     
     // Supprimer toutes les clés de contenu pour forcer l'utilisation des valeurs par défaut
-    const keys = ["tarifs", "gites", "contact", "social", "hero", "infoCards", "wellness"];
+    const keys = ["tarifs", "gites", "contact", "social", "hero", "infoCards", "wellness", "navigation", "texts", "pages"];
     const promises = keys.map(key => kv.del(key));
     await Promise.all(promises);
     

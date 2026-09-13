@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from 'motion/react';
 import { useInView } from 'motion/react';
 import { useRef, useState, useEffect } from 'react';
-import { useParams, Link, Navigate } from 'react-router'; // Changé de 'react-router-dom' à 'react-router'
+import { useParams, Link, Navigate } from 'react-router-dom';
 import {
   Home,
   Users,
@@ -25,19 +25,19 @@ const gitesData = {
   'le-suyen': {
     nom: 'Le Suyen',
     capacite: '3 personnes',
-    image: 'https://i.postimg.cc/FFcpb6LX/7588570501155327596.jpg',
+    image: '/images/postimg/FFcpb6LX/7588570501155327596.jpg',
     gallery: [
-      'https://i.postimg.cc/FFcpb6LX/7588570501155327596.jpg',
-      'https://i.postimg.cc/15788m3S/1666003494124778229.jpg',
-      'https://i.postimg.cc/sDL2VTTv/7554293390262409348.jpg',
-      'https://i.postimg.cc/hG1g7s1K/6942157828982581794.jpg',
-      'https://i.postimg.cc/kGkLHRvk/6609466444016411442.jpg',
-      'https://i.postimg.cc/9M0SFY8m/8216737013434007532.jpg',
-      'https://i.postimg.cc/htgK4NV2/5729882537124453531.jpg',
-      'https://i.postimg.cc/W3qBw7Md/2870535881177773093.jpg',
-      'https://i.postimg.cc/zXrsTK3f/7058983745362409722.jpg',
-      'https://i.postimg.cc/t4r80ckK/3080693530078709151.jpg',
-      'https://i.postimg.cc/sDsLMz09/3181144357257313940.jpg',
+      '/images/postimg/FFcpb6LX/7588570501155327596.jpg',
+      '/images/postimg/15788m3S/1666003494124778229.jpg',
+      '/images/postimg/sDL2VTTv/7554293390262409348.jpg',
+      '/images/postimg/hG1g7s1K/6942157828982581794.jpg',
+      '/images/postimg/kGkLHRvk/6609466444016411442.jpg',
+      '/images/postimg/9M0SFY8m/8216737013434007532.jpg',
+      '/images/postimg/htgK4NV2/5729882537124453531.jpg',
+      '/images/postimg/W3qBw7Md/2870535881177773093.jpg',
+      '/images/postimg/zXrsTK3f/7058983745362409722.jpg',
+      '/images/postimg/t4r80ckK/3080693530078709151.jpg',
+      '/images/postimg/sDsLMz09/3181144357257313940.jpg',
     ],
     color: 'from-amber-500/20 to-orange-600/20',
     accentColor: '#d4b584',
@@ -49,23 +49,23 @@ const gitesData = {
   'le-tech': {
     nom: 'Le Tech',
     capacite: '3 personnes',
-    image: 'https://i.postimg.cc/sfQJLy0X/2856943310074011028.jpg',
+    image: '/images/postimg/sfQJLy0X/2856943310074011028.jpg',
     gallery: [
-      'https://i.postimg.cc/gcQgcr6h/8792647096264011841.jpg',
-      'https://i.postimg.cc/P5zyM4Vx/1458763402424585270.jpg',
-      'https://i.postimg.cc/3w8BfvPh/1945866297861919455.jpg',
-      'https://i.postimg.cc/nzM1ptFD/3523331367990396970.jpg',
-      'https://i.postimg.cc/vBjtmSTC/8031039626966426336.jpg',
-      'https://i.postimg.cc/QCTkKkWg/3084952756933343499.jpg',
-      'https://i.postimg.cc/sfQJLy0X/2856943310074011028.jpg',
-      'https://i.postimg.cc/bY7RcMKx/4999626590109787033.jpg',
-      'https://i.postimg.cc/cLZM631G/2969122625866992685.jpg',
-      'https://i.postimg.cc/bwT0nvdZ/6649940378765655062.jpg',
-      'https://i.postimg.cc/kgcNS5DZ/6553876054002977520.jpg',
-      'https://i.postimg.cc/nLSvdw4Z/2597272950687853845.jpg',
-      'https://i.postimg.cc/rmd57Cjh/4961846973339871349.jpg',
-      'https://i.postimg.cc/sgV73RKM/2048309499798741627.jpg',
-      'https://i.postimg.cc/HkB5xPhg/6994973893995733369.jpg',
+      '/images/postimg/gcQgcr6h/8792647096264011841.jpg',
+      '/images/postimg/P5zyM4Vx/1458763402424585270.jpg',
+      '/images/postimg/3w8BfvPh/1945866297861919455.jpg',
+      '/images/postimg/nzM1ptFD/3523331367990396970.jpg',
+      '/images/postimg/vBjtmSTC/8031039626966426336.jpg',
+      '/images/postimg/QCTkKkWg/3084952756933343499.jpg',
+      '/images/postimg/sfQJLy0X/2856943310074011028.jpg',
+      '/images/postimg/bY7RcMKx/4999626590109787033.jpg',
+      '/images/postimg/cLZM631G/2969122625866992685.jpg',
+      '/images/postimg/bwT0nvdZ/6649940378765655062.jpg',
+      '/images/postimg/kgcNS5DZ/6553876054002977520.jpg',
+      '/images/postimg/nLSvdw4Z/2597272950687853845.jpg',
+      '/images/postimg/rmd57Cjh/4961846973339871349.jpg',
+      '/images/postimg/sgV73RKM/2048309499798741627.jpg',
+      '/images/postimg/HkB5xPhg/6994973893995733369.jpg',
     ],
     color: 'from-blue-500/20 to-cyan-600/20',
     accentColor: '#7a9fbf',
@@ -77,17 +77,17 @@ const gitesData = {
   'lestaing': {
     nom: "L'Estaing",
     capacite: '3 personnes',
-    image: 'https://i.postimg.cc/x12r0yfD/IMG-3567.jpg',
+    image: '/images/postimg/x12r0yfD/IMG-3567.jpg',
     gallery: [
-      'https://i.postimg.cc/x12r0yfD/IMG-3567.jpg',
-      'https://i.postimg.cc/XNRm8cyZ/IMG-3574.jpg',
-      'https://i.postimg.cc/jSK9Vxcs/IMG-3573.jpg',
-      'https://i.postimg.cc/9fgNqGh9/IMG-3568.jpg',
-      'https://i.postimg.cc/BZKwXLwq/IMG-3569.jpg',
-      'https://i.postimg.cc/VL9GFywQ/IMG-3570.jpg',
-      'https://i.postimg.cc/CK5cYzqV/IMG-3571.jpg',
-      'https://i.postimg.cc/7P0mxvbp/IMG-3575.jpg',
-      'https://i.postimg.cc/MKY5Qy0G/IMG-3572.jpg',
+      '/images/postimg/x12r0yfD/IMG-3567.jpg',
+      '/images/postimg/XNRm8cyZ/IMG-3574.jpg',
+      '/images/postimg/jSK9Vxcs/IMG-3573.jpg',
+      '/images/postimg/9fgNqGh9/IMG-3568.jpg',
+      '/images/postimg/BZKwXLwq/IMG-3569.jpg',
+      '/images/postimg/VL9GFywQ/IMG-3570.jpg',
+      '/images/postimg/CK5cYzqV/IMG-3571.jpg',
+      '/images/postimg/7P0mxvbp/IMG-3575.jpg',
+      '/images/postimg/MKY5Qy0G/IMG-3572.jpg',
     ],
     color: 'from-emerald-500/20 to-teal-600/20',
     accentColor: '#8fb89f',
@@ -99,19 +99,19 @@ const gitesData = {
   'le-soum': {
     nom: 'Le Soum',
     capacite: '3 personnes',
-    image: 'https://i.postimg.cc/SKksq5yk/unnamed.jpg',
+    image: '/images/postimg/SKksq5yk/unnamed.jpg',
     gallery: [
-      'https://i.postimg.cc/nVQdbwMg/193423021054318720.jpg',
-      'https://i.postimg.cc/yYs0QfRB/image0000001.jpg',
-      'https://i.postimg.cc/cH7rfSXr/8498337449415672384.jpg',
-      'https://i.postimg.cc/xjtdQg7L/8536361466365823395.jpg',
-      'https://i.postimg.cc/SKksq5yk/unnamed.jpg',
-      'https://i.postimg.cc/kGkzC0Pf/6106559327515509978.jpg',
-      'https://i.postimg.cc/J0BYppBw/4217731294211821747.jpg',
-      'https://i.postimg.cc/GpmCX1LM/1187468967096333346.jpg',
-      'https://i.postimg.cc/CK13jH7b/3434186147300656811.jpg',
-      'https://i.postimg.cc/BQ0RhGNT/3327490492765906103.jpg',
-      'https://i.postimg.cc/CL7rmnRw/unnamed-1.jpg',
+      '/images/postimg/nVQdbwMg/193423021054318720.jpg',
+      '/images/postimg/yYs0QfRB/image0000001.jpg',
+      '/images/postimg/cH7rfSXr/8498337449415672384.jpg',
+      '/images/postimg/xjtdQg7L/8536361466365823395.jpg',
+      '/images/postimg/SKksq5yk/unnamed.jpg',
+      '/images/postimg/kGkzC0Pf/6106559327515509978.jpg',
+      '/images/postimg/J0BYppBw/4217731294211821747.jpg',
+      '/images/postimg/GpmCX1LM/1187468967096333346.jpg',
+      '/images/postimg/CK13jH7b/3434186147300656811.jpg',
+      '/images/postimg/BQ0RhGNT/3327490492765906103.jpg',
+      '/images/postimg/CL7rmnRw/unnamed-1.jpg',
     ],
     color: 'from-purple-500/20 to-pink-600/20',
     accentColor: '#b89fc4',
@@ -233,13 +233,13 @@ export function GitePage() {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative mb-16 rounded-3xl overflow-hidden h-[60vh] max-h-[600px] cursor-pointer group"
+          className="relative mb-16 rounded-3xl overflow-hidden h-[60vh] max-h-[600px] cursor-pointer group bg-[#1a252f]"
           onClick={() => handleOpenGallery(0)}
         >
           <ImageWithFallback
             src={gite.image}
             alt={gite.nom}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
           />
           <div className={`absolute inset-0 bg-gradient-to-t ${gite.color} opacity-30 group-hover:opacity-20 transition-opacity duration-500`} />
           <div className="absolute inset-0 bg-gradient-to-t from-[#2d3843]/80 via-transparent to-transparent" />
@@ -397,11 +397,11 @@ export function GitePage() {
                 </div>
 
                 {/* Image */}
-                <div className="relative h-[70vh]">
+                <div className="relative h-[70vh] bg-[#1a252f]">
                   <ImageWithFallback
                     src={gite.gallery[selectedImage]}
                     alt={`${gite.nom} - Photo ${selectedImage + 1}`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
 
                   {/* Navigation arrows */}

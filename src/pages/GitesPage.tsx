@@ -4,7 +4,7 @@ import { EditableImage } from '../components/admin/EditableImage';
 import { Home, Users, Star, MapPin, Sparkles } from 'lucide-react';
 import { GitesSection } from '../components/GitesSection';
 import { useAdmin } from '../contexts/AdminContext';
-import { Link } from 'react-router'; // Changé de 'react-router-dom' à 'react-router'
+import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 
@@ -23,8 +23,7 @@ export function GitesPage() {
     );
   }
 
-  // Ensure gites is always an array
-  const gitesData = Array.isArray(content.gites) ? content.gites : [
+  const defaultGites = [
     {
       id: 'le-suyen',
       nom: 'Le Suyen',
@@ -32,7 +31,7 @@ export function GitesPage() {
       description: 'Un espace intimiste et chaleureux, conçu pour votre confort',
       surface: '50m²',
       capacite: '3 personnes',
-      imageMain: 'https://i.postimg.cc/FFcpb6LX/7588570501155327596.jpg',
+      imageMain: '/images/postimg/FFcpb6LX/7588570501155327596.jpg',
       couleur: 'from-amber-500/20 to-orange-600/20',
     },
     {
@@ -42,7 +41,7 @@ export function GitesPage() {
       description: 'Un espace intimiste et chaleureux, conçu pour votre confort',
       surface: '50m²',
       capacite: '3 personnes',
-      imageMain: 'https://i.postimg.cc/sfQJLy0X/2856943310074011028.jpg',
+      imageMain: '/images/postimg/sfQJLy0X/2856943310074011028.jpg',
       couleur: 'from-blue-500/20 to-cyan-600/20',
     },
     {
@@ -52,7 +51,7 @@ export function GitesPage() {
       description: 'Un espace intimiste et chaleureux, conçu pour votre confort',
       surface: '65m²',
       capacite: '3 personnes',
-      imageMain: 'https://i.postimg.cc/x12r0yfD/IMG-3567.jpg',
+      imageMain: '/images/postimg/x12r0yfD/IMG-3567.jpg',
       couleur: 'from-emerald-500/20 to-teal-600/20',
     },
     {
@@ -62,10 +61,26 @@ export function GitesPage() {
       description: 'Un espace intimiste et chaleureux, conçu pour votre confort',
       surface: '50m²',
       capacite: '3 personnes',
-      imageMain: 'https://i.postimg.cc/SKksq5yk/unnamed.jpg',
+      imageMain: '/images/postimg/SKksq5yk/unnamed.jpg',
       couleur: 'from-purple-500/20 to-pink-600/20',
     },
   ];
+
+  const savedGites = Array.isArray(content.gites) ? content.gites : [];
+  const gitesData = defaultGites.map((fallback, index) => {
+    const saved: any = savedGites[index] ?? {};
+    return {
+      ...fallback,
+      ...saved,
+      id: fallback.id,
+      slug: fallback.slug,
+      nom: saved.nom || fallback.nom,
+      description: saved.description || fallback.description,
+      surface: saved.superficie || saved.surface || fallback.surface,
+      capacite: saved.capacite || fallback.capacite,
+      imageMain: saved.image || saved.imageMain || fallback.imageMain,
+    };
+  });
 
   const equipementsCommuns = [
     { icon: Sparkles, nom: 'Wi-Fi' },
@@ -189,7 +204,7 @@ export function GitesPage() {
                       className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl"
                     >
                       <EditableImage
-                        path={`gites.${index}.imageMain`}
+                        path={`gites.${index}.image`}
                         src={gite.imageMain}
                         alt={gite.nom}
                         className="w-full h-full object-cover"

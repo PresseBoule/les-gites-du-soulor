@@ -310,21 +310,21 @@ export function GiteProximiteLourdesPage() {
                   
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="p-5 rounded-xl bg-gradient-to-br from-[#c4a574]/10 to-transparent border border-[#c4a574]/20 text-center">
-                      <h3 className="text-lg text-[#c4a574] mb-2">Week-end</h3>
-                      <p className="text-3xl text-white font-bold mb-2">400-450€</p>
-                      <p className="text-white/70 text-sm">Ven 16h → Dim 11h</p>
+                      <h3 className="text-lg text-[#c4a574] mb-2">Une nuit</h3>
+                      <p className="text-3xl text-white font-bold mb-2">150-180€</p>
+                      <p className="text-white/70 text-sm">Selon la saison</p>
                     </div>
 
                     <div className="p-5 rounded-xl bg-gradient-to-br from-[#c4a574]/10 to-transparent border border-[#c4a574]/20 text-center">
-                      <h3 className="text-lg text-[#c4a574] mb-2">Semaine</h3>
-                      <p className="text-3xl text-white font-bold mb-2">150-180€</p>
-                      <p className="text-white/70 text-sm">La nuit (min 1 nuits)</p>
+                      <h3 className="text-lg text-[#c4a574] mb-2">Dès 2 nuits</h3>
+                      <p className="text-3xl text-white font-bold mb-2">125-150€</p>
+                      <p className="text-white/70 text-sm">Par nuit, selon la saison</p>
                     </div>
 
                     <div className="p-5 rounded-xl bg-gradient-to-br from-[#c4a574]/10 to-transparent border border-[#c4a574]/20 text-center">
                       <h3 className="text-lg text-[#c4a574] mb-2">Semaine complète</h3>
-                      <p className="text-3xl text-white font-bold mb-2">1150-1350€</p>
-                      <p className="text-white/70 text-sm">7 jours / 6 nuits</p>
+                      <p className="text-3xl text-white font-bold mb-2">875-1050€</p>
+                      <p className="text-white/70 text-sm">7 nuits</p>
                     </div>
                   </div>
 

@@ -14,23 +14,23 @@ const gitesData = [
     slug: 'le-suyen',
     capacity: '3 personnes',
     // ⚠️ PHOTO À REMPLACER - Image principale de la carte
-    image: 'https://i.postimg.cc/FFcpb6LX/7588570501155327596.jpg',
+    image: '/images/postimg/FFcpb6LX/7588570501155327596.jpg',
     color: 'from-amber-500/20 to-orange-600/20',
     accentColor: '#d4b584',
     hasBalcony: true,
     gallery: [
       // ⚠️ PHOTOS À REMPLACER - Galerie du Suyen (5 photos)
-      'https://i.postimg.cc/FFcpb6LX/7588570501155327596.jpg', // Photo 1: Vue d'ensemble / salon
-      'https://i.postimg.cc/15788m3S/1666003494124778229.jpg', // Photo 2: Chambre
-      'https://i.postimg.cc/sDL2VTTv/7554293390262409348.jpg', // Photo 3: Cuisine
-      'https://i.postimg.cc/hG1g7s1K/6942157828982581794.jpg', // Photo 4: Balcon/Vue
-      'https://i.postimg.cc/kGkLHRvk/6609466444016411442.jpg', // Photo 5: Coin cheminée
-      'https://i.postimg.cc/9M0SFY8m/8216737013434007532.jpg', // Photo 1: Vue d'ensemble / salon
-      'https://i.postimg.cc/htgK4NV2/5729882537124453531.jpg', // Photo 2: Chambre
-      'https://i.postimg.cc/W3qBw7Md/2870535881177773093.jpg', // Photo 3: Cuisine
-      'https://i.postimg.cc/zXrsTK3f/7058983745362409722.jpg', // Photo 4: Balcon/Vue
-      'https://i.postimg.cc/t4r80ckK/3080693530078709151.jpg', // Photo 5: Coin cheminée
-      'https://i.postimg.cc/sDsLMz09/3181144357257313940.jpg', // Photo 5: Coin cheminée
+      '/images/postimg/FFcpb6LX/7588570501155327596.jpg', // Photo 1: Vue d'ensemble / salon
+      '/images/postimg/15788m3S/1666003494124778229.jpg', // Photo 2: Chambre
+      '/images/postimg/sDL2VTTv/7554293390262409348.jpg', // Photo 3: Cuisine
+      '/images/postimg/hG1g7s1K/6942157828982581794.jpg', // Photo 4: Balcon/Vue
+      '/images/postimg/kGkLHRvk/6609466444016411442.jpg', // Photo 5: Coin cheminée
+      '/images/postimg/9M0SFY8m/8216737013434007532.jpg', // Photo 1: Vue d'ensemble / salon
+      '/images/postimg/htgK4NV2/5729882537124453531.jpg', // Photo 2: Chambre
+      '/images/postimg/W3qBw7Md/2870535881177773093.jpg', // Photo 3: Cuisine
+      '/images/postimg/zXrsTK3f/7058983745362409722.jpg', // Photo 4: Balcon/Vue
+      '/images/postimg/t4r80ckK/3080693530078709151.jpg', // Photo 5: Coin cheminée
+      '/images/postimg/sDsLMz09/3181144357257313940.jpg', // Photo 5: Coin cheminée
     ],
   },
   {
@@ -38,68 +38,72 @@ const gitesData = [
     slug: 'le-tech',
     capacity: '3 personnes',
     // ⚠️ PHOTO À REMPLACER - Image principale de la carte
-    image: 'https://i.postimg.cc/sfQJLy0X/2856943310074011028.jpg',
+    image: '/images/postimg/sfQJLy0X/2856943310074011028.jpg',
     color: 'from-blue-500/20 to-cyan-600/20',
     accentColor: '#7a9fbf',
     hasBalcony: true,
     gallery: [
       // ⚠️ PHOTOS À REMPLACER - Galerie du Tech (5 photos)
-      'https://i.postimg.cc/gcQgcr6h/8792647096264011841.jpg', // Photo 1: Vue d'ensemble / salon
-      'https://i.postimg.cc/P5zyM4Vx/1458763402424585270.jpg', // Photo 2: Chambre
-      'https://i.postimg.cc/3w8BfvPh/1945866297861919455.jpg', // Photo 3: Salle de bain
-      'https://i.postimg.cc/nzM1ptFD/3523331367990396970.jpg', // Photo 4: Balcon/Terrasse
-      'https://i.postimg.cc/vBjtmSTC/8031039626966426336.jpg', // Photo 5: Cuisine / Salle à manger
-      'https://i.postimg.cc/QCTkKkWg/3084952756933343499.jpg', // Photo 1: Vue d'ensemble / salon
-      'https://i.postimg.cc/sfQJLy0X/2856943310074011028.jpg', // Photo 2: Chambre
-      'https://i.postimg.cc/bY7RcMKx/4999626590109787033.jpg', // Photo 3: Salle de bain
-      'https://i.postimg.cc/cLZM631G/2969122625866992685.jpg', // Photo 4: Balcon/Terrasse
-      'https://i.postimg.cc/bwT0nvdZ/6649940378765655062.jpg', // Photo 5: Cuisine / Salle à manger
-      'https://i.postimg.cc/kgcNS5DZ/6553876054002977520.jpg', // Photo 1: Vue d'ensemble / salon
-      'https://i.postimg.cc/nLSvdw4Z/2597272950687853845.jpg', // Photo 2: Chambre
-      'https://i.postimg.cc/rmd57Cjh/4961846973339871349.jpg', // Photo 3: Salle de bain
-      'https://i.postimg.cc/sgV73RKM/2048309499798741627.jpg', // Photo 4: Balcon/Terrasse
-      'https://i.postimg.cc/HkB5xPhg/6994973893995733369.jpg', // Photo 5: Cuisine / Salle à manger
+      '/images/postimg/gcQgcr6h/8792647096264011841.jpg', // Photo 1: Vue d'ensemble / salon
+      '/images/postimg/P5zyM4Vx/1458763402424585270.jpg', // Photo 2: Chambre
+      '/images/postimg/3w8BfvPh/1945866297861919455.jpg', // Photo 3: Salle de bain
+      '/images/postimg/nzM1ptFD/3523331367990396970.jpg', // Photo 4: Balcon/Terrasse
+      '/images/postimg/vBjtmSTC/8031039626966426336.jpg', // Photo 5: Cuisine / Salle à manger
+      '/images/postimg/QCTkKkWg/3084952756933343499.jpg', // Photo 1: Vue d'ensemble / salon
+      '/images/postimg/sfQJLy0X/2856943310074011028.jpg', // Photo 2: Chambre
+      '/images/postimg/bY7RcMKx/4999626590109787033.jpg', // Photo 3: Salle de bain
+      '/images/postimg/cLZM631G/2969122625866992685.jpg', // Photo 4: Balcon/Terrasse
+      '/images/postimg/bwT0nvdZ/6649940378765655062.jpg', // Photo 5: Cuisine / Salle à manger
+      '/images/postimg/kgcNS5DZ/6553876054002977520.jpg', // Photo 1: Vue d'ensemble / salon
+      '/images/postimg/nLSvdw4Z/2597272950687853845.jpg', // Photo 2: Chambre
+      '/images/postimg/rmd57Cjh/4961846973339871349.jpg', // Photo 3: Salle de bain
+      '/images/postimg/sgV73RKM/2048309499798741627.jpg', // Photo 4: Balcon/Terrasse
+      '/images/postimg/HkB5xPhg/6994973893995733369.jpg', // Photo 5: Cuisine / Salle à manger
     ],
   },
   {
     name: "L'Estaing",
     slug: 'lestaing',
     capacity: '3 personnes',
-    image: 'https://images.unsplash.com/photo-1686987537277-516791dabf61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob3VzZSUyMHJlbm92YXRpb24lMjBjb25zdHJ1Y3Rpb258ZW58MXx8fHwxNzYxODE4MjYzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    image: '/images/postimg/x12r0yfD/IMG-3567.jpg',
     color: 'from-emerald-500/20 to-teal-600/20',
     accentColor: '#8fb89f',
-    hasBalcony: false, // L'Estaing n'a pas de balcon
-    inConstruction: true, // L'Estaing est en travaux
+    hasBalcony: false,
+    inConstruction: false,
     gallery: [
-      'https://images.unsplash.com/photo-1686987537277-516791dabf61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob3VzZSUyMHJlbm92YXRpb24lMjBjb25zdHJ1Y3Rpb258ZW58MXx8fHwxNzYxODE4MjYzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      'https://images.unsplash.com/photo-1578177154072-bbbd429d496f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob21lJTIwcmVtb2RlbGluZyUyMHdvcmt8ZW58MXx8fHwxNzYxODE4MjY0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      'https://images.unsplash.com/photo-1674649207083-281c2517ab49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbnRlcmlvciUyMGNvbnN0cnVjdGlvbiUyMHdvcmtlcnN8ZW58MXx8fHwxNzYxODE4MjY0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      'https://images.unsplash.com/photo-1698889670684-0f4a7aa7cba8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidWlsZGluZyUyMHJlbm92YXRpb24lMjBwcm9ncmVzc3xlbnwxfHx8fDE3NjE4MTgyNjR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      'https://images.unsplash.com/photo-1673978484081-18d9ad5df5f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjBzaXRlJTIwaW5kb29yfGVufDF8fHx8MTc2MTgxODI2NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      '/images/postimg/x12r0yfD/IMG-3567.jpg',
+      '/images/postimg/XNRm8cyZ/IMG-3574.jpg',
+      '/images/postimg/jSK9Vxcs/IMG-3573.jpg',
+      '/images/postimg/9fgNqGh9/IMG-3568.jpg',
+      '/images/postimg/BZKwXLwq/IMG-3569.jpg',
+      '/images/postimg/VL9GFywQ/IMG-3570.jpg',
+      '/images/postimg/CK5cYzqV/IMG-3571.jpg',
+      '/images/postimg/7P0mxvbp/IMG-3575.jpg',
+      '/images/postimg/MKY5Qy0G/IMG-3572.jpg',
     ],
   },
   {
     name: 'Le Soum',
     slug: 'le-soum',
     capacity: '3 personnes',
-    image: 'https://i.postimg.cc/SKksq5yk/unnamed.jpg',
+    image: '/images/postimg/SKksq5yk/unnamed.jpg',
     color: 'from-purple-500/20 to-pink-600/20',
     accentColor: '#b89fc4',
     hasBalcony: true,
     gallery: [
-      'https://i.postimg.cc/nVQdbwMg/193423021054318720.jpg',
-      'https://i.postimg.cc/yYs0QfRB/image0000001.jpg',
-      'https://i.postimg.cc/cH7rfSXr/8498337449415672384.jpg',
-      'https://i.postimg.cc/xjtdQg7L/8536361466365823395.jpg',
-      'https://i.postimg.cc/SKksq5yk/unnamed.jpg',
-      'https://i.postimg.cc/kGkzC0Pf/6106559327515509978.jpg',
-      'https://i.postimg.cc/J0BYppBw/4217731294211821747.jpg',
-      'https://i.postimg.cc/GpmCX1LM/1187468967096333346.jpg',
-      'https://i.postimg.cc/CK13jH7b/3434186147300656811.jpg',
-      'https://i.postimg.cc/BQ0RhGNT/3327490492765906103.jpg',
-      'https://i.postimg.cc/CL7rmnRw/unnamed-1.jpg',
-      'https://i.postimg.cc/4dNCHhPc/5266744024645977021.jpg',
-      'https://i.postimg.cc/rpT2cHtK/8971786132493604003.jpg',
+      '/images/postimg/nVQdbwMg/193423021054318720.jpg',
+      '/images/postimg/yYs0QfRB/image0000001.jpg',
+      '/images/postimg/cH7rfSXr/8498337449415672384.jpg',
+      '/images/postimg/xjtdQg7L/8536361466365823395.jpg',
+      '/images/postimg/SKksq5yk/unnamed.jpg',
+      '/images/postimg/kGkzC0Pf/6106559327515509978.jpg',
+      '/images/postimg/J0BYppBw/4217731294211821747.jpg',
+      '/images/postimg/GpmCX1LM/1187468967096333346.jpg',
+      '/images/postimg/CK13jH7b/3434186147300656811.jpg',
+      '/images/postimg/BQ0RhGNT/3327490492765906103.jpg',
+      '/images/postimg/CL7rmnRw/unnamed-1.jpg',
+      '/images/postimg/4dNCHhPc/5266744024645977021.jpg',
+      '/images/postimg/rpT2cHtK/8971786132493604003.jpg',
     ],
   },
 ];
@@ -533,11 +537,11 @@ export function GitesSection({ gites }: GitesProps = {}) {
                 </div>
 
                 {/* Image */}
-                <div className="relative h-[70vh]">
+                <div className="relative h-[70vh] bg-[#1a252f]">
                   <ImageWithFallback
                     src={gitesDataToUse[selectedGite].gallery[currentImageIndex]}
                     alt={`${gitesDataToUse[selectedGite].name} - Photo ${currentImageIndex + 1}`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                   
                   {/* Navigation arrows */}

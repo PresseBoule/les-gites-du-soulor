@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { useEffect } from 'react';
-import { Link } from 'react-router'; // Changé de 'react-router-dom' à 'react-router'
+import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { MapPin, Home, Mountain, Waves, Flame, Star, ArrowRight, Check } from 'lucide-react';
 
@@ -10,10 +10,10 @@ export function GiteArrensMarsousPage() {
   }, []);
 
   const gites = [
-    { nom: 'Le Suyen', surface: '50m²', image: 'https://i.postimg.cc/FFcpb6LX/7588570501155327596.jpg' },
-    { nom: 'Le Tech', surface: '50m²', image: 'https://i.postimg.cc/sfQJLy0X/2856943310074011028.jpg' },
-    { nom: "L'Estaing", surface: '65m²', image: 'https://i.postimg.cc/x12r0yfD/IMG-3567.jpg' },
-    { nom: 'Le Soum', surface: '50m²', image: 'https://i.postimg.cc/SKksq5yk/unnamed.jpg' },
+    { nom: 'Le Suyen', surface: '50m²', image: '/images/postimg/FFcpb6LX/7588570501155327596.jpg' },
+    { nom: 'Le Tech', surface: '50m²', image: '/images/postimg/sfQJLy0X/2856943310074011028.jpg' },
+    { nom: "L'Estaing", surface: '65m²', image: '/images/postimg/x12r0yfD/IMG-3567.jpg' },
+    { nom: 'Le Soum', surface: '50m²', image: '/images/postimg/SKksq5yk/unnamed.jpg' },
   ];
 
   const proximite = [
@@ -49,7 +49,7 @@ export function GiteArrensMarsousPage() {
     <>
       <Helmet>
         <title>Gîte à Arrens-Marsous - Location 3 Personnes Val d'Azun Pyrénées</title>
-        <meta name="description" content="Location de gîte à Arrens-Marsous dans le Val d'Azun. 4 hébergements tout confort pour 4 personnes avec bain nordique et sauna. À 5 min du village à pied." />
+        <meta name="description" content="Location de gîte à Arrens-Marsous dans le Val d'Azun. 4 hébergements tout confort pour 3 personnes avec bain nordique et sauna. À 5 min du village à pied." />
         <link rel="canonical" href="https://lesgitesdusoulor.fr/gite-arrens-marsous" />
       </Helmet>
 
@@ -351,22 +351,22 @@ export function GiteArrensMarsousPage() {
                   Réservez votre gîte à Arrens-Marsous
                 </h3>
                 <p className="text-white/70 leading-relaxed mb-8">
-                  Disponible pour week-end (1 nuits minimum), mi-semaine ou semaine complète. 
-                  Acompte de 30% à la réservation, solde à l'arrivée. Chèques vacances acceptés.
+                  Disponible dès une nuit, pour plusieurs nuits ou une semaine complète.
+                  Acompte de 20% à la réservation, solde à l'arrivée. Chèques-vacances non acceptés.
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
                   <div className="text-center">
-                    <p className="text-white/60 text-sm mb-1">Week-end</p>
-                    <p className="text-[#c4a574] text-xl font-semibold">400€ - 450€</p>
+                    <p className="text-white/60 text-sm mb-1">Une nuit</p>
+                    <p className="text-[#c4a574] text-xl font-semibold">150€ - 180€</p>
                   </div>
                   <div className="text-center">
                     <p className="text-white/60 text-sm mb-1">Semaine</p>
-                    <p className="text-[#c4a574] text-xl font-semibold">1150€ - 1350€</p>
+                    <p className="text-[#c4a574] text-xl font-semibold">875€ - 1050€</p>
                   </div>
                   <div className="text-center">
-                    <p className="text-white/60 text-sm mb-1">À la nuit</p>
-                    <p className="text-[#c4a574] text-xl font-semibold">150€ - 180€</p>
+                    <p className="text-white/60 text-sm mb-1">Dès 2 nuits</p>
+                    <p className="text-[#c4a574] text-xl font-semibold">125€ - 150€/nuit</p>
                   </div>
                 </div>
 

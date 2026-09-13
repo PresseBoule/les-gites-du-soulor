@@ -22,7 +22,7 @@ export function Hero() {
           <motion.div
             className="w-full h-full bg-cover bg-center"
             style={{ 
-              backgroundImage: 'url(https://i.postimg.cc/BZMLXsYh/2022-10-10.jpg)',
+              backgroundImage: 'url(/images/postimg/BZMLXsYh/2022-10-10.jpg)',
               filter: 'brightness(1.05) contrast(1.08) saturate(1.12)'
             }}
             whileHover={{ scale: 1.02 }}
@@ -62,7 +62,7 @@ export function Hero() {
           <motion.div
             className="w-full h-full bg-cover bg-center"
             style={{ 
-              backgroundImage: 'url(https://i.postimg.cc/Dzpf7yyS/Les-Artigaux-appartements.jpg)',
+              backgroundImage: 'url(/images/postimg/Dzpf7yyS/Les-Artigaux-appartements.jpg)',
               filter: 'brightness(1.05) contrast(1.08) saturate(1.12)'
             }}
             whileHover={{ scale: 1.02 }}

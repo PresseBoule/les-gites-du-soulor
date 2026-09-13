@@ -343,7 +343,7 @@ export function GiteBainNordiquePage() {
                   </motion.div>
                   
                   <p className="text-white/60 text-sm mt-4">
-                    Tarifs gîte : Week-end dès 400€ • Semaine dès 150€/nuit • Bain nordique inclus
+                    Tarifs gîte : nuitée dès 150€ • Dès 2 nuits : 125€/nuit • Semaine dès 875€ • Bain nordique inclus
                   </p>
                 </div>
               </motion.div>

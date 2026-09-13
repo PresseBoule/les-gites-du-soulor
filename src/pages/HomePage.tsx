@@ -202,7 +202,7 @@ export function HomePage() {
                 <div className="h-[450px] relative overflow-hidden rounded-lg shadow-2xl">
                   <EditableImage
                     path="hero.imageMain"
-                    src={content.hero.imageMain || 'https://i.postimg.cc/BZMLXsYh/2022-10-10.jpg'}
+                    src={content.hero.imageMain || '/images/postimg/BZMLXsYh/2022-10-10.jpg'}
                     alt="Les Gîtes du Soulor"
                     className="w-full h-full object-cover"
                     style={{
@@ -463,7 +463,7 @@ export function HomePage() {
                 <div className="aspect-[16/10] relative overflow-hidden">
                   <EditableImage
                     path="hero.imageSecondaire"
-                    src={content.hero.imageSecondaire || 'https://i.postimg.cc/QNwn7RLP/unnamed1.jpg'}
+                    src={content.hero.imageSecondaire || '/images/postimg/QNwn7RLP/unnamed1.jpg'}
                     alt="Les Artigaux - Appartements"
                     className="w-full h-full object-cover"
                     style={{
