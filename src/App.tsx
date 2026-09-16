@@ -21,6 +21,7 @@ import { GiteArrensMarsousPage } from './pages/GiteArrensMarsousPage';
 import { GiteValAzunPage } from './pages/GiteValAzunPage';
 import { GiteBainNordiquePage } from './pages/GiteBainNordiquePage';
 import { GiteProximiteLourdesPage } from './pages/GiteProximiteLourdesPage';
+import { AgentWidget } from './components/AgentWidget';
 
 export default function App() {
   return (
@@ -101,6 +102,9 @@ function AppContent() {
 
         {/* Footer */}
         <Footer contact={loadedContent.contact} social={loadedContent.social} />
+
+        {/* Assistant conversationnel */}
+        <AgentWidget />
 
         {/* Cookie Banner */}
         <CookieBanner />
