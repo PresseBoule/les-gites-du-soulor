@@ -1,5 +1,10 @@
 export const TABLES = { gite: 'kv_store_497309b8', wellness: 'kv_store_2b20b999' };
 export const GITE_NAMES = { soum:'Le Soum', tech:'Le Tech', suyen:'Le Suyen', estaing:"L’Estaing" };
+// PostgreSQL jsonb reorders object keys. Revisions must survive that round-trip.
+export function reservationFingerprint(value) {
+  const canonical = item => Array.isArray(item) ? item.map(canonical) : item && typeof item==='object' ? Object.fromEntries(Object.keys(item).sort().map(key=>[key,canonical(item[key])])) : item;
+  return JSON.stringify(canonical(value));
+}
 export function dateKey(value) {
   if (typeof value !== 'string') return null;
   if (/^\d{4}-\d{2}-\d{2}$/.test(value)) { const date=new Date(value+'T00:00:00Z');return !Number.isNaN(date.getTime())&&date.toISOString().slice(0,10)===value?value:null; }

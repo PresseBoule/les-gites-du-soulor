@@ -13,6 +13,7 @@ export async function reservationHarness() {
     create table kv_store_497309b8(key text primary key,value jsonb not null);
     create table kv_store_2b20b999(key text primary key,value jsonb not null);`);
   await pg.exec(fs.readFileSync(new URL('../supabase/migrations/20261106_reservation_management.sql',import.meta.url),'utf8'));
+  await pg.exec(fs.readFileSync(new URL('../supabase/migrations/20261106_protect_reservation_data.sql',import.meta.url),'utf8'));
   const state={failure:false,blocks:[],externalFailure:false};
   const client={from(table){
     if(!Object.values(model.TABLES).includes(table))throw Error('Invalid table');

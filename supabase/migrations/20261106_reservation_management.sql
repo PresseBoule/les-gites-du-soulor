@@ -1,12 +1,6 @@
 -- Shared transaction lock: public booking creation and administrator restoration
 -- must use this same function. No reservation is deleted by this migration.
 begin;
--- All public access is through the filtered Edge Functions. Customer data and
--- mutation privileges remain available only to the backend service role.
-alter table public.kv_store_497309b8 enable row level security;
-alter table public.kv_store_2b20b999 enable row level security;
-revoke all on table public.kv_store_497309b8, public.kv_store_2b20b999 from anon, authenticated;
-grant all on table public.kv_store_497309b8, public.kv_store_2b20b999 to service_role;
 create or replace function public.soulor_booking_date(p_value text)
 returns date language plpgsql stable set search_path = public, pg_temp as $$
 begin

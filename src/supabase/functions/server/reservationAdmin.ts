@@ -1,4 +1,4 @@
-import { TABLES, GITE_NAMES, keyIsValid, active, dateKey, applyAction, presentReservation } from '../../../lib/reservationModel.mjs';
+import { TABLES, GITE_NAMES, keyIsValid, active, dateKey, applyAction, presentReservation, reservationFingerprint } from '../../../lib/reservationModel.mjs';
 import { digest } from './security.mjs';
 export function mountReservationAdmin(app, { prefix, db, authorized, fetchBlocks }) {
   async function readAll(kind) {
@@ -16,7 +16,7 @@ export function mountReservationAdmin(app, { prefix, db, authorized, fetchBlocks
     if(!await authorized(c))return denied(c);
     try {
     const [gites,wellness]=await Promise.all([readAll('gite'),readAll('wellness')]);
-    const reservations=await Promise.all([...gites.map(row=>({kind:'gite',...row})),...wellness.map(row=>({kind:'wellness',...row}))].map(async row=>presentReservation(row.kind,row.key,row.value,await digest(JSON.stringify(row.value)))));
+    const reservations=await Promise.all([...gites.map(row=>({kind:'gite',...row})),...wellness.map(row=>({kind:'wellness',...row}))].map(async row=>presentReservation(row.kind,row.key,row.value,await digest(reservationFingerprint(row.value)))));
     const warnings=[];
     const external=await Promise.all(Object.keys(GITE_NAMES).map(async gite=>{
       try {const blocks=await fetchBlocks(gite);return await Promise.all(blocks.map(async (block,index)=>({id:`airbnb:${gite}:${await digest(JSON.stringify(block))}:${index}`,kind:'gite',source:'airbnb',resource:GITE_NAMES[gite],gite,name:'Blocage importé d’Airbnb',email:'',phone:'',startDate:dateKey(block.startDate),endDate:dateKey(block.endDate),status:'accepted',archivedAt:null,price:null})));}
@@ -34,7 +34,7 @@ export function mountReservationAdmin(app, { prefix, db, authorized, fetchBlocks
     let body;try{body=JSON.parse(raw);}catch{return c.json({success:false,message:'Demande invalide.'},400);}
     const {data,error}=await db().from(TABLES[kind]).select('value').eq('key',id).maybeSingle();if(error)throw error;
     const current=data?.value;if(!current)return c.json({success:false,message:'Réservation introuvable.'},404);
-    if(body.revision!==await digest(JSON.stringify(current)))return c.json({success:false,message:'Cette réservation a changé. Actualisez avant de recommencer.'},409);
+    if(body.revision!==await digest(reservationFingerprint(current)))return c.json({success:false,message:'Cette réservation a changé. Actualisez avant de recommencer.'},409);
     let next;try{next=applyAction(current,body.action,undefined,kind);}catch(error){return c.json({success:false,message:error.message},400);}
     // Confirming or restoring must also respect the external Airbnb calendar.
     if(kind==='gite'&&active(next)&&(body.action==='confirm'||!active(current))) {
@@ -45,7 +45,7 @@ export function mountReservationAdmin(app, { prefix, db, authorized, fetchBlocks
     const result=await db().rpc('soulor_write_reservation',{p_kind:kind,p_key:id,p_expected:current,p_booking:next});
     if(result.error)throw result.error;
     if(!result.data?.success)return c.json({success:false,message:result.data?.code==='conflict'?'Le créneau ou les dates sont maintenant occupés. Aucune modification appliquée.':'Cette réservation a changé. Actualisez la liste.'},409);
-    return c.json({success:true,reservation:presentReservation(kind,id,next,await digest(JSON.stringify(next)))});
+    return c.json({success:true,reservation:presentReservation(kind,id,next,await digest(reservationFingerprint(next)))});
     } catch { return c.json({success:false,message:'Enregistrement non confirmé. Actualisez la liste avant de réessayer.'},503); }
   });
 }

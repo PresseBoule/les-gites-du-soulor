@@ -4,6 +4,15 @@ import {reservationHarness} from './reservation-harness.mjs';
 import {applyAction,active,dateKey} from '../src/lib/reservationModel.mjs';
 import {harness as cmsHarness} from './cms-harness.mjs';
 const stay={startDate:'2027-02-06',endDate:'2027-02-10',status:'pending',customerName:'Client fictif',customerEmail:'client@example.test'};
+test('the revision returned after archive remains valid after PostgreSQL jsonb reorders keys',async()=>{
+  const h=await reservationHarness();try{
+    await h.seed('wellness','booking:roundtrip',{id:'roundtrip',date:'2027-02-07',hour:16,clientName:'Test',clientEmail:'test@example.test',status:'accepted'});
+    const row=(await h.request()).data.reservations[0];
+    const archived=await h.request('/wellness/'+encodeURIComponent(row.id),{method:'POST',body:{action:'archive',revision:row.revision}});assert.equal(archived.status,200);
+    const restored=await h.request('/wellness/'+encodeURIComponent(row.id),{method:'POST',body:{action:'restore',revision:archived.data.reservation.revision}});assert.equal(restored.status,200);assert.equal(restored.data.reservation.status,'accepted');
+    assert.equal(restored.data.reservation.archivedAt,null);
+  }finally{await h.pg.close();}
+});
 test('the actual CMS login session grants reservation access, and logout revokes it',async()=>{
   const h=await reservationHarness();try{
     await h.seed('gite','booking:soum:fixture',stay);
@@ -44,7 +53,7 @@ test('archive releases dates; restoring into a later booking is refused without 
     const archived=await h.request('/gite/'+encodeURIComponent(row.id),{method:'POST',body:{action:'archive',revision:row.revision}});
     assert.equal(archived.status,200);assert.equal(archived.data.reservation.status,'cancelled');
     const created=await h.client.rpc('soulor_write_reservation',{p_kind:'gite',p_key:'booking:soum:two',p_expected:null,p_booking:stay});assert.equal(created.data.success,true);
-    const restored=await h.request('/gite/'+encodeURIComponent(row.id),{method:'POST',body:{action:'restore',revision:archived.data.reservation.revision}});assert.equal(restored.status,409);
+    const restored=await h.request('/gite/'+encodeURIComponent(row.id),{method:'POST',body:{action:'restore',revision:archived.data.reservation.revision}});assert.equal(restored.status,409);assert.match(restored.data.message,/occupés/);
     assert.equal((await h.request('/gite/'+encodeURIComponent(row.id),{method:'POST',body:{action:'cancel',revision:row.revision}})).status,409);
     assert.equal((await h.pg.query("select count(*)::int as total from kv_store_497309b8")).rows[0].total,2);
   }finally{await h.pg.close();}
