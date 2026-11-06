@@ -1,3 +1,4 @@
+import { CmsText } from '../components/admin/CmsFields';
 import { motion } from 'motion/react';
 import { Mail, Phone, MapPin, Clock, Send, MessageCircle, Car, Train, Plane } from 'lucide-react';
 import { EditableText } from '../components/admin/EditableText';
@@ -185,17 +186,12 @@ ${formData.message}
                 className="p-6 rounded-2xl bg-gradient-to-br from-white/5 to-transparent border border-white/10"
               >
                 <div className="prose prose-invert max-w-none">
-                  <h2 className="text-2xl text-white mb-4" style={{ fontFamily: 'serif' }}>
-                    Votre Séjour à Arrens-Marsous : Réservation & Renseignements
-                  </h2>
+                  <h2 className="text-2xl text-white mb-4" style={{ fontFamily: 'serif' }}><CmsText id="ContactPage-text-001" scope={[]}>{"Votre Séjour à Arrens-Marsous : Réservation & Renseignements"}</CmsText></h2>
                   
-                  <p className="text-white/90 leading-relaxed mb-4">
-                    Vous souhaitez <strong className="text-[#c4a574]">réserver un gîte</strong> pour vos prochaines vacances dans les <strong className="text-[#c4a574]">Pyrénées</strong> ? Les Gîtes du Soulor sont à votre disposition pour vous accueillir toute l'année à <strong className="text-[#c4a574]">Arrens-Marsous</strong>, dans le <strong className="text-[#c4a574]">Val d'Azun</strong>. Nous répondons à toutes vos questions sur nos 4 gîtes pour 3 personnes, nos tarifs, et nos équipements bien-être (bain nordique et sauna).
-                  </p>
+                  <p className="text-white/90 leading-relaxed mb-4"><CmsText id="ContactPage-text-002" scope={[]}>{"Vous souhaitez "}</CmsText><strong className="text-[#c4a574]"><CmsText id="ContactPage-text-003" scope={[]}>{"réserver un gîte"}</CmsText></strong><CmsText id="ContactPage-text-004" scope={[]}>{" pour vos prochaines vacances dans les "}</CmsText><strong className="text-[#c4a574]"><CmsText id="ContactPage-text-005" scope={[]}>{"Pyrénées"}</CmsText></strong><CmsText id="ContactPage-text-006" scope={[]}>{" ? Les Gîtes du Soulor sont à votre disposition pour vous accueillir toute l'année à "}</CmsText><strong className="text-[#c4a574]"><CmsText id="ContactPage-text-007" scope={[]}>{"Arrens-Marsous"}</CmsText></strong><CmsText id="ContactPage-text-008" scope={[]}>{", dans le "}</CmsText><strong className="text-[#c4a574]"><CmsText id="ContactPage-text-009" scope={[]}>{"Val d'Azun"}</CmsText></strong><CmsText id="ContactPage-text-010" scope={[]}>{". Nous répondons à toutes vos questions sur nos 4 gîtes pour 3 personnes, nos tarifs, et nos équipements bien-être (bain nordique et sauna)."}</CmsText></p>
                   
                   <p className="text-white/70 leading-relaxed text-sm">
-                    <strong className="text-white">Réponse rapide garantie :</strong> Nous nous engageons à répondre à toutes vos demandes dans un délai de <strong>24 heures maximum</strong>. Pour les demandes urgentes ou de dernière minute, nous vous conseillons de nous contacter directement par téléphone au <strong className="text-[#c4a574]">06 45 79 59 39</strong>. Nos gîtes sont situés au <strong>42 route du Soulor</strong> à Arrens-Marsous (65400), facilement accessibles depuis Lourdes (30 min), Pau (1h) ou Tarbes (45 min).
-                  </p>
+                    <strong className="text-white"><CmsText id="ContactPage-text-011" scope={[]}>{"Réponse rapide garantie :"}</CmsText></strong><CmsText id="ContactPage-text-012" scope={[]}>{" Nous nous engageons à répondre à toutes vos demandes dans un délai de "}</CmsText><strong><CmsText id="ContactPage-text-013" scope={[]}>{"24 heures maximum"}</CmsText></strong><CmsText id="ContactPage-text-014" scope={[]}>{". Pour les demandes urgentes ou de dernière minute, nous vous conseillons de nous contacter directement par téléphone au "}</CmsText><strong className="text-[#c4a574]"><CmsText id="ContactPage-text-015" scope={[]}>{"06 45 79 59 39"}</CmsText></strong><CmsText id="ContactPage-text-016" scope={[]}>{". Nos gîtes sont situés au "}</CmsText><strong><CmsText id="ContactPage-text-017" scope={[]}>{"42 route du Soulor"}</CmsText></strong><CmsText id="ContactPage-text-018" scope={[]}>{" à Arrens-Marsous (65400), facilement accessibles depuis Lourdes (30 min), Pau (1h) ou Tarbes (45 min)."}</CmsText></p>
                 </div>
               </motion.div>
             </div>
@@ -223,7 +219,7 @@ ${formData.message}
                 
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <div>
-                    <label className="block text-white/80 mb-2 text-sm">Nom complet *</label>
+                    <label className="block text-white/80 mb-2 text-sm"><CmsText id="ContactPage-text-019" scope={[]}>{"Nom complet *"}</CmsText></label>
                     <input
                       type="text"
                       name="nom"
@@ -237,7 +233,7 @@ ${formData.message}
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-white/80 mb-2 text-sm">Email *</label>
+                      <label className="block text-white/80 mb-2 text-sm"><CmsText id="ContactPage-text-020" scope={[]}>{"Email *"}</CmsText></label>
                       <input
                         type="email"
                         name="email"
@@ -249,7 +245,7 @@ ${formData.message}
                       />
                     </div>
                     <div>
-                      <label className="block text-white/80 mb-2 text-sm">Téléphone</label>
+                      <label className="block text-white/80 mb-2 text-sm"><CmsText id="ContactPage-text-021" scope={[]}>{"Téléphone"}</CmsText></label>
                       <input
                         type="tel"
                         name="telephone"
@@ -262,7 +258,7 @@ ${formData.message}
                   </div>
 
                   <div>
-                    <label className="block text-white/80 mb-2 text-sm">Message *</label>
+                    <label className="block text-white/80 mb-2 text-sm"><CmsText id="ContactPage-text-022" scope={[]}>{"Message *"}</CmsText></label>
                     <textarea
                       name="message"
                       value={formData.message}
@@ -283,14 +279,10 @@ ${formData.message}
                   >
                     {isSubmitting ? (
                       <>
-                        <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                        Envoi en cours...
-                      </>
+                        <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" /><CmsText id="ContactPage-text-023" scope={[]}>{"Envoi en cours..."}</CmsText></>
                     ) : (
                       <>
-                        <Send className="w-5 h-5" />
-                        Envoyer la demande
-                      </>
+                        <Send className="w-5 h-5" /><CmsText id="ContactPage-text-024" scope={[]}>{"Envoyer la demande"}</CmsText></>
                     )}
                   </motion.button>
 
@@ -299,9 +291,7 @@ ${formData.message}
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       className="p-4 rounded-lg bg-green-500/20 border border-green-500/30 text-green-400 text-center"
-                    >
-                      ✓ Votre client email s'est ouvert. Vérifiez et envoyez le message.
-                    </motion.div>
+                    ><CmsText id="ContactPage-text-025" scope={[]}>{"✓ Votre client email s'est ouvert. Vérifiez et envoyez le message."}</CmsText></motion.div>
                   )}
                 </form>
               </motion.div>

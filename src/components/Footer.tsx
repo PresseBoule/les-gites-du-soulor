@@ -1,3 +1,4 @@
+import { CmsText } from './admin/CmsFields';
 import { motion, AnimatePresence } from 'motion/react';
 import { useState } from 'react';
 import { MapPin, Phone, Mail, Instagram, Mountain, Heart, Lock, Eye, EyeOff, X } from 'lucide-react';
@@ -63,7 +64,7 @@ export function Footer({ contact, social }: FooterProps = {}) {
       }
     } catch (err) {
       console.error('Erreur de connexion:', err);
-      setLoginError('Erreur de connexion au serveur');
+      setLoginError(err instanceof Error ? err.message : 'Erreur de connexion au serveur');
     } finally {
       setLoginLoading(false);
     }
@@ -105,12 +106,9 @@ export function Footer({ contact, social }: FooterProps = {}) {
             >
               <div className="flex items-center gap-2 mb-4">
                 <Mountain className="w-6 h-6 text-[#c4a574]" />
-                <h3 className="text-white">Les Gîtes du Soulor</h3>
+                <h3 className="text-white"><CmsText id="Footer-text-001" scope={[]}>{"Les Gîtes du Soulor"}</CmsText></h3>
               </div>
-              <p className="text-white/60 mb-4 leading-relaxed">
-                Vivez une expérience authentique au cœur des Pyrénées. 
-                Quatre gîtes de charme pour des moments inoubliables en montagne.
-              </p>
+              <p className="text-white/60 mb-4 leading-relaxed"><CmsText id="Footer-text-002" scope={[]}>{"Vivez une expérience authentique au cœur des Pyrénées. Quatre gîtes de charme pour des moments inoubliables en montagne."}</CmsText></p>
               <div className="flex gap-3">
                 <motion.a
                   href={social?.instagram || 'https://www.instagram.com/les_gites_du_soulor/'}
@@ -142,43 +140,35 @@ export function Footer({ contact, social }: FooterProps = {}) {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.15 }}
             >
-              <h3 className="text-white mb-4">Nos Gîtes</h3>
+              <h3 className="text-white mb-4"><CmsText id="Footer-text-003" scope={[]}>{"Nos Gîtes"}</CmsText></h3>
               <ul className="space-y-2">
                 <li>
                   <Link
                     to="/gite-arrens-marsous"
                     className="text-white/60 hover:text-[#c4a574] transition-colors flex items-center gap-2 group text-sm"
                   >
-                    <span className="w-1 h-1 rounded-full bg-white/40 group-hover:bg-[#c4a574] transition-colors" />
-                    Gîte Arrens-Marsous
-                  </Link>
+                    <span className="w-1 h-1 rounded-full bg-white/40 group-hover:bg-[#c4a574] transition-colors" /><CmsText id="Footer-text-004" scope={[]}>{"Gîte Arrens-Marsous"}</CmsText></Link>
                 </li>
                 <li>
                   <Link
                     to="/gite-val-azun"
                     className="text-white/60 hover:text-[#c4a574] transition-colors flex items-center gap-2 group text-sm"
                   >
-                    <span className="w-1 h-1 rounded-full bg-white/40 group-hover:bg-[#c4a574] transition-colors" />
-                    Gîte Val d'Azun
-                  </Link>
+                    <span className="w-1 h-1 rounded-full bg-white/40 group-hover:bg-[#c4a574] transition-colors" /><CmsText id="Footer-text-005" scope={[]}>{"Gîte Val d'Azun"}</CmsText></Link>
                 </li>
                 <li>
                   <Link
                     to="/gite-bain-nordique"
                     className="text-white/60 hover:text-[#c4a574] transition-colors flex items-center gap-2 group text-sm"
                   >
-                    <span className="w-1 h-1 rounded-full bg-white/40 group-hover:bg-[#c4a574] transition-colors" />
-                    Gîte Bain Nordique
-                  </Link>
+                    <span className="w-1 h-1 rounded-full bg-white/40 group-hover:bg-[#c4a574] transition-colors" /><CmsText id="Footer-text-006" scope={[]}>{"Gîte Bain Nordique"}</CmsText></Link>
                 </li>
                 <li>
                   <Link
                     to="/gite-proximite-lourdes"
                     className="text-white/60 hover:text-[#c4a574] transition-colors flex items-center gap-2 group text-sm"
                   >
-                    <span className="w-1 h-1 rounded-full bg-white/40 group-hover:bg-[#c4a574] transition-colors" />
-                    Gîte près de Lourdes
-                  </Link>
+                    <span className="w-1 h-1 rounded-full bg-white/40 group-hover:bg-[#c4a574] transition-colors" /><CmsText id="Footer-text-007" scope={[]}>{"Gîte près de Lourdes"}</CmsText></Link>
                 </li>
               </ul>
             </motion.div>
@@ -190,7 +180,7 @@ export function Footer({ contact, social }: FooterProps = {}) {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <h3 className="text-white mb-4">Contact</h3>
+              <h3 className="text-white mb-4"><CmsText id="Footer-text-008" scope={[]}>{"Contact"}</CmsText></h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3 text-white/60">
                   <MapPin className="w-5 h-5 text-[#c4a574] flex-shrink-0 mt-0.5" />
@@ -231,34 +221,28 @@ export function Footer({ contact, social }: FooterProps = {}) {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              <h3 className="text-white mb-4">Informations Légales</h3>
+              <h3 className="text-white mb-4"><CmsText id="Footer-text-009" scope={[]}>{"Informations Légales"}</CmsText></h3>
               <ul className="space-y-2">
                 <li>
                   <button
                     onClick={() => setLegalModal('mentions')}
                     className="text-white/60 hover:text-[#c4a574] transition-colors flex items-center gap-2 group"
                   >
-                    <span className="w-1 h-1 rounded-full bg-white/40 group-hover:bg-[#c4a574] transition-colors" />
-                    Mentions Légales
-                  </button>
+                    <span className="w-1 h-1 rounded-full bg-white/40 group-hover:bg-[#c4a574] transition-colors" /><CmsText id="Footer-text-010" scope={[]}>{"Mentions Légales"}</CmsText></button>
                 </li>
                 <li>
                   <button
                     onClick={() => setLegalModal('privacy')}
                     className="text-white/60 hover:text-[#c4a574] transition-colors flex items-center gap-2 group"
                   >
-                    <span className="w-1 h-1 rounded-full bg-white/40 group-hover:bg-[#c4a574] transition-colors" />
-                    Politique de Confidentialité
-                  </button>
+                    <span className="w-1 h-1 rounded-full bg-white/40 group-hover:bg-[#c4a574] transition-colors" /><CmsText id="Footer-text-011" scope={[]}>{"Politique de Confidentialité"}</CmsText></button>
                 </li>
                 <li>
                   <button
                     onClick={() => setLegalModal('cookies')}
                     className="text-white/60 hover:text-[#c4a574] transition-colors flex items-center gap-2 group"
                   >
-                    <span className="w-1 h-1 rounded-full bg-white/40 group-hover:bg-[#c4a574] transition-colors" />
-                    Politique des Cookies
-                  </button>
+                    <span className="w-1 h-1 rounded-full bg-white/40 group-hover:bg-[#c4a574] transition-colors" /><CmsText id="Footer-text-012" scope={[]}>{"Politique des Cookies"}</CmsText></button>
                 </li>
                 <li>
                   <a
@@ -267,9 +251,7 @@ export function Footer({ contact, social }: FooterProps = {}) {
                     rel="noopener noreferrer"
                     className="text-white/60 hover:text-[#c4a574] transition-colors flex items-center gap-2 group"
                   >
-                    <span className="w-1 h-1 rounded-full bg-white/40 group-hover:bg-[#c4a574] transition-colors" />
-                    Réservation
-                  </a>
+                    <span className="w-1 h-1 rounded-full bg-white/40 group-hover:bg-[#c4a574] transition-colors" /><CmsText id="Footer-text-013" scope={[]}>{"Réservation"}</CmsText></a>
                 </li>
               </ul>
             </motion.div>
@@ -286,8 +268,7 @@ export function Footer({ contact, social }: FooterProps = {}) {
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <div className="flex items-center gap-4">
                 <p className="text-white/60 text-sm">
-                  © {currentYear} Les Gîtes du Soulor. Tous droits réservés.
-                </p>
+                  © {currentYear}<CmsText id="Footer-text-014" scope={[]}>{" Les Gîtes du Soulor. Tous droits réservés."}</CmsText></p>
                 {/* Bouton Admin discret */}
                 {!isAdminMode && (
                   <motion.button
@@ -301,16 +282,14 @@ export function Footer({ contact, social }: FooterProps = {}) {
                 )}
               </div>
               <div className="flex items-center gap-2 text-white/60 text-sm">
-                <span>Conçu avec</span>
+                <span><CmsText id="Footer-text-015" scope={[]}>{"Conçu avec"}</CmsText></span>
                 <Heart className="w-4 h-4 text-[#c4a574] fill-[#c4a574]" />
-                <span>par</span>
+                <span><CmsText id="Footer-text-016" scope={[]}>{"par"}</CmsText></span>
                 <a 
                   href="#" 
                   className="text-[#c4a574] hover:underline"
                   onClick={(e) => e.preventDefault()}
-                >
-                  PixelBoost
-                </a>
+                ><CmsText id="Footer-text-017" scope={[]}>{"PixelBoost"}</CmsText></a>
               </div>
             </div>
           </motion.div>
@@ -348,15 +327,13 @@ export function Footer({ contact, social }: FooterProps = {}) {
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-[#c4a574] rounded-full mb-4">
                   <Lock className="w-8 h-8 text-[#3a4a5a]" />
                 </div>
-                <h2 className="text-white mb-2">Espace Administrateur</h2>
-                <p className="text-white/70">Les Gîtes du Soulor</p>
+                <h2 className="text-white mb-2"><CmsText id="Footer-text-018" scope={[]}>{"Espace Administrateur"}</CmsText></h2>
+                <p className="text-white/70"><CmsText id="Footer-text-019" scope={[]}>{"Les Gîtes du Soulor"}</CmsText></p>
               </div>
 
               <form onSubmit={handleAdminLogin} className="space-y-4">
                 <div>
-                  <label htmlFor="admin-password" className="block text-white/90 mb-2">
-                    Mot de passe
-                  </label>
+                  <label htmlFor="admin-password" className="block text-white/90 mb-2"><CmsText id="Footer-text-020" scope={[]}>{"Mot de passe"}</CmsText></label>
                   <div className="relative">
                     <input
                       id="admin-password"

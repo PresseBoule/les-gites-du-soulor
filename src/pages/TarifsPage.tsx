@@ -1,3 +1,5 @@
+import { PriceRange, PriceSummary, priceRange } from '../components/SitePrices';
+import { CmsText } from '../components/admin/CmsFields';
 import { motion } from 'motion/react'; // Ajout de motion
 import { DollarSign, Home, Users, Sparkles, Info, Heart, Check, Moon, Calendar, Sunrise, Leaf, Sun, Snowflake, Euro, AlertCircle, ArrowRight, X } from 'lucide-react'; // Ajout des icônes manquantes
 import { EditableText } from '../components/admin/EditableText';
@@ -102,8 +104,8 @@ export function TarifsPage() {
   return (
     <>
       <Helmet>
-        <title>Tarifs Gîtes Arrens-Marsous - Dès 125€/Nuit | Les Gîtes du Soulor</title>
-        <meta name="description" content="Tarifs de nos gîtes 3 personnes à Arrens-Marsous : dès 150€/nuit, tarif dégressif à partir de 2 nuits (125€/nuit), semaine dès 875€. Réservez votre séjour dans les Pyrénées." />
+        <title>{`Tarifs Gîtes Arrens-Marsous - Dès ${priceRange(content, 1)?.min ?? '—'}€/Nuit | Les Gîtes du Soulor`}</title>
+        <meta name="description" content={`Tarifs de nos gîtes à Arrens-Marsous : nuitée dès ${priceRange(content, 0)?.min}€, dès deux nuits ${priceRange(content, 1)?.min}€/nuit, semaine dès ${priceRange(content, 2)?.min}€. Prix selon la saison de chaque nuit.`} />
         <link rel="canonical" href="https://lesgitesdusoulor.fr/tarifs" />
       </Helmet>
 
@@ -179,44 +181,31 @@ export function TarifsPage() {
                 className="p-8 rounded-2xl bg-gradient-to-br from-white/5 to-transparent border border-white/10"
               >
                 <div className="prose prose-invert prose-lg max-w-none">
-                  <p className="text-white/90 leading-relaxed mb-6">
-                    Découvrez nos <strong className="text-[#c4a574]">tarifs transparents</strong> pour un séjour dans nos gîtes de montagne à <strong className="text-[#c4a574]">Arrens-Marsous</strong>, au cœur du Val d'Azun dans les <strong className="text-[#c4a574]">Hautes-Pyrénées</strong>. Que vous souhaitiez réserver pour une nuitée, plusieurs jours ou un séjour complet d'une semaine, nous proposons des formules adaptées à tous vos besoins.
-                  </p>
+                  <p className="text-white/90 leading-relaxed mb-6"><CmsText id="TarifsPage-text-001" scope={[]}>{"Découvrez nos "}</CmsText><strong className="text-[#c4a574]"><CmsText id="TarifsPage-text-002" scope={[]}>{"tarifs transparents"}</CmsText></strong><CmsText id="TarifsPage-text-003" scope={[]}>{" pour un séjour dans nos gîtes de montagne à "}</CmsText><strong className="text-[#c4a574]"><CmsText id="TarifsPage-text-004" scope={[]}>{"Arrens-Marsous"}</CmsText></strong><CmsText id="TarifsPage-text-005" scope={[]}>{", au cœur du Val d'Azun dans les "}</CmsText><strong className="text-[#c4a574]"><CmsText id="TarifsPage-text-006" scope={[]}>{"Hautes-Pyrénées"}</CmsText></strong><CmsText id="TarifsPage-text-007" scope={[]}>{". Que vous souhaitiez réserver pour une nuitée, plusieurs jours ou un séjour complet d'une semaine, nous proposons des formules adaptées à tous vos besoins."}</CmsText></p>
                   
-                  <p className="text-white/80 leading-relaxed mb-6">
-                    Nos 4 gîtes pour 3 personnes (<strong>Le Suyen</strong>, <strong>Le Tech</strong>, <strong>L'Estaing</strong> et <strong>Le Soum</strong>) offrent le même niveau de confort et les mêmes tarifs. Tous nos prix incluent le linge de maison, le ménage de fin de séjour, le chauffage, le Wi-Fi et l'accès à nos équipements bien-être.
-                  </p>
+                  <p className="text-white/80 leading-relaxed mb-6"><CmsText id="TarifsPage-text-008" scope={[]}>{"Nos 4 gîtes pour 3 personnes ("}</CmsText><strong><CmsText id="TarifsPage-text-009" scope={[]}>{"Le Suyen"}</CmsText></strong>, <strong><CmsText id="TarifsPage-text-010" scope={[]}>{"Le Tech"}</CmsText></strong>, <strong><CmsText id="TarifsPage-text-011" scope={[]}>{"L'Estaing"}</CmsText></strong><CmsText id="TarifsPage-text-012" scope={[]}>{" et "}</CmsText><strong><CmsText id="TarifsPage-text-013" scope={[]}>{"Le Soum"}</CmsText></strong><CmsText id="TarifsPage-text-014" scope={[]}>{") offrent le même niveau de confort et les mêmes tarifs. Tous nos prix incluent le linge de maison, le ménage de fin de séjour, le chauffage, le Wi-Fi et l'accès à nos équipements bien-être."}</CmsText></p>
 
-                  <h2 className="text-2xl text-white mb-4 mt-8" style={{ fontFamily: 'serif' }}>
-                    Nos Formules de Séjour
-                  </h2>
+                  <h2 className="text-2xl text-white mb-4 mt-8" style={{ fontFamily: 'serif' }}><CmsText id="TarifsPage-text-015" scope={[]}>{"Nos Formules de Séjour"}</CmsText></h2>
                   
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
                     <div className="p-4 rounded-xl bg-white/5 border border-white/10">
-                      <h3 className="text-lg text-[#c4a574] mb-2">Nuitée</h3>
-                      <p className="text-white/70 text-sm leading-relaxed">
-                        Séjours flexibles à la nuitée, sans durée minimum. Idéal pour une escapade courte ou prolongée selon vos envies. Tarifs de <strong className="text-white">150€ à 180€ par nuit</strong> selon la saison.
+                      <h3 className="text-lg text-[#c4a574] mb-2"><CmsText id="TarifsPage-text-016" scope={[]}>{"Nuitée"}</CmsText></h3>
+                      <p className="text-white/70 text-sm leading-relaxed"><CmsText id="TarifsPage-text-017" scope={[]}>{"Séjours flexibles à la nuitée, sans durée minimum. Idéal pour une escapade courte ou prolongée selon vos envies. Tarifs de "}</CmsText><strong className="text-white"><PriceRange option={0} suffix=" par nuit" /></strong><CmsText id="TarifsPage-text-019" scope={[]}>{" selon la saison."}</CmsText></p>
+                    </div>
+                    
+                    <div className="p-4 rounded-xl bg-white/5 border border-white/10">
+                      <h3 className="text-lg text-[#c4a574] mb-2"><CmsText id="TarifsPage-text-020" scope={[]}>{"Séjour 2 Nuits ou Plus"}</CmsText></h3>
+                      <p className="text-white/70 text-sm leading-relaxed"><CmsText id="TarifsPage-text-021" scope={[]}>{"Bénéficiez d'un tarif dégressif dès la 2ème nuit ! Profitez du calme pyrénéen avec un tarif avantageux. Tarifs de "}</CmsText><strong className="text-white"><PriceRange option={1} suffix=" par nuit" /></strong>.
                       </p>
                     </div>
                     
                     <div className="p-4 rounded-xl bg-white/5 border border-white/10">
-                      <h3 className="text-lg text-[#c4a574] mb-2">Séjour 2 Nuits ou Plus</h3>
-                      <p className="text-white/70 text-sm leading-relaxed">
-                        Bénéficiez d'un tarif dégressif dès la 2ème nuit ! Profitez du calme pyrénéen avec un tarif avantageux. Tarifs de <strong className="text-white">125€ à 150€ par nuit</strong>.
-                      </p>
-                    </div>
-                    
-                    <div className="p-4 rounded-xl bg-white/5 border border-white/10">
-                      <h3 className="text-lg text-[#c4a574] mb-2">La Semaine Complète</h3>
-                      <p className="text-white/70 text-sm leading-relaxed">
-                        Pour un ressourcement total, optez pour un séjour de 7 jours complet. Tarifs de <strong className="text-white">875€ à 1050€</strong> selon la saison.
-                      </p>
+                      <h3 className="text-lg text-[#c4a574] mb-2"><CmsText id="TarifsPage-text-023" scope={[]}>{"La Semaine Complète"}</CmsText></h3>
+                      <p className="text-white/70 text-sm leading-relaxed"><CmsText id="TarifsPage-text-024" scope={[]}>{"Pour un ressourcement total, optez pour un séjour de 7 jours complet. Tarifs de "}</CmsText><strong className="text-white"><PriceRange option={2} /></strong><CmsText id="TarifsPage-text-026" scope={[]}>{" selon la saison."}</CmsText></p>
                     </div>
                   </div>
 
-                  <p className="text-white/70 leading-relaxed text-sm">
-                    Nos tarifs varient selon trois périodes : <strong className="text-white">basse saison</strong> (printemps/automne hors vacances), <strong className="text-white">moyenne saison</strong> (été hors juillet-août) et <strong className="text-white">haute saison</strong> (vacances scolaires, fêtes de fin d'année, février-mars pour le ski).
-                  </p>
+                  <p className="text-white/70 leading-relaxed text-sm"><CmsText id="TarifsPage-text-027" scope={[]}>{"Nos tarifs varient selon trois périodes : "}</CmsText><strong className="text-white"><CmsText id="TarifsPage-text-028" scope={[]}>{"basse saison"}</CmsText></strong><CmsText id="TarifsPage-text-029" scope={[]}>{" (printemps/automne hors vacances), "}</CmsText><strong className="text-white"><CmsText id="TarifsPage-text-030" scope={[]}>{"moyenne saison"}</CmsText></strong><CmsText id="TarifsPage-text-031" scope={[]}>{" (été hors juillet-août) et "}</CmsText><strong className="text-white"><CmsText id="TarifsPage-text-032" scope={[]}>{"haute saison"}</CmsText></strong><CmsText id="TarifsPage-text-033" scope={[]}>{" (vacances scolaires, fêtes de fin d'année, février-mars pour le ski)."}</CmsText></p>
                 </div>
               </motion.div>
             </div>
@@ -452,10 +441,8 @@ export function TarifsPage() {
                   <div className="flex items-start gap-3">
                     <X className="w-6 h-6 text-red-400 flex-shrink-0 mt-1" />
                     <div>
-                      <h3 className="text-white text-lg mb-2">Chèques Vacances</h3>
-                      <p className="text-white/70 text-sm leading-relaxed">
-                        Les chèques vacances ne sont pas acceptés comme moyen de paiement.
-                      </p>
+                      <h3 className="text-white text-lg mb-2"><CmsText id="TarifsPage-text-034" scope={[]}>{"Chèques Vacances"}</CmsText></h3>
+                      <p className="text-white/70 text-sm leading-relaxed"><CmsText id="TarifsPage-text-035" scope={[]}>{"Les chèques vacances ne sont pas acceptés comme moyen de paiement."}</CmsText></p>
                     </div>
                   </div>
                 </div>
@@ -474,10 +461,8 @@ export function TarifsPage() {
                   <div className="flex items-start gap-3">
                     <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-1" />
                     <div>
-                      <h3 className="text-white text-lg mb-2">Paiements Acceptés</h3>
-                      <p className="text-white/70 text-sm leading-relaxed">
-                        Espèces, carte bancaire et virement bancaire.
-                      </p>
+                      <h3 className="text-white text-lg mb-2"><CmsText id="TarifsPage-text-036" scope={[]}>{"Paiements Acceptés"}</CmsText></h3>
+                      <p className="text-white/70 text-sm leading-relaxed"><CmsText id="TarifsPage-text-037" scope={[]}>{"Espèces, carte bancaire et virement bancaire."}</CmsText></p>
                     </div>
                   </div>
                 </div>
@@ -525,9 +510,7 @@ export function TarifsPage() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="px-8 py-4 rounded-full bg-gradient-to-r from-[#c4a574] to-[#d4b584] text-white font-semibold flex items-center justify-center gap-3 mx-auto hover:from-[#d4b584] hover:to-[#c4a574] transition-all shadow-lg text-lg"
-                >
-                  Réserver maintenant
-                  <ArrowRight className="w-5 h-5" />
+                ><CmsText id="TarifsPage-text-038" scope={[]}>{"Réserver maintenant"}</CmsText><ArrowRight className="w-5 h-5" />
                 </motion.button>
               </Link>
             </motion.div>

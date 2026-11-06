@@ -1,3 +1,5 @@
+import defaultGites from '../content/gites.json';
+import { SEASON_PERIODS } from '../lib/pricing.mjs';
 // Types pour le contenu modifiable du site
 
 export interface PriceItem {
@@ -83,6 +85,7 @@ export interface NavItem {
 }
 
 export interface Texts {
+  [key: string]: string | undefined;
   siteName?: string;
   // Info section
   infoSectionTitre?: string;
@@ -120,6 +123,9 @@ export interface Texts {
 }
 
 export interface SiteContent {
+  seasonPeriods?: [string, string, string][];
+  fields?: Record<string, { kind: 'text' | 'image'; value: string }>;
+  images?: Record<string, string>;
   tarifs?: TarifOption[];
   gites?: Gite[];
   contact?: Contact;
@@ -134,6 +140,7 @@ export interface SiteContent {
 
 // Contenu par défaut (celui actuellement dans le site)
 export const defaultContent: SiteContent = {
+  seasonPeriods: SEASON_PERIODS,
   tarifs: [
     {
       type: 'Nuitée',
@@ -167,7 +174,7 @@ export const defaultContent: SiteContent = {
       ],
     },
   ],
-  gites: [],
+  gites: defaultGites,
   contact: {
     telephone: "06 45 79 59 39",
     email: "spanazol@wanadoo.fr",

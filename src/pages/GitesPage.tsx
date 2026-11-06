@@ -1,3 +1,4 @@
+import { CmsText } from '../components/admin/CmsFields';
 import { motion } from 'motion/react';
 import { EditableText } from '../components/admin/EditableText';
 import { EditableImage } from '../components/admin/EditableImage';
@@ -215,9 +216,7 @@ export function GitesPage() {
                       
                       {/* Badge "Voir le gîte" */}
                       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-y-0 translate-y-4">
-                        <div className="px-6 py-3 rounded-full bg-gradient-to-r from-[#c4a574] to-[#d4b584] text-white font-semibold shadow-lg">
-                          Découvrir ce gîte →
-                        </div>
+                        <div className="px-6 py-3 rounded-full bg-gradient-to-r from-[#c4a574] to-[#d4b584] text-white font-semibold shadow-lg"><CmsText id="GitesPage-text-001" scope={[index]}>{"Découvrir ce gîte →"}</CmsText></div>
                       </div>
 
                       {/* Corner decoration */}
@@ -274,7 +273,7 @@ export function GitesPage() {
 
                   {/* Équipements */}
                   <div>
-                    <h3 className="text-white/90 mb-3">Équipements inclus</h3>
+                    <h3 className="text-white/90 mb-3"><CmsText id="GitesPage-text-002" scope={[index]}>{"Équipements inclus"}</CmsText></h3>
                     <div className="grid grid-cols-2 gap-3">
                       {equipementsCommuns.slice(0, 4).map((equip, idx) => {
                         const Icon = equip.icon;
@@ -288,7 +287,7 @@ export function GitesPage() {
                             className="flex items-center gap-2 text-white/70 text-sm"
                           >
                             <Icon className="w-4 h-4 text-[#c4a574] flex-shrink-0" />
-                            <span>{equip.nom}</span>
+                            <span><CmsText id="GitesPage-text-003" scope={[index, idx]}>{equip.nom}</CmsText></span>
                           </motion.div>
                         );
                       })}
@@ -302,7 +301,7 @@ export function GitesPage() {
                       whileTap={{ scale: 0.95 }}
                       className="group flex items-center gap-2 text-[#c4a574] hover:text-[#d4b584] transition-colors"
                     >
-                      <span className="font-semibold">Voir tous les détails</span>
+                      <span className="font-semibold"><CmsText id="GitesPage-text-004" scope={[index]}>{"Voir tous les détails"}</CmsText></span>
                       <motion.span
                         animate={{ x: [0, 5, 0] }}
                         transition={{ duration: 1.5, repeat: Infinity }}
@@ -369,7 +368,7 @@ export function GitesPage() {
                         <Icon className="w-6 h-6 text-[#c4a574]" />
                       </div>
                     </motion.div>
-                    <p className="text-white/80 text-sm">{equip.nom}</p>
+                    <p className="text-white/80 text-sm"><CmsText id="GitesPage-text-005" scope={[index]}>{equip.nom}</CmsText></p>
                   </div>
                 </motion.div>
               );
@@ -407,23 +406,23 @@ export function GitesPage() {
                 transition={{ duration: 0.6 }}
                 className="p-6 rounded-2xl bg-white/5 border border-white/10"
               >
-                <h3 className="text-xl text-white mb-4">À proximité</h3>
+                <h3 className="text-xl text-white mb-4"><CmsText id="GitesPage-text-006" scope={[]}>{"À proximité"}</CmsText></h3>
                 <ul className="space-y-3 text-white/70">
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 rounded-full bg-[#c4a574] mt-2 flex-shrink-0" />
-                    <span>Village d'Arrens-Marsous : 5 min à pied</span>
+                    <span><CmsText id="GitesPage-text-007" scope={[]}>{"Village d'Arrens-Marsous : 5 min à pied"}</CmsText></span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 rounded-full bg-[#c4a574] mt-2 flex-shrink-0" />
-                    <span>Stations de ski : 15-30 min en voiture</span>
+                    <span><CmsText id="GitesPage-text-008" scope={[]}>{"Stations de ski : 15-30 min en voiture"}</CmsText></span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 rounded-full bg-[#c4a574] mt-2 flex-shrink-0" />
-                    <span>Lacs de montagne : accessible en randonnée</span>
+                    <span><CmsText id="GitesPage-text-009" scope={[]}>{"Lacs de montagne : accessible en randonnée"}</CmsText></span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 rounded-full bg-[#c4a574] mt-2 flex-shrink-0" />
-                    <span>Lourdes : 25 km</span>
+                    <span><CmsText id="GitesPage-text-010" scope={[]}>{"Lourdes : 25 km"}</CmsText></span>
                   </li>
                 </ul>
               </motion.div>
@@ -435,23 +434,23 @@ export function GitesPage() {
                 transition={{ duration: 0.6 }}
                 className="p-6 rounded-2xl bg-white/5 border border-white/10"
               >
-                <h3 className="text-xl text-white mb-4">Activités</h3>
+                <h3 className="text-xl text-white mb-4"><CmsText id="GitesPage-text-011" scope={[]}>{"Activités"}</CmsText></h3>
                 <ul className="space-y-3 text-white/70">
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 rounded-full bg-[#c4a574] mt-2 flex-shrink-0" />
-                    <span>Randonnées pédestres et VTT</span>
+                    <span><CmsText id="GitesPage-text-012" scope={[]}>{"Randonnées pédestres et VTT"}</CmsText></span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 rounded-full bg-[#c4a574] mt-2 flex-shrink-0" />
-                    <span>Ski alpin et raquettes en hiver</span>
+                    <span><CmsText id="GitesPage-text-013" scope={[]}>{"Ski alpin et raquettes en hiver"}</CmsText></span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 rounded-full bg-[#c4a574] mt-2 flex-shrink-0" />
-                    <span>Thermalisme à Cauterets</span>
+                    <span><CmsText id="GitesPage-text-014" scope={[]}>{"Thermalisme à Cauterets"}</CmsText></span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 rounded-full bg-[#c4a574] mt-2 flex-shrink-0" />
-                    <span>Découverte du patrimoine local</span>
+                    <span><CmsText id="GitesPage-text-015" scope={[]}>{"Découverte du patrimoine local"}</CmsText></span>
                   </li>
                 </ul>
               </motion.div>
@@ -491,9 +490,7 @@ export function GitesPage() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="px-8 py-4 rounded-full bg-gradient-to-r from-[#c4a574] to-[#d4b584] text-white font-semibold hover:from-[#d4b584] hover:to-[#c4a574] transition-all shadow-lg"
-                >
-                  Réserver maintenant
-                </motion.button>
+                ><CmsText id="GitesPage-text-016" scope={[]}>{"Réserver maintenant"}</CmsText></motion.button>
               </a>
             </div>
           </motion.div>

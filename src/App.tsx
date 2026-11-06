@@ -8,12 +8,9 @@ import { CookieBanner } from './components/CookieBanner';
 import { LoadingScreen } from './components/LoadingScreen';
 import { AdminProvider, useAdmin } from './contexts/AdminContext';
 import { AdminToolbar } from './components/admin/AdminToolbar';
-import { useContent } from './hooks/useContent';
 import { HomePage } from './pages/HomePage';
 import { TarifsPage } from './pages/TarifsPage';
-import { GitesListPage } from './pages/GitesListPage';
 import { GitePage } from './pages/GitePage';
-import { WellnessPage } from './pages/WellnessPage';
 import { ContactPage } from './pages/ContactPage';
 import { GitesPage } from './pages/GitesPage';
 import { BienEtrePage } from './pages/BienEtrePage';
@@ -36,16 +33,9 @@ export default function App() {
 }
 
 function AppContent() {
-  const { setContent } = useAdmin();
-  const { content: loadedContent, loading: contentLoading } = useContent();
+  const { content: loadedContent, loading: contentLoading } = useAdmin();
   const [scrollY, setScrollY] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    if (loadedContent && !contentLoading) {
-      setContent(loadedContent);
-    }
-  }, [loadedContent, contentLoading, setContent]);
 
   useEffect(() => {
     const handleScroll = () => {

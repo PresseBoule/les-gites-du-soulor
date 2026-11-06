@@ -1,126 +1,27 @@
-import { useState, useRef, useEffect } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
-import { Edit2, Check, X } from 'lucide-react';
+import { useEffect, useState, CSSProperties, ElementType } from 'react';
+import { useLocation } from 'react-router-dom';
 import { useAdmin } from '../../contexts/AdminContext';
-
-interface EditableTextProps {
-  path: string;
-  value: string;
-  as?: 'h1' | 'h2' | 'h3' | 'p' | 'span';
-  className?: string;
-  placeholder?: string;
-  multiline?: boolean;
-  style?: React.CSSProperties;
-}
-
-export function EditableText({
-  path,
-  value,
-  as: Component = 'p',
-  className = '',
-  placeholder = 'Cliquez pour modifier',
-  multiline = false,
-  style,
-}: EditableTextProps) {
-  const { isAdminMode, updateContent } = useAdmin();
-  const [isEditing, setIsEditing] = useState(false);
-  const [localValue, setLocalValue] = useState(value);
-  const inputRef = useRef<HTMLInputElement | HTMLTextAreaElement>(null);
-
-  useEffect(() => {
-    setLocalValue(value);
-  }, [value]);
-
-  useEffect(() => {
-    if (isEditing && inputRef.current) {
-      inputRef.current.focus();
-      if (inputRef.current instanceof HTMLInputElement) {
-        inputRef.current.select();
-      }
-    }
-  }, [isEditing]);
-
-  const handleSave = () => {
-    updateContent(path, localValue);
-    setIsEditing(false);
+import { getAtPath } from '../../lib/contentModel.mjs';
+import { EditorDialog } from './EditorDialog';
+export function EditableText({ path, value, as: Tag = 'p', className = '', style, multiline = false }: { path: string; value: string; as?: ElementType; className?: string; style?: CSSProperties; multiline?: boolean; placeholder?: string }) {
+  const { content, isAdminMode, updateContent, registerField } = useAdmin();
+  const { pathname } = useLocation();
+  const [editing, setEditing] = useState(false), [draft, setDraft] = useState('');
+  const [error, setError] = useState('');
+  const stored = getAtPath(content, path);
+  const displayed = typeof stored === 'string' ? stored : typeof value === 'string' ? value : '';
+  useEffect(() => { if (isAdminMode) registerField({ path, value: displayed, label: displayed.slice(0, 85) || path, kind: 'text', page: pathname }); }, [path, displayed, pathname, isAdminMode, registerField]);
+  const open = (event) => {
+    // Keep links and navigation usable; their labels remain editable in the catalogue.
+    if (!isAdminMode || document.body.classList.contains('cms-preview') || event.currentTarget.closest('a,button')) return;
+    event.preventDefault(); event.stopPropagation(); setDraft(displayed); setEditing(true); setError('');
   };
-
-  const handleCancel = () => {
-    setLocalValue(value);
-    setIsEditing(false);
-  };
-
-  const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter' && !multiline) {
-      e.preventDefault();
-      handleSave();
-    } else if (e.key === 'Escape') {
-      handleCancel();
-    }
-  };
-
-  if (!isAdminMode) {
-    return <Component className={className} style={style}>{value}</Component>;
-  }
-
-  if (isEditing) {
-    return (
-      <div className="relative group">
-        {multiline ? (
-          <textarea
-            ref={inputRef as React.RefObject<HTMLTextAreaElement>}
-            value={localValue}
-            onChange={(e) => setLocalValue(e.target.value)}
-            onKeyDown={handleKeyDown}
-            className={`${className} bg-white/10 border-2 border-[#c4a574] rounded-lg p-2 min-h-[100px] w-full`}
-            placeholder={placeholder}
-            rows={4}
-          />
-        ) : (
-          <input
-            ref={inputRef as React.RefObject<HTMLInputElement>}
-            type="text"
-            value={localValue}
-            onChange={(e) => setLocalValue(e.target.value)}
-            onKeyDown={handleKeyDown}
-            className={`${className} bg-white/10 border-2 border-[#c4a574] rounded-lg p-2 w-full`}
-            placeholder={placeholder}
-          />
-        )}
-        <div className="absolute -right-2 -top-2 flex gap-1">
-          <button
-            onClick={handleSave}
-            className="w-6 h-6 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center text-white shadow-lg"
-            title="Sauvegarder"
-          >
-            <Check className="w-4 h-4" />
-          </button>
-          <button
-            onClick={handleCancel}
-            className="w-6 h-6 bg-red-500 hover:bg-red-600 rounded-full flex items-center justify-center text-white shadow-lg"
-            title="Annuler"
-          >
-            <X className="w-4 h-4" />
-          </button>
-        </div>
-      </div>
-    );
-  }
-
-  return (
-    <div
-      onClick={() => setIsEditing(true)}
-      className={`${className} relative cursor-pointer group hover:outline hover:outline-2 hover:outline-[#c4a574] hover:outline-offset-2 rounded transition-all`}
-      style={style}
-    >
-      {value || placeholder}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        whileHover={{ opacity: 1, scale: 1 }}
-        className="absolute -right-2 -top-2 w-6 h-6 bg-[#c4a574] rounded-full flex items-center justify-center text-[#3a4a5a] opacity-0 group-hover:opacity-100 transition-opacity shadow-lg"
-      >
-        <Edit2 className="w-3 h-3" />
-      </motion.div>
-    </div>
-  );
+  const save = async () => { try { await updateContent(path, draft); setEditing(false); } catch (error) { setError(error.message); } };
+  return <><Tag className={`${className}${isAdminMode ? ' cms-editable' : ''}`} style={{ whiteSpace: 'pre-wrap', ...style }}
+    {...(isAdminMode ? { 'data-cms-path': path, tabIndex: 0, title: 'Modifier ce texte', onClickCapture: open, onKeyDown: event => { if (event.key === 'Enter') open(event); } } : {})}>{displayed}</Tag>
+    {editing && <EditorDialog title="Modifier le texte" close={() => setEditing(false)}><form onSubmit={event => { event.preventDefault(); void save(); }}>
+      <label className="cms-label">Texte<textarea aria-label="Texte" value={draft} onChange={event => setDraft(event.target.value)} rows={multiline || draft.length > 100 ? 6 : 3} maxLength={30000} autoFocus /></label>
+      {error && <p role="alert">{error}</p>}<div className="cms-actions"><button type="button" onClick={() => setEditing(false)}>Annuler</button><button type="submit">Appliquer à l’aperçu</button></div>
+    </form></EditorDialog>}
+  </>;
 }
