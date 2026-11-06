@@ -1,3 +1,4 @@
+import { CmsText } from './admin/CmsFields';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Cookie, X, Settings } from 'lucide-react';
@@ -79,12 +80,8 @@ export function CookieBanner() {
 
                     {/* Content */}
                     <div className="flex-1">
-                      <h3 className="text-white mb-2">🍪 Nous utilisons des cookies</h3>
-                      <p className="text-white/70 text-sm leading-relaxed">
-                        Nous utilisons des cookies pour améliorer votre expérience sur notre site. 
-                        Certains cookies sont nécessaires au fonctionnement du site, tandis que d'autres nous aident 
-                        à améliorer nos services. Vous pouvez personnaliser vos préférences à tout moment.
-                      </p>
+                      <h3 className="text-white mb-2"><CmsText id="CookieBanner-text-001" scope={[]}>{"🍪 Nous utilisons des cookies"}</CmsText></h3>
+                      <p className="text-white/70 text-sm leading-relaxed"><CmsText id="CookieBanner-text-002" scope={[]}>{"Nous utilisons des cookies pour améliorer votre expérience sur notre site. Certains cookies sont nécessaires au fonctionnement du site, tandis que d'autres nous aident à améliorer nos services. Vous pouvez personnaliser vos préférences à tout moment."}</CmsText></p>
                     </div>
 
                     {/* Actions */}
@@ -94,29 +91,23 @@ export function CookieBanner() {
                         variant="outline"
                         className="border-[#c4a574]/30 text-white hover:bg-[#c4a574]/10 hover:border-[#c4a574]/50"
                       >
-                        <Settings className="w-4 h-4 mr-2" />
-                        Personnaliser
-                      </Button>
+                        <Settings className="w-4 h-4 mr-2" /><CmsText id="CookieBanner-text-003" scope={[]}>{"Personnaliser"}</CmsText></Button>
                       <Button
                         onClick={acceptNecessary}
                         variant="outline"
                         className="border-white/20 text-white hover:bg-white/10"
-                      >
-                        Refuser
-                      </Button>
+                      ><CmsText id="CookieBanner-text-004" scope={[]}>{"Refuser"}</CmsText></Button>
                       <Button
                         onClick={acceptAll}
                         className="bg-gradient-to-r from-[#c4a574] to-[#b89560] hover:from-[#b89560] hover:to-[#c4a574] text-white shadow-lg shadow-[#c4a574]/20"
-                      >
-                        Tout accepter
-                      </Button>
+                      ><CmsText id="CookieBanner-text-005" scope={[]}>{"Tout accepter"}</CmsText></Button>
                     </div>
                   </div>
                 </div>
               ) : (
                 <div className="p-6 md:p-8">
                   <div className="flex items-center justify-between mb-6">
-                    <h3 className="text-white">Paramètres des cookies</h3>
+                    <h3 className="text-white"><CmsText id="CookieBanner-text-006" scope={[]}>{"Paramètres des cookies"}</CmsText></h3>
                     <button
                       onClick={() => setShowSettings(false)}
                       className="text-white/60 hover:text-white transition-colors"
@@ -135,10 +126,8 @@ export function CookieBanner() {
                         className="mt-1 w-4 h-4 rounded accent-[#c4a574]"
                       />
                       <div className="flex-1">
-                        <h4 className="text-white mb-1">Cookies nécessaires</h4>
-                        <p className="text-white/60 text-sm">
-                          Ces cookies sont essentiels au fonctionnement du site et ne peuvent pas être désactivés.
-                        </p>
+                        <h4 className="text-white mb-1"><CmsText id="CookieBanner-text-007" scope={[]}>{"Cookies nécessaires"}</CmsText></h4>
+                        <p className="text-white/60 text-sm"><CmsText id="CookieBanner-text-008" scope={[]}>{"Ces cookies sont essentiels au fonctionnement du site et ne peuvent pas être désactivés."}</CmsText></p>
                       </div>
                     </div>
 
@@ -151,10 +140,8 @@ export function CookieBanner() {
                         className="mt-1 w-4 h-4 rounded accent-[#c4a574]"
                       />
                       <div className="flex-1">
-                        <h4 className="text-white mb-1">Cookies analytiques</h4>
-                        <p className="text-white/60 text-sm">
-                          Ces cookies nous aident à comprendre comment vous utilisez notre site pour l'améliorer.
-                        </p>
+                        <h4 className="text-white mb-1"><CmsText id="CookieBanner-text-009" scope={[]}>{"Cookies analytiques"}</CmsText></h4>
+                        <p className="text-white/60 text-sm"><CmsText id="CookieBanner-text-010" scope={[]}>{"Ces cookies nous aident à comprendre comment vous utilisez notre site pour l'améliorer."}</CmsText></p>
                       </div>
                     </div>
 
@@ -167,10 +154,8 @@ export function CookieBanner() {
                         className="mt-1 w-4 h-4 rounded accent-[#c4a574]"
                       />
                       <div className="flex-1">
-                        <h4 className="text-white mb-1">Cookies marketing</h4>
-                        <p className="text-white/60 text-sm">
-                          Ces cookies sont utilisés pour vous proposer des contenus et publicités pertinents.
-                        </p>
+                        <h4 className="text-white mb-1"><CmsText id="CookieBanner-text-011" scope={[]}>{"Cookies marketing"}</CmsText></h4>
+                        <p className="text-white/60 text-sm"><CmsText id="CookieBanner-text-012" scope={[]}>{"Ces cookies sont utilisés pour vous proposer des contenus et publicités pertinents."}</CmsText></p>
                       </div>
                     </div>
                   </div>
@@ -180,15 +165,11 @@ export function CookieBanner() {
                       onClick={acceptNecessary}
                       variant="outline"
                       className="border-white/20 text-white hover:bg-white/10"
-                    >
-                      Cookies nécessaires uniquement
-                    </Button>
+                    ><CmsText id="CookieBanner-text-013" scope={[]}>{"Cookies nécessaires uniquement"}</CmsText></Button>
                     <Button
                       onClick={savePreferences}
                       className="bg-gradient-to-r from-[#c4a574] to-[#b89560] hover:from-[#b89560] hover:to-[#c4a574] text-white shadow-lg shadow-[#c4a574]/20"
-                    >
-                      Enregistrer mes préférences
-                    </Button>
+                    ><CmsText id="CookieBanner-text-014" scope={[]}>{"Enregistrer mes préférences"}</CmsText></Button>
                   </div>
                 </div>
               )}

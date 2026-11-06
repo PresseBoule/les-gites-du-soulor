@@ -1,0 +1,5231 @@
+[
+  {
+    "path": "fields.BienEtrePage-text-001.value",
+    "value": "Sauna et Bain Nordique : réservation par tranche d'1h",
+    "label": "Sauna et Bain Nordique : réservation par tranche d'1h",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-002.value",
+    "value": "Réserver Sauna & Bain Nordique",
+    "label": "Réserver Sauna & Bain Nordique",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-003.value",
+    "value": "Bain Nordique et Sauna au Cœur des Pyrénées",
+    "label": "Bain Nordique et Sauna au Cœur des Pyrénées",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-004.value",
+    "value": "Découvrez notre ",
+    "label": "Découvrez notre ",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-005.value",
+    "value": "espace bien-être unique",
+    "label": "espace bien-être unique",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-006.value",
+    "value": " à ",
+    "label": " à ",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-007.value",
+    "value": "Arrens-Marsous",
+    "label": "Arrens-Marsous",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-008.value",
+    "value": ", au cœur du ",
+    "label": ", au cœur du ",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-009.value",
+    "value": "Val d'Azun",
+    "label": "Val d'Azun",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-010.value",
+    "value": " dans les Hautes-Pyrénées. Nos gîtes proposent des équipements bien-être de qualité : un ",
+    "label": " dans les Hautes-Pyrénées. Nos gîtes proposent des équipements bien-être de qualité : un ",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-011.value",
+    "value": "bain nordique chauffé au feu de bois",
+    "label": "bain nordique chauffé au feu de bois",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-012.value",
+    "value": " et un ",
+    "label": " et un ",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-013.value",
+    "value": "sauna traditionnel en bois",
+    "label": "sauna traditionnel en bois",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-014.value",
+    "value": ", pour une expérience de détente authentique en montagne.",
+    "label": ", pour une expérience de détente authentique en montagne.",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-015.value",
+    "value": "Le ",
+    "label": "Le ",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-016.value",
+    "value": "bain nordique",
+    "label": "bain nordique",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-017.value",
+    "value": ", également appelé ",
+    "label": ", également appelé ",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-018.value",
+    "value": "hot tub",
+    "label": "hot tub",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-019.value",
+    "value": " ou ",
+    "label": " ou ",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-020.value",
+    "value": "spa nordique",
+    "label": "spa nordique",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-021.value",
+    "value": ", est une expérience bien-être incomparable. Imaginez-vous plongé dans une eau chaude à 38°C, chauffée naturellement au feu de bois, tout en admirant les ",
+    "label": ", est une expérience bien-être incomparable. Imaginez-vous plongé dans une eau chaude à 38",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-022.value",
+    "value": "sommets enneigés des Pyrénées",
+    "label": "sommets enneigés des Pyrénées",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-023.value",
+    "value": " depuis votre bain. Cette pratique ancestrale venue des pays scandinaves combine les bienfaits de la chaleur, de l'hydrothérapie et du contact avec la nature.",
+    "label": " depuis votre bain. Cette pratique ancestrale venue des pays scandinaves combine les bienf",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-024.value",
+    "value": "🔥 Bain Nordique",
+    "label": "🔥 Bain Nordique",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-025.value",
+    "value": "Chauffé au feu de bois traditionnel",
+    "label": "Chauffé au feu de bois traditionnel",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-026.value",
+    "value": "Température idéale 37-40°C",
+    "label": "Température idéale 37-40°C",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-027.value",
+    "value": "Vue panoramique sur les Pyrénées",
+    "label": "Vue panoramique sur les Pyrénées",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-028.value",
+    "value": "Réservation privative par tranche d'1h",
+    "label": "Réservation privative par tranche d'1h",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-029.value",
+    "value": "Capacité 4-6 personnes (idéal pour 2)",
+    "label": "Capacité 4-6 personnes (idéal pour 2)",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-030.value",
+    "value": "🌡️ Sauna Traditionnel",
+    "label": "🌡️ Sauna Traditionnel",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-031.value",
+    "value": "Sauna finlandais en bois massif",
+    "label": "Sauna finlandais en bois massif",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-032.value",
+    "value": "Chaleur sèche 70-90°C",
+    "label": "Chaleur sèche 70-90°C",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-033.value",
+    "value": "Idéal après randonnée ou ski",
+    "label": "Idéal après randonnée ou ski",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-034.value",
+    "value": "Accès privatif sur réservation",
+    "label": "Accès privatif sur réservation",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-035.value",
+    "value": "Détente musculaire profonde",
+    "label": "Détente musculaire profonde",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-036.value",
+    "value": "Notre ",
+    "label": "Notre ",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-037.value",
+    "value": "sauna traditionnel",
+    "label": "sauna traditionnel",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-038.value",
+    "value": " est construit selon les méthodes finlandaises, avec du bois noble qui diffuse une chaleur sèche bénéfique pour la santé. Après une journée de ",
+    "label": " est construit selon les méthodes finlandaises, avec du bois noble qui diffuse une chaleur",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-039.value",
+    "value": "randonnée dans les Pyrénées",
+    "label": "randonnée dans les Pyrénées",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-040.value",
+    "value": ", une sortie ",
+    "label": ", une sortie ",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-041.value",
+    "value": "ski à la station Hautacam",
+    "label": "ski à la station Hautacam",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-042.value",
+    "value": " ou une balade dans le ",
+    "label": " ou une balade dans le ",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-043.value",
+    "value": "Parc National des Pyrénées",
+    "label": "Parc National des Pyrénées",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-044.value",
+    "value": ", rien de tel qu'une session sauna pour détendre les muscles et évacuer les toxines.",
+    "label": ", rien de tel qu'une session sauna pour détendre les muscles et évacuer les toxines.",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-045.value",
+    "value": "Réservation simple et rapide :",
+    "label": "Réservation simple et rapide :",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-046.value",
+    "value": " Le bain nordique et le sauna se réservent en ligne par tranches d'1 heure. Vous profitez ainsi d'un ",
+    "label": " Le bain nordique et le sauna se réservent en ligne par tranches d'1 heure. Vous profitez ",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-047.value",
+    "value": "moment privatif",
+    "label": "moment privatif",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-048.value",
+    "value": ", sans partage avec d'autres clients. Nous chauffons le bain nordique à l'avance pour que vous puissiez en profiter dès votre arrivée. L'accès aux équipements bien-être est inclus pour tous nos locataires.",
+    "label": ", sans partage avec d'autres clients. Nous chauffons le bain nordique à l'avance pour que ",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-049.value",
+    "value": "Voir moins",
+    "label": "Voir moins",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-050.value",
+    "value": "Voir plus (",
+    "label": "Voir plus (",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-051.value",
+    "value": " autres photos)",
+    "label": " autres photos)",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.BienEtrePage-text-052.value",
+    "value": "Réserver Sauna & Bain Nordique",
+    "label": "Réserver Sauna & Bain Nordique",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "fields.ContactPage-text-001.value",
+    "value": "Votre Séjour à Arrens-Marsous : Réservation & Renseignements",
+    "label": "Votre Séjour à Arrens-Marsous : Réservation & Renseignements",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "fields.ContactPage-text-002.value",
+    "value": "Vous souhaitez ",
+    "label": "Vous souhaitez ",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "fields.ContactPage-text-003.value",
+    "value": "réserver un gîte",
+    "label": "réserver un gîte",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "fields.ContactPage-text-004.value",
+    "value": " pour vos prochaines vacances dans les ",
+    "label": " pour vos prochaines vacances dans les ",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "fields.ContactPage-text-005.value",
+    "value": "Pyrénées",
+    "label": "Pyrénées",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "fields.ContactPage-text-006.value",
+    "value": " ? Les Gîtes du Soulor sont à votre disposition pour vous accueillir toute l'année à ",
+    "label": " ? Les Gîtes du Soulor sont à votre disposition pour vous accueillir toute l'année à ",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "fields.ContactPage-text-007.value",
+    "value": "Arrens-Marsous",
+    "label": "Arrens-Marsous",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "fields.ContactPage-text-008.value",
+    "value": ", dans le ",
+    "label": ", dans le ",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "fields.ContactPage-text-009.value",
+    "value": "Val d'Azun",
+    "label": "Val d'Azun",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "fields.ContactPage-text-010.value",
+    "value": ". Nous répondons à toutes vos questions sur nos 4 gîtes pour 3 personnes, nos tarifs, et nos équipements bien-être (bain nordique et sauna).",
+    "label": ". Nous répondons à toutes vos questions sur nos 4 gîtes pour 3 personnes, nos tarifs, et n",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "fields.ContactPage-text-011.value",
+    "value": "Réponse rapide garantie :",
+    "label": "Réponse rapide garantie :",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "fields.ContactPage-text-012.value",
+    "value": " Nous nous engageons à répondre à toutes vos demandes dans un délai de ",
+    "label": " Nous nous engageons à répondre à toutes vos demandes dans un délai de ",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "fields.ContactPage-text-013.value",
+    "value": "24 heures maximum",
+    "label": "24 heures maximum",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "fields.ContactPage-text-014.value",
+    "value": ". Pour les demandes urgentes ou de dernière minute, nous vous conseillons de nous contacter directement par téléphone au ",
+    "label": ". Pour les demandes urgentes ou de dernière minute, nous vous conseillons de nous contacte",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "fields.ContactPage-text-015.value",
+    "value": "06 45 79 59 39",
+    "label": "06 45 79 59 39",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "fields.ContactPage-text-016.value",
+    "value": ". Nos gîtes sont situés au ",
+    "label": ". Nos gîtes sont situés au ",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "fields.ContactPage-text-017.value",
+    "value": "42 route du Soulor",
+    "label": "42 route du Soulor",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "fields.ContactPage-text-018.value",
+    "value": " à Arrens-Marsous (65400), facilement accessibles depuis Lourdes (30 min), Pau (1h) ou Tarbes (45 min).",
+    "label": " à Arrens-Marsous (65400), facilement accessibles depuis Lourdes (30 min), Pau (1h) ou Tar",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "fields.ContactPage-text-019.value",
+    "value": "Nom complet *",
+    "label": "Nom complet *",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "fields.ContactPage-text-020.value",
+    "value": "Email *",
+    "label": "Email *",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "fields.ContactPage-text-021.value",
+    "value": "Téléphone",
+    "label": "Téléphone",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "fields.ContactPage-text-022.value",
+    "value": "Message *",
+    "label": "Message *",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "fields.ContactPage-text-023.value",
+    "value": "Envoi en cours...",
+    "label": "Envoi en cours...",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "fields.ContactPage-text-024.value",
+    "value": "Envoyer la demande",
+    "label": "Envoyer la demande",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "fields.ContactPage-text-025.value",
+    "value": "✓ Votre client email s'est ouvert. Vérifiez et envoyez le message.",
+    "label": "✓ Votre client email s'est ouvert. Vérifiez et envoyez le message.",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-001.value",
+    "value": "Gîte à Arrens-Marsous",
+    "label": "Gîte à Arrens-Marsous",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-002.value",
+    "value": "Votre hébergement de charme au cœur du Val d'Azun dans les Hautes-Pyrénées",
+    "label": "Votre hébergement de charme au cœur du Val d'Azun dans les Hautes-Pyrénées",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-003.value",
+    "value": "Vous recherchez un ",
+    "label": "Vous recherchez un ",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-004.value",
+    "value": "gîte à Arrens-Marsous",
+    "label": "gîte à Arrens-Marsous",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-005.value",
+    "value": " pour vos prochaines vacances dans les Pyrénées ? Les Gîtes du Soulor vous accueillent dans un cadre exceptionnel au cœur du ",
+    "label": " pour vos prochaines vacances dans les Pyrénées ? Les Gîtes du Soulor vous accueillent dan",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-006.value",
+    "value": "Val d'Azun",
+    "label": "Val d'Azun",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-007.value",
+    "value": ", à seulement 5 minutes à pied du charmant village d'Arrens-Marsous.",
+    "label": ", à seulement 5 minutes à pied du charmant village d'Arrens-Marsous.",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-008.value",
+    "value": "Pourquoi choisir nos gîtes à Arrens-Marsous",
+    "label": "Pourquoi choisir nos gîtes à Arrens-Marsous",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-009.value",
+    "value": "Arrens-Marsous est un village de montagne authentique situé à 885 mètres d'altitude dans les Hautes-Pyrénées (65). Porte d'entrée du Parc National des Pyrénées, ce village de caractère offre un cadre idéal pour un séjour nature, que vous veniez pour randonner en été, skier en hiver ou simplement vous ressourcer au calme.",
+    "label": "Arrens-Marsous est un village de montagne authentique situé à 885 mètres d'altitude dans l",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-010.value",
+    "value": "Nos 4 gîtes se situent au Col du Soulor, position stratégique qui combine tranquillité absolue et proximité immédiate des commerces et services du village. Vous profitez ainsi du meilleur des deux mondes : le calme de la montagne et la commodité d'un village vivant.",
+    "label": "Nos 4 gîtes se situent au Col du Soulor, position stratégique qui combine tranquillité abs",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-011.value",
+    "value": "Nos 4 gîtes de charme pour 3 personnes",
+    "label": "Nos 4 gîtes de charme pour 3 personnes",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-012.value",
+    "value": "Le Suyen, Le Tech, L'Estaing et Le Soum : quatre hébergements tout confort avec bain nordique et sauna",
+    "label": "Le Suyen, Le Tech, L'Estaing et Le Soum : quatre hébergements tout confort avec bain nordi",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-018.value",
+    "value": "Équipements inclus dans chaque gîte",
+    "label": "Équipements inclus dans chaque gîte",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-019.value",
+    "value": "Bain nordique chauffé au feu de bois et sauna inclus",
+    "label": "Bain nordique chauffé au feu de bois et sauna inclus",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-020.value",
+    "value": "Arrens-Marsous : un village de montagne authentique",
+    "label": "Arrens-Marsous : un village de montagne authentique",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-021.value",
+    "value": "Arrens-Marsous (1 200 habitants) est l'un des plus beaux villages du Val d'Azun. Ce village pyrénéen authentique a su préserver son caractère traditionnel tout en offrant tous les services nécessaires à un séjour confortable.",
+    "label": "Arrens-Marsous (1 200 habitants) est l'un des plus beaux villages du Val d'Azun. Ce villag",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-022.value",
+    "value": "Ce que vous trouverez au village :",
+    "label": "Ce que vous trouverez au village :",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-023.value",
+    "value": "Commerces de proximité (boulangerie, épicerie, boucherie)",
+    "label": "Commerces de proximité (boulangerie, épicerie, boucherie)",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-024.value",
+    "value": "Restaurants typiques proposant cuisine pyrénéenne",
+    "label": "Restaurants typiques proposant cuisine pyrénéenne",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-025.value",
+    "value": "Office de Tourisme avec conseils randonnées",
+    "label": "Office de Tourisme avec conseils randonnées",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-026.value",
+    "value": "Départ de nombreux sentiers balisés",
+    "label": "Départ de nombreux sentiers balisés",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-027.value",
+    "value": "Architecture pyrénéenne traditionnelle préservée",
+    "label": "Architecture pyrénéenne traditionnelle préservée",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-028.value",
+    "value": "Église Saint-Félix du XIIe siècle",
+    "label": "Église Saint-Félix du XIIe siècle",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-029.value",
+    "value": "Marchés locaux en saison",
+    "label": "Marchés locaux en saison",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-030.value",
+    "value": "Le village est particulièrement apprécié des amoureux de la montagne pour son authenticité préservée et son accès direct au Parc National des Pyrénées.",
+    "label": "Le village est particulièrement apprécié des amoureux de la montagne pour son authenticité",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-031.value",
+    "value": "À proximité de nos gîtes",
+    "label": "À proximité de nos gîtes",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-032.value",
+    "value": "Distances depuis Les Gîtes du Soulor",
+    "label": "Distances depuis Les Gîtes du Soulor",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-033.value",
+    "value": "Activités et découvertes autour d'Arrens-Marsous",
+    "label": "Activités et découvertes autour d'Arrens-Marsous",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-034.value",
+    "value": "Saisons et activités",
+    "label": "Saisons et activités",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-035.value",
+    "value": "En été",
+    "label": "En été",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-036.value",
+    "value": "Randonnées tous niveaux, VTT, pêche, parapente, baignades en lacs de montagne",
+    "label": "Randonnées tous niveaux, VTT, pêche, parapente, baignades en lacs de montagne",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-037.value",
+    "value": "En hiver",
+    "label": "En hiver",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-038.value",
+    "value": "Ski alpin, ski de fond, raquettes, chiens de traîneau, ski de randonnée",
+    "label": "Ski alpin, ski de fond, raquettes, chiens de traîneau, ski de randonnée",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-039.value",
+    "value": "Réservez votre gîte à Arrens-Marsous",
+    "label": "Réservez votre gîte à Arrens-Marsous",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-040.value",
+    "value": "Disponible dès une nuit, pour plusieurs nuits ou une semaine complète. Acompte de 20% à la réservation, solde à l'arrivée. Chèques-vacances non acceptés.",
+    "label": "Disponible dès une nuit, pour plusieurs nuits ou une semaine complète. Acompte de 20% à la",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-041.value",
+    "value": "Une nuit",
+    "label": "Une nuit",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-043.value",
+    "value": "Semaine",
+    "label": "Semaine",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-045.value",
+    "value": "Dès 2 nuits",
+    "label": "Dès 2 nuits",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-047.value",
+    "value": "Voir tous les tarifs",
+    "label": "Voir tous les tarifs",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-048.value",
+    "value": "Nous contacter",
+    "label": "Nous contacter",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-049.value",
+    "value": "Téléphone : +33 6 45 79 59 39 | Email : spanazol@wanadoo.fr",
+    "label": "Téléphone : +33 6 45 79 59 39 | Email : spanazol@wanadoo.fr",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-050.value",
+    "value": "Découvrez aussi",
+    "label": "Découvrez aussi",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-051.value",
+    "value": "Gîte dans le Val d'Azun",
+    "label": "Gîte dans le Val d'Azun",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-052.value",
+    "value": "Découvrez la vallée",
+    "label": "Découvrez la vallée",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-053.value",
+    "value": "Gîte avec bain nordique",
+    "label": "Gîte avec bain nordique",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-054.value",
+    "value": "Expérience unique",
+    "label": "Expérience unique",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-055.value",
+    "value": "Bien-être & Détente",
+    "label": "Bien-être & Détente",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-056.value",
+    "value": "Sauna et bain nordique",
+    "label": "Sauna et bain nordique",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-057.value",
+    "value": "Séjour bien-être",
+    "label": "Séjour bien-être",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteArrensMarsousPage-text-058.value",
+    "value": "Ressourcement total",
+    "label": "Ressourcement total",
+    "kind": "text",
+    "page": "GiteArrensMarsousPage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-001.value",
+    "value": "Gîte avec Bain Nordique",
+    "label": "Gîte avec Bain Nordique",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-002.value",
+    "value": "Séjour bien-être avec bain nordique chauffé au feu de bois et sauna dans les Pyrénées",
+    "label": "Séjour bien-être avec bain nordique chauffé au feu de bois et sauna dans les Pyrénées",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-003.value",
+    "value": "Bain Nordique Chauffé au Feu de Bois dans les Hautes-Pyrénées",
+    "label": "Bain Nordique Chauffé au Feu de Bois dans les Hautes-Pyrénées",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-004.value",
+    "value": "Imaginez-vous plongé dans un ",
+    "label": "Imaginez-vous plongé dans un ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-005.value",
+    "value": "bain nordique",
+    "label": "bain nordique",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-006.value",
+    "value": " à ",
+    "label": " à ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-007.value",
+    "value": "38°C",
+    "label": "38°C",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-008.value",
+    "value": ", chauffé naturellement au ",
+    "label": ", chauffé naturellement au ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-009.value",
+    "value": "feu de bois",
+    "label": "feu de bois",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-010.value",
+    "value": ", tout en admirant les ",
+    "label": ", tout en admirant les ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-011.value",
+    "value": "sommets enneigés des Pyrénées",
+    "label": "sommets enneigés des Pyrénées",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-012.value",
+    "value": ". C'est l'expérience unique que vous offrent Les Gîtes du Soulor à ",
+    "label": ". C'est l'expérience unique que vous offrent Les Gîtes du Soulor à ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-013.value",
+    "value": "Arrens-Marsous",
+    "label": "Arrens-Marsous",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-014.value",
+    "value": ", au cœur du ",
+    "label": ", au cœur du ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-015.value",
+    "value": "Val d'Azun",
+    "label": "Val d'Azun",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-016.value",
+    "value": "Le ",
+    "label": "Le ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-017.value",
+    "value": "bain nordique",
+    "label": "bain nordique",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-018.value",
+    "value": ", également appelé ",
+    "label": ", également appelé ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-019.value",
+    "value": "hot tub",
+    "label": "hot tub",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-020.value",
+    "value": "spa nordique",
+    "label": "spa nordique",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-021.value",
+    "value": " ou ",
+    "label": " ou ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-022.value",
+    "value": "bain suédois",
+    "label": "bain suédois",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-023.value",
+    "value": ", est une tradition ancestrale venue des pays scandinaves. Contrairement aux jacuzzis électriques, notre bain nordique est chauffé de manière 100% naturelle grâce à un ",
+    "label": ", est une tradition ancestrale venue des pays scandinaves. Contrairement aux jacuzzis élec",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-024.value",
+    "value": "poêle à bois immergé",
+    "label": "poêle à bois immergé",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-025.value",
+    "value": ". Cette méthode authentique permet d'atteindre et maintenir une température idéale entre ",
+    "label": ". Cette méthode authentique permet d'atteindre et maintenir une température idéale entre ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-026.value",
+    "value": "37 et 40°C",
+    "label": "37 et 40°C",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-027.value",
+    "value": ", parfaite pour la détente musculaire et la relaxation.",
+    "label": ", parfaite pour la détente musculaire et la relaxation.",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-028.value",
+    "value": "L'expérience bain nordique aux Gîtes du Soulor",
+    "label": "L'expérience bain nordique aux Gîtes du Soulor",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-029.value",
+    "value": "Bain privatif",
+    "label": "Bain privatif",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-030.value",
+    "value": " : réservation exclusive par tranches d'1 heure",
+    "label": " : réservation exclusive par tranches d'1 heure",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-031.value",
+    "value": "Vue panoramique",
+    "label": "Vue panoramique",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-032.value",
+    "value": " sur les montagnes du Val d'Azun",
+    "label": " sur les montagnes du Val d'Azun",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-033.value",
+    "value": "Chauffage au feu de bois",
+    "label": "Chauffage au feu de bois",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-034.value",
+    "value": " : expérience authentique et écologique",
+    "label": " : expérience authentique et écologique",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-035.value",
+    "value": "Capacité 4-6 personnes",
+    "label": "Capacité 4-6 personnes",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-036.value",
+    "value": " (idéal pour 2 en couple)",
+    "label": " (idéal pour 2 en couple)",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-037.value",
+    "value": "Eau chauffée à l'avance",
+    "label": "Eau chauffée à l'avance",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-038.value",
+    "value": " pour profiter dès votre arrivée",
+    "label": " pour profiter dès votre arrivée",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-039.value",
+    "value": "Les Bienfaits du Bain Nordique",
+    "label": "Les Bienfaits du Bain Nordique",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-040.value",
+    "value": "Relaxation Profonde",
+    "label": "Relaxation Profonde",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-041.value",
+    "value": "La chaleur de l'eau (37-40°C) détend les muscles en profondeur, soulage les tensions accumulées, et favorise la libération d'endorphines. Idéal après une journée de ",
+    "label": "La chaleur de l'eau (37-40°C) détend les muscles en profondeur, soulage les tensions accum",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-042.value",
+    "value": "randonnée en montagne",
+    "label": "randonnée en montagne",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-043.value",
+    "value": " ou de ",
+    "label": " ou de ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-044.value",
+    "value": "ski",
+    "label": "ski",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-045.value",
+    "value": "Amélioration de la Circulation",
+    "label": "Amélioration de la Circulation",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-046.value",
+    "value": "L'immersion dans l'eau chaude dilate les vaisseaux sanguins, améliore la circulation sanguine et aide à éliminer les toxines. Excellent pour la récupération sportive et la vitalité.",
+    "label": "L'immersion dans l'eau chaude dilate les vaisseaux sanguins, améliore la circulation sangu",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-047.value",
+    "value": "Réduction du Stress",
+    "label": "Réduction du Stress",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-048.value",
+    "value": "Le bain nordique en extérieur, combiné à la ",
+    "label": "Le bain nordique en extérieur, combiné à la ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-049.value",
+    "value": "vue sur les montagnes",
+    "label": "vue sur les montagnes",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-050.value",
+    "value": " et au ",
+    "label": " et au ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-051.value",
+    "value": "crépitement du feu de bois",
+    "label": "crépitement du feu de bois",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-052.value",
+    "value": ", offre une déconnexion totale. Le stress mental et physique s'évapore littéralement.",
+    "label": ", offre une déconnexion totale. Le stress mental et physique s'évapore littéralement.",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-053.value",
+    "value": "Meilleur Sommeil",
+    "label": "Meilleur Sommeil",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-054.value",
+    "value": "Une séance de bain nordique en soirée favorise un ",
+    "label": "Une séance de bain nordique en soirée favorise un ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-055.value",
+    "value": "sommeil profond et réparateur",
+    "label": "sommeil profond et réparateur",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-056.value",
+    "value": ". La baisse de température corporelle après le bain induit naturellement l'endormissement.",
+    "label": ". La baisse de température corporelle après le bain induit naturellement l'endormissement.",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-057.value",
+    "value": "Sauna Traditionnel Finlandais",
+    "label": "Sauna Traditionnel Finlandais",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-058.value",
+    "value": "En complément du bain nordique, nos gîtes donnent accès à un ",
+    "label": "En complément du bain nordique, nos gîtes donnent accès à un ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-059.value",
+    "value": "sauna traditionnel en bois",
+    "label": "sauna traditionnel en bois",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-060.value",
+    "value": ", construit selon les méthodes finlandaises. Ce sauna à ",
+    "label": ", construit selon les méthodes finlandaises. Ce sauna à ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-061.value",
+    "value": "chaleur sèche",
+    "label": "chaleur sèche",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-062.value",
+    "value": " (70-90°C) offre des bienfaits complémentaires au bain nordique.",
+    "label": " (70-90°C) offre des bienfaits complémentaires au bain nordique.",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-063.value",
+    "value": "🌡️ Chaleur Sèche",
+    "label": "🌡️ Chaleur Sèche",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-064.value",
+    "value": "Le sauna finlandais diffuse une ",
+    "label": "Le sauna finlandais diffuse une ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-065.value",
+    "value": "chaleur sèche intense",
+    "label": "chaleur sèche intense",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-066.value",
+    "value": " qui fait transpirer abondamment, élimine les toxines et purifie la peau en profondeur.",
+    "label": " qui fait transpirer abondamment, élimine les toxines et purifie la peau en profondeur.",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-067.value",
+    "value": "💪 Détente Musculaire",
+    "label": "💪 Détente Musculaire",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-068.value",
+    "value": "La chaleur du sauna pénètre profondément dans les muscles, soulage les ",
+    "label": "La chaleur du sauna pénètre profondément dans les muscles, soulage les ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-069.value",
+    "value": "courbatures",
+    "label": "courbatures",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-070.value",
+    "value": " et favorise la récupération après l'effort.",
+    "label": " et favorise la récupération après l'effort.",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-071.value",
+    "value": "Circuit Nordique : Sauna + Bain Nordique",
+    "label": "Circuit Nordique : Sauna + Bain Nordique",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-072.value",
+    "value": "Pour une expérience bien-être optimale, nous vous recommandons le ",
+    "label": "Pour une expérience bien-être optimale, nous vous recommandons le ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-073.value",
+    "value": "circuit nordique",
+    "label": "circuit nordique",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-074.value",
+    "value": "1.",
+    "label": "1.",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-075.value",
+    "value": " Commencer par 10-15 min de ",
+    "label": " Commencer par 10-15 min de ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-076.value",
+    "value": "sauna",
+    "label": "sauna",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-077.value",
+    "value": " (chaleur sèche)",
+    "label": " (chaleur sèche)",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-078.value",
+    "value": "2.",
+    "label": "2.",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-079.value",
+    "value": " Douche froide ou repos 5 min",
+    "label": " Douche froide ou repos 5 min",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-080.value",
+    "value": "3.",
+    "label": "3.",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-081.value",
+    "value": " Plonger dans le ",
+    "label": " Plonger dans le ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-082.value",
+    "value": "bain nordique",
+    "label": "bain nordique",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-083.value",
+    "value": " (eau chaude 38°C) pour 20-30 min",
+    "label": " (eau chaude 38°C) pour 20-30 min",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-084.value",
+    "value": "4.",
+    "label": "4.",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-085.value",
+    "value": " Répéter le cycle 2-3 fois pour un effet maximal",
+    "label": " Répéter le cycle 2-3 fois pour un effet maximal",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-086.value",
+    "value": "💡 Ce contraste chaud-froid stimule la circulation, booste le système immunitaire et procure une sensation de bien-être intense.",
+    "label": "💡 Ce contraste chaud-froid stimule la circulation, booste le système immunitaire et procu",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-087.value",
+    "value": "Comment réserver le Bain Nordique ?",
+    "label": "Comment réserver le Bain Nordique ?",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-088.value",
+    "value": "L'accès au ",
+    "label": "L'accès au ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-089.value",
+    "value": "bain nordique",
+    "label": "bain nordique",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-090.value",
+    "value": " et au ",
+    "label": " et au ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-091.value",
+    "value": "sauna",
+    "label": "sauna",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-092.value",
+    "value": " est ",
+    "label": " est ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-093.value",
+    "value": "inclus",
+    "label": "inclus",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-094.value",
+    "value": " pour tous les locataires de nos gîtes. Pour profiter de ces équipements, il suffit de réserver en ligne via notre plateforme dédiée.",
+    "label": " pour tous les locataires de nos gîtes. Pour profiter de ces équipements, il suffit de rés",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-095.value",
+    "value": "1️⃣",
+    "label": "1️⃣",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-096.value",
+    "value": "Réservez votre gîte",
+    "label": "Réservez votre gîte",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-097.value",
+    "value": "Choisissez l'un de nos 4 gîtes 3 personnes",
+    "label": "Choisissez l'un de nos 4 gîtes 3 personnes",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-098.value",
+    "value": "2️⃣",
+    "label": "2️⃣",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-099.value",
+    "value": "Réservez votre créneau",
+    "label": "Réservez votre créneau",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-100.value",
+    "value": "Réservation par tranches d'1 heure sur notre plateforme",
+    "label": "Réservation par tranches d'1 heure sur notre plateforme",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-101.value",
+    "value": "3️⃣",
+    "label": "3️⃣",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-102.value",
+    "value": "Profitez !",
+    "label": "Profitez !",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-103.value",
+    "value": "Le bain est chauffé à l'avance pour vous",
+    "label": "Le bain est chauffé à l'avance pour vous",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-104.value",
+    "value": "Infos Pratiques Bain Nordique",
+    "label": "Infos Pratiques Bain Nordique",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-105.value",
+    "value": "Réservation :",
+    "label": "Réservation :",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-106.value",
+    "value": " Par tranches d'1 heure, en ligne sur notre plateforme",
+    "label": " Par tranches d'1 heure, en ligne sur notre plateforme",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-107.value",
+    "value": "Température :",
+    "label": "Température :",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-108.value",
+    "value": " 37-40°C (température idéale pour la détente)",
+    "label": " 37-40°C (température idéale pour la détente)",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-109.value",
+    "value": "Capacité :",
+    "label": "Capacité :",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-110.value",
+    "value": " 4-6 personnes (idéal pour 2 en couple)",
+    "label": " 4-6 personnes (idéal pour 2 en couple)",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-111.value",
+    "value": "Chauffage :",
+    "label": "Chauffage :",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-112.value",
+    "value": " Nous chauffons le bain 2-3h avant votre créneau",
+    "label": " Nous chauffons le bain 2-3h avant votre créneau",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-113.value",
+    "value": "Accès :",
+    "label": "Accès :",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-114.value",
+    "value": " Privatif (vous seuls pendant votre créneau)",
+    "label": " Privatif (vous seuls pendant votre créneau)",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-115.value",
+    "value": "Saison :",
+    "label": "Saison :",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-116.value",
+    "value": " Toute l'année (magique en hiver avec la neige !)",
+    "label": " Toute l'année (magique en hiver avec la neige !)",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-117.value",
+    "value": "Bain Nordique en Hiver : Une Expérience Magique",
+    "label": "Bain Nordique en Hiver : Une Expérience Magique",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-118.value",
+    "value": "L'",
+    "label": "L'",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-119.value",
+    "value": "hiver",
+    "label": "hiver",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-120.value",
+    "value": " est la période parfaite pour profiter du bain nordique ! Imaginez : il fait ",
+    "label": " est la période parfaite pour profiter du bain nordique ! Imaginez : il fait ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-121.value",
+    "value": "-5°C",
+    "label": "-5°C",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-122.value",
+    "value": " à l'extérieur, les ",
+    "label": " à l'extérieur, les ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-123.value",
+    "value": "sommets sont enneigés",
+    "label": "sommets sont enneigés",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-124.value",
+    "value": ", et vous êtes plongé dans une eau à ",
+    "label": ", et vous êtes plongé dans une eau à ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-125.value",
+    "value": "38°C",
+    "label": "38°C",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-126.value",
+    "value": ". Le contraste est saisissant et absolument magique.",
+    "label": ". Le contraste est saisissant et absolument magique.",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-127.value",
+    "value": "Après-Ski Détente",
+    "label": "Après-Ski Détente",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-128.value",
+    "value": "Après une journée de ",
+    "label": "Après une journée de ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-129.value",
+    "value": "ski à Hautacam",
+    "label": "ski à Hautacam",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-130.value",
+    "value": "Cauterets",
+    "label": "Cauterets",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-131.value",
+    "value": " ou ",
+    "label": " ou ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-132.value",
+    "value": "Barèges-La Mongie",
+    "label": "Barèges-La Mongie",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-133.value",
+    "value": ", rien de tel qu'un bain nordique pour détendre les muscles et évacuer les courbatures. Un vrai luxe après le ski !",
+    "label": ", rien de tel qu'un bain nordique pour détendre les muscles et évacuer les courbatures. Un",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-134.value",
+    "value": "Ciel Étoilé",
+    "label": "Ciel Étoilé",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-135.value",
+    "value": "En soirée, profitez du bain nordique sous les ",
+    "label": "En soirée, profitez du bain nordique sous les ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-136.value",
+    "value": "étoiles des Pyrénées",
+    "label": "étoiles des Pyrénées",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-137.value",
+    "value": ". Le Val d'Azun, préservé de la pollution lumineuse, offre un ",
+    "label": ". Le Val d'Azun, préservé de la pollution lumineuse, offre un ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-138.value",
+    "value": "ciel nocturne exceptionnel",
+    "label": "ciel nocturne exceptionnel",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-139.value",
+    "value": ". Romantisme garanti !",
+    "label": ". Romantisme garanti !",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-140.value",
+    "value": "Nos 4 Gîtes avec Bain Nordique",
+    "label": "Nos 4 Gîtes avec Bain Nordique",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-141.value",
+    "value": "Les Gîtes du Soulor proposent ",
+    "label": "Les Gîtes du Soulor proposent ",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-142.value",
+    "value": "4 gîtes indépendants pour 3 personnes",
+    "label": "4 gîtes indépendants pour 3 personnes",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-143.value",
+    "value": ", tous avec accès au bain nordique et au sauna :",
+    "label": ", tous avec accès au bain nordique et au sauna :",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-144.value",
+    "value": "🏔️ Le Suyen",
+    "label": "🏔️ Le Suyen",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-145.value",
+    "value": "Gîte cosy 3 personnes • Cuisine équipée • Bain nordique & sauna",
+    "label": "Gîte cosy 3 personnes • Cuisine équipée • Bain nordique & sauna",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-146.value",
+    "value": "🏔️ Le Tech",
+    "label": "🏔️ Le Tech",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-147.value",
+    "value": "Gîte tout confort • Literie premium • Accès bien-être",
+    "label": "Gîte tout confort • Literie premium • Accès bien-être",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-148.value",
+    "value": "🏔️ L'Estaing",
+    "label": "🏔️ L'Estaing",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-149.value",
+    "value": "Gîte moderne • Vue montagne • Bain nordique privatif",
+    "label": "Gîte moderne • Vue montagne • Bain nordique privatif",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-150.value",
+    "value": "🏔️ Le Soum",
+    "label": "🏔️ Le Soum",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-151.value",
+    "value": "Gîte équipé • Confort optimal • Spa nordique & sauna",
+    "label": "Gîte équipé • Confort optimal • Spa nordique & sauna",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-152.value",
+    "value": "Réserver votre gîte avec bain nordique",
+    "label": "Réserver votre gîte avec bain nordique",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteBainNordiquePage-text-153.value",
+    "value": "Réserver un créneau bain nordique",
+    "label": "Réserver un créneau bain nordique",
+    "kind": "text",
+    "page": "GiteBainNordiquePage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-001.value",
+    "value": "Gîte à proximité de Lourdes",
+    "label": "Gîte à proximité de Lourdes",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-002.value",
+    "value": "Hébergement calme et nature à 30 minutes de Lourdes, dans les Pyrénées",
+    "label": "Hébergement calme et nature à 30 minutes de Lourdes, dans les Pyrénées",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-003.value",
+    "value": "Location Gîte près de Lourdes dans les Hautes-Pyrénées",
+    "label": "Location Gîte près de Lourdes dans les Hautes-Pyrénées",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-004.value",
+    "value": "Vous recherchez un ",
+    "label": "Vous recherchez un ",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-005.value",
+    "value": "hébergement calme",
+    "label": "hébergement calme",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-006.value",
+    "value": " à proximité de ",
+    "label": " à proximité de ",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-007.value",
+    "value": "Lourdes",
+    "label": "Lourdes",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-008.value",
+    "value": " ? Les Gîtes du Soulor, situés à ",
+    "label": " ? Les Gîtes du Soulor, situés à ",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-009.value",
+    "value": "Arrens-Marsous",
+    "label": "Arrens-Marsous",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-010.value",
+    "value": " dans le ",
+    "label": " dans le ",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-011.value",
+    "value": "Val d'Azun",
+    "label": "Val d'Azun",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-012.value",
+    "value": ", vous proposent ",
+    "label": ", vous proposent ",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-013.value",
+    "value": "4 gîtes pour 3 personnes",
+    "label": "4 gîtes pour 3 personnes",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-014.value",
+    "value": " à seulement ",
+    "label": " à seulement ",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-015.value",
+    "value": "30 minutes de Lourdes",
+    "label": "30 minutes de Lourdes",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-016.value",
+    "value": ". Une alternative parfaite pour profiter du calme de la montagne tout en restant proche de la cité mariale.",
+    "label": ". Une alternative parfaite pour profiter du calme de la montagne tout en restant proche de",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-017.value",
+    "value": "Que vous veniez à Lourdes pour un ",
+    "label": "Que vous veniez à Lourdes pour un ",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-018.value",
+    "value": "pèlerinage",
+    "label": "pèlerinage",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-019.value",
+    "value": ", une ",
+    "label": ", une ",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-020.value",
+    "value": "visite touristique",
+    "label": "visite touristique",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-021.value",
+    "value": ", ou simplement pour découvrir les ",
+    "label": ", ou simplement pour découvrir les ",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-022.value",
+    "value": "Pyrénées",
+    "label": "Pyrénées",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-023.value",
+    "value": ", nos gîtes offrent un cadre reposant loin de l'agitation urbaine, tout en restant facilement accessibles depuis Lourdes via la ",
+    "label": ", nos gîtes offrent un cadre reposant loin de l'agitation urbaine, tout en restant facilem",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-024.value",
+    "value": "D821",
+    "label": "D821",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-025.value",
+    "value": " (route du Val d'Azun).",
+    "label": " (route du Val d'Azun).",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-026.value",
+    "value": "Pourquoi choisir un gîte près de Lourdes ?",
+    "label": "Pourquoi choisir un gîte près de Lourdes ?",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-027.value",
+    "value": "Calme et sérénité",
+    "label": "Calme et sérénité",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-028.value",
+    "value": " : Loin de l'agitation touristique de Lourdes",
+    "label": " : Loin de l'agitation touristique de Lourdes",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-029.value",
+    "value": "Nature préservée",
+    "label": "Nature préservée",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-030.value",
+    "value": " : Cadre montagnard authentique dans le Val d'Azun",
+    "label": " : Cadre montagnard authentique dans le Val d'Azun",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-031.value",
+    "value": "Proximité",
+    "label": "Proximité",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-032.value",
+    "value": " : Seulement 30 min en voiture de Lourdes",
+    "label": " : Seulement 30 min en voiture de Lourdes",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-033.value",
+    "value": "Meilleur rapport qualité/prix",
+    "label": "Meilleur rapport qualité/prix",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-034.value",
+    "value": " : Tarifs plus attractifs qu'en centre-ville de Lourdes",
+    "label": " : Tarifs plus attractifs qu'en centre-ville de Lourdes",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-035.value",
+    "value": "Équipements bien-être",
+    "label": "Équipements bien-être",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-036.value",
+    "value": " : Bain nordique et sauna inclus",
+    "label": " : Bain nordique et sauna inclus",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-037.value",
+    "value": "Comment venir de Lourdes à Arrens-Marsous ?",
+    "label": "Comment venir de Lourdes à Arrens-Marsous ?",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-038.value",
+    "value": "En Voiture depuis Lourdes",
+    "label": "En Voiture depuis Lourdes",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-039.value",
+    "value": "Trajet :",
+    "label": "Trajet :",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-040.value",
+    "value": " 30 minutes (25 km)",
+    "label": " 30 minutes (25 km)",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-041.value",
+    "value": "Route :",
+    "label": "Route :",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-042.value",
+    "value": " D821 (route du Val d'Azun)",
+    "label": " D821 (route du Val d'Azun)",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-043.value",
+    "value": "Itinéraire :",
+    "label": "Itinéraire :",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-044.value",
+    "value": " Lourdes → Argelès-Gazost → Arrens-Marsous",
+    "label": " Lourdes → Argelès-Gazost → Arrens-Marsous",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-045.value",
+    "value": "Route panoramique avec vue sur les montagnes. Parking privé gratuit à l'arrivée.",
+    "label": "Route panoramique avec vue sur les montagnes. Parking privé gratuit à l'arrivée.",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-046.value",
+    "value": "En Train + Transfert",
+    "label": "En Train + Transfert",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-047.value",
+    "value": "Gare :",
+    "label": "Gare :",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-048.value",
+    "value": " Lourdes (TGV Paris-Lourdes 4h30)",
+    "label": " Lourdes (TGV Paris-Lourdes 4h30)",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-049.value",
+    "value": "Transfert :",
+    "label": "Transfert :",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-050.value",
+    "value": " Taxi ou navette (30 min)",
+    "label": " Taxi ou navette (30 min)",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-051.value",
+    "value": "Distance :",
+    "label": "Distance :",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-052.value",
+    "value": " 25 km",
+    "label": " 25 km",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-053.value",
+    "value": "Nous pouvons vous conseiller des services de taxi locaux.",
+    "label": "Nous pouvons vous conseiller des services de taxi locaux.",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-054.value",
+    "value": "Distances depuis nos Gîtes",
+    "label": "Distances depuis nos Gîtes",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-055.value",
+    "value": "Lourdes :",
+    "label": "Lourdes :",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-056.value",
+    "value": " 30 min (25 km)",
+    "label": " 30 min (25 km)",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-057.value",
+    "value": "Argelès-Gazost :",
+    "label": "Argelès-Gazost :",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-058.value",
+    "value": " 15 min (12 km)",
+    "label": " 15 min (12 km)",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-059.value",
+    "value": "Cauterets :",
+    "label": "Cauterets :",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-060.value",
+    "value": " 35 min (30 km)",
+    "label": " 35 min (30 km)",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-061.value",
+    "value": "Pau :",
+    "label": "Pau :",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-062.value",
+    "value": " 1h (60 km)",
+    "label": " 1h (60 km)",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-063.value",
+    "value": "Tarbes :",
+    "label": "Tarbes :",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-064.value",
+    "value": " 45 min (50 km)",
+    "label": " 45 min (50 km)",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-065.value",
+    "value": "Toulouse :",
+    "label": "Toulouse :",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-066.value",
+    "value": " 2h15 (185 km)",
+    "label": " 2h15 (185 km)",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-067.value",
+    "value": "Que visiter à Lourdes depuis nos Gîtes ?",
+    "label": "Que visiter à Lourdes depuis nos Gîtes ?",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-068.value",
+    "value": "Lourdes",
+    "label": "Lourdes",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-069.value",
+    "value": " est la ",
+    "label": " est la ",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-070.value",
+    "value": "2ème ville touristique de France",
+    "label": "2ème ville touristique de France",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-071.value",
+    "value": " après Paris, avec plus de 6 millions de visiteurs par an. La ville est mondialement connue pour son ",
+    "label": " après Paris, avec plus de 6 millions de visiteurs par an. La ville est mondialement connu",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-072.value",
+    "value": "sanctuaire marial",
+    "label": "sanctuaire marial",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-073.value",
+    "value": ", mais offre également de nombreuses attractions touristiques.",
+    "label": ", mais offre également de nombreuses attractions touristiques.",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-074.value",
+    "value": "Le Sanctuaire de Lourdes",
+    "label": "Le Sanctuaire de Lourdes",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-075.value",
+    "value": "Grotte de Massabielle",
+    "label": "Grotte de Massabielle",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-076.value",
+    "value": "Basilique de l'Immaculée Conception",
+    "label": "Basilique de l'Immaculée Conception",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-077.value",
+    "value": "Basilique du Rosaire",
+    "label": "Basilique du Rosaire",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-078.value",
+    "value": "Basilique souterraine Saint-Pie X",
+    "label": "Basilique souterraine Saint-Pie X",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-079.value",
+    "value": "... Le sanctuaire s'étend sur 52 hectares et accueille pèlerins et visiteurs toute l'année. Accès gratuit.",
+    "label": "... Le sanctuaire s'étend sur 52 hectares et accueille pèlerins et visiteurs toute l'année",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-080.value",
+    "value": "🏰 Le Château Fort de Lourdes",
+    "label": "🏰 Le Château Fort de Lourdes",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-081.value",
+    "value": "Forteresse médiévale perchée sur un piton rocheux, offrant une ",
+    "label": "Forteresse médiévale perchée sur un piton rocheux, offrant une ",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-082.value",
+    "value": "vue panoramique sur Lourdes et les Pyrénées",
+    "label": "vue panoramique sur Lourdes et les Pyrénées",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-083.value",
+    "value": ". Abrite le ",
+    "label": ". Abrite le ",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-084.value",
+    "value": "Musée Pyrénéen",
+    "label": "Musée Pyrénéen",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-085.value",
+    "value": " avec des collections d'art populaire et d'histoire locale.",
+    "label": " avec des collections d'art populaire et d'histoire locale.",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-086.value",
+    "value": "🎭 Autres Attractions",
+    "label": "🎭 Autres Attractions",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-087.value",
+    "value": "Pic du Jer :",
+    "label": "Pic du Jer :",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-088.value",
+    "value": " Funiculaire jusqu'au sommet (948m), vue à 360° sur les Pyrénées",
+    "label": " Funiculaire jusqu'au sommet (948m), vue à 360° sur les Pyrénées",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-089.value",
+    "value": "Lac de Lourdes :",
+    "label": "Lac de Lourdes :",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-090.value",
+    "value": " Plan d'eau aménagé, promenades, activités nautiques",
+    "label": " Plan d'eau aménagé, promenades, activités nautiques",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-091.value",
+    "value": "Grottes de Bétharram :",
+    "label": "Grottes de Bétharram :",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-092.value",
+    "value": " Réseau souterrain spectaculaire (20 min de Lourdes)",
+    "label": " Réseau souterrain spectaculaire (20 min de Lourdes)",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-093.value",
+    "value": "Chemin de Croix :",
+    "label": "Chemin de Croix :",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-094.value",
+    "value": " Parcours spirituel dans la forêt",
+    "label": " Parcours spirituel dans la forêt",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-095.value",
+    "value": "Combiner Visite de Lourdes et Séjour Montagne",
+    "label": "Combiner Visite de Lourdes et Séjour Montagne",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-096.value",
+    "value": "En séjournant dans nos gîtes à ",
+    "label": "En séjournant dans nos gîtes à ",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-097.value",
+    "value": "Arrens-Marsous",
+    "label": "Arrens-Marsous",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-098.value",
+    "value": ", vous combinez le meilleur des deux mondes : la ",
+    "label": ", vous combinez le meilleur des deux mondes : la ",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-099.value",
+    "value": "visite de Lourdes",
+    "label": "visite de Lourdes",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-100.value",
+    "value": " et la ",
+    "label": " et la ",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-101.value",
+    "value": "découverte authentique des Pyrénées",
+    "label": "découverte authentique des Pyrénées",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-102.value",
+    "value": "Exemple : Séjour Week-end",
+    "label": "Exemple : Séjour Week-end",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-103.value",
+    "value": "Samedi matin :",
+    "label": "Samedi matin :",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-104.value",
+    "value": " Visite du Sanctuaire de Lourdes (2-3h)",
+    "label": " Visite du Sanctuaire de Lourdes (2-3h)",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-105.value",
+    "value": "Samedi après-midi :",
+    "label": "Samedi après-midi :",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-106.value",
+    "value": " Randonnée au Lac d'Estaing (Val d'Azun)",
+    "label": " Randonnée au Lac d'Estaing (Val d'Azun)",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-107.value",
+    "value": "Samedi soir :",
+    "label": "Samedi soir :",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-108.value",
+    "value": " Bain nordique au gîte (détente)",
+    "label": " Bain nordique au gîte (détente)",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-109.value",
+    "value": "Dimanche :",
+    "label": "Dimanche :",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-110.value",
+    "value": " Château de Lourdes + Pic du Jer",
+    "label": " Château de Lourdes + Pic du Jer",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-111.value",
+    "value": "Exemple : Séjour Semaine",
+    "label": "Exemple : Séjour Semaine",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-112.value",
+    "value": "Jour 1-2 :",
+    "label": "Jour 1-2 :",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-113.value",
+    "value": " Visite complète de Lourdes et environs",
+    "label": " Visite complète de Lourdes et environs",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-114.value",
+    "value": "Jour 3-5 :",
+    "label": "Jour 3-5 :",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-115.value",
+    "value": " Randonnées dans le Val d'Azun",
+    "label": " Randonnées dans le Val d'Azun",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-116.value",
+    "value": "Jour 6 :",
+    "label": "Jour 6 :",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-117.value",
+    "value": " Cauterets + Pont d'Espagne",
+    "label": " Cauterets + Pont d'Espagne",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-118.value",
+    "value": "Jour 7 :",
+    "label": "Jour 7 :",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-119.value",
+    "value": " Détente au gîte (bain nordique, sauna)",
+    "label": " Détente au gîte (bain nordique, sauna)",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-120.value",
+    "value": "Nos Gîtes près de Lourdes",
+    "label": "Nos Gîtes près de Lourdes",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-121.value",
+    "value": "Les Gîtes du Soulor proposent ",
+    "label": "Les Gîtes du Soulor proposent ",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-122.value",
+    "value": "4 hébergements indépendants pour 3 personnes",
+    "label": "4 hébergements indépendants pour 3 personnes",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-123.value",
+    "value": ", idéaux pour un séjour en couple près de Lourdes. Chaque gîte est entièrement équipé et offre tout le confort moderne.",
+    "label": ", idéaux pour un séjour en couple près de Lourdes. Chaque gîte est entièrement équipé et o",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-124.value",
+    "value": "Équipements de nos Gîtes",
+    "label": "Équipements de nos Gîtes",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-125.value",
+    "value": "Cuisine entièrement équipée",
+    "label": "Cuisine entièrement équipée",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-126.value",
+    "value": "Salle de bain moderne avec douche",
+    "label": "Salle de bain moderne avec douche",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-127.value",
+    "value": "Literie de qualité (160x200)",
+    "label": "Literie de qualité (160x200)",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-128.value",
+    "value": "Salon avec TV écran plat",
+    "label": "Salon avec TV écran plat",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-129.value",
+    "value": "Wi-Fi gratuit haut débit",
+    "label": "Wi-Fi gratuit haut débit",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-130.value",
+    "value": "Parking privé gratuit",
+    "label": "Parking privé gratuit",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-131.value",
+    "value": "Accès bain nordique chauffé au feu de bois",
+    "label": "Accès bain nordique chauffé au feu de bois",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-132.value",
+    "value": "Accès sauna traditionnel",
+    "label": "Accès sauna traditionnel",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-133.value",
+    "value": "Linge de maison fourni",
+    "label": "Linge de maison fourni",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-134.value",
+    "value": "Ménage de fin de séjour inclus",
+    "label": "Ménage de fin de séjour inclus",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-135.value",
+    "value": "🏔️ Le Suyen",
+    "label": "🏔️ Le Suyen",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-136.value",
+    "value": "Gîte 3 personnes avec accès bien-être",
+    "label": "Gîte 3 personnes avec accès bien-être",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-137.value",
+    "value": "🏔️ Le Tech",
+    "label": "🏔️ Le Tech",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-138.value",
+    "value": "Gîte tout confort proche de Lourdes",
+    "label": "Gîte tout confort proche de Lourdes",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-139.value",
+    "value": "🏔️ L'Estaing",
+    "label": "🏔️ L'Estaing",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-140.value",
+    "value": "Hébergement moderne à 30 min de Lourdes",
+    "label": "Hébergement moderne à 30 min de Lourdes",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-141.value",
+    "value": "🏔️ Le Soum",
+    "label": "🏔️ Le Soum",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-142.value",
+    "value": "Gîte équipé avec bain nordique",
+    "label": "Gîte équipé avec bain nordique",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-143.value",
+    "value": "Tarifs de nos Gîtes près de Lourdes",
+    "label": "Tarifs de nos Gîtes près de Lourdes",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-144.value",
+    "value": "Une nuit",
+    "label": "Une nuit",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-146.value",
+    "value": "Selon la saison",
+    "label": "Selon la saison",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-147.value",
+    "value": "Dès 2 nuits",
+    "label": "Dès 2 nuits",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-149.value",
+    "value": "Par nuit, selon la saison",
+    "label": "Par nuit, selon la saison",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-150.value",
+    "value": "Semaine complète",
+    "label": "Semaine complète",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-152.value",
+    "value": "7 nuits",
+    "label": "7 nuits",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-153.value",
+    "value": "Tarifs variables selon la saison (basse, moyenne, haute). Tout inclus : linge, ménage, Wi-Fi, parking, accès bain nordique & sauna.",
+    "label": "Tarifs variables selon la saison (basse, moyenne, haute). Tout inclus : linge, ménage, Wi-",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-154.value",
+    "value": "Réserver votre gîte près de Lourdes",
+    "label": "Réserver votre gîte près de Lourdes",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GiteProximiteLourdesPage-text-155.value",
+    "value": "À 30 min de Lourdes • 4 gîtes 3 personnes • Bain nordique & sauna inclus",
+    "label": "À 30 min de Lourdes • 4 gîtes 3 personnes • Bain nordique & sauna inclus",
+    "kind": "text",
+    "page": "GiteProximiteLourdesPage"
+  },
+  {
+    "path": "fields.GitesPage-text-006.value",
+    "value": "À proximité",
+    "label": "À proximité",
+    "kind": "text",
+    "page": "GitesPage"
+  },
+  {
+    "path": "fields.GitesPage-text-007.value",
+    "value": "Village d'Arrens-Marsous : 5 min à pied",
+    "label": "Village d'Arrens-Marsous : 5 min à pied",
+    "kind": "text",
+    "page": "GitesPage"
+  },
+  {
+    "path": "fields.GitesPage-text-008.value",
+    "value": "Stations de ski : 15-30 min en voiture",
+    "label": "Stations de ski : 15-30 min en voiture",
+    "kind": "text",
+    "page": "GitesPage"
+  },
+  {
+    "path": "fields.GitesPage-text-009.value",
+    "value": "Lacs de montagne : accessible en randonnée",
+    "label": "Lacs de montagne : accessible en randonnée",
+    "kind": "text",
+    "page": "GitesPage"
+  },
+  {
+    "path": "fields.GitesPage-text-010.value",
+    "value": "Lourdes : 25 km",
+    "label": "Lourdes : 25 km",
+    "kind": "text",
+    "page": "GitesPage"
+  },
+  {
+    "path": "fields.GitesPage-text-011.value",
+    "value": "Activités",
+    "label": "Activités",
+    "kind": "text",
+    "page": "GitesPage"
+  },
+  {
+    "path": "fields.GitesPage-text-012.value",
+    "value": "Randonnées pédestres et VTT",
+    "label": "Randonnées pédestres et VTT",
+    "kind": "text",
+    "page": "GitesPage"
+  },
+  {
+    "path": "fields.GitesPage-text-013.value",
+    "value": "Ski alpin et raquettes en hiver",
+    "label": "Ski alpin et raquettes en hiver",
+    "kind": "text",
+    "page": "GitesPage"
+  },
+  {
+    "path": "fields.GitesPage-text-014.value",
+    "value": "Thermalisme à Cauterets",
+    "label": "Thermalisme à Cauterets",
+    "kind": "text",
+    "page": "GitesPage"
+  },
+  {
+    "path": "fields.GitesPage-text-015.value",
+    "value": "Découverte du patrimoine local",
+    "label": "Découverte du patrimoine local",
+    "kind": "text",
+    "page": "GitesPage"
+  },
+  {
+    "path": "fields.GitesPage-text-016.value",
+    "value": "Réserver maintenant",
+    "label": "Réserver maintenant",
+    "kind": "text",
+    "page": "GitesPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-001.value",
+    "value": "Gîte Val d'Azun",
+    "label": "Gîte Val d'Azun",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-002.value",
+    "value": "Votre hébergement de charme au cœur de la vallée préservée du Val d'Azun",
+    "label": "Votre hébergement de charme au cœur de la vallée préservée du Val d'Azun",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-003.value",
+    "value": "Location de Gîte dans le Val d'Azun",
+    "label": "Location de Gîte dans le Val d'Azun",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-004.value",
+    "value": "Le ",
+    "label": "Le ",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-005.value",
+    "value": "Val d'Azun",
+    "label": "Val d'Azun",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-006.value",
+    "value": " est l'une des vallées les plus préservées et authentiques des ",
+    "label": " est l'une des vallées les plus préservées et authentiques des ",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-007.value",
+    "value": "Hautes-Pyrénées",
+    "label": "Hautes-Pyrénées",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-008.value",
+    "value": ". Situé entre le célèbre ",
+    "label": ". Situé entre le célèbre ",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-009.value",
+    "value": "Col du Soulor",
+    "label": "Col du Soulor",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-010.value",
+    "value": " et le ",
+    "label": " et le ",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-011.value",
+    "value": "Col d'Aubisque",
+    "label": "Col d'Aubisque",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-012.value",
+    "value": ", cette vallée offre des paysages époustouflants et une nature intacte. Les Gîtes du Soulor, situés à ",
+    "label": ", cette vallée offre des paysages époustouflants et une nature intacte. Les Gîtes du Soulo",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-013.value",
+    "value": "Arrens-Marsous",
+    "label": "Arrens-Marsous",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-014.value",
+    "value": ", vous proposent ",
+    "label": ", vous proposent ",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-015.value",
+    "value": "4 gîtes pour 3 personnes",
+    "label": "4 gîtes pour 3 personnes",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-016.value",
+    "value": " idéalement placés pour découvrir toutes les richesses de cette région exceptionnelle.",
+    "label": " idéalement placés pour découvrir toutes les richesses de cette région exceptionnelle.",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-017.value",
+    "value": "Que vous soyez ",
+    "label": "Que vous soyez ",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-018.value",
+    "value": "amateur de randonnée",
+    "label": "amateur de randonnée",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-019.value",
+    "value": "passionné de cyclisme",
+    "label": "passionné de cyclisme",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-020.value",
+    "value": " (le Tour de France passe régulièrement par les cols du Val d'Azun), ou simplement à la recherche d'un ",
+    "label": " (le Tour de France passe régulièrement par les cols du Val d'Azun), ou simplement à la re",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-021.value",
+    "value": "séjour ressourçant en montagne",
+    "label": "séjour ressourçant en montagne",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-022.value",
+    "value": ", notre gîte Val d'Azun est le point de départ idéal pour vos aventures pyrénéennes.",
+    "label": ", notre gîte Val d'Azun est le point de départ idéal pour vos aventures pyrénéennes.",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-023.value",
+    "value": "Pourquoi choisir un gîte dans le Val d'Azun ?",
+    "label": "Pourquoi choisir un gîte dans le Val d'Azun ?",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-024.value",
+    "value": "Nature Préservée",
+    "label": "Nature Préservée",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-025.value",
+    "value": "Le Val d'Azun fait partie du ",
+    "label": "Le Val d'Azun fait partie du ",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-026.value",
+    "value": "Parc National des Pyrénées",
+    "label": "Parc National des Pyrénées",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-027.value",
+    "value": ". Vous êtes au cœur d'une zone protégée où la faune et la flore sont exceptionnelles : marmottes, isards, vautours, aigles royaux, et une flore alpine remarquable.",
+    "label": ". Vous êtes au cœur d'une zone protégée où la faune et la flore sont exceptionnelles : mar",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-028.value",
+    "value": "Cols Mythiques",
+    "label": "Cols Mythiques",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-029.value",
+    "value": "Le ",
+    "label": "Le ",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-030.value",
+    "value": "Col du Soulor",
+    "label": "Col du Soulor",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-031.value",
+    "value": " (1474m) et le ",
+    "label": " (1474m) et le ",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-032.value",
+    "value": "Col d'Aubisque",
+    "label": "Col d'Aubisque",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-033.value",
+    "value": " (1709m) sont accessibles en voiture, vélo ou à pied. Ces cols offrent des panoramas à 360° sur la chaîne des Pyrénées, du Pic du Midi au Pic d'Anie.",
+    "label": " (1709m) sont accessibles en voiture, vélo ou à pied. Ces cols offrent des panoramas à 360",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-034.value",
+    "value": "Randonnées Exceptionnelles",
+    "label": "Randonnées Exceptionnelles",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-035.value",
+    "value": "Le Val d'Azun est le paradis des randonneurs : ",
+    "label": "Le Val d'Azun est le paradis des randonneurs : ",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-036.value",
+    "value": "Lac d'Estaing",
+    "label": "Lac d'Estaing",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-037.value",
+    "value": "Lac d'Ilhéou",
+    "label": "Lac d'Ilhéou",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-038.value",
+    "value": "Lacs d'Arrémoulit",
+    "label": "Lacs d'Arrémoulit",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-039.value",
+    "value": "Cirque du Litor",
+    "label": "Cirque du Litor",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-040.value",
+    "value": "... Des dizaines de sentiers balisés pour tous les niveaux.",
+    "label": "... Des dizaines de sentiers balisés pour tous les niveaux.",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-041.value",
+    "value": "Ski en Hiver",
+    "label": "Ski en Hiver",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-042.value",
+    "value": "En hiver, le Val d'Azun donne accès aux ",
+    "label": "En hiver, le Val d'Azun donne accès aux ",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-043.value",
+    "value": "stations de ski d'Hautacam",
+    "label": "stations de ski d'Hautacam",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-044.value",
+    "value": " (15 min), ",
+    "label": " (15 min), ",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-045.value",
+    "value": "Cauterets",
+    "label": "Cauterets",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-046.value",
+    "value": " (35 min), et le ",
+    "label": " (35 min), et le ",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-047.value",
+    "value": "Grand Tourmalet",
+    "label": "Grand Tourmalet",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-048.value",
+    "value": " (La Mongie / Barèges, 40 min). Ski alpin, ski de fond, raquettes...",
+    "label": " (La Mongie / Barèges, 40 min). Ski alpin, ski de fond, raquettes...",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-049.value",
+    "value": "Nos Gîtes 3 Personnes dans le Val d'Azun",
+    "label": "Nos Gîtes 3 Personnes dans le Val d'Azun",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-050.value",
+    "value": "Les Gîtes du Soulor vous proposent ",
+    "label": "Les Gîtes du Soulor vous proposent ",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-051.value",
+    "value": "4 hébergements indépendants",
+    "label": "4 hébergements indépendants",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-052.value",
+    "value": " pour 3 personnes, situés au pied du Col du Soulor à Arrens-Marsous. Chaque gîte porte le nom d'un sommet emblématique du Val d'Azun :",
+    "label": " pour 3 personnes, situés au pied du Col du Soulor à Arrens-Marsous. Chaque gîte porte le ",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-053.value",
+    "value": "🏔️ Le Suyen",
+    "label": "🏔️ Le Suyen",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-054.value",
+    "value": "Du nom du pic de Suyen (2341m), sommet panoramique accessible depuis le col du Soulor.",
+    "label": "Du nom du pic de Suyen (2341m), sommet panoramique accessible depuis le col du Soulor.",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-055.value",
+    "value": "🏔️ Le Tech",
+    "label": "🏔️ Le Tech",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-056.value",
+    "value": "En référence au gave de Tech, affluent du gave d'Azun qui arrose la vallée.",
+    "label": "En référence au gave de Tech, affluent du gave d'Azun qui arrose la vallée.",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-057.value",
+    "value": "🏔️ L'Estaing",
+    "label": "🏔️ L'Estaing",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-058.value",
+    "value": "Du nom du magnifique lac d'Estaing, joyau du Val d'Azun accessible en 2h de marche.",
+    "label": "Du nom du magnifique lac d'Estaing, joyau du Val d'Azun accessible en 2h de marche.",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-059.value",
+    "value": "🏔️ Le Soum",
+    "label": "🏔️ Le Soum",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-060.value",
+    "value": "\"Soum\" signifie \"sommet\" en gascon. Ce gîte célèbre les nombreux sommets du Val d'Azun.",
+    "label": "\"Soum\" signifie \"sommet\" en gascon. Ce gîte célèbre les nombreux sommets du Val d'Azun.",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-061.value",
+    "value": "Équipements de nos gîtes Val d'Azun",
+    "label": "Équipements de nos gîtes Val d'Azun",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-062.value",
+    "value": "Cuisine entièrement équipée (lave-vaisselle, four, plaques, réfrigérateur)",
+    "label": "Cuisine entièrement équipée (lave-vaisselle, four, plaques, réfrigérateur)",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-063.value",
+    "value": "Salle de bain moderne avec douche italienne",
+    "label": "Salle de bain moderne avec douche italienne",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-064.value",
+    "value": "Literie haut de gamme (160x200 ou 2x80x200)",
+    "label": "Literie haut de gamme (160x200 ou 2x80x200)",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-065.value",
+    "value": "Salon cosy avec TV écran plat",
+    "label": "Salon cosy avec TV écran plat",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-066.value",
+    "value": "Wi-Fi gratuit haut débit",
+    "label": "Wi-Fi gratuit haut débit",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-067.value",
+    "value": "Parking privé gratuit",
+    "label": "Parking privé gratuit",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-068.value",
+    "value": "Accès bain nordique chauffé au feu de bois",
+    "label": "Accès bain nordique chauffé au feu de bois",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-069.value",
+    "value": "Accès sauna traditionnel",
+    "label": "Accès sauna traditionnel",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-070.value",
+    "value": "Que faire dans le Val d'Azun ?",
+    "label": "Que faire dans le Val d'Azun ?",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-071.value",
+    "value": "🥾 Randonnée Pédestre",
+    "label": "🥾 Randonnée Pédestre",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-072.value",
+    "value": "Le Val d'Azun compte plus de ",
+    "label": "Le Val d'Azun compte plus de ",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-073.value",
+    "value": "100 km de sentiers balisés",
+    "label": "100 km de sentiers balisés",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-074.value",
+    "value": ". Randonnées incontournables :",
+    "label": ". Randonnées incontournables :",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-075.value",
+    "value": "• Lac d'Estaing (2h, facile) : lac glaciaire magnifique",
+    "label": "• Lac d'Estaing (2h, facile) : lac glaciaire magnifique",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-076.value",
+    "value": "• Lac d'Ilhéou (3h, moyen) : panorama exceptionnel",
+    "label": "• Lac d'Ilhéou (3h, moyen) : panorama exceptionnel",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-077.value",
+    "value": "• Cirque du Litor (4h, moyen) : cirque glaciaire sauvage",
+    "label": "• Cirque du Litor (4h, moyen) : cirque glaciaire sauvage",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-078.value",
+    "value": "• Col d'Ilhéou (5h, difficile) : haute montagne à 2716m",
+    "label": "• Col d'Ilhéou (5h, difficile) : haute montagne à 2716m",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-079.value",
+    "value": "🚴 Cyclisme et Cols",
+    "label": "🚴 Cyclisme et Cols",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-080.value",
+    "value": "Les ",
+    "label": "Les ",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-081.value",
+    "value": "cyclistes",
+    "label": "cyclistes",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-082.value",
+    "value": " adorent le Val d'Azun : montées du ",
+    "label": " adorent le Val d'Azun : montées du ",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-083.value",
+    "value": "Col du Soulor",
+    "label": "Col du Soulor",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-084.value",
+    "value": " et ",
+    "label": " et ",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-085.value",
+    "value": "Col d'Aubisque",
+    "label": "Col d'Aubisque",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-086.value",
+    "value": " (étapes mythiques du Tour de France), routes panoramiques, circuits VTT et VTT électrique.",
+    "label": " (étapes mythiques du Tour de France), routes panoramiques, circuits VTT et VTT électrique",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-087.value",
+    "value": "⛷️ Ski et Sports d'Hiver",
+    "label": "⛷️ Ski et Sports d'Hiver",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-088.value",
+    "value": "En hiver : ski alpin à ",
+    "label": "En hiver : ski alpin à ",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-089.value",
+    "value": "Hautacam",
+    "label": "Hautacam",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-090.value",
+    "value": "Cauterets",
+    "label": "Cauterets",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-091.value",
+    "value": "Barèges-La Mongie",
+    "label": "Barèges-La Mongie",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-092.value",
+    "value": ". Ski de fond et raquettes sur les plateaux du Val d'Azun.",
+    "label": ". Ski de fond et raquettes sur les plateaux du Val d'Azun.",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-093.value",
+    "value": "🧗 Via Ferrata et Escalade",
+    "label": "🧗 Via Ferrata et Escalade",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-094.value",
+    "value": "Via ferrata de Bious (parcours sportif), nombreuses voies d'escalade dans la vallée.",
+    "label": "Via ferrata de Bious (parcours sportif), nombreuses voies d'escalade dans la vallée.",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-095.value",
+    "value": "Villages et Patrimoine du Val d'Azun",
+    "label": "Villages et Patrimoine du Val d'Azun",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-096.value",
+    "value": "Le Val d'Azun est composé de ",
+    "label": "Le Val d'Azun est composé de ",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-097.value",
+    "value": "5 villages",
+    "label": "5 villages",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-098.value",
+    "value": " authentiques :",
+    "label": " authentiques :",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-099.value",
+    "value": "📍 Arrens-Marsous",
+    "label": "📍 Arrens-Marsous",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-100.value",
+    "value": "Village principal, cœur du Val d'Azun. Commerces, services, départ de randonnées.",
+    "label": "Village principal, cœur du Val d'Azun. Commerces, services, départ de randonnées.",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-101.value",
+    "value": "📍 Artalens-Souin",
+    "label": "📍 Artalens-Souin",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-102.value",
+    "value": "Village pittoresque avec son église romane classée.",
+    "label": "Village pittoresque avec son église romane classée.",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-103.value",
+    "value": "📍 Aucun",
+    "label": "📍 Aucun",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-104.value",
+    "value": "Village thermal, station verte, accès au lac de Gaube.",
+    "label": "Village thermal, station verte, accès au lac de Gaube.",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-105.value",
+    "value": "📍 Bun",
+    "label": "📍 Bun",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-106.value",
+    "value": "Petit village de montagne authentique.",
+    "label": "Petit village de montagne authentique.",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-107.value",
+    "value": "Infos Pratiques - Accès au Val d'Azun",
+    "label": "Infos Pratiques - Accès au Val d'Azun",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-108.value",
+    "value": "En Voiture",
+    "label": "En Voiture",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-109.value",
+    "value": "• Depuis ",
+    "label": "• Depuis ",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-110.value",
+    "value": "Lourdes",
+    "label": "Lourdes",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-111.value",
+    "value": " : 30 min (25 km via D821)",
+    "label": " : 30 min (25 km via D821)",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-112.value",
+    "value": "• Depuis ",
+    "label": "• Depuis ",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-113.value",
+    "value": "Pau",
+    "label": "Pau",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-114.value",
+    "value": " : 1h (60 km via A64 puis D821)",
+    "label": " : 1h (60 km via A64 puis D821)",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-115.value",
+    "value": "• Depuis ",
+    "label": "• Depuis ",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-116.value",
+    "value": "Tarbes",
+    "label": "Tarbes",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-117.value",
+    "value": " : 45 min (50 km)",
+    "label": " : 45 min (50 km)",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-118.value",
+    "value": "• Depuis ",
+    "label": "• Depuis ",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-119.value",
+    "value": "Toulouse",
+    "label": "Toulouse",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-120.value",
+    "value": " : 2h15 (185 km via A64)",
+    "label": " : 2h15 (185 km via A64)",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-121.value",
+    "value": "Adresse",
+    "label": "Adresse",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-122.value",
+    "value": "Les Gîtes du Soulor",
+    "label": "Les Gîtes du Soulor",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-123.value",
+    "value": "42 route du Soulor",
+    "label": "42 route du Soulor",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-124.value",
+    "value": "65400 Arrens-Marsous",
+    "label": "65400 Arrens-Marsous",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-125.value",
+    "value": "Val d'Azun, Hautes-Pyrénées",
+    "label": "Val d'Azun, Hautes-Pyrénées",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-126.value",
+    "value": "GPS : 42.9653° N, 0.1892° O",
+    "label": "GPS : 42.9653° N, 0.1892° O",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.GiteValAzunPage-text-127.value",
+    "value": "Réserver votre gîte dans le Val d'Azun",
+    "label": "Réserver votre gîte dans le Val d'Azun",
+    "kind": "text",
+    "page": "GiteValAzunPage"
+  },
+  {
+    "path": "fields.HomePage-text-001.value",
+    "value": "Gîtes de Montagne à Arrens-Marsous, Val d'Azun",
+    "label": "Gîtes de Montagne à Arrens-Marsous, Val d'Azun",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-002.value",
+    "value": "Bienvenue aux ",
+    "label": "Bienvenue aux ",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-003.value",
+    "value": "Gîtes du Soulor",
+    "label": "Gîtes du Soulor",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-004.value",
+    "value": ", votre havre de paix au cœur des ",
+    "label": ", votre havre de paix au cœur des ",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-005.value",
+    "value": "Hautes-Pyrénées",
+    "label": "Hautes-Pyrénées",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-006.value",
+    "value": ". Nous vous proposons ",
+    "label": ". Nous vous proposons ",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-007.value",
+    "value": "4 gîtes pour 3 personnes",
+    "label": "4 gîtes pour 3 personnes",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-008.value",
+    "value": " dans le charmant village d'",
+    "label": " dans le charmant village d'",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-009.value",
+    "value": "Arrens-Marsous",
+    "label": "Arrens-Marsous",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-010.value",
+    "value": ", au pied du mythique ",
+    "label": ", au pied du mythique ",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-011.value",
+    "value": "Col du Soulor",
+    "label": "Col du Soulor",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-012.value",
+    "value": ". Que vous recherchiez un ",
+    "label": ". Que vous recherchiez un ",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-013.value",
+    "value": "week-end romantique",
+    "label": "week-end romantique",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-014.value",
+    "value": ", une ",
+    "label": ", une ",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-015.value",
+    "value": "semaine de randonnée",
+    "label": "semaine de randonnée",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-016.value",
+    "value": " ou un ",
+    "label": " ou un ",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-017.value",
+    "value": "séjour ressourçant avec bain nordique et sauna",
+    "label": "séjour ressourçant avec bain nordique et sauna",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-018.value",
+    "value": ", nos hébergements de montagne vous offrent le cadre idéal pour vos vacances dans les Pyrénées.",
+    "label": ", nos hébergements de montagne vous offrent le cadre idéal pour vos vacances dans les Pyré",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-019.value",
+    "value": "Nos 4 Gîtes pour 3 Personnes",
+    "label": "Nos 4 Gîtes pour 3 Personnes",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-020.value",
+    "value": "Le Suyen",
+    "label": "Le Suyen",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-021.value",
+    "value": "Le Tech",
+    "label": "Le Tech",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-022.value",
+    "value": "L'Estaing",
+    "label": "L'Estaing",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-023.value",
+    "value": " et ",
+    "label": " et ",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-024.value",
+    "value": "Le Soum",
+    "label": "Le Soum",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-025.value",
+    "value": " : quatre gîtes tout confort, entièrement équipés, avec cuisine aménagée, salle de bain moderne, et un accès privilégié à nos équipements bien-être.",
+    "label": " : quatre gîtes tout confort, entièrement équipés, avec cuisine aménagée, salle de bain mo",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-026.value",
+    "value": "Tous nos gîtes sont indépendants, offrant intimité et tranquillité pour votre séjour en montagne.",
+    "label": "Tous nos gîtes sont indépendants, offrant intimité et tranquillité pour votre séjour en mo",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-027.value",
+    "value": "Situation Géographique Idéale",
+    "label": "Situation Géographique Idéale",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-028.value",
+    "value": "Situés au cœur du ",
+    "label": "Situés au cœur du ",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-029.value",
+    "value": "Val d'Azun",
+    "label": "Val d'Azun",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-030.value",
+    "value": ", nos gîtes sont le point de départ parfait pour explorer le ",
+    "label": ", nos gîtes sont le point de départ parfait pour explorer le ",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-031.value",
+    "value": "Parc National des Pyrénées",
+    "label": "Parc National des Pyrénées",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-032.value",
+    "value": ", les ",
+    "label": ", les ",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-033.value",
+    "value": "stations de ski d'Hautacam et Grand Tourmalet",
+    "label": "stations de ski d'Hautacam et Grand Tourmalet",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-034.value",
+    "value": ", et les nombreux sentiers de randonnée de la région.",
+    "label": ", et les nombreux sentiers de randonnée de la région.",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-035.value",
+    "value": "Accès facile : 30 min de Lourdes, 1h de Pau, 45 min de Tarbes.",
+    "label": "Accès facile : 30 min de Lourdes, 1h de Pau, 45 min de Tarbes.",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-036.value",
+    "value": "Le ",
+    "label": "Le ",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-037.value",
+    "value": "Val d'Azun",
+    "label": "Val d'Azun",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-038.value",
+    "value": " est une vallée préservée des Pyrénées, réputée pour sa beauté naturelle et son authenticité. En séjournant dans nos gîtes à ",
+    "label": " est une vallée préservée des Pyrénées, réputée pour sa beauté naturelle et son authentici",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-039.value",
+    "value": "Arrens-Marsous",
+    "label": "Arrens-Marsous",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-040.value",
+    "value": ", vous bénéficiez d'un accès privilégié aux ",
+    "label": ", vous bénéficiez d'un accès privilégié aux ",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-041.value",
+    "value": "cols mythiques du Soulor et d'Aubisque",
+    "label": "cols mythiques du Soulor et d'Aubisque",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-042.value",
+    "value": ", aux ",
+    "label": ", aux ",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-043.value",
+    "value": "lacs de montagne",
+    "label": "lacs de montagne",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-044.value",
+    "value": " (lac d'Estaing, lac d'Ilhéou), et à une multitude d'activités outdoor : ",
+    "label": " (lac d'Estaing, lac d'Ilhéou), et à une multitude d'activités outdoor : ",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-045.value",
+    "value": "randonnée pédestre",
+    "label": "randonnée pédestre",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-046.value",
+    "value": "VTT",
+    "label": "VTT",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-047.value",
+    "value": "ski alpin et ski de fond",
+    "label": "ski alpin et ski de fond",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-048.value",
+    "value": " en hiver, ",
+    "label": " en hiver, ",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-049.value",
+    "value": "via ferrata",
+    "label": "via ferrata",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-050.value",
+    "value": ", et bien plus encore.",
+    "label": ", et bien plus encore.",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-051.value",
+    "value": "Pourquoi choisir Les Gîtes du Soulor ?",
+    "label": "Pourquoi choisir Les Gîtes du Soulor ?",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-052.value",
+    "value": "4 gîtes modernes et tout équipés pour 3 personnes",
+    "label": "4 gîtes modernes et tout équipés pour 3 personnes",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-053.value",
+    "value": "Bain nordique chauffé au feu de bois et sauna traditionnel",
+    "label": "Bain nordique chauffé au feu de bois et sauna traditionnel",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-054.value",
+    "value": "Emplacement idéal au pied des montagnes",
+    "label": "Emplacement idéal au pied des montagnes",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-055.value",
+    "value": "Accès aux randonnées et stations de ski",
+    "label": "Accès aux randonnées et stations de ski",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-056.value",
+    "value": "Formules flexibles : week-end, semaine ou séjour long",
+    "label": "Formules flexibles : week-end, semaine ou séjour long",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-057.value",
+    "value": "Parking privé et Wi-Fi gratuit inclus",
+    "label": "Parking privé et Wi-Fi gratuit inclus",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-058.value",
+    "value": "Que vous planifiez une ",
+    "label": "Que vous planifiez une ",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-059.value",
+    "value": "escapade romantique",
+    "label": "escapade romantique",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-060.value",
+    "value": ", un ",
+    "label": ", un ",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-061.value",
+    "value": "séjour bien-être",
+    "label": "séjour bien-être",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-062.value",
+    "value": " ou des ",
+    "label": " ou des ",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-063.value",
+    "value": "vacances sportives",
+    "label": "vacances sportives",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.HomePage-text-064.value",
+    "value": ", nos gîtes à Arrens-Marsous vous promettent une expérience authentique dans les Pyrénées. Réservez dès maintenant et vivez un séjour inoubliable en montagne !",
+    "label": ", nos gîtes à Arrens-Marsous vous promettent une expérience authentique dans les Pyrénées.",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "fields.TarifsPage-text-001.value",
+    "value": "Découvrez nos ",
+    "label": "Découvrez nos ",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-002.value",
+    "value": "tarifs transparents",
+    "label": "tarifs transparents",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-003.value",
+    "value": " pour un séjour dans nos gîtes de montagne à ",
+    "label": " pour un séjour dans nos gîtes de montagne à ",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-004.value",
+    "value": "Arrens-Marsous",
+    "label": "Arrens-Marsous",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-005.value",
+    "value": ", au cœur du Val d'Azun dans les ",
+    "label": ", au cœur du Val d'Azun dans les ",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-006.value",
+    "value": "Hautes-Pyrénées",
+    "label": "Hautes-Pyrénées",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-007.value",
+    "value": ". Que vous souhaitiez réserver pour une nuitée, plusieurs jours ou un séjour complet d'une semaine, nous proposons des formules adaptées à tous vos besoins.",
+    "label": ". Que vous souhaitiez réserver pour une nuitée, plusieurs jours ou un séjour complet d'une",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-008.value",
+    "value": "Nos 4 gîtes pour 3 personnes (",
+    "label": "Nos 4 gîtes pour 3 personnes (",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-009.value",
+    "value": "Le Suyen",
+    "label": "Le Suyen",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-010.value",
+    "value": "Le Tech",
+    "label": "Le Tech",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-011.value",
+    "value": "L'Estaing",
+    "label": "L'Estaing",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-012.value",
+    "value": " et ",
+    "label": " et ",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-013.value",
+    "value": "Le Soum",
+    "label": "Le Soum",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-014.value",
+    "value": ") offrent le même niveau de confort et les mêmes tarifs. Tous nos prix incluent le linge de maison, le ménage de fin de séjour, le chauffage, le Wi-Fi et l'accès à nos équipements bien-être.",
+    "label": ") offrent le même niveau de confort et les mêmes tarifs. Tous nos prix incluent le linge d",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-015.value",
+    "value": "Nos Formules de Séjour",
+    "label": "Nos Formules de Séjour",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-016.value",
+    "value": "Nuitée",
+    "label": "Nuitée",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-017.value",
+    "value": "Séjours flexibles à la nuitée, sans durée minimum. Idéal pour une escapade courte ou prolongée selon vos envies. Tarifs de ",
+    "label": "Séjours flexibles à la nuitée, sans durée minimum. Idéal pour une escapade courte ou prolo",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-019.value",
+    "value": " selon la saison.",
+    "label": " selon la saison.",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-020.value",
+    "value": "Séjour 2 Nuits ou Plus",
+    "label": "Séjour 2 Nuits ou Plus",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-021.value",
+    "value": "Bénéficiez d'un tarif dégressif dès la 2ème nuit ! Profitez du calme pyrénéen avec un tarif avantageux. Tarifs de ",
+    "label": "Bénéficiez d'un tarif dégressif dès la 2ème nuit ! Profitez du calme pyrénéen avec un tari",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-023.value",
+    "value": "La Semaine Complète",
+    "label": "La Semaine Complète",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-024.value",
+    "value": "Pour un ressourcement total, optez pour un séjour de 7 jours complet. Tarifs de ",
+    "label": "Pour un ressourcement total, optez pour un séjour de 7 jours complet. Tarifs de ",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-026.value",
+    "value": " selon la saison.",
+    "label": " selon la saison.",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-027.value",
+    "value": "Nos tarifs varient selon trois périodes : ",
+    "label": "Nos tarifs varient selon trois périodes : ",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-028.value",
+    "value": "basse saison",
+    "label": "basse saison",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-029.value",
+    "value": " (printemps/automne hors vacances), ",
+    "label": " (printemps/automne hors vacances), ",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-030.value",
+    "value": "moyenne saison",
+    "label": "moyenne saison",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-031.value",
+    "value": " (été hors juillet-août) et ",
+    "label": " (été hors juillet-août) et ",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-032.value",
+    "value": "haute saison",
+    "label": "haute saison",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-033.value",
+    "value": " (vacances scolaires, fêtes de fin d'année, février-mars pour le ski).",
+    "label": " (vacances scolaires, fêtes de fin d'année, février-mars pour le ski).",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-034.value",
+    "value": "Chèques Vacances",
+    "label": "Chèques Vacances",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-035.value",
+    "value": "Les chèques vacances ne sont pas acceptés comme moyen de paiement.",
+    "label": "Les chèques vacances ne sont pas acceptés comme moyen de paiement.",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-036.value",
+    "value": "Paiements Acceptés",
+    "label": "Paiements Acceptés",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-037.value",
+    "value": "Espèces, carte bancaire et virement bancaire.",
+    "label": "Espèces, carte bancaire et virement bancaire.",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.TarifsPage-text-038.value",
+    "value": "Réserver maintenant",
+    "label": "Réserver maintenant",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "fields.Footer-text-001.value",
+    "value": "Les Gîtes du Soulor",
+    "label": "Les Gîtes du Soulor",
+    "kind": "text",
+    "page": "Footer"
+  },
+  {
+    "path": "fields.Footer-text-002.value",
+    "value": "Vivez une expérience authentique au cœur des Pyrénées. Quatre gîtes de charme pour des moments inoubliables en montagne.",
+    "label": "Vivez une expérience authentique au cœur des Pyrénées. Quatre gîtes de charme pour des mom",
+    "kind": "text",
+    "page": "Footer"
+  },
+  {
+    "path": "fields.Footer-text-003.value",
+    "value": "Nos Gîtes",
+    "label": "Nos Gîtes",
+    "kind": "text",
+    "page": "Footer"
+  },
+  {
+    "path": "fields.Footer-text-004.value",
+    "value": "Gîte Arrens-Marsous",
+    "label": "Gîte Arrens-Marsous",
+    "kind": "text",
+    "page": "Footer"
+  },
+  {
+    "path": "fields.Footer-text-005.value",
+    "value": "Gîte Val d'Azun",
+    "label": "Gîte Val d'Azun",
+    "kind": "text",
+    "page": "Footer"
+  },
+  {
+    "path": "fields.Footer-text-006.value",
+    "value": "Gîte Bain Nordique",
+    "label": "Gîte Bain Nordique",
+    "kind": "text",
+    "page": "Footer"
+  },
+  {
+    "path": "fields.Footer-text-007.value",
+    "value": "Gîte près de Lourdes",
+    "label": "Gîte près de Lourdes",
+    "kind": "text",
+    "page": "Footer"
+  },
+  {
+    "path": "fields.Footer-text-008.value",
+    "value": "Contact",
+    "label": "Contact",
+    "kind": "text",
+    "page": "Footer"
+  },
+  {
+    "path": "fields.Footer-text-009.value",
+    "value": "Informations Légales",
+    "label": "Informations Légales",
+    "kind": "text",
+    "page": "Footer"
+  },
+  {
+    "path": "fields.Footer-text-010.value",
+    "value": "Mentions Légales",
+    "label": "Mentions Légales",
+    "kind": "text",
+    "page": "Footer"
+  },
+  {
+    "path": "fields.Footer-text-011.value",
+    "value": "Politique de Confidentialité",
+    "label": "Politique de Confidentialité",
+    "kind": "text",
+    "page": "Footer"
+  },
+  {
+    "path": "fields.Footer-text-012.value",
+    "value": "Politique des Cookies",
+    "label": "Politique des Cookies",
+    "kind": "text",
+    "page": "Footer"
+  },
+  {
+    "path": "fields.Footer-text-013.value",
+    "value": "Réservation",
+    "label": "Réservation",
+    "kind": "text",
+    "page": "Footer"
+  },
+  {
+    "path": "fields.Footer-text-014.value",
+    "value": " Les Gîtes du Soulor. Tous droits réservés.",
+    "label": " Les Gîtes du Soulor. Tous droits réservés.",
+    "kind": "text",
+    "page": "Footer"
+  },
+  {
+    "path": "fields.Footer-text-015.value",
+    "value": "Conçu avec",
+    "label": "Conçu avec",
+    "kind": "text",
+    "page": "Footer"
+  },
+  {
+    "path": "fields.Footer-text-016.value",
+    "value": "par",
+    "label": "par",
+    "kind": "text",
+    "page": "Footer"
+  },
+  {
+    "path": "fields.Footer-text-017.value",
+    "value": "PixelBoost",
+    "label": "PixelBoost",
+    "kind": "text",
+    "page": "Footer"
+  },
+  {
+    "path": "fields.Footer-text-018.value",
+    "value": "Espace Administrateur",
+    "label": "Espace Administrateur",
+    "kind": "text",
+    "page": "Footer"
+  },
+  {
+    "path": "fields.Footer-text-019.value",
+    "value": "Les Gîtes du Soulor",
+    "label": "Les Gîtes du Soulor",
+    "kind": "text",
+    "page": "Footer"
+  },
+  {
+    "path": "fields.Footer-text-020.value",
+    "value": "Mot de passe",
+    "label": "Mot de passe",
+    "kind": "text",
+    "page": "Footer"
+  },
+  {
+    "path": "fields.CookieBanner-text-001.value",
+    "value": "🍪 Nous utilisons des cookies",
+    "label": "🍪 Nous utilisons des cookies",
+    "kind": "text",
+    "page": "CookieBanner"
+  },
+  {
+    "path": "fields.CookieBanner-text-002.value",
+    "value": "Nous utilisons des cookies pour améliorer votre expérience sur notre site. Certains cookies sont nécessaires au fonctionnement du site, tandis que d'autres nous aident à améliorer nos services. Vous pouvez personnaliser vos préférences à tout moment.",
+    "label": "Nous utilisons des cookies pour améliorer votre expérience sur notre site. Certains cookie",
+    "kind": "text",
+    "page": "CookieBanner"
+  },
+  {
+    "path": "fields.CookieBanner-text-003.value",
+    "value": "Personnaliser",
+    "label": "Personnaliser",
+    "kind": "text",
+    "page": "CookieBanner"
+  },
+  {
+    "path": "fields.CookieBanner-text-004.value",
+    "value": "Refuser",
+    "label": "Refuser",
+    "kind": "text",
+    "page": "CookieBanner"
+  },
+  {
+    "path": "fields.CookieBanner-text-005.value",
+    "value": "Tout accepter",
+    "label": "Tout accepter",
+    "kind": "text",
+    "page": "CookieBanner"
+  },
+  {
+    "path": "fields.CookieBanner-text-006.value",
+    "value": "Paramètres des cookies",
+    "label": "Paramètres des cookies",
+    "kind": "text",
+    "page": "CookieBanner"
+  },
+  {
+    "path": "fields.CookieBanner-text-007.value",
+    "value": "Cookies nécessaires",
+    "label": "Cookies nécessaires",
+    "kind": "text",
+    "page": "CookieBanner"
+  },
+  {
+    "path": "fields.CookieBanner-text-008.value",
+    "value": "Ces cookies sont essentiels au fonctionnement du site et ne peuvent pas être désactivés.",
+    "label": "Ces cookies sont essentiels au fonctionnement du site et ne peuvent pas être désactivés.",
+    "kind": "text",
+    "page": "CookieBanner"
+  },
+  {
+    "path": "fields.CookieBanner-text-009.value",
+    "value": "Cookies analytiques",
+    "label": "Cookies analytiques",
+    "kind": "text",
+    "page": "CookieBanner"
+  },
+  {
+    "path": "fields.CookieBanner-text-010.value",
+    "value": "Ces cookies nous aident à comprendre comment vous utilisez notre site pour l'améliorer.",
+    "label": "Ces cookies nous aident à comprendre comment vous utilisez notre site pour l'améliorer.",
+    "kind": "text",
+    "page": "CookieBanner"
+  },
+  {
+    "path": "fields.CookieBanner-text-011.value",
+    "value": "Cookies marketing",
+    "label": "Cookies marketing",
+    "kind": "text",
+    "page": "CookieBanner"
+  },
+  {
+    "path": "fields.CookieBanner-text-012.value",
+    "value": "Ces cookies sont utilisés pour vous proposer des contenus et publicités pertinents.",
+    "label": "Ces cookies sont utilisés pour vous proposer des contenus et publicités pertinents.",
+    "kind": "text",
+    "page": "CookieBanner"
+  },
+  {
+    "path": "fields.CookieBanner-text-013.value",
+    "value": "Cookies nécessaires uniquement",
+    "label": "Cookies nécessaires uniquement",
+    "kind": "text",
+    "page": "CookieBanner"
+  },
+  {
+    "path": "fields.CookieBanner-text-014.value",
+    "value": "Enregistrer mes préférences",
+    "label": "Enregistrer mes préférences",
+    "kind": "text",
+    "page": "CookieBanner"
+  },
+  {
+    "path": "hero.badge",
+    "value": "Arrens-Marsous, Hautes-Pyrénées",
+    "label": "Arrens-Marsous, Hautes-Pyrénées",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "hero.sousTitre",
+    "value": "Votre Refuge d'Exception au Cœur des Pyrénées",
+    "label": "Votre Refuge d'Exception au Cœur des Pyrénées",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "hero.imageMain",
+    "value": "/images/postimg/BZMLXsYh/2022-10-10.jpg",
+    "label": "/images/postimg/BZMLXsYh/2022-10-10.jpg",
+    "kind": "image",
+    "page": "HomePage"
+  },
+  {
+    "path": "texts.infoSectionTitre",
+    "value": "Quelques informations pour un séjour serein",
+    "label": "Quelques informations pour un séjour serein",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "hero.imageSecondaire",
+    "value": "/images/postimg/QNwn7RLP/unnamed1.jpg",
+    "label": "/images/postimg/QNwn7RLP/unnamed1.jpg",
+    "kind": "image",
+    "page": "HomePage"
+  },
+  {
+    "path": "texts.reglementTitre",
+    "value": "Règlement des Gîtes",
+    "label": "Règlement des Gîtes",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "texts.ageMinTitre",
+    "value": "Âge Minimum",
+    "label": "Âge Minimum",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "texts.ageMinDescription",
+    "value": "Nos gîtes sont inadaptés pour les enfants de moins de 10 ans. Nous vous remercions de votre compréhension.",
+    "label": "Nos gîtes sont inadaptés pour les enfants de moins de 10 ans. Nous vous remercions de votr",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "texts.animauxTitre",
+    "value": "Animaux Non Admis",
+    "label": "Animaux Non Admis",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "texts.animauxDescription",
+    "value": "Les animaux ne sont pas acceptés dans nos gîtes afin de garantir le confort de tous nos visiteurs.",
+    "label": "Les animaux ne sont pas acceptés dans nos gîtes afin de garantir le confort de tous nos vi",
+    "kind": "text",
+    "page": "HomePage"
+  },
+  {
+    "path": "pages.tarifs.titre",
+    "value": "Nos Tarifs",
+    "label": "Nos Tarifs",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "pages.tarifs.sousTitre",
+    "value": "Des prix transparents pour un séjour d'exception",
+    "label": "Des prix transparents pour un séjour d'exception",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "pages.tarifs.inclusTitre",
+    "value": "Ce qui est inclus dans nos tarifs",
+    "label": "Ce qui est inclus dans nos tarifs",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "pages.tarifs.conditionsTitre",
+    "value": "Conditions de réservation",
+    "label": "Conditions de réservation",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "pages.tarifs.noteImportante",
+    "value": "Les tarifs sont indiqués pour 3 personnes. Tous nos gîtes sont conçus pour accueillir 3 personnes maximum. Pour toute demande spécifique ou réservation de dernière minute, n'hésitez pas à nous contacter directement.",
+    "label": "Les tarifs sont indiqués pour 3 personnes. Tous nos gîtes sont conçus pour accueillir 3 pe",
+    "kind": "text",
+    "page": "TarifsPage"
+  },
+  {
+    "path": "pages.gites.titre",
+    "value": "Nos Gîtes",
+    "label": "Nos Gîtes",
+    "kind": "text",
+    "page": "GitesPage"
+  },
+  {
+    "path": "pages.gites.sousTitre",
+    "value": "Quatre havres de paix pour 3 personnes, chacun avec son caractère unique",
+    "label": "Quatre havres de paix pour 3 personnes, chacun avec son caractère unique",
+    "kind": "text",
+    "page": "GitesPage"
+  },
+  {
+    "path": "pages.gites.introduction",
+    "value": "Chacun de nos quatre gîtes a été pensé pour accueillir confortablement 3 personnes dans un cadre intimiste et raffiné. Que vous recherchiez une escapade romantique, un séjour ressourçant ou une base pour vos aventures en montagne, vous trouverez ici votre refuge idéal.",
+    "label": "Chacun de nos quatre gîtes a été pensé pour accueillir confortablement 3 personnes dans un",
+    "kind": "text",
+    "page": "GitesPage"
+  },
+  {
+    "path": "pages.gites.equipementsTitre",
+    "value": "Équipements & Conforts",
+    "label": "Équipements & Conforts",
+    "kind": "text",
+    "page": "GitesPage"
+  },
+  {
+    "path": "pages.gites.equipementsSousTitre",
+    "value": "Tous nos gîtes sont équipés pour votre confort",
+    "label": "Tous nos gîtes sont équipés pour votre confort",
+    "kind": "text",
+    "page": "GitesPage"
+  },
+  {
+    "path": "pages.gites.localisationTitre",
+    "value": "Un Emplacement Privilégié",
+    "label": "Un Emplacement Privilégié",
+    "kind": "text",
+    "page": "GitesPage"
+  },
+  {
+    "path": "pages.gites.ctaTitre",
+    "value": "Trouvez votre gîte idéal",
+    "label": "Trouvez votre gîte idéal",
+    "kind": "text",
+    "page": "GitesPage"
+  },
+  {
+    "path": "pages.gites.ctaDescription",
+    "value": "Chaque gîte a son caractère unique. Explorez-les en détail pour trouver celui qui correspond le mieux à vos attentes.",
+    "label": "Chaque gîte a son caractère unique. Explorez-les en détail pour trouver celui qui correspo",
+    "kind": "text",
+    "page": "GitesPage"
+  },
+  {
+    "path": "pages.bienEtre.titre",
+    "value": "Bien-être & Détente",
+    "label": "Bien-être & Détente",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "pages.bienEtre.sousTitre",
+    "value": "Ressourcez-vous au cœur des Pyrénées",
+    "label": "Ressourcez-vous au cœur des Pyrénées",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "pages.bienEtre.imageHero",
+    "value": "/images/postimg/SQ5Nzs4k/2005472970463032322.jpg",
+    "label": "/images/postimg/SQ5Nzs4k/2005472970463032322.jpg",
+    "kind": "image",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "pages.bienEtre.servicesTitre",
+    "value": "Nos Services Bien-être",
+    "label": "Nos Services Bien-être",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "pages.bienEtre.servicesSousTitre",
+    "value": "Des prestations premium pour votre confort",
+    "label": "Des prestations premium pour votre confort",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "pages.bienEtre.activitesTitre",
+    "value": "Activités & Découvertes",
+    "label": "Activités & Découvertes",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "pages.bienEtre.galerieTitre",
+    "value": "Galerie Photos",
+    "label": "Galerie Photos",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "pages.bienEtre.galerieSousTitre",
+    "value": "Découvrez nos équipements bien-être",
+    "label": "Découvrez nos équipements bien-être",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "pages.bienEtre.bienfaitsTitre",
+    "value": "Les Bienfaits d'un Séjour Bien-être",
+    "label": "Les Bienfaits d'un Séjour Bien-être",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "pages.bienEtre.ctaTitre",
+    "value": "Réservez votre Séjour Bien-être",
+    "label": "Réservez votre Séjour Bien-être",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "pages.bienEtre.ctaDescription",
+    "value": "Offrez-vous une parenthèse de détente et de ressourcement dans un cadre naturel exceptionnel. Contactez-nous pour composer votre séjour sur mesure.",
+    "label": "Offrez-vous une parenthèse de détente et de ressourcement dans un cadre naturel exceptionn",
+    "kind": "text",
+    "page": "BienEtrePage"
+  },
+  {
+    "path": "pages.contact.titre",
+    "value": "Contactez-nous",
+    "label": "Contactez-nous",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "pages.contact.sousTitre",
+    "value": "Nous sommes à votre écoute pour préparer votre séjour",
+    "label": "Nous sommes à votre écoute pour préparer votre séjour",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "pages.contact.formulaireTitre",
+    "value": "Demande de renseignement",
+    "label": "Demande de renseignement",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "pages.contact.infoTitre",
+    "value": "Informations pratiques",
+    "label": "Informations pratiques",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "pages.contact.horaires",
+    "value": "Nous répondons à vos messages dans un délai de 24h maximum. Pour les demandes urgentes, privilégiez le contact téléphonique.",
+    "label": "Nous répondons à vos messages dans un délai de 24h maximum. Pour les demandes urgentes, pr",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "pages.contact.accesTitre",
+    "value": "Comment nous rejoindre",
+    "label": "Comment nous rejoindre",
+    "kind": "text",
+    "page": "ContactPage"
+  },
+  {
+    "path": "contact.adresse",
+    "value": "42 route du Soulor, 65400 Arrens-Marsous, France",
+    "label": "42 route du Soulor, 65400 Arrens-Marsous, France",
+    "kind": "text",
+    "page": "Footer"
+  },
+  {
+    "path": "contact.telephone",
+    "value": "06 45 79 59 39",
+    "label": "06 45 79 59 39",
+    "kind": "text",
+    "page": "Footer"
+  },
+  {
+    "path": "contact.email",
+    "value": "spanazol@wanadoo.fr",
+    "label": "spanazol@wanadoo.fr",
+    "kind": "text",
+    "page": "Footer"
+  },
+  {
+    "path": "texts.navLogo",
+    "value": "LES GÎTES DU SOULOR",
+    "label": "LES GÎTES DU SOULOR",
+    "kind": "text",
+    "page": "Navigation"
+  }
+]

@@ -1,3 +1,4 @@
+import { CmsText } from './admin/CmsFields';
 import { motion } from 'motion/react';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
@@ -67,7 +68,7 @@ export function Navigation({ scrollY }: NavigationProps) {
                         : 'text-white/70 hover:text-white hover:bg-white/5'
                     }`}
                   >
-                    {link.label}
+                    <CmsText id="Navigation-text-001" scope={[index]}>{link.label}</CmsText>
                   </motion.button>
                 </Link>
               );
@@ -77,6 +78,8 @@ export function Navigation({ scrollY }: NavigationProps) {
           {/* Mobile Menu Button */}
           <motion.button
             className="xl:hidden text-white relative z-10 p-2"
+            aria-label={isOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
+            aria-expanded={isOpen}
             onClick={() => setIsOpen(!isOpen)}
             whileTap={{ scale: 0.95 }}
           >
@@ -92,6 +95,8 @@ export function Navigation({ scrollY }: NavigationProps) {
         {/* Mobile Menu */}
         <motion.div
           initial={false}
+          aria-hidden={!isOpen}
+          style={{ pointerEvents: isOpen ? 'auto' : 'none' }}
           animate={{
             height: isOpen ? 'auto' : 0,
             opacity: isOpen ? 1 : 0,
@@ -116,7 +121,7 @@ export function Navigation({ scrollY }: NavigationProps) {
                     whileTap={{ scale: 0.98 }}
                   >
                     <span className="flex items-center justify-between">
-                      {link.label}
+                      <CmsText id="Navigation-text-002" scope={[index]}>{link.label}</CmsText>
                       {isActive && (
                         <motion.div
                           initial={{ scale: 0 }}

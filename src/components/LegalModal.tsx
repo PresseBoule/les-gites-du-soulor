@@ -1,3 +1,4 @@
+import { CmsText } from './admin/CmsFields';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, ScrollText, Shield, Cookie } from 'lucide-react';
 import { Button } from './ui/button';
@@ -18,27 +19,27 @@ export function LegalModal({ isOpen, onClose, type }: LegalModalProps) {
           title: 'Éditeur du site',
           content: (
             <>
-              <p><strong>Dénomination sociale :</strong> SARL Les Artigaux</p>
-              <p><strong>Forme juridique :</strong> Société à Responsabilité Limitée (SARL)</p>
-              <p><strong>Capital social :</strong> 15 000 €</p>
-              <p><strong>SIRET :</strong> 851 041 590 00015</p>
-              <p className="mt-3"><strong>Gérant :</strong> Panazol Sylvain</p>
-              <p><strong>Adresse :</strong> 42 route du Soulor, 65400 Arrens-Marsous, France</p>
-              <p><strong>Téléphone :</strong> 06 45 79 59 39</p>
-              <p><strong>Email :</strong> spanazol@wanadoo.fr</p>
+              <p><strong><CmsText id="LegalModal-text-001" scope={[type]}>{"Dénomination sociale :"}</CmsText></strong><CmsText id="LegalModal-text-002" scope={[type]}>{" SARL Les Artigaux"}</CmsText></p>
+              <p><strong><CmsText id="LegalModal-text-003" scope={[type]}>{"Forme juridique :"}</CmsText></strong><CmsText id="LegalModal-text-004" scope={[type]}>{" Société à Responsabilité Limitée (SARL)"}</CmsText></p>
+              <p><strong><CmsText id="LegalModal-text-005" scope={[type]}>{"Capital social :"}</CmsText></strong><CmsText id="LegalModal-text-006" scope={[type]}>{" 15 000 €"}</CmsText></p>
+              <p><strong><CmsText id="LegalModal-text-007" scope={[type]}>{"SIRET :"}</CmsText></strong><CmsText id="LegalModal-text-008" scope={[type]}>{" 851 041 590 00015"}</CmsText></p>
+              <p className="mt-3"><strong><CmsText id="LegalModal-text-009" scope={[type]}>{"Gérant :"}</CmsText></strong><CmsText id="LegalModal-text-010" scope={[type]}>{" Panazol Sylvain"}</CmsText></p>
+              <p><strong><CmsText id="LegalModal-text-011" scope={[type]}>{"Adresse :"}</CmsText></strong><CmsText id="LegalModal-text-012" scope={[type]}>{" 42 route du Soulor, 65400 Arrens-Marsous, France"}</CmsText></p>
+              <p><strong><CmsText id="LegalModal-text-013" scope={[type]}>{"Téléphone :"}</CmsText></strong><CmsText id="LegalModal-text-014" scope={[type]}>{" 06 45 79 59 39"}</CmsText></p>
+              <p><strong><CmsText id="LegalModal-text-015" scope={[type]}>{"Email :"}</CmsText></strong><CmsText id="LegalModal-text-016" scope={[type]}>{" spanazol@wanadoo.fr"}</CmsText></p>
             </>
           ),
         },
         {
           title: 'Responsable de publication',
-          content: <p>Sylvain Panazol</p>,
+          content: <p><CmsText id="LegalModal-text-017" scope={[type]}>{"Sylvain Panazol"}</CmsText></p>,
         },
         {
           title: 'Conception et réalisation',
           content: (
             <>
-              <p><strong>Designer & Développeur :</strong> Camille Panazol</p>
-              <p><strong>Agence :</strong> PixelBoost</p>
+              <p><strong><CmsText id="LegalModal-text-018" scope={[type]}>{"Designer & Développeur :"}</CmsText></strong><CmsText id="LegalModal-text-019" scope={[type]}>{" Camille Panazol"}</CmsText></p>
+              <p><strong><CmsText id="LegalModal-text-020" scope={[type]}>{"Agence :"}</CmsText></strong><CmsText id="LegalModal-text-021" scope={[type]}>{" PixelBoost"}</CmsText></p>
             </>
           ),
         },
@@ -46,19 +47,17 @@ export function LegalModal({ isOpen, onClose, type }: LegalModalProps) {
           title: 'Hébergement',
           content: (
             <>
-              <p><strong>Hébergeur :</strong> Netlify, Inc.</p>
-              <p><strong>Adresse :</strong> 2325 3rd Street, Suite 296</p>
-              <p>San Francisco, California 94107</p>
-              <p>États-Unis</p>
+              <p><strong><CmsText id="LegalModal-text-022" scope={[type]}>{"Hébergeur :"}</CmsText></strong><CmsText id="LegalModal-text-023" scope={[type]}>{" Netlify, Inc."}</CmsText></p>
+              <p><strong><CmsText id="LegalModal-text-024" scope={[type]}>{"Adresse :"}</CmsText></strong><CmsText id="LegalModal-text-025" scope={[type]}>{" 2325 3rd Street, Suite 296"}</CmsText></p>
+              <p><CmsText id="LegalModal-text-026" scope={[type]}>{"San Francisco, California 94107"}</CmsText></p>
+              <p><CmsText id="LegalModal-text-027" scope={[type]}>{"États-Unis"}</CmsText></p>
               <p className="mt-2">
-                <a 
-                  href="https://www.netlify.com" 
-                  target="_blank" 
+                <a
+                  href="https://www.netlify.com"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#c4a574] hover:underline"
-                >
-                  www.netlify.com
-                </a>
+                ><CmsText id="LegalModal-text-028" scope={[type]}>{"www.netlify.com"}</CmsText></a>
               </p>
             </>
           ),
@@ -67,15 +66,8 @@ export function LegalModal({ isOpen, onClose, type }: LegalModalProps) {
           title: 'Propriété intellectuelle',
           content: (
             <>
-              <p>
-                L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur 
-                et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour 
-                les documents téléchargeables et les représentations iconographiques et photographiques.
-              </p>
-              <p className="mt-3">
-                La reproduction de tout ou partie de ce site sur un support électronique quel qu'il soit est 
-                formellement interdite sauf autorisation expresse du directeur de la publication.
-              </p>
+              <p><CmsText id="LegalModal-text-029" scope={[type]}>{"L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques."}</CmsText></p>
+              <p className="mt-3"><CmsText id="LegalModal-text-030" scope={[type]}>{"La reproduction de tout ou partie de ce site sur un support électronique quel qu'il soit est formellement interdite sauf autorisation expresse du directeur de la publication."}</CmsText></p>
             </>
           ),
         },
@@ -83,14 +75,8 @@ export function LegalModal({ isOpen, onClose, type }: LegalModalProps) {
           title: 'Crédits photos',
           content: (
             <>
-              <p>
-                Toutes les photographies utilisées sur ce site sont issues de la collection personnelle 
-                de Panazol Sylvain, gérant des Gîtes du Soulor.
-              </p>
-              <p className="mt-2">
-                Ces images sont protégées par le droit d'auteur et ne peuvent être utilisées sans 
-                autorisation préalable écrite.
-              </p>
+              <p><CmsText id="LegalModal-text-031" scope={[type]}>{"Toutes les photographies utilisées sur ce site sont issues de la collection personnelle de Panazol Sylvain, gérant des Gîtes du Soulor."}</CmsText></p>
+              <p className="mt-2"><CmsText id="LegalModal-text-032" scope={[type]}>{"Ces images sont protégées par le droit d'auteur et ne peuvent être utilisées sans autorisation préalable écrite."}</CmsText></p>
             </>
           ),
         },
@@ -104,15 +90,12 @@ export function LegalModal({ isOpen, onClose, type }: LegalModalProps) {
           title: 'Collecte des données personnelles',
           content: (
             <>
-              <p>
-                Dans le cadre de l'utilisation de notre site et de nos services de réservation, 
-                nous sommes amenés à collecter les données personnelles suivantes :
-              </p>
+              <p><CmsText id="LegalModal-text-033" scope={[type]}>{"Dans le cadre de l'utilisation de notre site et de nos services de réservation, nous sommes amenés à collecter les données personnelles suivantes :"}</CmsText></p>
               <ul className="list-disc list-inside mt-2 space-y-1">
-                <li><strong>Nom et prénom</strong></li>
-                <li><strong>Adresse email</strong></li>
-                <li><strong>Numéro de téléphone</strong></li>
-                <li><strong>Informations de réservation</strong> (dates, nombre de personnes, gîte choisi)</li>
+                <li><strong><CmsText id="LegalModal-text-034" scope={[type]}>{"Nom et prénom"}</CmsText></strong></li>
+                <li><strong><CmsText id="LegalModal-text-035" scope={[type]}>{"Adresse email"}</CmsText></strong></li>
+                <li><strong><CmsText id="LegalModal-text-036" scope={[type]}>{"Numéro de téléphone"}</CmsText></strong></li>
+                <li><strong><CmsText id="LegalModal-text-037" scope={[type]}>{"Informations de réservation"}</CmsText></strong><CmsText id="LegalModal-text-038" scope={[type]}>{" (dates, nombre de personnes, gîte choisi)"}</CmsText></li>
               </ul>
             </>
           ),
@@ -121,12 +104,12 @@ export function LegalModal({ isOpen, onClose, type }: LegalModalProps) {
           title: 'Finalité de la collecte',
           content: (
             <>
-              <p>Les données collectées sont utilisées pour :</p>
+              <p><CmsText id="LegalModal-text-039" scope={[type]}>{"Les données collectées sont utilisées pour :"}</CmsText></p>
               <ul className="list-disc list-inside mt-2 space-y-1">
-                <li>Gérer vos réservations et confirmations</li>
-                <li>Vous contacter concernant votre séjour</li>
-                <li>Répondre à vos demandes d'information</li>
-                <li>Améliorer nos services</li>
+                <li><CmsText id="LegalModal-text-040" scope={[type]}>{"Gérer vos réservations et confirmations"}</CmsText></li>
+                <li><CmsText id="LegalModal-text-041" scope={[type]}>{"Vous contacter concernant votre séjour"}</CmsText></li>
+                <li><CmsText id="LegalModal-text-042" scope={[type]}>{"Répondre à vos demandes d'information"}</CmsText></li>
+                <li><CmsText id="LegalModal-text-043" scope={[type]}>{"Améliorer nos services"}</CmsText></li>
               </ul>
             </>
           ),
@@ -134,20 +117,17 @@ export function LegalModal({ isOpen, onClose, type }: LegalModalProps) {
         {
           title: 'Base légale du traitement',
           content: (
-            <p>
-              Le traitement de vos données personnelles est fondé sur l'exécution du contrat de 
-              réservation et votre consentement explicite lors de la soumission du formulaire de contact.
-            </p>
+            <p><CmsText id="LegalModal-text-044" scope={[type]}>{"Le traitement de vos données personnelles est fondé sur l'exécution du contrat de réservation et votre consentement explicite lors de la soumission du formulaire de contact."}</CmsText></p>
           ),
         },
         {
           title: 'Durée de conservation',
           content: (
             <>
-              <p>Vos données sont conservées pendant :</p>
+              <p><CmsText id="LegalModal-text-045" scope={[type]}>{"Vos données sont conservées pendant :"}</CmsText></p>
               <ul className="list-disc list-inside mt-2 space-y-1">
-                <li><strong>3 ans</strong> à compter de votre dernière interaction avec nos services</li>
-                <li>Les données de réservation sont archivées conformément aux obligations comptables et fiscales</li>
+                <li><strong><CmsText id="LegalModal-text-046" scope={[type]}>{"3 ans"}</CmsText></strong><CmsText id="LegalModal-text-047" scope={[type]}>{" à compter de votre dernière interaction avec nos services"}</CmsText></li>
+                <li><CmsText id="LegalModal-text-048" scope={[type]}>{"Les données de réservation sont archivées conformément aux obligations comptables et fiscales"}</CmsText></li>
               </ul>
             </>
           ),
@@ -156,19 +136,16 @@ export function LegalModal({ isOpen, onClose, type }: LegalModalProps) {
           title: 'Vos droits',
           content: (
             <>
-              <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+              <p><CmsText id="LegalModal-text-049" scope={[type]}>{"Conformément au RGPD, vous disposez des droits suivants :"}</CmsText></p>
               <ul className="list-disc list-inside mt-2 space-y-1">
-                <li><strong>Droit d'accès :</strong> Vous pouvez demander une copie de vos données</li>
-                <li><strong>Droit de rectification :</strong> Vous pouvez corriger vos données inexactes</li>
-                <li><strong>Droit à l'effacement :</strong> Vous pouvez demander la suppression de vos données</li>
-                <li><strong>Droit d'opposition :</strong> Vous pouvez vous opposer au traitement de vos données</li>
-                <li><strong>Droit à la portabilité :</strong> Vous pouvez récupérer vos données dans un format structuré</li>
+                <li><strong><CmsText id="LegalModal-text-050" scope={[type]}>{"Droit d'accès :"}</CmsText></strong><CmsText id="LegalModal-text-051" scope={[type]}>{" Vous pouvez demander une copie de vos données"}</CmsText></li>
+                <li><strong><CmsText id="LegalModal-text-052" scope={[type]}>{"Droit de rectification :"}</CmsText></strong><CmsText id="LegalModal-text-053" scope={[type]}>{" Vous pouvez corriger vos données inexactes"}</CmsText></li>
+                <li><strong><CmsText id="LegalModal-text-054" scope={[type]}>{"Droit à l'effacement :"}</CmsText></strong><CmsText id="LegalModal-text-055" scope={[type]}>{" Vous pouvez demander la suppression de vos données"}</CmsText></li>
+                <li><strong><CmsText id="LegalModal-text-056" scope={[type]}>{"Droit d'opposition :"}</CmsText></strong><CmsText id="LegalModal-text-057" scope={[type]}>{" Vous pouvez vous opposer au traitement de vos données"}</CmsText></li>
+                <li><strong><CmsText id="LegalModal-text-058" scope={[type]}>{"Droit à la portabilité :"}</CmsText></strong><CmsText id="LegalModal-text-059" scope={[type]}>{" Vous pouvez récupérer vos données dans un format structuré"}</CmsText></li>
               </ul>
-              <p className="mt-3">
-                Pour exercer ces droits, veuillez nous envoyer un email à :{' '}
-                <a href="mailto:spanazol@wanadoo.fr" className="text-[#c4a574] hover:underline">
-                  spanazol@wanadoo.fr
-                </a>
+              <p className="mt-3"><CmsText id="LegalModal-text-060" scope={[type]}>{"Pour exercer ces droits, veuillez nous envoyer un email à :"}</CmsText><CmsText id="LegalModal-text-061" scope={[type]}>{' '}</CmsText>
+                <a href="mailto:spanazol@wanadoo.fr" className="text-[#c4a574] hover:underline"><CmsText id="LegalModal-text-062" scope={[type]}>{"spanazol@wanadoo.fr"}</CmsText></a>
               </p>
             </>
           ),
@@ -176,34 +153,25 @@ export function LegalModal({ isOpen, onClose, type }: LegalModalProps) {
         {
           title: 'Sécurité des données',
           content: (
-            <p>
-              Nous mettons en œuvre toutes les mesures techniques et organisationnelles appropriées 
-              pour garantir la sécurité de vos données personnelles et empêcher leur altération, 
-              leur perte ou l'accès par des tiers non autorisés.
-            </p>
+            <p><CmsText id="LegalModal-text-063" scope={[type]}>{"Nous mettons en œuvre toutes les mesures techniques et organisationnelles appropriées pour garantir la sécurité de vos données personnelles et empêcher leur altération, leur perte ou l'accès par des tiers non autorisés."}</CmsText></p>
           ),
         },
         {
           title: 'Transmission des données',
           content: (
-            <p>
-              Vos données personnelles ne sont ni vendues, ni louées, ni transmises à des tiers, 
-              sauf obligation légale ou réglementaire.
-            </p>
+            <p><CmsText id="LegalModal-text-064" scope={[type]}>{"Vos données personnelles ne sont ni vendues, ni louées, ni transmises à des tiers, sauf obligation légale ou réglementaire."}</CmsText></p>
           ),
         },
         {
           title: 'Contact',
           content: (
             <>
-              <p>Pour toute question concernant la protection de vos données personnelles :</p>
+              <p><CmsText id="LegalModal-text-065" scope={[type]}>{"Pour toute question concernant la protection de vos données personnelles :"}</CmsText></p>
               <p className="mt-2">
-                <strong>Email :</strong>{' '}
-                <a href="mailto:spanazol@wanadoo.fr" className="text-[#c4a574] hover:underline">
-                  spanazol@wanadoo.fr
-                </a>
+                <strong><CmsText id="LegalModal-text-066" scope={[type]}>{"Email :"}</CmsText></strong><CmsText id="LegalModal-text-067" scope={[type]}>{' '}</CmsText>
+                <a href="mailto:spanazol@wanadoo.fr" className="text-[#c4a574] hover:underline"><CmsText id="LegalModal-text-068" scope={[type]}>{"spanazol@wanadoo.fr"}</CmsText></a>
               </p>
-              <p><strong>Téléphone :</strong> 06 45 79 59 39</p>
+              <p><strong><CmsText id="LegalModal-text-069" scope={[type]}>{"Téléphone :"}</CmsText></strong><CmsText id="LegalModal-text-070" scope={[type]}>{" 06 45 79 59 39"}</CmsText></p>
             </>
           ),
         },
@@ -216,34 +184,19 @@ export function LegalModal({ isOpen, onClose, type }: LegalModalProps) {
         {
           title: 'Qu\'est-ce qu\'un cookie ?',
           content: (
-            <p>
-              Un cookie est un petit fichier texte déposé sur votre ordinateur lors de la visite d'un site web. 
-              Il permet de mémoriser des informations relatives à votre navigation et de reconnaître votre 
-              navigateur lors de votre prochaine visite.
-            </p>
+            <p><CmsText id="LegalModal-text-071" scope={[type]}>{"Un cookie est un petit fichier texte déposé sur votre ordinateur lors de la visite d'un site web. Il permet de mémoriser des informations relatives à votre navigation et de reconnaître votre navigateur lors de votre prochaine visite."}</CmsText></p>
           ),
         },
         {
           title: 'Les cookies que nous utilisons',
           content: (
             <>
-              <p><strong>1. Cookies nécessaires (obligatoires)</strong></p>
-              <p className="mt-2 ml-4">
-                Ces cookies sont indispensables au fonctionnement du site. Ils vous permettent de naviguer 
-                sur le site et d'utiliser ses fonctionnalités essentielles. Sans ces cookies, certains 
-                services ne peuvent pas être fournis.
-              </p>
-              <p className="mt-4"><strong>2. Cookies analytiques (optionnels)</strong></p>
-              <p className="mt-2 ml-4">
-                Ces cookies nous permettent de comprendre comment les visiteurs utilisent notre site, 
-                de détecter les erreurs et d'améliorer les performances. Toutes les informations collectées 
-                sont anonymes.
-              </p>
-              <p className="mt-4"><strong>3. Cookies marketing (optionnels)</strong></p>
-              <p className="mt-2 ml-4">
-                Ces cookies peuvent être utilisés pour vous proposer des contenus personnalisés et 
-                adaptés à vos centres d'intérêt.
-              </p>
+              <p><strong><CmsText id="LegalModal-text-072" scope={[type]}>{"1. Cookies nécessaires (obligatoires)"}</CmsText></strong></p>
+              <p className="mt-2 ml-4"><CmsText id="LegalModal-text-073" scope={[type]}>{"Ces cookies sont indispensables au fonctionnement du site. Ils vous permettent de naviguer sur le site et d'utiliser ses fonctionnalités essentielles. Sans ces cookies, certains services ne peuvent pas être fournis."}</CmsText></p>
+              <p className="mt-4"><strong><CmsText id="LegalModal-text-074" scope={[type]}>{"2. Cookies analytiques (optionnels)"}</CmsText></strong></p>
+              <p className="mt-2 ml-4"><CmsText id="LegalModal-text-075" scope={[type]}>{"Ces cookies nous permettent de comprendre comment les visiteurs utilisent notre site, de détecter les erreurs et d'améliorer les performances. Toutes les informations collectées sont anonymes."}</CmsText></p>
+              <p className="mt-4"><strong><CmsText id="LegalModal-text-076" scope={[type]}>{"3. Cookies marketing (optionnels)"}</CmsText></strong></p>
+              <p className="mt-2 ml-4"><CmsText id="LegalModal-text-077" scope={[type]}>{"Ces cookies peuvent être utilisés pour vous proposer des contenus personnalisés et adaptés à vos centres d'intérêt."}</CmsText></p>
             </>
           ),
         },
@@ -251,44 +204,34 @@ export function LegalModal({ isOpen, onClose, type }: LegalModalProps) {
           title: 'Gestion des cookies',
           content: (
             <>
-              <p>Vous pouvez à tout moment :</p>
+              <p><CmsText id="LegalModal-text-078" scope={[type]}>{"Vous pouvez à tout moment :"}</CmsText></p>
               <ul className="list-disc list-inside mt-2 space-y-1">
-                <li>Accepter ou refuser les cookies via la bannière de consentement</li>
-                <li>Modifier vos préférences dans les paramètres de votre navigateur</li>
-                <li>Supprimer les cookies déjà déposés sur votre appareil</li>
+                <li><CmsText id="LegalModal-text-079" scope={[type]}>{"Accepter ou refuser les cookies via la bannière de consentement"}</CmsText></li>
+                <li><CmsText id="LegalModal-text-080" scope={[type]}>{"Modifier vos préférences dans les paramètres de votre navigateur"}</CmsText></li>
+                <li><CmsText id="LegalModal-text-081" scope={[type]}>{"Supprimer les cookies déjà déposés sur votre appareil"}</CmsText></li>
               </ul>
-              <p className="mt-3">
-                Attention : La désactivation de certains cookies peut affecter votre expérience de 
-                navigation et limiter l'accès à certaines fonctionnalités du site.
-              </p>
+              <p className="mt-3"><CmsText id="LegalModal-text-082" scope={[type]}>{"Attention : La désactivation de certains cookies peut affecter votre expérience de navigation et limiter l'accès à certaines fonctionnalités du site."}</CmsText></p>
             </>
           ),
         },
         {
           title: 'Durée de conservation',
           content: (
-            <p>
-              Les cookies sont conservés pour une durée maximale de 13 mois à compter de leur premier dépôt 
-              sur votre terminal. Votre consentement est valable pour cette même durée.
-            </p>
+            <p><CmsText id="LegalModal-text-083" scope={[type]}>{"Les cookies sont conservés pour une durée maximale de 13 mois à compter de leur premier dépôt sur votre terminal. Votre consentement est valable pour cette même durée."}</CmsText></p>
           ),
         },
         {
           title: 'Pour plus d\'informations',
           content: (
             <>
-              <p>
-                Pour en savoir plus sur les cookies et leur utilisation, vous pouvez consulter le site de la CNIL :
-              </p>
+              <p><CmsText id="LegalModal-text-084" scope={[type]}>{"Pour en savoir plus sur les cookies et leur utilisation, vous pouvez consulter le site de la CNIL :"}</CmsText></p>
               <p className="mt-2">
-                <a 
-                  href="https://www.cnil.fr/fr/cookies-et-autres-traceurs" 
-                  target="_blank" 
+                <a
+                  href="https://www.cnil.fr/fr/cookies-et-autres-traceurs"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#c4a574] hover:underline"
-                >
-                  www.cnil.fr/fr/cookies-et-autres-traceurs
-                </a>
+                ><CmsText id="LegalModal-text-085" scope={[type]}>{"www.cnil.fr/fr/cookies-et-autres-traceurs"}</CmsText></a>
               </p>
             </>
           ),
@@ -328,7 +271,7 @@ export function LegalModal({ isOpen, onClose, type }: LegalModalProps) {
                   <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#c4a574]/20 to-[#b89560]/20 flex items-center justify-center">
                     <Icon className="w-5 h-5 text-[#c4a574]" />
                   </div>
-                  <h2 className="text-white">{currentContent.title}</h2>
+                  <h2 className="text-white"><CmsText id="LegalModal-text-086" scope={[type]}>{currentContent.title}</CmsText></h2>
                 </div>
                 <button
                   onClick={onClose}
@@ -351,7 +294,7 @@ export function LegalModal({ isOpen, onClose, type }: LegalModalProps) {
                     >
                       <h3 className="text-[#c4a574] flex items-center gap-2">
                         <span className="w-1 h-6 bg-gradient-to-b from-[#c4a574] to-[#b89560] rounded-full" />
-                        {section.title}
+                        <CmsText id="LegalModal-text-087" scope={[type, index]}>{section.title}</CmsText>
                       </h3>
                       <div className="text-white/80 space-y-3 ml-4">
                         {section.content}
@@ -362,11 +305,10 @@ export function LegalModal({ isOpen, onClose, type }: LegalModalProps) {
 
                 {/* Footer */}
                 <div className="mt-8 pt-6 border-t border-white/10">
-                  <p className="text-white/60 text-sm text-center">
-                    Dernière mise à jour : {new Date().toLocaleDateString('fr-FR', { 
-                      year: 'numeric', 
-                      month: 'long', 
-                      day: 'numeric' 
+                  <p className="text-white/60 text-sm text-center"><CmsText id="LegalModal-text-088" scope={[type]}>{"Dernière mise à jour : "}</CmsText>{new Date().toLocaleDateString('fr-FR', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric'
                     })}
                   </p>
                 </div>
@@ -377,9 +319,7 @@ export function LegalModal({ isOpen, onClose, type }: LegalModalProps) {
                 <Button
                   onClick={onClose}
                   className="bg-gradient-to-r from-[#c4a574] to-[#b89560] hover:from-[#b89560] hover:to-[#c4a574] text-white shadow-lg"
-                >
-                  Fermer
-                </Button>
+                ><CmsText id="LegalModal-text-089" scope={[type]}>{"Fermer"}</CmsText></Button>
               </div>
             </motion.div>
           </div>

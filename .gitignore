@@ -17,3 +17,8 @@ yarn-error.log*
 # OS
 .DS_Store
 Thumbs.db
+content-live-audit.json
+scripts/connect-editor.mjs
+scripts/connect-pricing.mjs
+scripts/finish-content-model.mjs
+test-results/

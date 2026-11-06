@@ -1,3 +1,8 @@
+import { PriceRange, PriceSummary, priceRange } from '../components/SitePrices';
+import { CmsText, CmsImage } from '../components/admin/CmsFields';
+import { useAdmin } from '../contexts/AdminContext';
+import { EditableImage } from '../components/admin/EditableImage';
+import { EditableText } from '../components/admin/EditableText';
 import { motion } from 'motion/react';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
@@ -5,16 +10,18 @@ import { Helmet } from 'react-helmet-async';
 import { MapPin, Home, Mountain, Waves, Flame, Star, ArrowRight, Check } from 'lucide-react';
 
 export function GiteArrensMarsousPage() {
+  const { content } = useAdmin();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const gites = [
+  const fallbackGites = [
     { nom: 'Le Suyen', surface: '50m²', image: '/images/postimg/FFcpb6LX/7588570501155327596.jpg' },
     { nom: 'Le Tech', surface: '50m²', image: '/images/postimg/sfQJLy0X/2856943310074011028.jpg' },
     { nom: "L'Estaing", surface: '65m²', image: '/images/postimg/x12r0yfD/IMG-3567.jpg' },
     { nom: 'Le Soum', surface: '50m²', image: '/images/postimg/SKksq5yk/unnamed.jpg' },
   ];
+  const gites = fallbackGites.map((fallback, index) => ({ ...fallback, ...content.gites?.[index], surface: content.gites?.[index]?.superficie || fallback.surface }));
 
   const proximite = [
     { lieu: "Village d'Arrens-Marsous", distance: '5 min à pied', icon: Home },
@@ -74,12 +81,8 @@ export function GiteArrensMarsousPage() {
                 <MapPin className="w-16 h-16 text-[#c4a574] mx-auto" />
               </motion.div>
               
-              <h1 className="text-4xl md:text-6xl text-white mb-6" style={{ fontFamily: 'serif' }}>
-                Gîte à Arrens-Marsous
-              </h1>
-              <p className="text-white/70 text-xl max-w-3xl mx-auto">
-                Votre hébergement de charme au cœur du Val d'Azun dans les Hautes-Pyrénées
-              </p>
+              <h1 className="text-4xl md:text-6xl text-white mb-6" style={{ fontFamily: 'serif' }}><CmsText id="GiteArrensMarsousPage-text-001" scope={[]}>{"Gîte à Arrens-Marsous"}</CmsText></h1>
+              <p className="text-white/70 text-xl max-w-3xl mx-auto"><CmsText id="GiteArrensMarsousPage-text-002" scope={[]}>{"Votre hébergement de charme au cœur du Val d'Azun dans les Hautes-Pyrénées"}</CmsText></p>
             </motion.div>
           </div>
         </section>
@@ -94,19 +97,11 @@ export function GiteArrensMarsousPage() {
                 viewport={{ once: true }}
                 className="p-8 rounded-2xl bg-gradient-to-br from-white/5 to-transparent border border-white/10"
               >
-                <p className="text-white/80 leading-relaxed mb-6">
-                  Vous recherchez un <strong className="text-[#c4a574]">gîte à Arrens-Marsous</strong> pour vos prochaines vacances dans les Pyrénées ? Les Gîtes du Soulor vous accueillent dans un cadre exceptionnel au cœur du <strong className="text-[#c4a574]">Val d'Azun</strong>, à seulement 5 minutes à pied du charmant village d'Arrens-Marsous.
-                </p>
+                <p className="text-white/80 leading-relaxed mb-6"><CmsText id="GiteArrensMarsousPage-text-003" scope={[]}>{"Vous recherchez un "}</CmsText><strong className="text-[#c4a574]"><CmsText id="GiteArrensMarsousPage-text-004" scope={[]}>{"gîte à Arrens-Marsous"}</CmsText></strong><CmsText id="GiteArrensMarsousPage-text-005" scope={[]}>{" pour vos prochaines vacances dans les Pyrénées ? Les Gîtes du Soulor vous accueillent dans un cadre exceptionnel au cœur du "}</CmsText><strong className="text-[#c4a574]"><CmsText id="GiteArrensMarsousPage-text-006" scope={[]}>{"Val d'Azun"}</CmsText></strong><CmsText id="GiteArrensMarsousPage-text-007" scope={[]}>{", à seulement 5 minutes à pied du charmant village d'Arrens-Marsous."}</CmsText></p>
                 
-                <h2 className="text-2xl text-white mb-4 mt-8" style={{ fontFamily: 'serif' }}>
-                  Pourquoi choisir nos gîtes à Arrens-Marsous
-                </h2>
-                <p className="text-white/80 leading-relaxed mb-4">
-                  Arrens-Marsous est un village de montagne authentique situé à 885 mètres d'altitude dans les Hautes-Pyrénées (65). Porte d'entrée du Parc National des Pyrénées, ce village de caractère offre un cadre idéal pour un séjour nature, que vous veniez pour randonner en été, skier en hiver ou simplement vous ressourcer au calme.
-                </p>
-                <p className="text-white/80 leading-relaxed">
-                  Nos 4 gîtes se situent au Col du Soulor, position stratégique qui combine tranquillité absolue et proximité immédiate des commerces et services du village. Vous profitez ainsi du meilleur des deux mondes : le calme de la montagne et la commodité d'un village vivant.
-                </p>
+                <h2 className="text-2xl text-white mb-4 mt-8" style={{ fontFamily: 'serif' }}><CmsText id="GiteArrensMarsousPage-text-008" scope={[]}>{"Pourquoi choisir nos gîtes à Arrens-Marsous"}</CmsText></h2>
+                <p className="text-white/80 leading-relaxed mb-4"><CmsText id="GiteArrensMarsousPage-text-009" scope={[]}>{"Arrens-Marsous est un village de montagne authentique situé à 885 mètres d'altitude dans les Hautes-Pyrénées (65). Porte d'entrée du Parc National des Pyrénées, ce village de caractère offre un cadre idéal pour un séjour nature, que vous veniez pour randonner en été, skier en hiver ou simplement vous ressourcer au calme."}</CmsText></p>
+                <p className="text-white/80 leading-relaxed"><CmsText id="GiteArrensMarsousPage-text-010" scope={[]}>{"Nos 4 gîtes se situent au Col du Soulor, position stratégique qui combine tranquillité absolue et proximité immédiate des commerces et services du village. Vous profitez ainsi du meilleur des deux mondes : le calme de la montagne et la commodité d'un village vivant."}</CmsText></p>
               </motion.div>
             </div>
           </div>
@@ -121,12 +116,8 @@ export function GiteArrensMarsousPage() {
               viewport={{ once: true }}
               className="text-center mb-12"
             >
-              <h2 className="text-4xl text-white mb-4" style={{ fontFamily: 'serif' }}>
-                Nos 4 gîtes de charme pour 3 personnes
-              </h2>
-              <p className="text-white/70 text-lg max-w-2xl mx-auto">
-                Le Suyen, Le Tech, L'Estaing et Le Soum : quatre hébergements tout confort avec bain nordique et sauna
-              </p>
+              <h2 className="text-4xl text-white mb-4" style={{ fontFamily: 'serif' }}><CmsText id="GiteArrensMarsousPage-text-011" scope={[]}>{"Nos 4 gîtes de charme pour 3 personnes"}</CmsText></h2>
+              <p className="text-white/70 text-lg max-w-2xl mx-auto"><CmsText id="GiteArrensMarsousPage-text-012" scope={[]}>{"Le Suyen, Le Tech, L'Estaing et Le Soum : quatre hébergements tout confort avec bain nordique et sauna"}</CmsText></p>
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
@@ -143,7 +134,7 @@ export function GiteArrensMarsousPage() {
                   
                   <div className="relative overflow-hidden rounded-2xl bg-white/5 border border-white/10 group-hover:border-[#c4a574]/30 transition-all duration-300">
                     <div className="aspect-[4/3] overflow-hidden">
-                      <img 
+                      <EditableImage path={`gites.${index}.image`}
                         src={gite.image} 
                         alt={gite.nom}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -151,17 +142,16 @@ export function GiteArrensMarsousPage() {
                     </div>
                     <div className="p-6">
                       <div className="flex items-center justify-between mb-2">
-                        <h3 className="text-xl text-white font-semibold">{gite.nom}</h3>
+                        <h3 className="text-xl text-white font-semibold"><EditableText path={`gites.${index}.nom`} value={gite.nom} as="span" /></h3>
                         <Star className="w-5 h-5 text-[#c4a574]" />
                       </div>
                       <p className="text-white/60 text-sm mb-4">
-                        {gite.surface} • 3 personnes
-                      </p>
+                        <CmsText id="GiteArrensMarsousPage-text-015" scope={[index]}>{gite.surface}</CmsText><CmsText id="GiteArrensMarsousPage-text-016" scope={[index]}>{" • 3 personnes"}</CmsText></p>
                       <Link 
                         to="/gites" 
                         className="inline-flex items-center gap-2 text-[#c4a574] hover:text-[#d4b584] transition-colors text-sm"
                       >
-                        <span>Découvrir</span>
+                        <span><CmsText id="GiteArrensMarsousPage-text-017" scope={[index]}>{"Découvrir"}</CmsText></span>
                         <ArrowRight className="w-4 h-4" />
                       </Link>
                     </div>
@@ -178,22 +168,18 @@ export function GiteArrensMarsousPage() {
               className="mt-16 max-w-4xl mx-auto"
             >
               <div className="p-8 rounded-2xl bg-gradient-to-br from-white/5 to-transparent border border-white/10">
-                <h3 className="text-2xl text-white mb-6 text-center" style={{ fontFamily: 'serif' }}>
-                  Équipements inclus dans chaque gîte
-                </h3>
+                <h3 className="text-2xl text-white mb-6 text-center" style={{ fontFamily: 'serif' }}><CmsText id="GiteArrensMarsousPage-text-018" scope={[]}>{"Équipements inclus dans chaque gîte"}</CmsText></h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {equipements.map((equip, idx) => (
                     <div key={idx} className="flex items-center gap-3 text-white/80">
                       <Check className="w-5 h-5 text-[#c4a574] flex-shrink-0" />
-                      <span>{equip}</span>
+                      <span><CmsText id="Arrens-equipment" scope={[idx]}>{equip}</CmsText></span>
                     </div>
                   ))}
                 </div>
                 <div className="mt-6 pt-6 border-t border-white/10">
                   <p className="text-[#c4a574] font-semibold text-center flex items-center justify-center gap-2">
-                    <Flame className="w-5 h-5" />
-                    Bain nordique chauffé au feu de bois et sauna inclus
-                  </p>
+                    <Flame className="w-5 h-5" /><CmsText id="GiteArrensMarsousPage-text-019" scope={[]}>{"Bain nordique chauffé au feu de bois et sauna inclus"}</CmsText></p>
                 </div>
               </div>
             </motion.div>
@@ -210,9 +196,7 @@ export function GiteArrensMarsousPage() {
                 viewport={{ once: true }}
                 className="mb-12 text-center"
               >
-                <h2 className="text-4xl text-white mb-4" style={{ fontFamily: 'serif' }}>
-                  Arrens-Marsous : un village de montagne authentique
-                </h2>
+                <h2 className="text-4xl text-white mb-4" style={{ fontFamily: 'serif' }}><CmsText id="GiteArrensMarsousPage-text-020" scope={[]}>{"Arrens-Marsous : un village de montagne authentique"}</CmsText></h2>
               </motion.div>
 
               <div className="prose prose-invert prose-lg max-w-none">
@@ -222,24 +206,20 @@ export function GiteArrensMarsousPage() {
                   viewport={{ once: true }}
                   className="p-8 rounded-2xl bg-gradient-to-br from-white/5 to-transparent border border-white/10"
                 >
-                  <p className="text-white/80 leading-relaxed mb-6">
-                    Arrens-Marsous (1 200 habitants) est l'un des plus beaux villages du Val d'Azun. Ce village pyrénéen authentique a su préserver son caractère traditionnel tout en offrant tous les services nécessaires à un séjour confortable.
-                  </p>
+                  <p className="text-white/80 leading-relaxed mb-6"><CmsText id="GiteArrensMarsousPage-text-021" scope={[]}>{"Arrens-Marsous (1 200 habitants) est l'un des plus beaux villages du Val d'Azun. Ce village pyrénéen authentique a su préserver son caractère traditionnel tout en offrant tous les services nécessaires à un séjour confortable."}</CmsText></p>
                   
-                  <h3 className="text-xl text-white mb-4">Ce que vous trouverez au village :</h3>
+                  <h3 className="text-xl text-white mb-4"><CmsText id="GiteArrensMarsousPage-text-022" scope={[]}>{"Ce que vous trouverez au village :"}</CmsText></h3>
                   <ul className="space-y-2 text-white/70">
-                    <li>Commerces de proximité (boulangerie, épicerie, boucherie)</li>
-                    <li>Restaurants typiques proposant cuisine pyrénéenne</li>
-                    <li>Office de Tourisme avec conseils randonnées</li>
-                    <li>Départ de nombreux sentiers balisés</li>
-                    <li>Architecture pyrénéenne traditionnelle préservée</li>
-                    <li>Église Saint-Félix du XIIe siècle</li>
-                    <li>Marchés locaux en saison</li>
+                    <li><CmsText id="GiteArrensMarsousPage-text-023" scope={[]}>{"Commerces de proximité (boulangerie, épicerie, boucherie)"}</CmsText></li>
+                    <li><CmsText id="GiteArrensMarsousPage-text-024" scope={[]}>{"Restaurants typiques proposant cuisine pyrénéenne"}</CmsText></li>
+                    <li><CmsText id="GiteArrensMarsousPage-text-025" scope={[]}>{"Office de Tourisme avec conseils randonnées"}</CmsText></li>
+                    <li><CmsText id="GiteArrensMarsousPage-text-026" scope={[]}>{"Départ de nombreux sentiers balisés"}</CmsText></li>
+                    <li><CmsText id="GiteArrensMarsousPage-text-027" scope={[]}>{"Architecture pyrénéenne traditionnelle préservée"}</CmsText></li>
+                    <li><CmsText id="GiteArrensMarsousPage-text-028" scope={[]}>{"Église Saint-Félix du XIIe siècle"}</CmsText></li>
+                    <li><CmsText id="GiteArrensMarsousPage-text-029" scope={[]}>{"Marchés locaux en saison"}</CmsText></li>
                   </ul>
                   
-                  <p className="text-white/80 leading-relaxed mt-6">
-                    Le village est particulièrement apprécié des amoureux de la montagne pour son authenticité préservée et son accès direct au Parc National des Pyrénées.
-                  </p>
+                  <p className="text-white/80 leading-relaxed mt-6"><CmsText id="GiteArrensMarsousPage-text-030" scope={[]}>{"Le village est particulièrement apprécié des amoureux de la montagne pour son authenticité préservée et son accès direct au Parc National des Pyrénées."}</CmsText></p>
                 </motion.div>
               </div>
             </div>
@@ -255,10 +235,8 @@ export function GiteArrensMarsousPage() {
               viewport={{ once: true }}
               className="text-center mb-12"
             >
-              <h2 className="text-4xl text-white mb-4" style={{ fontFamily: 'serif' }}>
-                À proximité de nos gîtes
-              </h2>
-              <p className="text-white/70 text-lg">Distances depuis Les Gîtes du Soulor</p>
+              <h2 className="text-4xl text-white mb-4" style={{ fontFamily: 'serif' }}><CmsText id="GiteArrensMarsousPage-text-031" scope={[]}>{"À proximité de nos gîtes"}</CmsText></h2>
+              <p className="text-white/70 text-lg"><CmsText id="GiteArrensMarsousPage-text-032" scope={[]}>{"Distances depuis Les Gîtes du Soulor"}</CmsText></p>
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
@@ -274,8 +252,8 @@ export function GiteArrensMarsousPage() {
                     className="p-6 rounded-2xl bg-gradient-to-br from-white/5 to-transparent border border-white/10 hover:border-[#c4a574]/30 transition-all duration-300 text-center"
                   >
                     <Icon className="w-10 h-10 text-[#c4a574] mx-auto mb-4" />
-                    <h3 className="text-white mb-2 font-semibold">{item.lieu}</h3>
-                    <p className="text-white/60 text-sm">{item.distance}</p>
+                    <h3 className="text-white mb-2 font-semibold"><CmsText id="Arrens-nearby-place" scope={[index]}>{item.lieu}</CmsText></h3>
+                    <p className="text-white/60 text-sm"><CmsText id="Arrens-nearby-distance" scope={[index]}>{item.distance}</CmsText></p>
                   </motion.div>
                 );
               })}
@@ -293,9 +271,7 @@ export function GiteArrensMarsousPage() {
                 viewport={{ once: true }}
                 className="text-center mb-12"
               >
-                <h2 className="text-4xl text-white mb-4" style={{ fontFamily: 'serif' }}>
-                  Activités et découvertes autour d'Arrens-Marsous
-                </h2>
+                <h2 className="text-4xl text-white mb-4" style={{ fontFamily: 'serif' }}><CmsText id="GiteArrensMarsousPage-text-033" scope={[]}>{"Activités et découvertes autour d'Arrens-Marsous"}</CmsText></h2>
               </motion.div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -309,7 +285,7 @@ export function GiteArrensMarsousPage() {
                     className="flex items-start gap-3 p-4 rounded-xl bg-white/5 border border-white/10"
                   >
                     <Check className="w-5 h-5 text-[#c4a574] flex-shrink-0 mt-0.5" />
-                    <span className="text-white/80">{activite}</span>
+                    <span className="text-white/80"><CmsText id="Arrens-activity" scope={[index]}>{activite}</CmsText></span>
                   </motion.div>
                 ))}
               </div>
@@ -320,15 +296,15 @@ export function GiteArrensMarsousPage() {
                 viewport={{ once: true }}
                 className="mt-12 p-8 rounded-2xl bg-gradient-to-br from-white/5 to-transparent border border-white/10"
               >
-                <h3 className="text-xl text-white mb-4">Saisons et activités</h3>
+                <h3 className="text-xl text-white mb-4"><CmsText id="GiteArrensMarsousPage-text-034" scope={[]}>{"Saisons et activités"}</CmsText></h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-white/70">
                   <div>
-                    <h4 className="text-[#c4a574] font-semibold mb-2">En été</h4>
-                    <p className="text-sm">Randonnées tous niveaux, VTT, pêche, parapente, baignades en lacs de montagne</p>
+                    <h4 className="text-[#c4a574] font-semibold mb-2"><CmsText id="GiteArrensMarsousPage-text-035" scope={[]}>{"En été"}</CmsText></h4>
+                    <p className="text-sm"><CmsText id="GiteArrensMarsousPage-text-036" scope={[]}>{"Randonnées tous niveaux, VTT, pêche, parapente, baignades en lacs de montagne"}</CmsText></p>
                   </div>
                   <div>
-                    <h4 className="text-[#c4a574] font-semibold mb-2">En hiver</h4>
-                    <p className="text-sm">Ski alpin, ski de fond, raquettes, chiens de traîneau, ski de randonnée</p>
+                    <h4 className="text-[#c4a574] font-semibold mb-2"><CmsText id="GiteArrensMarsousPage-text-037" scope={[]}>{"En hiver"}</CmsText></h4>
+                    <p className="text-sm"><CmsText id="GiteArrensMarsousPage-text-038" scope={[]}>{"Ski alpin, ski de fond, raquettes, chiens de traîneau, ski de randonnée"}</CmsText></p>
                   </div>
                 </div>
               </motion.div>
@@ -347,26 +323,21 @@ export function GiteArrensMarsousPage() {
             >
               <div className="absolute inset-0 bg-gradient-to-br from-[#c4a574]/20 to-[#5a7a9f]/20 rounded-3xl blur-2xl" />
               <div className="relative p-10 rounded-3xl border border-[#c4a574]/30 bg-gradient-to-br from-[#2d3843]/90 to-[#3a4a5a]/90 backdrop-blur-sm text-center">
-                <h3 className="text-3xl text-white mb-4" style={{ fontFamily: 'serif' }}>
-                  Réservez votre gîte à Arrens-Marsous
-                </h3>
-                <p className="text-white/70 leading-relaxed mb-8">
-                  Disponible dès une nuit, pour plusieurs nuits ou une semaine complète.
-                  Acompte de 20% à la réservation, solde à l'arrivée. Chèques-vacances non acceptés.
-                </p>
+                <h3 className="text-3xl text-white mb-4" style={{ fontFamily: 'serif' }}><CmsText id="GiteArrensMarsousPage-text-039" scope={[]}>{"Réservez votre gîte à Arrens-Marsous"}</CmsText></h3>
+                <p className="text-white/70 leading-relaxed mb-8"><CmsText id="GiteArrensMarsousPage-text-040" scope={[]}>{"Disponible dès une nuit, pour plusieurs nuits ou une semaine complète. Acompte de 20% à la réservation, solde à l'arrivée. Chèques-vacances non acceptés."}</CmsText></p>
                 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
                   <div className="text-center">
-                    <p className="text-white/60 text-sm mb-1">Une nuit</p>
-                    <p className="text-[#c4a574] text-xl font-semibold">150€ - 180€</p>
+                    <p className="text-white/60 text-sm mb-1"><CmsText id="GiteArrensMarsousPage-text-041" scope={[]}>{"Une nuit"}</CmsText></p>
+                    <p className="text-[#c4a574] text-xl font-semibold"><PriceRange option={0} /></p>
                   </div>
                   <div className="text-center">
-                    <p className="text-white/60 text-sm mb-1">Semaine</p>
-                    <p className="text-[#c4a574] text-xl font-semibold">875€ - 1050€</p>
+                    <p className="text-white/60 text-sm mb-1"><CmsText id="GiteArrensMarsousPage-text-043" scope={[]}>{"Semaine"}</CmsText></p>
+                    <p className="text-[#c4a574] text-xl font-semibold"><PriceRange option={2} /></p>
                   </div>
                   <div className="text-center">
-                    <p className="text-white/60 text-sm mb-1">Dès 2 nuits</p>
-                    <p className="text-[#c4a574] text-xl font-semibold">125€ - 150€/nuit</p>
+                    <p className="text-white/60 text-sm mb-1"><CmsText id="GiteArrensMarsousPage-text-045" scope={[]}>{"Dès 2 nuits"}</CmsText></p>
+                    <p className="text-[#c4a574] text-xl font-semibold"><PriceRange option={1} suffix="/nuit" /></p>
                   </div>
                 </div>
 
@@ -376,24 +347,18 @@ export function GiteArrensMarsousPage() {
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       className="px-8 py-4 rounded-full bg-gradient-to-r from-[#c4a574] to-[#d4b584] text-white font-semibold hover:from-[#d4b584] hover:to-[#c4a574] transition-all shadow-lg"
-                    >
-                      Voir tous les tarifs
-                    </motion.button>
+                    ><CmsText id="GiteArrensMarsousPage-text-047" scope={[]}>{"Voir tous les tarifs"}</CmsText></motion.button>
                   </Link>
                   <Link to="/contact">
                     <motion.button
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       className="px-8 py-4 rounded-full border-2 border-[#c4a574] text-[#c4a574] font-semibold hover:bg-[#c4a574]/10 transition-all"
-                    >
-                      Nous contacter
-                    </motion.button>
+                    ><CmsText id="GiteArrensMarsousPage-text-048" scope={[]}>{"Nous contacter"}</CmsText></motion.button>
                   </Link>
                 </div>
 
-                <p className="text-white/50 text-sm mt-6">
-                  Téléphone : +33 6 45 79 59 39 | Email : spanazol@wanadoo.fr
-                </p>
+                <p className="text-white/50 text-sm mt-6"><CmsText id="GiteArrensMarsousPage-text-049" scope={[]}>{"Téléphone : +33 6 45 79 59 39 | Email : spanazol@wanadoo.fr"}</CmsText></p>
               </div>
             </motion.div>
           </div>
@@ -409,35 +374,27 @@ export function GiteArrensMarsousPage() {
                 viewport={{ once: true }}
                 className="p-8 rounded-2xl bg-gradient-to-br from-white/5 to-transparent border border-white/10"
               >
-                <h3 className="text-xl text-white mb-6 text-center">Découvrez aussi</h3>
+                <h3 className="text-xl text-white mb-6 text-center"><CmsText id="GiteArrensMarsousPage-text-050" scope={[]}>{"Découvrez aussi"}</CmsText></h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <Link to="/gite-val-azun" className="p-4 rounded-xl bg-white/5 border border-white/10 hover:border-[#c4a574]/30 transition-all group">
                     <h4 className="text-white group-hover:text-[#c4a574] transition-colors mb-1 flex items-center gap-2">
-                      <ArrowRight className="w-4 h-4" />
-                      Gîte dans le Val d'Azun
-                    </h4>
-                    <p className="text-white/60 text-sm">Découvrez la vallée</p>
+                      <ArrowRight className="w-4 h-4" /><CmsText id="GiteArrensMarsousPage-text-051" scope={[]}>{"Gîte dans le Val d'Azun"}</CmsText></h4>
+                    <p className="text-white/60 text-sm"><CmsText id="GiteArrensMarsousPage-text-052" scope={[]}>{"Découvrez la vallée"}</CmsText></p>
                   </Link>
                   <Link to="/gite-bain-nordique-pyrenees" className="p-4 rounded-xl bg-white/5 border border-white/10 hover:border-[#c4a574]/30 transition-all group">
                     <h4 className="text-white group-hover:text-[#c4a574] transition-colors mb-1 flex items-center gap-2">
-                      <ArrowRight className="w-4 h-4" />
-                      Gîte avec bain nordique
-                    </h4>
-                    <p className="text-white/60 text-sm">Expérience unique</p>
+                      <ArrowRight className="w-4 h-4" /><CmsText id="GiteArrensMarsousPage-text-053" scope={[]}>{"Gîte avec bain nordique"}</CmsText></h4>
+                    <p className="text-white/60 text-sm"><CmsText id="GiteArrensMarsousPage-text-054" scope={[]}>{"Expérience unique"}</CmsText></p>
                   </Link>
                   <Link to="/bien-etre" className="p-4 rounded-xl bg-white/5 border border-white/10 hover:border-[#c4a574]/30 transition-all group">
                     <h4 className="text-white group-hover:text-[#c4a574] transition-colors mb-1 flex items-center gap-2">
-                      <ArrowRight className="w-4 h-4" />
-                      Bien-être & Détente
-                    </h4>
-                    <p className="text-white/60 text-sm">Sauna et bain nordique</p>
+                      <ArrowRight className="w-4 h-4" /><CmsText id="GiteArrensMarsousPage-text-055" scope={[]}>{"Bien-être & Détente"}</CmsText></h4>
+                    <p className="text-white/60 text-sm"><CmsText id="GiteArrensMarsousPage-text-056" scope={[]}>{"Sauna et bain nordique"}</CmsText></p>
                   </Link>
                   <Link to="/sejour-bien-etre-pyrenees" className="p-4 rounded-xl bg-white/5 border border-white/10 hover:border-[#c4a574]/30 transition-all group">
                     <h4 className="text-white group-hover:text-[#c4a574] transition-colors mb-1 flex items-center gap-2">
-                      <ArrowRight className="w-4 h-4" />
-                      Séjour bien-être
-                    </h4>
-                    <p className="text-white/60 text-sm">Ressourcement total</p>
+                      <ArrowRight className="w-4 h-4" /><CmsText id="GiteArrensMarsousPage-text-057" scope={[]}>{"Séjour bien-être"}</CmsText></h4>
+                    <p className="text-white/60 text-sm"><CmsText id="GiteArrensMarsousPage-text-058" scope={[]}>{"Ressourcement total"}</CmsText></p>
                   </Link>
                 </div>
               </motion.div>

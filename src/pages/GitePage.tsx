@@ -1,3 +1,8 @@
+import { useAdmin } from '../contexts/AdminContext';
+import { EditableText } from '../components/admin/EditableText';
+import { EditableImage } from '../components/admin/EditableImage';
+import { ImageCodeEditor } from '../components/admin/ImageCodeEditor';
+import { CmsText, CmsImage } from '../components/admin/CmsFields';
 import { motion, AnimatePresence } from 'motion/react';
 import { useInView } from 'motion/react';
 import { useRef, useState, useEffect } from 'react';
@@ -132,6 +137,8 @@ const features = [
 ];
 
 export function GitePage() {
+  const { content, isAdminMode, updateContent } = useAdmin();
+  const [editingGallery, setEditingGallery] = useState(false);
   const { slug } = useParams<{ slug: string }>();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
@@ -145,7 +152,8 @@ export function GitePage() {
     return <Navigate to="/gites" replace />;
   }
 
-  const gite = gitesData[slug as keyof typeof gitesData];
+  const giteIndex = ['le-suyen', 'le-tech', 'lestaing', 'le-soum'].indexOf(slug);
+  const gite = { ...gitesData[slug as keyof typeof gitesData], ...content.gites?.[giteIndex] };
 
   const handleOpenGallery = (index: number) => {
     setSelectedImage(index);
@@ -182,7 +190,7 @@ export function GitePage() {
             className="inline-flex items-center gap-2 text-[#c4a574] hover:text-[#b89560] transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
-            <span>Retour aux gîtes</span>
+            <span><CmsText id="GitePage-text-001" scope={[slug]}>{"Retour aux gîtes"}</CmsText></span>
           </Link>
         </motion.div>
 
@@ -195,27 +203,25 @@ export function GitePage() {
         >
           <div className="inline-flex items-center gap-3 mb-4">
             <h1 className="text-5xl md:text-6xl text-white bg-gradient-to-r from-white via-[#c4a574] to-white bg-clip-text text-transparent" style={{ fontFamily: 'serif' }}>
-              {gite.nom}
+              <EditableText path={`gites.${giteIndex}.nom`} value={gite.nom} as="span" />
             </h1>
             {gite.inConstruction && (
               <span className="px-4 py-2 rounded-full bg-orange-500/20 backdrop-blur-md border border-orange-500/50 text-orange-400 text-sm font-medium flex items-center gap-2">
-                <Construction className="w-4 h-4" />
-                En travaux
-              </span>
+                <Construction className="w-4 h-4" /><CmsText id="GitePage-text-003" scope={[slug]}>{"En travaux"}</CmsText></span>
             )}
           </div>
 
           <div className="flex items-center justify-center gap-4 text-white/60">
             <div className="flex items-center gap-2">
               <Users className="w-4 h-4" />
-              <span>{gite.capacite}</span>
+              <span><EditableText path={`gites.${giteIndex}.capacite`} value={gite.capacite} as="span" /></span>
             </div>
             <span>•</span>
-            <span>{gite.superficie}</span>
+            <span><EditableText path={`gites.${giteIndex}.superficie`} value={gite.superficie} as="span" /></span>
             {gite.hasBalcony && (
               <>
                 <span>•</span>
-                <span>Balcon avec vue</span>
+                <span><CmsText id="GitePage-text-006" scope={[slug]}>{"Balcon avec vue"}</CmsText></span>
               </>
             )}
           </div>
@@ -228,6 +234,8 @@ export function GitePage() {
           />
         </motion.div>
 
+        {isAdminMode && <button className="cms-gallery-button" onClick={() => setEditingGallery(true)}>Gérer toutes les photos de ce gîte</button>}
+        {editingGallery && <ImageCodeEditor isOpen onClose={() => setEditingGallery(false)} onSave={urls => updateContent(`gites.${giteIndex}.gallery`, urls)} initialUrls={gite.gallery} title={`Galerie de ${gite.nom}`} />}
         {/* Main Image */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -236,7 +244,7 @@ export function GitePage() {
           className="relative mb-16 rounded-3xl overflow-hidden h-[60vh] max-h-[600px] cursor-pointer group bg-[#1a252f]"
           onClick={() => handleOpenGallery(0)}
         >
-          <ImageWithFallback
+          <EditableImage path={`gites.${giteIndex}.image`}
             src={gite.image}
             alt={gite.nom}
             className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
@@ -246,9 +254,7 @@ export function GitePage() {
           
           {/* Click to view overlay */}
           <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
-            <div className="px-6 py-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white">
-              Cliquez pour agrandir
-            </div>
+            <div className="px-6 py-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white"><CmsText id="GitePage-text-008" scope={[slug]}>{"Cliquez pour agrandir"}</CmsText></div>
           </div>
         </motion.div>
 
@@ -260,11 +266,9 @@ export function GitePage() {
           className="max-w-4xl mx-auto mb-16"
         >
           <div className="bg-gradient-to-br from-[#2d3843] to-[#3a4a5a] rounded-3xl p-8 md:p-12 border border-white/10">
-            <h2 className="text-3xl text-white mb-6" style={{ fontFamily: 'serif' }}>
-              Votre Refuge en Montagne
-            </h2>
+            <h2 className="text-3xl text-white mb-6" style={{ fontFamily: 'serif' }}><CmsText id="GitePage-text-009" scope={[slug]}>{"Votre Refuge en Montagne"}</CmsText></h2>
             <p className="text-white/70 text-lg leading-relaxed">
-              {gite.description}
+              <EditableText path={`gites.${giteIndex}.description`} value={gite.description} as="span" />
             </p>
           </div>
         </motion.div>
@@ -276,9 +280,7 @@ export function GitePage() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="mb-16"
         >
-          <h2 className="text-3xl text-white mb-8 text-center" style={{ fontFamily: 'serif' }}>
-            Galerie Photos
-          </h2>
+          <h2 className="text-3xl text-white mb-8 text-center" style={{ fontFamily: 'serif' }}><CmsText id="GitePage-text-011" scope={[slug]}>{"Galerie Photos"}</CmsText></h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {gite.gallery.map((image, index) => (
               <motion.div
@@ -290,7 +292,7 @@ export function GitePage() {
                 onClick={() => handleOpenGallery(index)}
                 whileHover={{ scale: 1.05 }}
               >
-                <ImageWithFallback
+                <EditableImage path={`gites.${giteIndex}.gallery.${index}`}
                   src={image}
                   alt={`${gite.nom} - Photo ${index + 1}`}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -308,9 +310,7 @@ export function GitePage() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="mb-16"
         >
-          <h2 className="text-3xl text-white mb-8 text-center" style={{ fontFamily: 'serif' }}>
-            Équipements & Services
-          </h2>
+          <h2 className="text-3xl text-white mb-8 text-center" style={{ fontFamily: 'serif' }}><CmsText id="GitePage-text-013" scope={[slug]}>{"Équipements & Services"}</CmsText></h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((feature, index) => {
               const Icon = feature.icon;
@@ -329,8 +329,8 @@ export function GitePage() {
                   <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#c4a574]/20 to-[#5a7a9f]/20 flex items-center justify-center mb-4">
                     <Icon className="w-6 h-6 text-[#c4a574]" />
                   </div>
-                  <h3 className="text-white mb-2">{feature.title}</h3>
-                  <p className="text-white/60 text-sm">{feature.description}</p>
+                  <h3 className="text-white mb-2"><CmsText id="GitePage-text-014" scope={[slug, index]}>{feature.title}</CmsText></h3>
+                  <p className="text-white/60 text-sm"><CmsText id="GitePage-text-015" scope={[slug, index]}>{feature.description}</CmsText></p>
                 </motion.div>
               );
             })}
@@ -352,8 +352,7 @@ export function GitePage() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="inline-block px-8 py-4 rounded-full bg-gradient-to-r from-[#c4a574] to-[#b89560] text-white font-medium shadow-xl shadow-[#c4a574]/30 hover:from-[#b89560] hover:to-[#c4a574] transition-all duration-300"
-            >
-              Réserver {gite.nom}
+            ><CmsText id="GitePage-text-016" scope={[slug]}>{"Réserver "}</CmsText><EditableText path={`gites.${giteIndex}.nom`} value={gite.nom} as="span" />
             </motion.a>
           </motion.div>
         )}
@@ -364,12 +363,9 @@ export function GitePage() {
         <DialogContent className="max-w-5xl bg-[#2d3843] border-[#c4a574]/30 p-0 overflow-hidden">
           {selectedImage !== null && (
             <>
-              <DialogTitle className="sr-only">
-                Galerie photos - {gite.nom}
+              <DialogTitle className="sr-only"><CmsText id="GitePage-text-018" scope={[slug]}>{"Galerie photos - "}</CmsText><EditableText path={`gites.${giteIndex}.nom`} value={gite.nom} as="span" />
               </DialogTitle>
-              <DialogDescription className="sr-only">
-                Parcourez les photos du gîte {gite.nom}. Utilisez les flèches pour naviguer entre les images.
-              </DialogDescription>
+              <DialogDescription className="sr-only"><CmsText id="GitePage-text-020" scope={[slug]}>{"Parcourez les photos du gîte "}</CmsText><EditableText path={`gites.${giteIndex}.nom`} value={gite.nom} as="span" /><CmsText id="GitePage-text-022" scope={[slug]}>{". Utilisez les flèches pour naviguer entre les images."}</CmsText></DialogDescription>
 
               <motion.div
                 key={selectedImage}
@@ -383,7 +379,7 @@ export function GitePage() {
                 <div className="absolute top-0 left-0 right-0 z-20 p-6 bg-gradient-to-b from-[#2d3843] to-transparent">
                   <div className="flex items-center justify-between">
                     <h3 className="text-2xl text-white" style={{ fontFamily: 'serif' }}>
-                      {gite.nom}
+                      <EditableText path={`gites.${giteIndex}.nom`} value={gite.nom} as="span" />
                     </h3>
                     <motion.button
                       onClick={handleCloseGallery}
@@ -398,7 +394,7 @@ export function GitePage() {
 
                 {/* Image */}
                 <div className="relative h-[70vh] bg-[#1a252f]">
-                  <ImageWithFallback
+                  <EditableImage path={`gites.${giteIndex}.gallery.${selectedImage}`}
                     src={gite.gallery[selectedImage]}
                     alt={`${gite.nom} - Photo ${selectedImage + 1}`}
                     className="w-full h-full object-contain"
@@ -445,7 +441,7 @@ export function GitePage() {
                           : 'border-white/20 opacity-50 hover:opacity-75'
                       }`}
                     >
-                      <ImageWithFallback
+                      <EditableImage path={`gites.${giteIndex}.gallery.${idx}`}
                         src={img}
                         alt={`Thumbnail ${idx + 1}`}
                         className="w-full h-full object-cover"

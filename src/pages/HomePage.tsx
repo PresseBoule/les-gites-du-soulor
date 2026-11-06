@@ -1,8 +1,4 @@
-import { Hero } from '../components/Hero';
-import { Features } from '../components/Features';
-import { GitesSection } from '../components/GitesSection';
-import { WellnessSection } from '../components/WellnessSection';
-import { CTASection } from '../components/CTASection';
+import { CmsText } from '../components/admin/CmsFields';
 import { useAdmin } from '../contexts/AdminContext';
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
@@ -270,79 +266,60 @@ export function HomePage() {
               className="p-10 rounded-3xl bg-gradient-to-br from-white/5 to-transparent border border-white/10 shadow-2xl"
             >
               <div className="prose prose-invert prose-lg max-w-none">
-                <h2 className="text-3xl text-white mb-6 text-center" style={{ fontFamily: 'serif' }}>
-                  Gîtes de Montagne à Arrens-Marsous, Val d'Azun
-                </h2>
+                <h2 className="text-3xl text-white mb-6 text-center" style={{ fontFamily: 'serif' }}><CmsText id="HomePage-text-001" scope={[]}>{"Gîtes de Montagne à Arrens-Marsous, Val d'Azun"}</CmsText></h2>
                 
-                <p className="text-white/90 leading-relaxed mb-6">
-                  Bienvenue aux <strong className="text-[#c4a574]">Gîtes du Soulor</strong>, votre havre de paix au cœur des <strong className="text-[#c4a574]">Hautes-Pyrénées</strong>. Nous vous proposons <strong className="text-[#c4a574]">4 gîtes pour 3 personnes</strong> dans le charmant village d'<strong className="text-[#c4a574]">Arrens-Marsous</strong>, au pied du mythique <strong className="text-[#c4a574]">Col du Soulor</strong>. Que vous recherchiez un <strong>week-end romantique</strong>, une <strong>semaine de randonnée</strong> ou un <strong>séjour ressourçant avec bain nordique et sauna</strong>, nos hébergements de montagne vous offrent le cadre idéal pour vos vacances dans les Pyrénées.
-                </p>
+                <p className="text-white/90 leading-relaxed mb-6"><CmsText id="HomePage-text-002" scope={[]}>{"Bienvenue aux "}</CmsText><strong className="text-[#c4a574]"><CmsText id="HomePage-text-003" scope={[]}>{"Gîtes du Soulor"}</CmsText></strong><CmsText id="HomePage-text-004" scope={[]}>{", votre havre de paix au cœur des "}</CmsText><strong className="text-[#c4a574]"><CmsText id="HomePage-text-005" scope={[]}>{"Hautes-Pyrénées"}</CmsText></strong><CmsText id="HomePage-text-006" scope={[]}>{". Nous vous proposons "}</CmsText><strong className="text-[#c4a574]"><CmsText id="HomePage-text-007" scope={[]}>{"4 gîtes pour 3 personnes"}</CmsText></strong><CmsText id="HomePage-text-008" scope={[]}>{" dans le charmant village d'"}</CmsText><strong className="text-[#c4a574]"><CmsText id="HomePage-text-009" scope={[]}>{"Arrens-Marsous"}</CmsText></strong><CmsText id="HomePage-text-010" scope={[]}>{", au pied du mythique "}</CmsText><strong className="text-[#c4a574]"><CmsText id="HomePage-text-011" scope={[]}>{"Col du Soulor"}</CmsText></strong><CmsText id="HomePage-text-012" scope={[]}>{". Que vous recherchiez un "}</CmsText><strong><CmsText id="HomePage-text-013" scope={[]}>{"week-end romantique"}</CmsText></strong><CmsText id="HomePage-text-014" scope={[]}>{", une "}</CmsText><strong><CmsText id="HomePage-text-015" scope={[]}>{"semaine de randonnée"}</CmsText></strong><CmsText id="HomePage-text-016" scope={[]}>{" ou un "}</CmsText><strong><CmsText id="HomePage-text-017" scope={[]}>{"séjour ressourçant avec bain nordique et sauna"}</CmsText></strong><CmsText id="HomePage-text-018" scope={[]}>{", nos hébergements de montagne vous offrent le cadre idéal pour vos vacances dans les Pyrénées."}</CmsText></p>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
                   <div className="p-6 rounded-xl bg-white/5 border border-white/10">
                     <h3 className="text-xl text-[#c4a574] mb-4 flex items-center gap-2">
-                      <Home className="w-5 h-5" />
-                      Nos 4 Gîtes pour 3 Personnes
-                    </h3>
+                      <Home className="w-5 h-5" /><CmsText id="HomePage-text-019" scope={[]}>{"Nos 4 Gîtes pour 3 Personnes"}</CmsText></h3>
                     <p className="text-white/80 leading-relaxed text-sm mb-3">
-                      <strong className="text-white">Le Suyen</strong>, <strong className="text-white">Le Tech</strong>, <strong className="text-white">L'Estaing</strong> et <strong className="text-white">Le Soum</strong> : quatre gîtes tout confort, entièrement équipés, avec cuisine aménagée, salle de bain moderne, et un accès privilégié à nos équipements bien-être.
-                    </p>
-                    <p className="text-white/70 text-sm">
-                      Tous nos gîtes sont indépendants, offrant intimité et tranquillité pour votre séjour en montagne.
-                    </p>
+                      <strong className="text-white"><CmsText id="HomePage-text-020" scope={[]}>{"Le Suyen"}</CmsText></strong>, <strong className="text-white"><CmsText id="HomePage-text-021" scope={[]}>{"Le Tech"}</CmsText></strong>, <strong className="text-white"><CmsText id="HomePage-text-022" scope={[]}>{"L'Estaing"}</CmsText></strong><CmsText id="HomePage-text-023" scope={[]}>{" et "}</CmsText><strong className="text-white"><CmsText id="HomePage-text-024" scope={[]}>{"Le Soum"}</CmsText></strong><CmsText id="HomePage-text-025" scope={[]}>{" : quatre gîtes tout confort, entièrement équipés, avec cuisine aménagée, salle de bain moderne, et un accès privilégié à nos équipements bien-être."}</CmsText></p>
+                    <p className="text-white/70 text-sm"><CmsText id="HomePage-text-026" scope={[]}>{"Tous nos gîtes sont indépendants, offrant intimité et tranquillité pour votre séjour en montagne."}</CmsText></p>
                   </div>
                   
                   <div className="p-6 rounded-xl bg-white/5 border border-white/10">
                     <h3 className="text-xl text-[#c4a574] mb-4 flex items-center gap-2">
-                      <Map className="w-5 h-5" />
-                      Situation Géographique Idéale
-                    </h3>
-                    <p className="text-white/80 leading-relaxed text-sm mb-3">
-                      Situés au cœur du <strong className="text-white">Val d'Azun</strong>, nos gîtes sont le point de départ parfait pour explorer le <strong>Parc National des Pyrénées</strong>, les <strong>stations de ski d'Hautacam et Grand Tourmalet</strong>, et les nombreux sentiers de randonnée de la région.
-                    </p>
-                    <p className="text-white/70 text-sm">
-                      Accès facile : 30 min de Lourdes, 1h de Pau, 45 min de Tarbes.
-                    </p>
+                      <Map className="w-5 h-5" /><CmsText id="HomePage-text-027" scope={[]}>{"Situation Géographique Idéale"}</CmsText></h3>
+                    <p className="text-white/80 leading-relaxed text-sm mb-3"><CmsText id="HomePage-text-028" scope={[]}>{"Situés au cœur du "}</CmsText><strong className="text-white"><CmsText id="HomePage-text-029" scope={[]}>{"Val d'Azun"}</CmsText></strong><CmsText id="HomePage-text-030" scope={[]}>{", nos gîtes sont le point de départ parfait pour explorer le "}</CmsText><strong><CmsText id="HomePage-text-031" scope={[]}>{"Parc National des Pyrénées"}</CmsText></strong><CmsText id="HomePage-text-032" scope={[]}>{", les "}</CmsText><strong><CmsText id="HomePage-text-033" scope={[]}>{"stations de ski d'Hautacam et Grand Tourmalet"}</CmsText></strong><CmsText id="HomePage-text-034" scope={[]}>{", et les nombreux sentiers de randonnée de la région."}</CmsText></p>
+                    <p className="text-white/70 text-sm"><CmsText id="HomePage-text-035" scope={[]}>{"Accès facile : 30 min de Lourdes, 1h de Pau, 45 min de Tarbes."}</CmsText></p>
                   </div>
                 </div>
 
-                <p className="text-white/80 leading-relaxed mb-6">
-                  Le <strong>Val d'Azun</strong> est une vallée préservée des Pyrénées, réputée pour sa beauté naturelle et son authenticité. En séjournant dans nos gîtes à <strong>Arrens-Marsous</strong>, vous bénéficiez d'un accès privilégié aux <strong>cols mythiques du Soulor et d'Aubisque</strong>, aux <strong>lacs de montagne</strong> (lac d'Estaing, lac d'Ilhéou), et à une multitude d'activités outdoor : <em>randonnée pédestre</em>, <em>VTT</em>, <em>ski alpin et ski de fond</em> en hiver, <em>via ferrata</em>, et bien plus encore.
-                </p>
+                <p className="text-white/80 leading-relaxed mb-6"><CmsText id="HomePage-text-036" scope={[]}>{"Le "}</CmsText><strong><CmsText id="HomePage-text-037" scope={[]}>{"Val d'Azun"}</CmsText></strong><CmsText id="HomePage-text-038" scope={[]}>{" est une vallée préservée des Pyrénées, réputée pour sa beauté naturelle et son authenticité. En séjournant dans nos gîtes à "}</CmsText><strong><CmsText id="HomePage-text-039" scope={[]}>{"Arrens-Marsous"}</CmsText></strong><CmsText id="HomePage-text-040" scope={[]}>{", vous bénéficiez d'un accès privilégié aux "}</CmsText><strong><CmsText id="HomePage-text-041" scope={[]}>{"cols mythiques du Soulor et d'Aubisque"}</CmsText></strong><CmsText id="HomePage-text-042" scope={[]}>{", aux "}</CmsText><strong><CmsText id="HomePage-text-043" scope={[]}>{"lacs de montagne"}</CmsText></strong><CmsText id="HomePage-text-044" scope={[]}>{" (lac d'Estaing, lac d'Ilhéou), et à une multitude d'activités outdoor : "}</CmsText><em><CmsText id="HomePage-text-045" scope={[]}>{"randonnée pédestre"}</CmsText></em>, <em><CmsText id="HomePage-text-046" scope={[]}>{"VTT"}</CmsText></em>, <em><CmsText id="HomePage-text-047" scope={[]}>{"ski alpin et ski de fond"}</CmsText></em><CmsText id="HomePage-text-048" scope={[]}>{" en hiver, "}</CmsText><em><CmsText id="HomePage-text-049" scope={[]}>{"via ferrata"}</CmsText></em><CmsText id="HomePage-text-050" scope={[]}>{", et bien plus encore."}</CmsText></p>
 
                 <div className="p-6 rounded-xl bg-gradient-to-br from-[#c4a574]/10 to-[#5a7a9f]/10 border border-[#c4a574]/20 mt-6">
-                  <h3 className="text-xl text-white mb-3">Pourquoi choisir Les Gîtes du Soulor ?</h3>
+                  <h3 className="text-xl text-white mb-3"><CmsText id="HomePage-text-051" scope={[]}>{"Pourquoi choisir Les Gîtes du Soulor ?"}</CmsText></h3>
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-white/80 text-sm">
                     <li className="flex items-start gap-2">
                       <span className="text-[#c4a574] mt-1">✓</span>
-                      <span>4 gîtes modernes et tout équipés pour 3 personnes</span>
+                      <span><CmsText id="HomePage-text-052" scope={[]}>{"4 gîtes modernes et tout équipés pour 3 personnes"}</CmsText></span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#c4a574] mt-1">✓</span>
-                      <span>Bain nordique chauffé au feu de bois et sauna traditionnel</span>
+                      <span><CmsText id="HomePage-text-053" scope={[]}>{"Bain nordique chauffé au feu de bois et sauna traditionnel"}</CmsText></span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#c4a574] mt-1">✓</span>
-                      <span>Emplacement idéal au pied des montagnes</span>
+                      <span><CmsText id="HomePage-text-054" scope={[]}>{"Emplacement idéal au pied des montagnes"}</CmsText></span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#c4a574] mt-1">✓</span>
-                      <span>Accès aux randonnées et stations de ski</span>
+                      <span><CmsText id="HomePage-text-055" scope={[]}>{"Accès aux randonnées et stations de ski"}</CmsText></span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#c4a574] mt-1">✓</span>
-                      <span>Formules flexibles : week-end, semaine ou séjour long</span>
+                      <span><CmsText id="HomePage-text-056" scope={[]}>{"Formules flexibles : week-end, semaine ou séjour long"}</CmsText></span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#c4a574] mt-1">✓</span>
-                      <span>Parking privé et Wi-Fi gratuit inclus</span>
+                      <span><CmsText id="HomePage-text-057" scope={[]}>{"Parking privé et Wi-Fi gratuit inclus"}</CmsText></span>
                     </li>
                   </ul>
                 </div>
 
-                <p className="text-white/70 leading-relaxed text-sm mt-6 text-center">
-                  Que vous planifiez une <strong className="text-white">escapade romantique</strong>, un <strong className="text-white">séjour bien-être</strong> ou des <strong className="text-white">vacances sportives</strong>, nos gîtes à Arrens-Marsous vous promettent une expérience authentique dans les Pyrénées. Réservez dès maintenant et vivez un séjour inoubliable en montagne !
-                </p>
+                <p className="text-white/70 leading-relaxed text-sm mt-6 text-center"><CmsText id="HomePage-text-058" scope={[]}>{"Que vous planifiez une "}</CmsText><strong className="text-white"><CmsText id="HomePage-text-059" scope={[]}>{"escapade romantique"}</CmsText></strong><CmsText id="HomePage-text-060" scope={[]}>{", un "}</CmsText><strong className="text-white"><CmsText id="HomePage-text-061" scope={[]}>{"séjour bien-être"}</CmsText></strong><CmsText id="HomePage-text-062" scope={[]}>{" ou des "}</CmsText><strong className="text-white"><CmsText id="HomePage-text-063" scope={[]}>{"vacances sportives"}</CmsText></strong><CmsText id="HomePage-text-064" scope={[]}>{", nos gîtes à Arrens-Marsous vous promettent une expérience authentique dans les Pyrénées. Réservez dès maintenant et vivez un séjour inoubliable en montagne !"}</CmsText></p>
               </div>
             </motion.div>
           </div>

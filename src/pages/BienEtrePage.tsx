@@ -1,3 +1,4 @@
+import { CmsText } from '../components/admin/CmsFields';
 import { motion } from 'motion/react';
 import { Sparkles, Droplets, Wind, Sun, Moon, Heart, Flame, Snowflake, Calendar } from 'lucide-react';
 import { EditableText } from '../components/admin/EditableText';
@@ -230,7 +231,7 @@ export function BienEtrePage() {
               <div className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-[#c4a574]/20 to-[#5a7a9f]/20 border border-[#c4a574]/30 backdrop-blur-sm">
                 <p className="text-[#c4a574] text-sm flex items-center gap-2">
                   <Calendar className="w-4 h-4" />
-                  <span>Sauna et Bain Nordique : réservation par tranche d'1h</span>
+                  <span><CmsText id="BienEtrePage-text-001" scope={[]}>{"Sauna et Bain Nordique : réservation par tranche d'1h"}</CmsText></span>
                 </p>
               </div>
             </motion.div>
@@ -252,7 +253,7 @@ export function BienEtrePage() {
                 className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#c4a574] to-[#a08960] text-white rounded-full hover:shadow-lg hover:shadow-[#c4a574]/30 transition-all duration-300"
               >
                 <Calendar className="w-5 h-5" />
-                <span>Réserver Sauna & Bain Nordique</span>
+                <span><CmsText id="BienEtrePage-text-002" scope={[]}>{"Réserver Sauna & Bain Nordique"}</CmsText></span>
               </motion.a>
             </motion.div>
 
@@ -356,49 +357,40 @@ export function BienEtrePage() {
                 className="p-8 rounded-2xl bg-gradient-to-br from-white/5 to-transparent border border-white/10"
               >
                 <div className="prose prose-invert prose-lg max-w-none">
-                  <h2 className="text-3xl text-white mb-6" style={{ fontFamily: 'serif' }}>
-                    Bain Nordique et Sauna au Cœur des Pyrénées
-                  </h2>
+                  <h2 className="text-3xl text-white mb-6" style={{ fontFamily: 'serif' }}><CmsText id="BienEtrePage-text-003" scope={[]}>{"Bain Nordique et Sauna au Cœur des Pyrénées"}</CmsText></h2>
                   
-                  <p className="text-white/90 leading-relaxed mb-6">
-                    Découvrez notre <strong className="text-[#c4a574]">espace bien-être unique</strong> à <strong className="text-[#c4a574]">Arrens-Marsous</strong>, au cœur du <strong className="text-[#c4a574]">Val d'Azun</strong> dans les Hautes-Pyrénées. Nos gîtes proposent des équipements bien-être de qualité : un <strong className="text-[#c4a574]">bain nordique chauffé au feu de bois</strong> et un <strong className="text-[#c4a574]">sauna traditionnel en bois</strong>, pour une expérience de détente authentique en montagne.
-                  </p>
+                  <p className="text-white/90 leading-relaxed mb-6"><CmsText id="BienEtrePage-text-004" scope={[]}>{"Découvrez notre "}</CmsText><strong className="text-[#c4a574]"><CmsText id="BienEtrePage-text-005" scope={[]}>{"espace bien-être unique"}</CmsText></strong><CmsText id="BienEtrePage-text-006" scope={[]}>{" à "}</CmsText><strong className="text-[#c4a574]"><CmsText id="BienEtrePage-text-007" scope={[]}>{"Arrens-Marsous"}</CmsText></strong><CmsText id="BienEtrePage-text-008" scope={[]}>{", au cœur du "}</CmsText><strong className="text-[#c4a574]"><CmsText id="BienEtrePage-text-009" scope={[]}>{"Val d'Azun"}</CmsText></strong><CmsText id="BienEtrePage-text-010" scope={[]}>{" dans les Hautes-Pyrénées. Nos gîtes proposent des équipements bien-être de qualité : un "}</CmsText><strong className="text-[#c4a574]"><CmsText id="BienEtrePage-text-011" scope={[]}>{"bain nordique chauffé au feu de bois"}</CmsText></strong><CmsText id="BienEtrePage-text-012" scope={[]}>{" et un "}</CmsText><strong className="text-[#c4a574]"><CmsText id="BienEtrePage-text-013" scope={[]}>{"sauna traditionnel en bois"}</CmsText></strong><CmsText id="BienEtrePage-text-014" scope={[]}>{", pour une expérience de détente authentique en montagne."}</CmsText></p>
                   
-                  <p className="text-white/80 leading-relaxed mb-6">
-                    Le <strong>bain nordique</strong>, également appelé <em>hot tub</em> ou <em>spa nordique</em>, est une expérience bien-être incomparable. Imaginez-vous plongé dans une eau chaude à 38°C, chauffée naturellement au feu de bois, tout en admirant les <strong>sommets enneigés des Pyrénées</strong> depuis votre bain. Cette pratique ancestrale venue des pays scandinaves combine les bienfaits de la chaleur, de l'hydrothérapie et du contact avec la nature.
-                  </p>
+                  <p className="text-white/80 leading-relaxed mb-6"><CmsText id="BienEtrePage-text-015" scope={[]}>{"Le "}</CmsText><strong><CmsText id="BienEtrePage-text-016" scope={[]}>{"bain nordique"}</CmsText></strong><CmsText id="BienEtrePage-text-017" scope={[]}>{", également appelé "}</CmsText><em><CmsText id="BienEtrePage-text-018" scope={[]}>{"hot tub"}</CmsText></em><CmsText id="BienEtrePage-text-019" scope={[]}>{" ou "}</CmsText><em><CmsText id="BienEtrePage-text-020" scope={[]}>{"spa nordique"}</CmsText></em><CmsText id="BienEtrePage-text-021" scope={[]}>{", est une expérience bien-être incomparable. Imaginez-vous plongé dans une eau chaude à 38°C, chauffée naturellement au feu de bois, tout en admirant les "}</CmsText><strong><CmsText id="BienEtrePage-text-022" scope={[]}>{"sommets enneigés des Pyrénées"}</CmsText></strong><CmsText id="BienEtrePage-text-023" scope={[]}>{" depuis votre bain. Cette pratique ancestrale venue des pays scandinaves combine les bienfaits de la chaleur, de l'hydrothérapie et du contact avec la nature."}</CmsText></p>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
                     <div className="p-5 rounded-xl bg-white/5 border border-white/10">
-                      <h3 className="text-xl text-[#c4a574] mb-3">🔥 Bain Nordique</h3>
+                      <h3 className="text-xl text-[#c4a574] mb-3"><CmsText id="BienEtrePage-text-024" scope={[]}>{"🔥 Bain Nordique"}</CmsText></h3>
                       <ul className="text-white/70 text-sm space-y-2 list-disc list-inside">
-                        <li>Chauffé au feu de bois traditionnel</li>
-                        <li>Température idéale 37-40°C</li>
-                        <li>Vue panoramique sur les Pyrénées</li>
-                        <li>Réservation privative par tranche d'1h</li>
-                        <li>Capacité 4-6 personnes (idéal pour 2)</li>
+                        <li><CmsText id="BienEtrePage-text-025" scope={[]}>{"Chauffé au feu de bois traditionnel"}</CmsText></li>
+                        <li><CmsText id="BienEtrePage-text-026" scope={[]}>{"Température idéale 37-40°C"}</CmsText></li>
+                        <li><CmsText id="BienEtrePage-text-027" scope={[]}>{"Vue panoramique sur les Pyrénées"}</CmsText></li>
+                        <li><CmsText id="BienEtrePage-text-028" scope={[]}>{"Réservation privative par tranche d'1h"}</CmsText></li>
+                        <li><CmsText id="BienEtrePage-text-029" scope={[]}>{"Capacité 4-6 personnes (idéal pour 2)"}</CmsText></li>
                       </ul>
                     </div>
                     
                     <div className="p-5 rounded-xl bg-white/5 border border-white/10">
-                      <h3 className="text-xl text-[#c4a574] mb-3">🌡️ Sauna Traditionnel</h3>
+                      <h3 className="text-xl text-[#c4a574] mb-3"><CmsText id="BienEtrePage-text-030" scope={[]}>{"🌡️ Sauna Traditionnel"}</CmsText></h3>
                       <ul className="text-white/70 text-sm space-y-2 list-disc list-inside">
-                        <li>Sauna finlandais en bois massif</li>
-                        <li>Chaleur sèche 70-90°C</li>
-                        <li>Idéal après randonnée ou ski</li>
-                        <li>Accès privatif sur réservation</li>
-                        <li>Détente musculaire profonde</li>
+                        <li><CmsText id="BienEtrePage-text-031" scope={[]}>{"Sauna finlandais en bois massif"}</CmsText></li>
+                        <li><CmsText id="BienEtrePage-text-032" scope={[]}>{"Chaleur sèche 70-90°C"}</CmsText></li>
+                        <li><CmsText id="BienEtrePage-text-033" scope={[]}>{"Idéal après randonnée ou ski"}</CmsText></li>
+                        <li><CmsText id="BienEtrePage-text-034" scope={[]}>{"Accès privatif sur réservation"}</CmsText></li>
+                        <li><CmsText id="BienEtrePage-text-035" scope={[]}>{"Détente musculaire profonde"}</CmsText></li>
                       </ul>
                     </div>
                   </div>
 
-                  <p className="text-white/80 leading-relaxed mb-6">
-                    Notre <strong>sauna traditionnel</strong> est construit selon les méthodes finlandaises, avec du bois noble qui diffuse une chaleur sèche bénéfique pour la santé. Après une journée de <strong>randonnée dans les Pyrénées</strong>, une sortie <strong>ski à la station Hautacam</strong> ou une balade dans le <strong>Parc National des Pyrénées</strong>, rien de tel qu'une session sauna pour détendre les muscles et évacuer les toxines.
-                  </p>
+                  <p className="text-white/80 leading-relaxed mb-6"><CmsText id="BienEtrePage-text-036" scope={[]}>{"Notre "}</CmsText><strong><CmsText id="BienEtrePage-text-037" scope={[]}>{"sauna traditionnel"}</CmsText></strong><CmsText id="BienEtrePage-text-038" scope={[]}>{" est construit selon les méthodes finlandaises, avec du bois noble qui diffuse une chaleur sèche bénéfique pour la santé. Après une journée de "}</CmsText><strong><CmsText id="BienEtrePage-text-039" scope={[]}>{"randonnée dans les Pyrénées"}</CmsText></strong><CmsText id="BienEtrePage-text-040" scope={[]}>{", une sortie "}</CmsText><strong><CmsText id="BienEtrePage-text-041" scope={[]}>{"ski à la station Hautacam"}</CmsText></strong><CmsText id="BienEtrePage-text-042" scope={[]}>{" ou une balade dans le "}</CmsText><strong><CmsText id="BienEtrePage-text-043" scope={[]}>{"Parc National des Pyrénées"}</CmsText></strong><CmsText id="BienEtrePage-text-044" scope={[]}>{", rien de tel qu'une session sauna pour détendre les muscles et évacuer les toxines."}</CmsText></p>
 
                   <p className="text-white/70 leading-relaxed text-sm">
-                    <strong className="text-white">Réservation simple et rapide :</strong> Le bain nordique et le sauna se réservent en ligne par tranches d'1 heure. Vous profitez ainsi d'un <strong>moment privatif</strong>, sans partage avec d'autres clients. Nous chauffons le bain nordique à l'avance pour que vous puissiez en profiter dès votre arrivée. L'accès aux équipements bien-être est inclus pour tous nos locataires.
-                  </p>
+                    <strong className="text-white"><CmsText id="BienEtrePage-text-045" scope={[]}>{"Réservation simple et rapide :"}</CmsText></strong><CmsText id="BienEtrePage-text-046" scope={[]}>{" Le bain nordique et le sauna se réservent en ligne par tranches d'1 heure. Vous profitez ainsi d'un "}</CmsText><strong><CmsText id="BienEtrePage-text-047" scope={[]}>{"moment privatif"}</CmsText></strong><CmsText id="BienEtrePage-text-048" scope={[]}>{", sans partage avec d'autres clients. Nous chauffons le bain nordique à l'avance pour que vous puissiez en profiter dès votre arrivée. L'accès aux équipements bien-être est inclus pour tous nos locataires."}</CmsText></p>
                 </div>
               </motion.div>
             </div>
@@ -555,7 +547,7 @@ export function BienEtrePage() {
                   <span className="flex items-center gap-2">
                     {showAllPhotos ? (
                       <>
-                        <span>Voir moins</span>
+                        <span><CmsText id="BienEtrePage-text-049" scope={[]}>{"Voir moins"}</CmsText></span>
                         <motion.span
                           animate={{ y: [0, 3, 0] }}
                           transition={{ duration: 1.5, repeat: Infinity }}
@@ -565,7 +557,7 @@ export function BienEtrePage() {
                       </>
                     ) : (
                       <>
-                        <span>Voir plus ({galerie.length - 4} autres photos)</span>
+                        <span><CmsText id="BienEtrePage-text-050" scope={[]}>{"Voir plus ("}</CmsText>{galerie.length - 4}<CmsText id="BienEtrePage-text-051" scope={[]}>{" autres photos)"}</CmsText></span>
                         <motion.span
                           animate={{ y: [0, 3, 0] }}
                           transition={{ duration: 1.5, repeat: Infinity }}
@@ -670,7 +662,7 @@ export function BienEtrePage() {
                   className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#c4a574] to-[#a08960] text-white rounded-full hover:shadow-lg hover:shadow-[#c4a574]/30 transition-all duration-300"
                 >
                   <Calendar className="w-5 h-5" />
-                  <span>Réserver Sauna & Bain Nordique</span>
+                  <span><CmsText id="BienEtrePage-text-052" scope={[]}>{"Réserver Sauna & Bain Nordique"}</CmsText></span>
                 </motion.a>
               </div>
             </motion.div>
