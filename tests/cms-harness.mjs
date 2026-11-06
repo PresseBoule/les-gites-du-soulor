@@ -5,6 +5,9 @@ import { Hono } from 'hono';
 import { cors } from 'hono/cors';
 import * as model from '../src/lib/contentModel.mjs';
 import * as security from '../src/supabase/functions/server/security.mjs';
+import * as reservationModel from '../src/lib/reservationModel.mjs';
+const reservationSource = fs.readFileSync(new URL('../src/supabase/functions/server/reservationAdmin.ts',import.meta.url),'utf8').replace(/^import .*?;\r?\n/gm,'').replace('export function','function');
+const reservationCompiled=await transform(reservationSource+'\nglobalThis.mountReservationAdmin=mountReservationAdmin;', {loader:'ts',format:'iife'});
 const raw = fs.readFileSync(new URL('../src/supabase/functions/server/index.tsx', import.meta.url), 'utf8').replace(/^import .*?;\r?\n/gm, '');
 const compiled = await transform(raw + '\nglobalThis.api = {app};', { loader: 'ts', format: 'iife' });
 const kvSource = fs.readFileSync(new URL('../src/supabase/functions/server/kv_store.tsx', import.meta.url), 'utf8').replace(/^import .*?;\r?\n/gm, '').replaceAll('export const ', 'const ');
@@ -15,7 +18,7 @@ const original = {
   tarifs: [150, 125, 875].map((base, index) => ({ type: ['Nuitée', 'Dès deux nuits', 'Semaine'][index], prices: ['basse','moyenne','haute'].map((season, i) => ({ season, price: `${[[150,165,180],[125,140,150],[875,980,1050]][index][i]}€` })) })),
   gites: [{ nom: 'Le Suyen', image: '/photo.jpg', gallery: ['/photo.jpg'] }],
 };
-export function harness({ configured = true, env = {} } = {}) {
+export function harness({ configured = true, env = {}, reservationClient, fetchBlocks = async () => [] } = {}) {
   const rows = new Map(Object.entries(original).map(([key, value]) => [key, structuredClone(value)]));
   if (configured) rows.set('admin_password', 'Personal-fixture-password-42!');
   const state = { failure: false, uploads: [], rows };
@@ -43,8 +46,10 @@ export function harness({ configured = true, env = {} } = {}) {
     return builder;
   }
   const client = { from: () => query(), storage: { getBucket: async () => ({ data: { id: 'soulor-site-media' } }), from: () => ({ upload: async (path, bytes) => { state.uploads.push({ path, bytes }); return { error: null }; }, getPublicUrl: path => ({ data: { publicUrl: `https://media.example.test/${path}` } }) }) } };
-  const context = vm.createContext({ console, ...model, ...security, Hono, cors, createClient: () => client, crypto: globalThis.crypto, Request, Response, File, Blob, FormData, Uint8Array, TextDecoder, TextEncoder, Date, JSON, Object, Array, Map, Set, Error, String, Number, Deno: { env: { get: key => env[key] }, serve() {} } });
+  const context = vm.createContext({ console, ...model, ...security, ...reservationModel, Hono, cors, createClient: () => client, crypto: globalThis.crypto, Request, Response, File, Blob, FormData, Uint8Array, TextDecoder, TextEncoder, Date, JSON, Object, Array, Map, Set, Error, String, Number, Deno: { env: { get: key => env[key] }, serve() {} } });
   vm.runInContext(kvCompiled.code, context);
+  vm.runInContext(reservationCompiled.code, context);
+  if (reservationClient) { const mount=context.mountReservationAdmin; context.mountReservationAdmin=(app,options)=>mount(app,{...options,db:()=>reservationClient,fetchBlocks}); }
   vm.runInContext(compiled.code, context);
   const request = async (path, { method = 'GET', token, body, ip = 'fixture', form } = {}) => {
     const headers = { 'x-forwarded-for': ip, ...(token ? { 'X-CMS-Session': token } : {}), ...(!form ? { 'Content-Type': 'application/json' } : {}) };
