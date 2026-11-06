@@ -11,6 +11,7 @@ interface AdminContextType {
   saveChanges: () => Promise<void>; discardChanges: () => void; reloadContent: () => Promise<void>;
   uploadImage: (file: File) => Promise<string>; changePassword: (oldPassword: string, newPassword: string) => Promise<void>;
   fields: ContentField[]; registerField: (field: ContentField) => void;
+  reservationRequest: (path?: string, options?: RequestInit) => Promise<any>;
 }
 const AdminContext = createContext<AdminContextType | undefined>(undefined);
 export function AdminProvider({ children }: { children: ReactNode }) {
@@ -89,6 +90,10 @@ export function AdminProvider({ children }: { children: ReactNode }) {
     const data = await contentRequest('/admin/change-password', { method: 'POST', body: JSON.stringify({ oldPassword, newPassword }) }, token || undefined); setToken(data.token);
   };
   const discardChanges = () => { if (!saveInFlight.current && window.confirm('Annuler toutes les modifications non publiées ?')) { setContent(published); setDirty(false); generation.current++; } };
-  return <AdminContext.Provider value={{ content, isAdminMode, isAuthenticated: !!token, setIsAdminMode, updateContent, login, logout, saveChanges, discardChanges, hasUnsavedChanges, saving, loading, loadError, reloadContent, uploadImage, changePassword, fields, registerField }}>{children}</AdminContext.Provider>;
+  const reservationRequest = useCallback((path = '', options = {}) => {
+    if (!token) return Promise.reject(new Error('Reconnectez-vous pour gérer les réservations.'));
+    return contentRequest('/admin/reservations' + path, options, token);
+  }, [token]);
+  return <AdminContext.Provider value={{ content, isAdminMode, isAuthenticated: !!token, setIsAdminMode, updateContent, login, logout, saveChanges, discardChanges, hasUnsavedChanges, saving, loading, loadError, reloadContent, uploadImage, changePassword, fields, registerField, reservationRequest }}>{children}</AdminContext.Provider>;
 }
 export function useAdmin() { const context = useContext(AdminContext); if (!context) throw new Error('useAdmin doit être utilisé dans AdminProvider'); return context; }

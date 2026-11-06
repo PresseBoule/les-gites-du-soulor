@@ -265,7 +265,7 @@ export function GiteBainNordiquePage() {
                     whileTap={{ scale: 0.95 }}
                   >
                     <Link
-                      to="https://bain-sauna-gite-soulor.netlify.app/"
+                      to="https://reservation-gitedusoulor-bain-sauna.netlify.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 text-white rounded-full font-medium hover:bg-white/20 transition-all duration-300 border border-white/20"

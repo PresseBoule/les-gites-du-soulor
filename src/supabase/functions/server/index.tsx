@@ -4,6 +4,7 @@ import { createClient } from 'jsr:@supabase/supabase-js@2.49.8';
 import * as kv from './kv_store.tsx';
 import { CONTENT_KEYS, validateContent } from '../../../lib/contentModel.mjs';
 import { digest, passwordHash, passwordMatches, validateNewPassword, detectImage } from './security.mjs';
+import { mountReservationAdmin } from './reservationAdmin.ts';
 
 const app = new Hono();
 const prefix = '/make-server-66cb1054';
@@ -131,4 +132,9 @@ app.post(`${prefix}/admin/media`, async c => {
   if (error) throw error;
   return c.json({ success: true, url: client.storage.from(bucket).getPublicUrl(path).data.publicUrl });
 });
+mountReservationAdmin(app, { prefix, db, authorized, fetchBlocks: async gite => {
+  const response=await fetch(`${Deno.env.get('SUPABASE_URL')}/functions/v1/make-server-497309b8/bookings/${gite}`,{headers:{Authorization:`Bearer ${Deno.env.get('SUPABASE_ANON_KEY')}`},cache:'no-store',signal:AbortSignal.timeout(12000)});
+  const data=await response.json();if(!response.ok||!data.success||!Array.isArray(data.bookings))throw Error('Calendrier inaccessible');
+  return data.bookings.filter(booking=>booking.source==='airbnb');
+} });
 Deno.serve(app.fetch);
