@@ -309,7 +309,7 @@ export function Footer({ contact, social }: FooterProps = {}) {
                   className="text-[#c4a574] hover:underline"
                   onClick={(e) => e.preventDefault()}
                 >
-                  Camille Panazol - PixelBoost
+                  PixelBoost
                 </a>
               </div>
             </div>
